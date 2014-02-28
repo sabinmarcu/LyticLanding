@@ -17,8 +17,7 @@
     "eco": "*",
     "mime": "*",
     "LiveScript": "*",
-    "js-yaml": "*",
-    "traceur": "0.0.24"
+    "js-yaml": "*"
   },
   "scripts": {
     "create-dir-structure": "mkdir lib src spec bin",
