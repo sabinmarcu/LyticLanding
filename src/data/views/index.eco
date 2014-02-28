@@ -1,0 +1,2 @@
+<%- DepMan.render ["partials", "header"] %>
+<%- DepMan.render ["partials", "signup"] %>

@@ -64,7 +64,7 @@ class Compiler
                     if error then return @throw error, callback
                     source = """
 						(function(){
-                            var getStylesheets = function() { element = document.createElement('style'); element.innerHTML = \"#{styles.replace(/\"/g, "'").replace(/\n/g, "")}\"; element.id = \"compiled_styles\"; return element; };
+                            var getStylesheets = function() { element = document.createElement('style'); element.innerHTML = \"#{styles.replace(/\"/g, "'").replace(/\n/g, "\\n")}\"; element.id = \"compiled_styles\"; return element; };
                             #{if @options.verbose then "window.isDev = true; "}
 
 							#{source}

@@ -15,10 +15,11 @@ TESTS =
 		return true for prefix in PREFIXES when win["#{prefix}IndexedDB"]?
 		false
 		
-	"localstorage": -> chrome?.storage? or win.localDBStorage? # Only two things to check here : normal API and Chrome local DBStorage
+	"localstorage": -> chrome?.storage? or win.localStorage? # Only two things to check here : normal API and Chrome local DBStorage
 
 	"chrome.storage": -> chrome? and chrome.storage?
-	"webkitiTNotifications": -> webkitiTNotifications?
+	"webkitNotifications": -> webkitNotifications?
+	"mozNotifications": -> Notification?
 	"mac": -> (navigator.userAgent.indexOf "Macintosh") >= 0
 	"requestAnimationFrame": -> 
 		# Checking whether the base rAF exists
@@ -45,16 +46,16 @@ NORMIALIZES =
 
 	"localstorage": ->
 		# If running the app in a chrome packaged app, use chrome local localstorage
-		win.LocalDBStorage = {}
+		win.LocalStorage = {}
 		if chrome? and chrome.storage?
-			win.LocalDBStorage.set = (key, value) -> chrome.storage.local.set key: value
-			win.LocalDBStorage.get = (args...) -> chrome.storage.local.get.apply chrome.storage.local, args
-			win.LocalDBStorage.remove = chrome.storage.local.remove
+			win.LocalStorage.set = (key, value) -> chrome.storage.local.set key: value
+			win.LocalStorage.get = (args...) -> chrome.storage.local.get.apply chrome.storage.local, args
+			win.LocalStorage.remove = chrome.storage.local.remove
 		# Else run the regular localstorage with a slightly different API
 		else
-			win.LocalDBStorage.set = (key, value) -> localDBStorage.setItem key, value
-			win.LocalDBStorage.get = (item, callback) -> res = {}; res[item] = win.localDBStorage.getItem item; callback res
-			win.LocalDBStorage.remove = (item) -> win.localDBStorage.removeItem item
+			win.LocalStorage.set = (key, value) -> localStorage.setItem key, value
+			win.LocalStorage.get = (item, callback) -> res = {}; res[item] = win.localStorage.getItem item; callback res
+			win.LocalStorage.remove = (item) -> win.localStorage.removeItem item
 
 	"requestAnimationFrame" : -> 
 		if not win.requestAnimationFrame?
@@ -68,7 +69,7 @@ NORMIALIZES =
 # Finally wrapping them up in an object that runs the tests, runs the normalizes and makes the test results available
 # Also, if a test was unsuccesful then the normalize function associated never runs
 class Tester extends window.IS.Object
-	constructor: (cb) -> @log "Tester Online"; do @tests; do @normalize; do cb
+	constructor: (cb) -> @log "Tester Online"; do @tests; do @normalize; if cb? then do cb
 	tests: -> @[name] = do test for name, test of TESTS
 	normalize: -> do normalize for name, normalize of NORMIALIZES
 

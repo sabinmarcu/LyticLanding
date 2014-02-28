@@ -1,0 +1,7 @@
+<aside>
+    <label for="mail"><h1 <%= _T "Get invited to test" %>></h1></label>
+    <section>
+        <div class="input"><input type="email" id="mail" <%= _T "Your eMail Address", "placeholder" %>></div>
+        <div class="submit"><input type="submit" <%= _T "Sign Up" %>></input></div>
+    </section>
+</aside>
