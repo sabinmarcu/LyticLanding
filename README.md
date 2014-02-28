@@ -1,1 +1,3 @@
-# This is the code for the landing page of the Lytic App
+# Lytic
+
+This is the code for the landing page of the Lytic App
