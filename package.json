@@ -1,0 +1,34 @@
+{
+  "name": "lyticdash",
+  "displayname": "Lytic Dashboard",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sabin Marcu",
+    "email": "sabinmarcu@gmail.com"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "cliparser": "*",
+    "express": "*",
+    "stylus": "*",
+    "nib": "*",
+    "isf": "*",
+    "stitchw": "*",
+    "eco": "*",
+    "mime": "*",
+    "LiveScript": "*",
+    "js-yaml": "*",
+    "traceur": "0.0.24"
+  },
+  "scripts": {
+    "create-dir-structure": "mkdir lib src spec bin",
+    "compile": "node node_modules/.bin/coffee -c -o lib src",
+    "run-tests": "node node_modules/.bin/jasmine-node --coffee --noColor spec",
+    "test": "npm run-script compile && npm run-script run-tests"
+  },
+  "main": "node server -s -c -v -p 80",
+  "subdomain": "lytic",
+  "engines": {
+    "node": "3"
+  }
+}
