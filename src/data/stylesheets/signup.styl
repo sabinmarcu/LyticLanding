@@ -1,4 +1,4 @@
-&
+.flow.prime
     padding-bottom asideheight + 50px
 
 aside
@@ -11,16 +11,10 @@ aside
     left 0
     bottom 0
     margin-bottom 50px
-    h1
-        display block
-        height (asideheight - formheight)px
-        background linear-gradient(top, rgba(256, 256, 256, 0) 0%, rgba(256, 256, 256, 1) 100%)
-        padding 0
-        margin 0
-        text-indent 15px
-        line-height (asideheight - formheight)px
-        font-weight 100
-        font-size 28pt
+    z-index 9999
+    transition all 0.5s ease-in-out
+    &.hidden
+        transform translateX(-100%)
     section
         background #639
         height formheight
@@ -72,12 +66,12 @@ aside
     aside
         margin-bottom 0
         width auto
-        min-width auto
-        max-width auto
+        min-width 0px
+        max-width 99999999999999px
         right 0
         height formheight
-        h1
-            display none
+    .flow.prime
+        padding-bottom formheight
 
 placeholder()
     color white

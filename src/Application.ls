@@ -4,7 +4,7 @@ class Application extends IS.Object
         document.title = AppInfo.displayname
 
         @LifeCycle = new IS.Promise!
-        @LifeCycle.then @checkDevMode .then @fixMobile .then @loadDepMan .then @getStyles .then @loadLibs .then @loadEssentials .then @bootStrapAngular .then @completeLoad
+        @LifeCycle.then @checkDevMode .then @fixMobile .then @loadDepMan .then @getStyles .then @loadLibs .then @loadEssentials .then @bootStrapAngular .then @renderPage .then @completeLoad
 
         window.Tester = new (require "classes/helpers/Tester")(~> @LifeCycle.resolve!)
 
@@ -35,14 +35,25 @@ class Application extends IS.Object
     getStyles: ~> document.head.append-child @getStylesFunc!; @LifeCycle.resolve!
     loadLibs: ~>
 
+        window <<< DepMan.lib \jwerty
+        window <<< DepMan.lib \heatmap
+        window <<< DepMan.lib \annyang
+
         DepMan.google-font "Roboto", [100 400]
 
-        DepMan.ext-script "//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"
-        DepMan.ext-script "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
-        DepMan.ext-script "http://preludels.com/prelude-browser-min.js", ~>
-            window <<<< window.require "prelude-ls"
-            @LifeCycle.resolve!
+        DepMan.ext-link "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+        
+        <~ DepMan.ext-script "//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"
+        <~ DepMan.ext-script "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+        <~ DepMan.ext-script "http://preludels.com/prelude-browser-min.js"
 
+        window <<<< window.require "prelude-ls"
+        @LifeCycle.resolve!
+
+    renderPage: ~>
+        
+        document.body.innerHTML = DepMan.render "index"
+        @LifeCycle.resolve!
 
     bootStrapAngular: ~> 
 
@@ -50,12 +61,17 @@ class Application extends IS.Object
 
         DepMan.helper "Runtime"
         DepMan.helper "Translate"
+        DepMan.controller "Scroll"
+        DepMan.controller "Signup"
+        DepMan.controller "Heatmap"
         [window.Notifications, window.Toast] = DepMan.helper "Notification"
 
         @LifeCycle.resolve!
 
     completeLoad: ~>    
-        document.body.innerHTML = DepMan.render "index"
+
+        DepMan.controller "Modal"
+        angular.bootstrap document.body, [AppInfo.displayname]
 
 
 module.exports = Application

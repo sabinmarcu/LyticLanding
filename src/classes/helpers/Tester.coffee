@@ -19,8 +19,9 @@ TESTS =
 
 	"chrome.storage": -> chrome? and chrome.storage?
 	"webkitNotifications": -> webkitNotifications?
-	"mozNotifications": -> Notification?
+	"mozNotifications": -> Notification? or mozNotification?
 	"mac": -> (navigator.userAgent.indexOf "Macintosh") >= 0
+	"ios": -> /(iPad|iPhone|iPad)/.test navigator.userAgent
 	"requestAnimationFrame": -> 
 		# Checking whether the base rAF exists
 		if win.requestAnimationFrame then return true
@@ -60,6 +61,8 @@ NORMIALIZES =
 	"requestAnimationFrame" : -> 
 		if not win.requestAnimationFrame?
 			return win.requestAnimationFrame = win["#{prefix}RequestAnimationFrame"] for prefix in PREFIXES when win["#{prefix}RequestAnimationFrame"]?
+
+	"mozNotifications": -> if not win.Notification? then win.Notification = win.mozNotification or win.webkitNotification
 
 	"audioContext": -> return win.audioContext = win.AudioContext or win.webkitAudioContext
 	"getUserMedia": -> 

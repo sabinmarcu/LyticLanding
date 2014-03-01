@@ -53,8 +53,6 @@ class Compiler
 
                     #{( require path.resolve "#{__dirname}/data/appinfo" )(json, new Date())}
                     **/
-
-                    #{source}
                 """
                 source += src for src in @sources when src.substr?
                 source += do src for src in @sources when src.apply?

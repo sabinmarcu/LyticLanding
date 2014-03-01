@@ -37,6 +37,15 @@ class DepMan extends IS.Object
       if callback? then callback _s
     document.head.appendChild _s
     _s
+  extLink  : (src, stylesheet = true) ~>
+    if @deps[src] then return @deps[src]
+    _name = src.substr (src.lastIndexOf "/") + 1
+    _s = @deps[src] = document.createElement "link"
+    _s.href = src
+    _s.id = _name
+    if stylesheet then _s.rel = "stylesheet"
+    document.head.appendChild _s
+    _s
 
   googleFont : (font, sizes, subsets = null) ~>
     if @deps[font] then return @deps[font]

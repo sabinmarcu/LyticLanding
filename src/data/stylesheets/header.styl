@@ -1,15 +1,50 @@
 header
     display block
     border-top solid 5px #639
-
+    background articlecolor
+    position fixed
+    top 0
+    left 0
+    right 0
+    height 250px
     h1
         display block
         padding 0
         margin 0 
         font-weight 100
-        font-size 25vmin
+        font-size 200px
         text-transform uppercase
         text-indent 15px
         text-align center
         small
             display none
+
+.flow.prime
+    padding-top 250px
+
+@media (max-width: 1000px)
+    header
+        height 200px
+        h1
+            font-size 150px
+
+    .flow.prime
+        padding-top 200px
+
+@media (max-width: 600px)
+    header
+        height 150px
+        h1
+            font-size 100px
+
+    .flow.prime
+        padding-top 150px
+
+@media (max-width: 320px)
+    header
+        height 100px
+        h1
+            font-size 75px
+
+    .flow.prime
+        padding-top 100px

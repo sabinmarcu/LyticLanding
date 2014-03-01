@@ -1,2 +1,10 @@
-<%- DepMan.render ["partials", "header"] %>
-<%- DepMan.render ["partials", "signup"] %>
+<section class="app">
+    <%- DepMan.render ["partials", "heatmap"] %>
+    <div class="flow prime" ng-controller="Scroll">
+        <%- DepMan.render ["partials", "header"] %>
+        <div class="container">
+            <%- DepMan.render ["partials", "dummydata"] %>
+        </div>
+    </div>
+    <%- DepMan.render ["partials", "signup"] %>
+</section>

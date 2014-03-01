@@ -17,7 +17,8 @@
     "eco": "*",
     "mime": "*",
     "LiveScript": "*",
-    "js-yaml": "*"
+    "js-yaml": "*",
+    "mailchimp-api": "~2.0.4"
   },
   "scripts": {
     "create-dir-structure": "mkdir lib src spec bin",

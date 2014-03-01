@@ -1,7 +1,6 @@
-<aside>
-    <label for="mail"><h1 <%= _T "Get invited to test" %>></h1></label>
+<aside ng-controller="Signup" ng-class="{'hidden': isHidden}">
     <section>
-        <div class="input"><input type="email" id="mail" <%= _T "Your eMail Address", "placeholder" %>></div>
-        <div class="submit"><input type="submit" <%= _T "Sign Up" %>></input></div>
+        <div class="input"><input type="email" id="mail" <%= _T "Get Invited to the Beta", "placeholder" %> ng-model="email"></div>
+        <div class="submit"><input type="submit" <%= _T "Sign Up" %> ng-click="signup(email)"></input></div>
     </section>
 </aside>

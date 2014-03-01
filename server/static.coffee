@@ -1,6 +1,7 @@
 require "isf" # We're gonna need the ISF framework to help with ErrorReporting (for now)
 
 info = require ( require "path" ).resolve "#{__dirname}/../package.json"
+mc = new (require "mailchimp-api").Mailchimp "2c7f80a167418320ed90825042873b02-us3"
 
 # Defining the Server Bootstrap class (the actual work is done by Express)
 class Server
@@ -54,6 +55,13 @@ class Server
                     App.get "/js/#{info.name}.js", (req, res) => @compiler.compile null, (err, source) ->
                         if err then console.log "ERROR : #{err}"
                         else res.send source, {"Content-Type": "application/javascript"}, 201
+                App.post "/subscribe", (req, res) =>
+                    if req.body.email is "" or not /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test req.body.email
+                        res.send "ERROR"
+                    else mc.lists.subscribe id: "91af16d98f", double_optin: false, email: {email: req.body.email}, (data) ->
+                            if data is null then res.send "ERROR"
+                            else res.send "SUCCESS"
+                        , (err) -> res.send "ERROR - #{err.error}" 
                 App.get "*", (req, res) =>
                     console.log "Requested", (require "path").resolve "#{__dirname}/../public#{req.url}"
                     (require "fs").exists ((require "path").resolve "#{__dirname}/../public#{req.url}"), (exists) ->

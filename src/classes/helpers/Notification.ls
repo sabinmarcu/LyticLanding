@@ -17,12 +17,16 @@ class NotificationHelper extends IS.Object
 					window.removeEventListener "click"
 				window.addEventListener "click", handler
 			Runtime.set 'toast-driver', Drivers[\webkit]
-		if Tester[\mozNotifications]
+		else if Tester[\mozNotifications]
 			handler = ->
 				Notification.requestPermission()
 				window.removeEventListener "click"
 			window.addEventListener "click", handler
 			Runtime.set 'toast-driver', Drivers[\moz]
+		Runtime.subscribe \prop-modal-state-change, ~>
+			switch Runtime.get \modal-state
+			| 1 => $ \.app .addClass \modal-active
+			| 0 => $ \.app .removeClass \modal-active
 		@echo "Notification Helper Online, with driver : ", @drive, " and timeout : ", Runtime.get('toast-timeout')
 
 	toast: (title = "Notification", ...body)~> switch Runtime.get('toast-driver')
@@ -36,18 +40,17 @@ class NotificationHelper extends IS.Object
 		else @toast-normal title, body
 	| otherwise => @toast-normal title, body
 	toast-moz: (title, body) ~> 
-		new Notification title + (body * \\n)
+		notif = new Notification title, body: body * \\n, icon: 'icon.ico'
+		setTimeout (-> notif.close()), Runtime.get 'toast-timeout'
 	toast-webkit: (title, body)~>
-		b = body.shift!
-		for item in body then b += "\n#item"
-		notif = webkitNotifications.createNotification 'icon.ico', title, b 
+		notif = webkitNotifications.createNotification 'icon.ico', title, body  * \\n
 		notif.ondisplay = (ev) -> setTimeout (-> ev.currentTarget.cancel()), Runtime.get 'toast-timeout'
 		notif.show!
 	toast-normal: (title, body) ~>
 		b = ""
 		if Modal? 
 			for item in body then b += "<p>#item</p>"
-			Modal.show {title: title, content: b}, Runtime.get 'toast-timeout'
+			Modal.show title: title, content: b, Runtime.get 'toast-timeout'
 		else 
 			b = ( [title] ++ body ) * "\n"
 			alert b
