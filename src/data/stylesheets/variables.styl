@@ -1,4 +1,12 @@
-asideheight=45px
+mix(a, b, m)
+    require-color a
+    require-color b
+    if unit(m) is '%'
+        m = unit(m / 100, '')
+    n = 1 - m
+    return a * m +  b * n
+
+navheight=35px
 formheight=45px
 formbuttonwidth=70px
 articlecolor=rgba(256, 256, 256, 0.9)

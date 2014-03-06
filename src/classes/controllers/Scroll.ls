@@ -4,22 +4,37 @@ class ScrollController extends IS.Object
         @init-runtime!
 
     init-runtime: ~>
+        window.addEventListener "resize", @headerResize
+        window.addEventListener "orientationchange", @headerResize
+        $ ".app header nav" .css "top", ($ ".app header h1" .height!)
         $ \.flow .scroll ~> 
             _r = (it.target.scrollTop + 1) / (it.target.scrollHeight - window.innerHeight)
             _o = 1000 - window.innerHeight 
             if _o > 0 
                 $ \.app .css \background-position : "right -#{parseInt _r * _o}px"
-                $ ".app header" .css \top : - it.target.scrollTop * 2
+                if window.innerWidth < 1200 then $ ".app header" .css \top : - it.target.scrollTop * 2
                 $ \.heatmap .css \top : - it.target.scrollTop
             else 
                 $ \.app .css \background-position : "bottom right"
-                $ ".app header" .css \top : 0
+                if window.innerWidth < 1200 then $ ".app header" .css \top : 0
                 $ \.heatmap .css \top : 0
 
         if annyang
-            annyang.addCommands "show me more": ~> $ \.flow .scrollTop 500
+            annyang.addCommands "show me more": ~>  
+                @log "Recognized"
+                $ \.flow .scrollTop 500
             annyang.start!
 
+    headerResize: ~>
+        el = $ ".app header h1"
+        flow = $ \.flow.prime
+        if window.innerWidth >= 1200
+            el.css "font-size", ((el.width! / (7 * 1.5)) * 3)
+            flow.css "padding-left", window.innerWidth - 900
+        else 
+            el.css "font-size", ""
+            flow.css "padding-left", ""
+        $ ".app header nav" .css "top", el.height!
 
     config-scope: ~>
         @safeApply = (fn) ~>

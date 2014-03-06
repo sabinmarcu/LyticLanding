@@ -35,10 +35,6 @@ class Application extends IS.Object
     getStyles: ~> document.head.append-child @getStylesFunc!; @LifeCycle.resolve!
     loadLibs: ~>
 
-        window <<< DepMan.lib \jwerty
-        window <<< DepMan.lib \heatmap
-        window <<< DepMan.lib \annyang
-
         DepMan.google-font "Roboto", [100 400]
 
         DepMan.ext-link "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
@@ -46,6 +42,11 @@ class Application extends IS.Object
         <~ DepMan.ext-script "//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"
         <~ DepMan.ext-script "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
         <~ DepMan.ext-script "http://preludels.com/prelude-browser-min.js"
+
+        window <<< DepMan.lib \jwerty
+        window <<< DepMan.lib \heatmap
+        window <<< DepMan.lib \annyang
+        window <<< DepMan.lib \fittext
 
         window <<<< window.require "prelude-ls"
         @LifeCycle.resolve!

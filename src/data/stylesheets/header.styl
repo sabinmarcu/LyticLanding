@@ -1,50 +1,119 @@
+
+hheight = 200px
 header
     display block
     border-top solid 5px #639
-    background articlecolor
     position fixed
     top 0
     left 0
     right 0
-    height 250px
+    height hheight
     h1
         display block
         padding 0
         margin 0 
         font-weight 100
-        font-size 200px
+        font-size hheight - 50
         text-transform uppercase
         text-indent 15px
         text-align center
         small
             display none
+        background articlecolor
+    nav
+        height navheight
+        position absolute
+        top hheight
+        left 0
+        right 0
+        div
+            display inline-block
+            margin 0
+            padding 0
+            text-align center
+            width 25%
+            height navheight
+            line-height navheight
+            float left
+            background articlecolor
+            box-shadow 1px 1px 1px darken(articlecolor, 10) inset
+            a, a:hover, a:visited, a:active, a:link
+                color inherit
+                text-decoration none
+            span
+                padding 0 2px
+            transition all 0.5s ease-in-out
+            color #999
+            min-width 75px
+            cursor pointer
+            &:hover
+                box-shadow none
+                &.facebook
+                    background #3b5998
+                    color white
+                &.twitter
+                    background #4099FF
+                    color white
+                &.admin
+                    background darken(red, 12)
+                    color white
+                &.contact
+                    background rgba(0, 0, 0, 0.7)
+                    color white
+
 
 .flow.prime
-    padding-top 250px
+    padding-top hheight + navheight
+
+@media (min-width: 1200px)
+    cwidth = 900px
+    header 
+        h1, nav
+            position absolute
+            top 0
+            left 0
+            right cwidth + 25
+    
+
+    .flow.prime
+        padding-top 0
+        left auto
+        .container
+            float left
+            width cwidth
 
 @media (max-width: 1000px)
+    hheight = 200px
     header
-        height 200px
+        height hheight
         h1
-            font-size 150px
+            font-size hheight - 50
+        nav 
+            top hheight
 
     .flow.prime
-        padding-top 200px
+        padding-top 200px + navheight
 
 @media (max-width: 600px)
+    hheight = 150px
     header
-        height 150px
+        height hheight
         h1
-            font-size 100px
+            font-size hheight - 50
+        nav 
+            top hheight
 
     .flow.prime
-        padding-top 150px
+        padding-top 150px + navheight
 
 @media (max-width: 320px)
+    hheight = 100px
     header
-        height 100px
+        height hheight
         h1
             font-size 75px
+        nav 
+            top hheight
 
     .flow.prime
-        padding-top 100px
+        padding-top 100px + navheight
