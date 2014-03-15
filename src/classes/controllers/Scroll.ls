@@ -1,29 +1,25 @@
 class ScrollController extends IS.Object
-    (@scope) ~>
-        @config-scope!
-        @init-runtime!
+    (@scope, @runtime) ~>
+        @log @runtime
+        @init-runtime!config-scope!
 
     init-runtime: ~>
         window.addEventListener "resize", @headerResize
         window.addEventListener "orientationchange", @headerResize
+        @runtime.init "contact-form-open", false
         $ ".app header nav" .css "top", ($ ".app header h1" .height!)
         $ \.flow .scroll ~> 
             _r = (it.target.scrollTop + 1) / (it.target.scrollHeight - window.innerHeight)
             _o = 1000 - window.innerHeight 
+            $ ".app header" .css \top : 0
             if _o > 0 
                 $ \.app .css \background-position : "right -#{parseInt _r * _o}px"
                 if window.innerWidth < 1200 then $ ".app header" .css \top : - it.target.scrollTop * 2
                 $ \.heatmap .css \top : - it.target.scrollTop
             else 
                 $ \.app .css \background-position : "bottom right"
-                if window.innerWidth < 1200 then $ ".app header" .css \top : 0
                 $ \.heatmap .css \top : 0
-
-        if annyang
-            annyang.addCommands "show me more": ~>  
-                @log "Recognized"
-                $ \.flow .scrollTop 500
-            annyang.start!
+        @
 
     headerResize: ~>
         el = $ ".app header h1"
@@ -44,6 +40,7 @@ class ScrollController extends IS.Object
                     do fn
             else @scope.$apply(fn)
         @scope <<< @
+        @
 
-angular.module AppInfo.displayname .controller "Scroll", ["$scope", ScrollController]
+angular.module AppInfo.displayname .controller "Scroll", ["$scope", "Runtime", ScrollController]
 module.exports = ScrollController

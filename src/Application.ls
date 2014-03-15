@@ -38,15 +38,14 @@ class Application extends IS.Object
         DepMan.google-font "Roboto", [100 400]
 
         DepMan.ext-link "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-        
-        <~ DepMan.ext-script "//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"
-        <~ DepMan.ext-script "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
-        <~ DepMan.ext-script "http://preludels.com/prelude-browser-min.js"
+
+        window.jQuery = window.$ = DepMan.lib \jquery.min
+        window <<< DepMan.lib \angular.min
+        window <<< DepMan.lib \prelude-browser-min
 
         window <<< DepMan.lib \jwerty
         window <<< DepMan.lib \heatmap
         window <<< DepMan.lib \annyang
-        window <<< DepMan.lib \fittext
 
         window <<<< window.require "prelude-ls"
         @LifeCycle.resolve!
@@ -65,6 +64,8 @@ class Application extends IS.Object
         DepMan.controller "Scroll"
         DepMan.controller "Signup"
         DepMan.controller "Heatmap"
+        DepMan.controller "Navigation"
+        DepMan.controller "Content"
         [window.Notifications, window.Toast] = DepMan.helper "Notification"
 
         @LifeCycle.resolve!

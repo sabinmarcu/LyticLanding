@@ -18,7 +18,9 @@
     "mime": "*",
     "LiveScript": "*",
     "js-yaml": "*",
-    "mailchimp-api": "~2.0.4"
+    "mailchimp-api": "~2.0.4",
+    "handlebars": "~2.0.0-alpha.2",
+    "nodemailer": "~0.6.1"
   },
   "scripts": {
     "create-dir-structure": "mkdir lib src spec bin",

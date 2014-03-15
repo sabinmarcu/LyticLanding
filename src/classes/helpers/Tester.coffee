@@ -72,7 +72,7 @@ NORMIALIZES =
 # Finally wrapping them up in an object that runs the tests, runs the normalizes and makes the test results available
 # Also, if a test was unsuccesful then the normalize function associated never runs
 class Tester extends window.IS.Object
-	constructor: (cb) -> @log "Tester Online"; do @tests; do @normalize; if cb? then do cb
+	constructor: (cb) -> @log "Tester Online"; do @tests; do @normalize; window.Tester ?= @; if cb? then do cb
 	tests: -> @[name] = do test for name, test of TESTS
 	normalize: -> do normalize for name, normalize of NORMIALIZES
 

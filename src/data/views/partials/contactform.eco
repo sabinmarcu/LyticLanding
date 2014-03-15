@@ -1,0 +1,16 @@
+<section class="form" ng-class="{true: 'active', false: 'inactive'}[runtime.props['contact-form-open']]">
+    <span class="info" ng-class="error.type">{{error.message}}</span>
+    <label for="name">
+        <i class="fa fa-person"></i><span class="text">Your Name</span>
+        <input type="text" id="name" ng-model="mail.name"/>
+    </label>
+    <label for="mail">
+        <i class="fa fa-at-sign"></i><span class="text">Your eMail Address</span>
+        <input type="email" id="mail" ng-model="mail.email"/>
+    </label>
+    <label for="content">
+        <i class="fa fa-comment"></i><span class="text">The content of your email</span>
+        <textarea id="mail" ng-model="mail.content" cols="30" rows="10"></textarea>
+    </label>
+    <button class="submit" ng-disabled="mail.content.length * mail.email.length" ng-click="alert('DONE')">Submit</button>
+</section>

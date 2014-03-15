@@ -67,8 +67,9 @@ class Server
                     (require "fs").exists ((require "path").resolve "#{__dirname}/../public#{req.url}"), (exists) ->
                         if exists and req.url isnt "/" then res.sendfile ((require "path").resolve "#{__dirname}/../public#{req.url}")
                         else 
-                            content = (require "fs").readFileSync (require "path").resolve("#{__dirname}/../public/index.html"), "utf-8"
+                            content = (require "fs").readFileSync (require "path").resolve("#{__dirname}/../public/_index.html"), "utf-8"
                             content = content.replace /\<\<appname\>\>/, info.name
+                            (require "fs").writeFileSync (require "path").resolve("#{__dirname}/../public/index.html"), content
                             res.send content, {"Content-Type": "text/html"}, 201
             # And if watch is enabled ...
             if @watch
