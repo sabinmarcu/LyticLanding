@@ -25,7 +25,7 @@ class NotificationHelper extends IS.Object
 			#Runtime.set 'toast-driver', Drivers[\moz]
 		Runtime.subscribe \prop-modal-state-change, ~>
 			switch Runtime.get \modal-state
-			| 1 => $ \.app .addClass \modal-active
+			| 1, 2 => $ \.app .addClass \modal-active
 			| 0 => $ \.app .removeClass \modal-active
 		@echo "Notification Helper Online, with driver : ", @drive, " and timeout : ", Runtime.get('toast-timeout')
 
