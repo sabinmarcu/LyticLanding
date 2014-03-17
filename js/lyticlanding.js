@@ -1348,6 +1348,7 @@
         Runtime.subscribe('prop-modal-state-change', function(){
           switch (Runtime.get('modal-state')) {
           case 1:
+          case 2:
             return $('.app').addClass('modal-active');
           case 0:
             return $('.app').removeClass('modal-active');
@@ -4421,6 +4422,78 @@ window.AppInfo = {
     "node": "3"
   }
 }
+;window.AppInfo = {
+  "name": "lyticlanding",
+  "displayname": "Lytic",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sabin Marcu",
+    "email": "sabinmarcu@gmail.com"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "cliparser": "*",
+    "express": "*",
+    "stylus": "*",
+    "nib": "*",
+    "isf": "*",
+    "stitchw": "*",
+    "eco": "*",
+    "mime": "*",
+    "LiveScript": "*",
+    "js-yaml": "*",
+    "mailchimp-api": "~2.0.4",
+    "handlebars": "~2.0.0-alpha.2",
+    "nodemailer": "~0.6.1"
+  },
+  "scripts": {
+    "create-dir-structure": "mkdir lib src spec bin",
+    "compile": "node node_modules/.bin/coffee -c -o lib src",
+    "run-tests": "node node_modules/.bin/jasmine-node --coffee --noColor spec",
+    "test": "npm run-script compile && npm run-script run-tests"
+  },
+  "main": "node server -s -c -v -p 80",
+  "subdomain": "lytic",
+  "engines": {
+    "node": "3"
+  }
+}
+;window.AppInfo = {
+  "name": "lyticlanding",
+  "displayname": "Lytic",
+  "version": "0.0.1",
+  "author": {
+    "name": "Sabin Marcu",
+    "email": "sabinmarcu@gmail.com"
+  },
+  "dependencies": {
+    "coffee-script": "*",
+    "cliparser": "*",
+    "express": "*",
+    "stylus": "*",
+    "nib": "*",
+    "isf": "*",
+    "stitchw": "*",
+    "eco": "*",
+    "mime": "*",
+    "LiveScript": "*",
+    "js-yaml": "*",
+    "mailchimp-api": "~2.0.4",
+    "handlebars": "~2.0.0-alpha.2",
+    "nodemailer": "~0.6.1"
+  },
+  "scripts": {
+    "create-dir-structure": "mkdir lib src spec bin",
+    "compile": "node node_modules/.bin/coffee -c -o lib src",
+    "run-tests": "node node_modules/.bin/jasmine-node --coffee --noColor spec",
+    "test": "npm run-script compile && npm run-script run-tests"
+  },
+  "main": "node server -s -c -v -p 80",
+  "subdomain": "lytic",
+  "engines": {
+    "node": "3"
+  }
+}
 ;/** COPYRIGHT
 Copyright (c) Sabin Marcu 2009-2013, Powered by the Arrowhead System (tm)
 You may not redistribute this software under any circumstance other than sharing the link to any online service supplied by myself, Sabin Marcu, or any market or application store it might be registered in without consulting with the author, or using the software in any commercial way.
@@ -4429,7 +4502,7 @@ Other than that, feel free to enjoy the application!
 @Application Name : Lytic
 @Author           : Sabin Marcu <sabinmarcu@gmail.com>
 @Version          : 0.0.1
-@Date Compiled    : Mon Mar 17 2014 08:13:47 GMT+0000 (GMT)
+@Date Compiled    : Mon Mar 17 2014 08:48:10 GMT+0000 (GMT)
 **/
 
 	window.addEventListener('load', function(){ 
