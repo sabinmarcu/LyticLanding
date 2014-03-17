@@ -7,6 +7,7 @@ class SignupController extends IS.Object
         DBStorage.get "signedup", (data) ~>
             if data? then @scope.isHidden = true
             @scope.safeApply!
+            $ \.flow.prime .add-class \signedup
         $ \#mail .change ~> @signup ($ \#mail .val!)
 
     signup: (email) ~>

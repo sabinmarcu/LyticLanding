@@ -1,8 +1,10 @@
 <section class="app">
+    <%- DepMan.render ["partials", "languages"] %>
     <%- DepMan.render ["partials", "heatmap"] %>
     <div class="flow prime" ng-controller="Scroll">
         <%- DepMan.render ["partials", "header"] %>
-        <div class="container">
+        <div ng-controller="Content" class="container" ng-class="{true: 'formopen', false: 'formclosed'}[runtime.props['contact-form-open']]">
+            <h1>Data</h1>
             <%- DepMan.render ["partials", "dummydata"] %>
         </div>
     </div>

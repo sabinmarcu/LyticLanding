@@ -91,6 +91,7 @@
             }else{
                 while(dlen--){
                     var point = d[dlen];
+                    if (!(point && point.x && point.y && point.count)) continue;
                     heatmap.drawAlpha(point.x, point.y, point.count, false);
                     if(!data[point.x])
                         data[point.x] = [];
@@ -109,14 +110,19 @@
                 data = me.get("data"),
                 exportData = [];
 
+            console.log(data);
+
             for(var one in data){
                 // jump over undefined indexes
-                if(one === undefined)
+                var cond = parseInt(one, 10); cond = cond > 0 || cond < 0 || cond === 0;
+                if(one === undefined || !cond)
                     continue;
                 for(var two in data[one]){
-                    if(two === undefined)
+                    var cond = parseInt(two, 10); cond = cond > 0 || cond < 0 || cond === 0;
+                    if(two === undefined || !cond)
                         continue;
                     // if both indexes are defined, push the values into the array
+                    // console.log(one, two, data[one][two])
                     exportData.push({x: parseInt(one, 10), y: parseInt(two, 10), count: data[one][two]});
                 }
             }

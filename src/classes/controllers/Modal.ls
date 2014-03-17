@@ -42,7 +42,6 @@ class ModalController extends IS.Object
         else @runtime.set \modal-state, States.normal
         if timeout then setTimeout @hide, timeout
         @safeApply!
-    trust: (html) ~> @sce.trustAsHtml html
     hide: ~> @runtime.set \modal-state, States.closed; @safeApply!
     set: (key, value) ~> if key in [\title \content] then @[key] = value; @safeApply!
 

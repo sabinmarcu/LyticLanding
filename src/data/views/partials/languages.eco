@@ -1,0 +1,5 @@
+<nav class="languages" ng-controller="Language">
+    <li ng-repeat="(code, lang) in languages" ng-click="changeLanguage(lang)">
+        <img src="{{getImage(code)}}" alt="" />
+    </li>
+</nav>

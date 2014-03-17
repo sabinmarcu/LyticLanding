@@ -11,7 +11,10 @@ class DepMan extends IS.Object
 
   data       : (module, suffix = "") ~> @_require module, "data/#{suffix}"
   classes    : (module, suffix = "") ~> @_require module, "classes/#{suffix}"
-  render     : (module, ...args) ~> (@data module, "views/").apply @, args
+  render     : (module, ...args) ~>
+    module = @data module, "views/"
+    if module.main then module.main.apply @, [null, null, null] ++ [args]
+    else module.apply @, args
   doc        : (module) ~> @data "docs/"
   stylesheet : (module) ~> @data module, "stylesheets/"
   image      : (module) ~> @data module, "images/"
@@ -19,12 +22,8 @@ class DepMan extends IS.Object
   language   : (module) ~> @data module, "languages/"
   helper     : (module) ~> @classes module, "helpers/"
   controller : (module) ~> @classes module, "controllers/"
-  model : (module) ~> @classes module, "models/"
   model      : (module) ~> @classes module, "models/"
   lib        : (module) ~> @classes module, "libs/"
-  angular    : (module) ~> @classes module, "angular/"
-  gesture    : (module) ~> @classes module, "gestures/"
-  renderer   : (module) ~> @classes module, "renderers/"
   extScript  : (src, callback = null) ~>
     if @deps[src] then return @deps[src]
     _name = src.substr (src.lastIndexOf "/") + 1
