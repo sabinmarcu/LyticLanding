@@ -10,19 +10,19 @@ class NotificationHelper extends IS.Object
 
 		Runtime.set 'toast-timeout', timeout
 		Runtime.set 'toast-driver',	Drivers[\normal]
-		if Tester[\webkitNotifications]
-			unless Tester[\chrome.storage]
-				handler = ->
-					webkitNotifications.requestPermission()
-					window.removeEventListener "click"
-				window.addEventListener "click", handler
-			Runtime.set 'toast-driver', Drivers[\webkit]
-		else if Tester[\mozNotifications]
-			handler = ->
-				Notification.requestPermission()
-				window.removeEventListener "click"
-			window.addEventListener "click", handler
-			Runtime.set 'toast-driver', Drivers[\moz]
+		#if Tester[\webkitNotifications]
+			#unless Tester[\chrome.storage]
+				#handler = ->
+					#webkitNotifications.requestPermission()
+					#window.removeEventListener "click"
+				#window.addEventListener "click", handler
+			#Runtime.set 'toast-driver', Drivers[\webkit]
+		#else if Tester[\mozNotifications]
+			#handler = ->
+				#Notification.requestPermission()
+				#window.removeEventListener "click"
+			#window.addEventListener "click", handler
+			#Runtime.set 'toast-driver', Drivers[\moz]
 		Runtime.subscribe \prop-modal-state-change, ~>
 			switch Runtime.get \modal-state
 			| 1 => $ \.app .addClass \modal-active

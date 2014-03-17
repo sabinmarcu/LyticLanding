@@ -1,4 +1,5 @@
 <section class="app">
+    <%- DepMan.render ["partials", "languages"] %>
     <%- DepMan.render ["partials", "heatmap"] %>
     <div class="flow prime" ng-controller="Scroll">
         <%- DepMan.render ["partials", "header"] %>

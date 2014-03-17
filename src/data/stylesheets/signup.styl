@@ -7,11 +7,9 @@
 aside
     display block
     position fixed
-    width 75%
+    width 900px
     height formheight
-    max-width 750px
-    min-width 200px
-    left 0
+    right 0
     bottom 0
     margin-bottom 50px
     z-index 9999
@@ -65,16 +63,17 @@ aside
                 &:hover, &:active
                     background darken(#639, 25)
 
-@media (max-width: 1000px) 
+@media (max-width: 1200px) 
     aside
         margin-bottom 0
         width auto
         min-width 0px
         max-width 99999999999999px
         right 0
+        left 0
         height formheight
     .flow.prime
-        padding-bottom formheight
+        padding-bottom formheight+ 25px
 
 placeholder()
     color white

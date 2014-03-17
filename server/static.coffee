@@ -48,6 +48,7 @@ class Server
         try # Attempt to configure the server and return an error
             App = do Express
             Server = require("http").createServer App
+            Mail = require("nodemailer").createTransport "SMTP", service: "Gmail", auth: {user: "noreply@lytic.co.uk", pass: "noreplypass"}
             App.configure =>
                 App.use Express.bodyParser()
                 App.use App.router
@@ -62,6 +63,13 @@ class Server
                             if data is null then res.send "ERROR"
                             else res.send "SUCCESS"
                         , (err) -> res.send "ERROR - #{err.error}" 
+                App.post "/contact", (req, res) =>
+                    console.log "MAIL", req.body
+                    if req.body.email is "" or not /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/.test req.body.email
+                        res.send "ERROR"
+                    else Mail.sendMail {from: "#{req.body.name} <#{req.body.email}>", to: "social@lytic.co.uk", subject: "Landing Page Contact", html: "<h1>Received Contact E-Mail from : </h1><h4><i>#{req.body.name}</i> &lt;<a href='mailto:#{req.body.email}'>#{req.body.email}</a>&gt;</h4><br><br>=================================================================<br><br>#{req.body.content.replace(/\n/g, "<br>")}"}, (err, resp) =>
+                        if err then res.send "ERROR", err
+                        else res.send resp
                 App.get "*", (req, res) =>
                     console.log "Requested", (require "path").resolve "#{__dirname}/../public#{req.url}"
                     (require "fs").exists ((require "path").resolve "#{__dirname}/../public#{req.url}"), (exists) ->

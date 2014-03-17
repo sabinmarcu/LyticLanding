@@ -1,16 +1,16 @@
-<section class="form" ng-class="{true: 'active', false: 'inactive'}[runtime.props['contact-form-open']]">
+<section class="form" ng-class="{true: 'active', false: 'inactive'}[runtime.props['contact-form-open']]" ng-controller="Contact">
     <span class="info" ng-class="error.type">{{error.message}}</span>
     <label for="name">
-        <i class="fa fa-person"></i><span class="text">Your Name</span>
-        <input type="text" id="name" ng-model="mail.name"/>
+        <i class="fa fa-user"></i>
+        <span><input type="text" id="name" ng-model="mail.name" <%= _T "Name", "placeholder" %>/></span>
     </label>
     <label for="mail">
-        <i class="fa fa-at-sign"></i><span class="text">Your eMail Address</span>
-        <input type="email" id="mail" ng-model="mail.email"/>
+        <i class="fa fa-envelope"></i>
+        <span><input type="email" id="mail" ng-model="mail.email" <%= _T "E-mail Address", "placeholder" %>/></span>
     </label>
-    <label for="content">
-        <i class="fa fa-comment"></i><span class="text">The content of your email</span>
-        <textarea id="mail" ng-model="mail.content" cols="30" rows="10"></textarea>
+    <label for="content" class='large'>
+        <i class="fa fa-comment"></i>
+        <span><textarea id="mail" ng-model="mail.content" cols="30" rows="10" <%= _T "Content", "placeholder" %>></textarea></span>
     </label>
-    <button class="submit" ng-disabled="mail.content.length * mail.email.length" ng-click="alert('DONE')">Submit</button>
+    <button class="submit" ng-disabled="mail.content.length * mail.email.length == 0" ng-click="sendMail()" <%- _T "Submit" %>></button>
 </section>

@@ -1,12 +1,15 @@
 class NavigationController extends IS.Object
     (@scope, @runtime) ~>
-        @init-runtime!config-scope!
+        @init-runtime!
+        @config-scope!
 
     init-runtime: ~>
         @runtime.init "contact-form-open", false
-        @error = type: "hidden", message: "No Errors"
-        @mail = name: "", mail: "", content: ""
-        @
+        @runtime.subscribe \prop-contact-form-open-change, ~>
+            switch @runtime.props[\contact-form-open] 
+            case true
+                Modal.show title: "Contact Form", content: DepMan.render ["partials", "contactform"]
+            default @log "closed"
 
     config-scope: ~>
         @safeApply = (fn) ~>

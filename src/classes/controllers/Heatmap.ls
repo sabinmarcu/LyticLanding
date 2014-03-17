@@ -34,7 +34,7 @@ class HeatmapController extends IS.Object
             else _add it
 
         resHandler = ~>
-            if window.innerWidth < 1000 then $ \heatmap .width 1000
+            if window.innerWidth < 1200 then $ \.heatmap .width 1200
             else $ \.heatmap .width window.innerWidth
             @map.set "width", ($ \.heatmap .width!)
             @map.resize!

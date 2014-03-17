@@ -18,7 +18,6 @@ class LoadingHelper extends IS.Object
         | \left => "-50%"
         | \right => "50%"
         transString = "translateX(#{arg})  skew(#{angle}rad)"
-        console.log transString
         $ it .css \transform, transString
         @
     progress: (arg) ~> 

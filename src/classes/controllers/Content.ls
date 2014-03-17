@@ -4,13 +4,11 @@ class ContentController extends IS.Object
         @init-runtime!
 
     init-runtime: ~>
-
-        if annyang
-            annyang.addCommands "show me more": ~>
-                @log "Recognized"
-                $ \.flow .scrollTop 500
-            annyang.start!
-
+        #if annyang
+            #annyang.addCommands "show me more": ~>
+                #@log "Recognized"
+                #$ \.flow .scrollTop 500
+            #annyang.start!
 
     config-scope: ~>
         @safeApply = (fn) ~>
