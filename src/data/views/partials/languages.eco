@@ -2,4 +2,5 @@
     <li ng-repeat="(code, lang) in languages" ng-click="changeLanguage(lang)">
         <img src="{{getImage(code)}}" alt="" />
     </li>
+    <li ng-click='runtime.set("fullscreen", !runtime.props["fullscreen"])'><i class="fa" ng-class="{true: 'fa-compress', false: 'fa-expand'}[runtime.props['fullscreen']]"></i></li>
 </nav>

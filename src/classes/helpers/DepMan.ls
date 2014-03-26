@@ -50,7 +50,7 @@ class DepMan extends IS.Object
     if @deps[font] then return @deps[font]
     names = font.split " "
     _s = @deps["#{font}"] = document.createElement "link"
-    string =  "http://fonts.googleapis.com/css?family=#{names.join "+"}:#{sizes.join ","}"
+    string =  "#{window.location.protocol}//fonts.googleapis.com/css?family=#{names.join "+"}:#{sizes.join ","}"
     if subsets? then string += "&subset=#{subsets.join ","}"
     _s.setAttribute "href", string
     _s.setAttribute "rel", "stylesheet"

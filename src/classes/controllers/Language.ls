@@ -1,10 +1,11 @@
 class LanguageController extends IS.Object
-    (@scope) ~>
+    (@scope, @runtime) ~>
         @init-runtime!
         @config-scope!
 
     init-runtime: ~>
         @languages = "ro": "ro-RO", "gb": "en-US"
+        @runtime.set "fullscreen", false
 
     changeLanguage: (lang) ~> Runtime.set \language, lang
     getImage: (code) ~> DepMan.image code .toString!
@@ -18,5 +19,5 @@ class LanguageController extends IS.Object
             else @scope.$apply(fn)
         @scope <<< @
 
-angular.module AppInfo.displayname .controller "Language", ["$scope", LanguageController]
+angular.module AppInfo.displayname .controller "Language", ["$scope", "Runtime", LanguageController]
 module.exports = LanguageController

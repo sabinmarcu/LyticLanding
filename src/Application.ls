@@ -39,6 +39,8 @@ class Application extends IS.Object
         window <<< DepMan.lib \jwerty
         window <<< DepMan.lib \heatmap
         window <<< DepMan.lib \annyang
+        window <<< DepMan.lib \leap-0.4.3
+        window <<< DepMan.lib \leap-plugins-0.1.3.min
         window <<<< window.require "prelude-ls"
         @LifeCycle.resolve!
 
@@ -48,6 +50,7 @@ class Application extends IS.Object
 
     bootStrapAngular: ~>
         angular.module AppInfo.displayname, []
+        #DepMan.helper "Background"
         DepMan.helper "DynamicContent"
         DepMan.helper "Runtime"
         DepMan.helper "Translate"

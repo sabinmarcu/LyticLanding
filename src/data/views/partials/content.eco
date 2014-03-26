@@ -1,0 +1,18 @@
+<div ng-controller="Content" class="container" ng-class="{hidden: voiceCommand, fullscreen: runtime.props['fullscreen']}">
+    <section id="voice" ng-class="{true: 'active'}[voiceCommand]">
+        <article>
+            <h1>Voice command stuff</h1>
+            <button class="close" ng-click="disableVoice()" <%- _T "Never Mind" %>></button>
+        </article>
+    </section>
+    <section id="rest" ng-class="{true: 'hidden'}[voiceCommand]">
+        <article>
+            <h1>stuff</h1>
+            <aside><img src="https://www.viralheat.com/wp-content/uploads/2012/09/analytics.jpg" alt="" /></aside>
+        </article>
+        <article>
+            <h1>more stuff</h1>
+            <aside><img src="https://www.viralheat.com/wp-content/uploads/2012/09/analytics.jpg" alt="" /></aside>
+        </article>
+    </section>
+</div>

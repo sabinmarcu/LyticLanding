@@ -1,14 +1,23 @@
 class ContentController extends IS.Object
-    (@scope) ~>
-        @config-scope!
+    (@scope, @runtime) ~>
         @init-runtime!
+        @config-scope!
 
     init-runtime: ~>
-        #if annyang
-            #annyang.addCommands "show me more": ~>
-                #@log "Recognized"
-                #$ \.flow .scrollTop 500
-            #annyang.start!
+        @runtime.init "fullscreen", false
+        if annyang
+            (enabled) <~ DBStorage.get "voiceDisabled"
+            unless enabled
+                @scope.voiceCommand = true
+                annyang.addCommands "show me more": @disableVoice
+                annyang.start!
+
+    disableVoice:  ~>
+        @log "Recognized"
+        @scope.voiceCommand = false
+        DBStorage.set "voiceDisabled", true
+        @safeApply!
+
 
     config-scope: ~>
         @safeApply = (fn) ~>
@@ -19,5 +28,5 @@ class ContentController extends IS.Object
             else @scope.$apply(fn)
         @scope <<< @
 
-angular.module AppInfo.displayname .controller "Content", ["$scope", ContentController]
+angular.module AppInfo.displayname .controller "Content", ["$scope", "Runtime", ContentController]
 module.exports = ContentController
