@@ -1,5 +1,5 @@
 (function(){
-                            var getStylesheets = function() { element = document.createElement('style'); element.innerHTML = "body,\nhtml {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  background: #181810;\n}\nbody {\n  background: #181810;\n  font-size: 10pt;\n  overflow: hidden;\n  font-family: Roboto, Arial, Helvetica, sans-serif;\n}\nbody .app {\n  background: #fff;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  -webkit-transition: -webkit-transform, border-radius, opacity, filter 0.5s ease-in-out;\n  -moz-transition: -moz-transform, border-radius, opacity, filter 0.5s ease-in-out;\n  -o-transition: -o-transform, border-radius, opacity, filter 0.5s ease-in-out;\n  -ms-transition: -ms-transform, border-radius, opacity, filter 0.5s ease-in-out;\n  transition: transform, border-radius, opacity, filter 0.5s ease-in-out;\n}\nbody .app .container {\n  width: 1000px;\n  margin: 0 auto;\n}\nbody .app .container h1 {\n  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  background: #fff;\n  color: #181810;\n  padding: 25px;\n  margin: 0;\n  -webkit-border-radius: 2px;\n  border-radius: 2px;\n  margin: 25px 0;\n}\nbody .app .flow {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  overflow-y: auto;\n  overflow-x: hidden;\n  z-index: 9;\n}\n@media (max-width: 1000px) {\n  body .app .container {\n    width: 600px;\n  }\n}\n@media (max-width: 600px) {\n  body .app .container {\n    width: auto;\n  }\n}\nbody .app header {\n  display: block;\n  border-top: solid 5px #639;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 200px;\n  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  background: #fff;\n  color: #181810;\n}\nbody .app header h1 {\n  display: block;\n  padding: 0;\n  margin: 0;\n  font-weight: 100;\n  font-size: 150px;\n  text-transform: uppercase;\n  text-align: center;\n  background: #fff;\n}\nbody .app header h1 small {\n  display: none;\n}\nbody .app header nav {\n  height: 35px;\n  position: absolute;\n  top: 200px;\n  left: 0;\n  right: 0;\n}\nbody .app header nav div {\n  display: inline-block;\n  margin: 0;\n  padding: 0;\n  text-align: center;\n  width: 25%;\n  height: 35px;\n  line-height: 35px;\n  float: left;\n  background: #fff;\n  -webkit-box-shadow: 0px 0px 1px #d9d9d9 inset;\n  box-shadow: 0px 0px 1px #d9d9d9 inset;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  color: #999;\n  min-width: 75px;\n  cursor: pointer;\n}\nbody .app header nav div a,\nbody .app header nav div a:hover,\nbody .app header nav div a:visited,\nbody .app header nav div a:active,\nbody .app header nav div a:link {\n  color: inherit;\n  text-decoration: none;\n}\nbody .app header nav div span {\n  padding: 0 2px;\n}\nbody .app header nav div:hover {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\nbody .app header nav div:hover.facebook {\n  background: #3b5998;\n  color: #fff;\n}\nbody .app header nav div:hover.twitter {\n  background: #4099ff;\n  color: #fff;\n}\nbody .app header nav div:hover.admin {\n  background: #c20000;\n  color: #fff;\n}\nbody .app header nav div:hover.contact {\n  background: #000;\n  color: #fff;\n}\nbody .app .flow.prime {\n  padding-top: 235px;\n}\n@media (min-width: 1200px) {\n  body .app .flow.prime {\n    padding-top: 0;\n    left: auto;\n  }\n  body .app .flow.prime .container {\n    float: left;\n    width: 900px;\n  }\n}\n@media (max-width: 1000px) {\n  body .app header {\n    height: 200px;\n  }\n  body .app header h1 {\n    font-size: 150px;\n  }\n  body .app header nav {\n    top: 200px;\n  }\n  body .app .flow.prime {\n    padding-top: 235px;\n  }\n}\n@media (max-width: 600px) {\n  body .app header {\n    height: 150px;\n  }\n  body .app header h1 {\n    font-size: 100px;\n  }\n  body .app header nav {\n    top: 150px;\n  }\n  body .app .flow.prime {\n    padding-top: 185px;\n  }\n}\n@media (max-width: 320px) {\n  body .app header {\n    height: 100px;\n  }\n  body .app header h1 {\n    font-size: 75px;\n  }\n  body .app header nav {\n    top: 100px;\n  }\n  body .app .flow.prime {\n    padding-top: 135px;\n  }\n}\nbody .app .fa.fa-at-sign:before {\n  content: '@';\n}\nbody .app .flow.prime {\n  padding-bottom: 95px;\n}\nbody .app .flow.prime.signedup {\n  padding-bottom: 0;\n}\nbody .app aside {\n  display: block;\n  position: fixed;\n  width: 900px;\n  height: 45px;\n  right: 0;\n  bottom: 0;\n  margin-bottom: 50px;\n  z-index: 9999;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody .app aside.hidden {\n  -webkit-transform: translateX(-100%);\n  -moz-transform: translateX(-100%);\n  -o-transform: translateX(-100%);\n  -ms-transform: translateX(-100%);\n  transform: translateX(-100%);\n}\nbody .app aside section {\n  background: #639;\n  height: 45px;\n  border: solid 1px rgba(0,0,0,0.1);\n  display: block;\n  position: relative;\n}\nbody .app aside section div {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\nbody .app aside section div.input {\n  right: 70px;\n}\nbody .app aside section div.submit {\n  left: auto;\n  width: 70px;\n}\nbody .app aside section input {\n  background: transparent;\n  border: none;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  text-align: left;\n  line-height: 45px;\n  outline: none;\n  text-indent: 15px;\n  color: #fff;\n  text-shadow: 0 1px 1px rgba(0,0,0,0.1);\n  font-size: 14pt;\n  font-family: Roboto, inherit;\n  font-weight: 100;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody .app aside section input:hover,\nbody .app aside section input:active {\n  background: #592d86;\n}\nbody .app aside section input[type=submit] {\n  font-size: 12pt;\n  text-indent: 0;\n  text-align: center;\n  background: #4c2673;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  -webkit-appearance: none;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\nbody .app aside section input[type=submit]:hover,\nbody .app aside section input[type=submit]:active {\n  background: #261339;\n}\n@media (max-width: 1200px) {\n  body .app aside {\n    margin-bottom: 0;\n    width: auto;\n    min-width: 0px;\n    max-width: 99999999999999px;\n    right: 0;\n    left: 0;\n    height: 45px;\n  }\n  body .app .flow.prime {\n    padding-bottom: 70px;\n  }\n}\nbody .app *::-webkit-input-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app *:-moz-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app *::-moz-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app *:-ms-input-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app .heatmap {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1;\n}\nbody .app .languages {\n  display: block;\n  position: absolute;\n  top: 5px;\n  left: 0px;\n  right: 15px;\n  height: 15px;\n  z-index: 99999999;\n}\nbody .app .languages li {\n  list-style: none;\n  float: left;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  margin: 0 0 0 5px;\n  cursor: pointer;\n}\nbody .app .languages li:hover {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\nbody #modal-window {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  -webkit-transition: all 1s ease-in-out;\n  -moz-transition: all 1s ease-in-out;\n  -o-transition: all 1s ease-in-out;\n  -ms-transition: all 1s ease-in-out;\n  transition: all 1s ease-in-out;\n  background: rgba(0,0,0,0);\n  z-index: -1;\n}\nbody #modal-window > section {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  right: 50%;\n  bottom: 50%;\n  -webkit-border-radius: 2px;\n  border-radius: 2px;\n  width: 480px;\n  height: 290px;\n  margin: -150px 0 0 -250px;\n  -webkit-box-shadow: -1px 1px 5px rgba(0,0,0,0.4);\n  box-shadow: -1px 1px 5px rgba(0,0,0,0.4);\n  background: #fff;\n  -webkit-transform: scale(0.2);\n  -moz-transform: scale(0.2);\n  -o-transform: scale(0.2);\n  -ms-transform: scale(0.2);\n  transform: scale(0.2);\n  -webkit-transition: all 1s ease-in-out;\n  -moz-transition: all 1s ease-in-out;\n  -o-transition: all 1s ease-in-out;\n  -ms-transition: all 1s ease-in-out;\n  transition: all 1s ease-in-out;\n  opacity: 0;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';\n  filter: alpha(opacity=0);\n}\nbody #modal-window > section > * {\n  position: absolute;\n  left: 0;\n  right: 0;\n}\nbody #modal-window > section header {\n  top: 0;\n  height: 55px;\n  line-height: 55px;\n  overflow: hiden;\n  font-size: 18pt;\n  font-weight: 100;\n  padding-left: 10px;\n}\nbody #modal-window > section nav {\n  top: 10px;\n  right: 10px;\n}\nbody #modal-window > section nav li {\n  list-style: none;\n  margin: 5px;\n  display: inline-block;\n  float: right;\n  font-size: 12pt;\n}\nbody #modal-window > section article {\n  overflow: auto;\n  top: 70px;\n  bottom: 0;\n  padding: 0 20px 20px;\n}\nbody #modal-window > section article > div > div {\n  overflow: hidden;\n  clear: both;\n  min-height: 35px;\n  position: relative;\n}\nbody #modal-window > section article > div > div label {\n  height: 35px;\n  line-height: 35px;\n  float: left;\n}\nbody #modal-window > section article > div > div input,\nbody #modal-window > section article > div > div textarea {\n  width: 99%;\n  margin: 0;\n  padding: 5px 0;\n  text-indent: 5px;\n  outline: none;\n  border: solid 1px #ccc;\n  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.1) inset;\n  box-shadow: 0 0 15px rgba(0,0,0,0.1) inset;\n  color: #444;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody #modal-window > section article > div > div input:hover,\nbody #modal-window > section article > div > div textarea:hover,\nbody #modal-window > section article > div > div input:active,\nbody #modal-window > section article > div > div textarea:active,\nbody #modal-window > section article > div > div input:focus,\nbody #modal-window > section article > div > div textarea:focus {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  color: #111;\n}\nbody #modal-window > section article > div > div textarea {\n  height: 50px;\n}\nbody #modal-window > section article > div > div input[type='checkbox'] {\n  width: auto;\n  float: right;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  height: 35px;\n}\nbody #modal-window > section article > div > div input[type='button'] {\n  position: absolute;\n  left: 0;\n  right: 50%;\n  border: solid 1px #ccc;\n  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background-color: #fff;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  top: 0;\n  bottom: 0;\n  width: auto;\n}\nbody #modal-window > section article > div > div input[type='button']:hover {\n  background-color: #ccc;\n}\nbody #modal-window > section article > div > div input[type='button']:last-child {\n  right: 0;\n  left: 50%;\n}\nbody #modal-window.fullscreen > section {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\nbody .modal-active {\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -o-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n  -webkit-border-radius: 2px;\n  border-radius: 2px;\n  opacity: 0.8;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';\n  filter: alpha(opacity=80);\n  -webkit-filter: blur(2px);\n  -moz-filter: blur(2px);\n  -ms-filter: blur(2px);\n  -o-filter: blur(2px);\n  filter: blur(2px);\n}\nbody .modal-active ~ #modal-container #modal-window {\n  background: rgba(0,0,0,0.2);\n  z-index: 1;\n}\nbody .modal-active ~ #modal-container #modal-window section {\n  -webkit-transform: scale(1);\n  -moz-transform: scale(1);\n  -o-transform: scale(1);\n  -ms-transform: scale(1);\n  transform: scale(1);\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\n@media (max-width:320px) {\n  body #modal-window > section {\n    width: 300px;\n    margin-left: -150px;\n  }\n}\nbody #loadingscreen {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  opacity: 0;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';\n  filter: alpha(opacity=0);\n  z-index: -1;\n  -webkit-transition: all 1s ease-in-out;\n  -moz-transition: all 1s ease-in-out;\n  -o-transition: all 1s ease-in-out;\n  -ms-transition: all 1s ease-in-out;\n  transition: all 1s ease-in-out;\n  overflow: hidden;\n}\nbody #loadingscreen * {\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody #loadingscreen > section {\n  width: 100%;\n  height: 100%;\n  background: #000;\n  opacity: 0.8;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';\n  filter: alpha(opacity=80);\n  trnasition: all 1s ease-in-out;\n}\nbody #loadingscreen > aside {\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  position: absolute;\n  left: -200%;\n  right: 200%;\n  top: 0;\n  bottom: 0;\n  background: #fff;\n  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  -webkit-transform-origin: right center;\n  -moz-transform-origin: right center;\n  -o-transform-origin: right center;\n  -ms-transform-origin: right center;\n  transform-origin: right center;\n  width: 100%;\n  height: 100%;\n}\nbody #loadingscreen > aside:last-of-type {\n  -webkit-transform-origin: left center;\n  -moz-transform-origin: left center;\n  -o-transform-origin: left center;\n  -ms-transform-origin: left center;\n  transform-origin: left center;\n  border: solid 1px rgba(0,0,0,0.05);\n  left: 200%;\n  right: -200%;\n}\nbody #loadingscreen.active > aside {\n  left: 0;\n  right: 0;\n}\nbody #loadingscreen > article {\n  height: 200px;\n  width: 350px;\n  background: #fff;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.2);\n  box-shadow: 0 5px 5px rgba(0,0,0,0.2);\n  border: solid 1px rgba(0,0,0,0.2);\n  opacity: 0;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';\n  filter: alpha(opacity=0);\n  position: absolute;\n  z-index: 9;\n  left: 50%;\n  top: 50%;\n  margin: -100px 0 0 -175px;\n  text-align: center;\n  -webkit-transform: scale(10);\n  -moz-transform: scale(10);\n  -o-transform: scale(10);\n  -ms-transform: scale(10);\n  transform: scale(10);\n  font-family: Roboto;\n  font-size: 18pt;\n  font-weight: 100;\n  text-align: center;\n  line-height: 200px;\n  vertical-align: middle;\n}\nbody #loadingscreen > article > span,\nbody #loadingscreen > article p,\nbody #loadingscreen > article div {\n  display: inline-block;\n  vertical-align: middle;\n}\nbody #loadingscreen > article > span {\n  width: 30px;\n  height: 30px;\n  -webkit-border-radius: 100%;\n  border-radius: 100%;\n  border: solid 1px rgba(0,0,0,0.3);\n  margin-top: -6px;\n}\nbody #loadingscreen > article div {\n  width: 0;\n  overflow: hidden;\n}\nbody #loadingscreen > article div p {\n  float: left;\n}\nbody #loadingscreen > article div:last-of-type p {\n  float: right;\n}\nbody #loadingscreen > article > p {\n  line-height: 1em;\n  position: absolute;\n  left: 10%;\n  right: 10%;\n  top: 65%;\n  height: 50px;\n  font-size: 14pt;\n  overflow: hidden;\n}\nbody #loadingscreen > article:hover > span {\n  border-color: rgba(0,0,0,0.8);\n}\nbody #loadingscreen > article:hover div {\n  width: 80px;\n  margin: 0;\n  padding: 0;\n  margin-left: 11px;\n}\nbody #loadingscreen > article:hover div:last-of-type {\n  width: 11px;\n  margin: 0;\n  margin-right: 80px;\n}\nbody #loadingscreen.active > article {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n  -webkit-transform: scale(1);\n  -moz-transform: scale(1);\n  -o-transform: scale(1);\n  -ms-transform: scale(1);\n  transform: scale(1);\n}\nbody #loadingscreen.active {\n  z-index: 99;\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\nbody .form {\n  display: block;\n}\nbody .form button.submit {\n  display: block;\n  width: 100%;\n  margin: 15px 0 5px;\n  padding: 0;\n  border: 0;\n  text-align: center;\n  height: 30px;\n  line-height: 30px;\n  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  background: #fff;\n}\nbody .form label {\n  display: block;\n  background: #fff;\n  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);\n  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);\n  height: 30px;\n  margin: 10px 0;\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  overflow: auto;\n  position: relative;\n}\nbody .form label > span {\n  display: block;\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  left: 30px;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\nbody .form label > span > input,\nbody .form label > span > textarea {\n  text-indent: 15px;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  width: 100%;\n  border: 0;\n  background: transparent;\n}\nbody .form label > i {\n  display: inline-block;\n  height: 30px;\n  width: 30px;\n  line-height: 30px;\n  text-align: center;\n  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  margin: 0;\n  padding: 0;\n}\nbody .form label.large {\n  height: 75px;\n}\n"; element.id = "compiled_styles"; return element; };
+                            var getStylesheets = function() { element = document.createElement('style'); element.innerHTML = "body,\nhtml {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  background: #181810;\n}\nbody {\n  background: #181810;\n  font-size: 10pt;\n  overflow: hidden;\n  font-family: Roboto, Arial, Helvetica, sans-serif;\n}\nbody .app {\n  background: #ddd;\n  width: 100%;\n  height: 100%;\n  overflow: hidden;\n  -webkit-transition: all 3s ease-in-out;\n  -moz-transition: all 3s ease-in-out;\n  -o-transition: all 3s ease-in-out;\n  -ms-transition: all 3s ease-in-out;\n  transition: all 3s ease-in-out;\n}\nbody .app .container {\n  width: 1000px;\n  margin: 0 auto;\n  margin-top: -25px;\n}\nbody .app .container.hidden,\nbody .app .container.fullscreen {\n  height: 100%;\n  overflow: hidden;\n}\nbody .app .container.fullscreen * {\n  -webkit-transform: translateX(200%);\n  -moz-transform: translateX(200%);\n  -o-transform: translateX(200%);\n  -ms-transform: translateX(200%);\n  transform: translateX(200%);\n}\nbody .app .container section {\n  display: block;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody .app .container section#voice {\n  -webkit-transform: translateY(-1000px);\n  -moz-transform: translateY(-1000px);\n  -o-transform: translateY(-1000px);\n  -ms-transform: translateY(-1000px);\n  transform: translateY(-1000px);\n  height: 500px;\n}\nbody .app .container section#voice.active {\n  -webkit-transform: none;\n  -moz-transform: none;\n  -o-transform: none;\n  -ms-transform: none;\n  transform: none;\n}\nbody .app .container section#rest {\n  margin-top: -550px;\n}\nbody .app .container section#rest.hidden {\n  -webkit-transform: translateY(1000px);\n  -moz-transform: translateY(1000px);\n  -o-transform: translateY(1000px);\n  -ms-transform: translateY(1000px);\n  transform: translateY(1000px);\n}\nbody .app .container section article {\n  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  background: #fff;\n  color: #181810;\n  padding: 50px;\n  margin: 0;\n  -webkit-border-radius: 2px;\n  border-radius: 2px;\n  margin: 50px 0;\n  padding-right: 33%;\n  overflow: hidden;\n  position: relative;\n  min-height: 400px;\n}\nbody .app .container section article:nth-child(2n) {\n  padding-right: 50px;\n  padding-left: 33%;\n}\nbody .app .container section article:nth-child(2n) aside {\n  left: -70%;\n  right: 70%;\n}\nbody .app .container section article aside {\n  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  background: #fff;\n  color: #181810;\n  position: absolute;\n  top: 50px;\n  bottom: 50px;\n  right: -70%;\n  left: 70%;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody .app .container section article aside:hover {\n  left: 50px;\n  right: 50px;\n}\nbody .app .container section article aside img {\n  height: 100%;\n  width: 100%;\n}\nbody .app .flow {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  right: 0;\n  left: 0;\n  overflow-y: auto;\n  overflow-x: hidden;\n  z-index: 9;\n}\n@media (max-width: 1000px) {\n  body .app .container {\n    width: 600px;\n  }\n}\n@media (max-width: 600px) {\n  body .app .container {\n    width: auto;\n  }\n}\nbody .app header {\n  display: block;\n  border-top: solid 5px #639;\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  height: 200px;\n  -webkit-box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  box-shadow: 0 0 7px rgba(0,0,0,0.2);\n  background: #fff;\n  color: #181810;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody .app header.fullscreen {\n  -webkit-transform: translateY(-100%);\n  -moz-transform: translateY(-100%);\n  -o-transform: translateY(-100%);\n  -ms-transform: translateY(-100%);\n  transform: translateY(-100%);\n}\nbody .app header h1 {\n  display: block;\n  padding: 0;\n  margin: 0;\n  font-weight: 100;\n  font-size: 150px;\n  text-transform: uppercase;\n  text-align: center;\n  background: #fff;\n}\nbody .app header h1 small {\n  display: none;\n}\nbody .app header nav {\n  height: 35px;\n  position: absolute;\n  top: 200px;\n  left: 0;\n  right: 0;\n}\nbody .app header nav div {\n  display: inline-block;\n  margin: 0;\n  padding: 0;\n  text-align: center;\n  width: 25%;\n  height: 35px;\n  line-height: 35px;\n  float: left;\n  background: #fff;\n  -webkit-box-shadow: 0px 0px 1px #d9d9d9 inset;\n  box-shadow: 0px 0px 1px #d9d9d9 inset;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  color: #999;\n  min-width: 75px;\n  cursor: pointer;\n}\nbody .app header nav div a,\nbody .app header nav div a:hover,\nbody .app header nav div a:visited,\nbody .app header nav div a:active,\nbody .app header nav div a:link {\n  color: inherit;\n  text-decoration: none;\n}\nbody .app header nav div span {\n  padding: 0 2px;\n}\nbody .app header nav div:hover {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n}\nbody .app header nav div:hover.facebook {\n  background: #3b5998;\n  color: #fff;\n}\nbody .app header nav div:hover.twitter {\n  background: #4099ff;\n  color: #fff;\n}\nbody .app header nav div:hover.admin {\n  background: #c20000;\n  color: #fff;\n}\nbody .app header nav div:hover.contact {\n  background: #000;\n  color: #fff;\n}\nbody .app .flow.prime {\n  padding-top: 235px;\n}\n@media (min-width: 1200px) {\n  body .app .flow.prime {\n    padding-top: 0;\n    left: auto;\n  }\n  body .app .flow.prime .container {\n    float: left;\n    width: 900px;\n  }\n}\n@media (max-width: 1000px) {\n  body .app header {\n    height: 200px;\n  }\n  body .app header h1 {\n    font-size: 150px;\n  }\n  body .app header nav {\n    top: 200px;\n  }\n  body .app .flow.prime {\n    padding-top: 235px;\n  }\n}\n@media (max-width: 600px) {\n  body .app header {\n    height: 150px;\n  }\n  body .app header h1 {\n    font-size: 100px;\n  }\n  body .app header nav {\n    top: 150px;\n  }\n  body .app .flow.prime {\n    padding-top: 185px;\n  }\n}\n@media (max-width: 320px) {\n  body .app header {\n    height: 100px;\n  }\n  body .app header h1 {\n    font-size: 75px;\n  }\n  body .app header nav {\n    top: 100px;\n  }\n  body .app .flow.prime {\n    padding-top: 135px;\n  }\n}\nbody .app .fa.fa-at-sign:before {\n  content: '@';\n}\nbody .app .flow.prime {\n  padding-bottom: 95px;\n}\nbody .app .flow.prime.signedup {\n  padding-bottom: 0;\n}\nbody .app > aside {\n  display: block;\n  position: fixed;\n  width: 900px;\n  height: 45px;\n  right: 0;\n  bottom: 0;\n  margin-bottom: 50px;\n  z-index: 9999;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody .app > aside.hidden {\n  -webkit-transform: translateX(-100%);\n  -moz-transform: translateX(-100%);\n  -o-transform: translateX(-100%);\n  -ms-transform: translateX(-100%);\n  transform: translateX(-100%);\n}\nbody .app > aside section {\n  background: #639;\n  height: 45px;\n  border: solid 1px rgba(0,0,0,0.1);\n  display: block;\n  position: relative;\n}\nbody .app > aside section div {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\nbody .app > aside section div.input {\n  right: 70px;\n}\nbody .app > aside section div.submit {\n  left: auto;\n  width: 70px;\n}\nbody .app > aside section input {\n  background: transparent;\n  border: none;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: 100%;\n  text-align: left;\n  line-height: 45px;\n  outline: none;\n  text-indent: 15px;\n  color: #fff;\n  text-shadow: 0 1px 1px rgba(0,0,0,0.1);\n  font-size: 14pt;\n  font-family: Roboto, inherit;\n  font-weight: 100;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody .app > aside section input:hover,\nbody .app > aside section input:active {\n  background: #592d86;\n}\nbody .app > aside section input[type=submit] {\n  font-size: 12pt;\n  text-indent: 0;\n  text-align: center;\n  background: #4c2673;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  -webkit-appearance: none;\n  -webkit-border-radius: 0;\n  border-radius: 0;\n}\nbody .app > aside section input[type=submit]:hover,\nbody .app > aside section input[type=submit]:active {\n  background: #261339;\n}\n@media (max-width: 1200px) {\n  body .app > aside {\n    margin-bottom: 0;\n    width: auto;\n    min-width: 0px;\n    max-width: 99999999999999px;\n    right: 0;\n    left: 0;\n    height: 45px;\n  }\n  body .app .flow.prime {\n    padding-bottom: 70px;\n  }\n}\nbody .app *::-webkit-input-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app *:-moz-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app *::-moz-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app *:-ms-input-placeholder {\n  color: #fff;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  font-family: Roboto, inherit;\n  font-weight: 100;\n}\nbody .app .heatmap {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  z-index: 1;\n}\nbody .app .languages {\n  display: block;\n  position: absolute;\n  top: 5px;\n  left: 0px;\n  right: 15px;\n  height: 15px;\n  z-index: 99999999;\n}\nbody .app .languages li {\n  list-style: none;\n  float: left;\n  opacity: 0.5;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';\n  filter: alpha(opacity=50);\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  margin: 0 0 0 5px;\n  cursor: pointer;\n}\nbody .app .languages li:hover {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\nbody #modal-window {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  -webkit-transition: all 1s ease-in-out;\n  -moz-transition: all 1s ease-in-out;\n  -o-transition: all 1s ease-in-out;\n  -ms-transition: all 1s ease-in-out;\n  transition: all 1s ease-in-out;\n  background: rgba(0,0,0,0);\n  z-index: -1;\n}\nbody #modal-window > section {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  right: 50%;\n  bottom: 50%;\n  -webkit-border-radius: 2px;\n  border-radius: 2px;\n  width: 480px;\n  height: 290px;\n  margin: -150px 0 0 -250px;\n  -webkit-box-shadow: -1px 1px 5px rgba(0,0,0,0.4);\n  box-shadow: -1px 1px 5px rgba(0,0,0,0.4);\n  background: #fff;\n  -webkit-transform: scale(0.2);\n  -moz-transform: scale(0.2);\n  -o-transform: scale(0.2);\n  -ms-transform: scale(0.2);\n  transform: scale(0.2);\n  -webkit-transition: all 1s ease-in-out;\n  -moz-transition: all 1s ease-in-out;\n  -o-transition: all 1s ease-in-out;\n  -ms-transition: all 1s ease-in-out;\n  transition: all 1s ease-in-out;\n  opacity: 0;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';\n  filter: alpha(opacity=0);\n}\nbody #modal-window > section > * {\n  position: absolute;\n  left: 0;\n  right: 0;\n}\nbody #modal-window > section header {\n  top: 0;\n  height: 55px;\n  line-height: 55px;\n  overflow: hiden;\n  font-size: 18pt;\n  font-weight: 100;\n  padding-left: 10px;\n}\nbody #modal-window > section nav {\n  top: 10px;\n  right: 10px;\n}\nbody #modal-window > section nav li {\n  list-style: none;\n  margin: 5px;\n  display: inline-block;\n  float: right;\n  font-size: 12pt;\n}\nbody #modal-window > section article {\n  overflow: auto;\n  top: 70px;\n  bottom: 0;\n  padding: 0 20px 20px;\n}\nbody #modal-window > section article > div > div {\n  overflow: hidden;\n  clear: both;\n  min-height: 35px;\n  position: relative;\n}\nbody #modal-window > section article > div > div label {\n  height: 35px;\n  line-height: 35px;\n  float: left;\n}\nbody #modal-window > section article > div > div input,\nbody #modal-window > section article > div > div textarea {\n  width: 99%;\n  margin: 0;\n  padding: 5px 0;\n  text-indent: 5px;\n  outline: none;\n  border: solid 1px #ccc;\n  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.1) inset;\n  box-shadow: 0 0 15px rgba(0,0,0,0.1) inset;\n  color: #444;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody #modal-window > section article > div > div input:hover,\nbody #modal-window > section article > div > div textarea:hover,\nbody #modal-window > section article > div > div input:active,\nbody #modal-window > section article > div > div textarea:active,\nbody #modal-window > section article > div > div input:focus,\nbody #modal-window > section article > div > div textarea:focus {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  color: #111;\n}\nbody #modal-window > section article > div > div textarea {\n  height: 50px;\n}\nbody #modal-window > section article > div > div input[type='checkbox'] {\n  width: auto;\n  float: right;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  height: 35px;\n}\nbody #modal-window > section article > div > div input[type='button'] {\n  position: absolute;\n  left: 0;\n  right: 50%;\n  border: solid 1px #ccc;\n  background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.1) 100%);\n  background-color: #fff;\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  top: 0;\n  bottom: 0;\n  width: auto;\n}\nbody #modal-window > section article > div > div input[type='button']:hover {\n  background-color: #ccc;\n}\nbody #modal-window > section article > div > div input[type='button']:last-child {\n  right: 0;\n  left: 50%;\n}\nbody #modal-window.fullscreen > section {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  right: 0;\n}\nbody .modal-active {\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -o-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n  -webkit-border-radius: 2px;\n  border-radius: 2px;\n  opacity: 0.8;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';\n  filter: alpha(opacity=80);\n  -webkit-filter: blur(2px);\n  -moz-filter: blur(2px);\n  -ms-filter: blur(2px);\n  -o-filter: blur(2px);\n  filter: blur(2px);\n}\nbody .modal-active ~ #modal-container #modal-window {\n  background: rgba(0,0,0,0.2);\n  z-index: 1;\n}\nbody .modal-active ~ #modal-container #modal-window section {\n  -webkit-transform: scale(1);\n  -moz-transform: scale(1);\n  -o-transform: scale(1);\n  -ms-transform: scale(1);\n  transform: scale(1);\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\n@media (max-width:320px) {\n  body #modal-window > section {\n    width: 300px;\n    margin-left: -150px;\n  }\n}\nbody #loadingscreen {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  opacity: 0;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';\n  filter: alpha(opacity=0);\n  z-index: -1;\n  -webkit-transition: all 1s ease-in-out;\n  -moz-transition: all 1s ease-in-out;\n  -o-transition: all 1s ease-in-out;\n  -ms-transition: all 1s ease-in-out;\n  transition: all 1s ease-in-out;\n  overflow: hidden;\n}\nbody #loadingscreen * {\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n}\nbody #loadingscreen > section {\n  width: 100%;\n  height: 100%;\n  background: #000;\n  opacity: 0.8;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=80)';\n  filter: alpha(opacity=80);\n  trnasition: all 1s ease-in-out;\n}\nbody #loadingscreen > aside {\n  -webkit-transition: all 0.5s ease-in-out;\n  -moz-transition: all 0.5s ease-in-out;\n  -o-transition: all 0.5s ease-in-out;\n  -ms-transition: all 0.5s ease-in-out;\n  transition: all 0.5s ease-in-out;\n  position: absolute;\n  left: -200%;\n  right: 200%;\n  top: 0;\n  bottom: 0;\n  background: #fff;\n  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  -webkit-transform-origin: right center;\n  -moz-transform-origin: right center;\n  -o-transform-origin: right center;\n  -ms-transform-origin: right center;\n  transform-origin: right center;\n  width: 100%;\n  height: 100%;\n}\nbody #loadingscreen > aside:last-of-type {\n  -webkit-transform-origin: left center;\n  -moz-transform-origin: left center;\n  -o-transform-origin: left center;\n  -ms-transform-origin: left center;\n  transform-origin: left center;\n  border: solid 1px rgba(0,0,0,0.05);\n  left: 200%;\n  right: -200%;\n}\nbody #loadingscreen.active > aside {\n  left: 0;\n  right: 0;\n}\nbody #loadingscreen > article {\n  height: 200px;\n  width: 350px;\n  background: #fff;\n  -webkit-border-radius: 4px;\n  border-radius: 4px;\n  -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.2);\n  box-shadow: 0 5px 5px rgba(0,0,0,0.2);\n  border: solid 1px rgba(0,0,0,0.2);\n  opacity: 0;\n  -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';\n  filter: alpha(opacity=0);\n  position: absolute;\n  z-index: 9;\n  left: 50%;\n  top: 50%;\n  margin: -100px 0 0 -175px;\n  text-align: center;\n  -webkit-transform: scale(10);\n  -moz-transform: scale(10);\n  -o-transform: scale(10);\n  -ms-transform: scale(10);\n  transform: scale(10);\n  font-family: Roboto;\n  font-size: 18pt;\n  font-weight: 100;\n  text-align: center;\n  line-height: 200px;\n  vertical-align: middle;\n}\nbody #loadingscreen > article > span,\nbody #loadingscreen > article p,\nbody #loadingscreen > article div {\n  display: inline-block;\n  vertical-align: middle;\n}\nbody #loadingscreen > article > span {\n  width: 30px;\n  height: 30px;\n  -webkit-border-radius: 100%;\n  border-radius: 100%;\n  border: solid 1px rgba(0,0,0,0.3);\n  margin-top: -6px;\n}\nbody #loadingscreen > article div {\n  width: 0;\n  overflow: hidden;\n}\nbody #loadingscreen > article div p {\n  float: left;\n}\nbody #loadingscreen > article div:last-of-type p {\n  float: right;\n}\nbody #loadingscreen > article > p {\n  line-height: 1em;\n  position: absolute;\n  left: 10%;\n  right: 10%;\n  top: 65%;\n  height: 50px;\n  font-size: 14pt;\n  overflow: hidden;\n}\nbody #loadingscreen > article:hover > span {\n  border-color: rgba(0,0,0,0.8);\n}\nbody #loadingscreen > article:hover div {\n  width: 80px;\n  margin: 0;\n  padding: 0;\n  margin-left: 11px;\n}\nbody #loadingscreen > article:hover div:last-of-type {\n  width: 11px;\n  margin: 0;\n  margin-right: 80px;\n}\nbody #loadingscreen.active > article {\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n  -webkit-transform: scale(1);\n  -moz-transform: scale(1);\n  -o-transform: scale(1);\n  -ms-transform: scale(1);\n  transform: scale(1);\n}\nbody #loadingscreen.active {\n  z-index: 99;\n  opacity: 1;\n  -ms-filter: none;\n  filter: none;\n}\nbody .form {\n  display: block;\n}\nbody .form button.submit {\n  display: block;\n  width: 100%;\n  margin: 15px 0 5px;\n  padding: 0;\n  border: 0;\n  text-align: center;\n  height: 30px;\n  line-height: 30px;\n  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  background: #fff;\n}\nbody .form label {\n  display: block;\n  background: #fff;\n  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.2);\n  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);\n  height: 30px;\n  margin: 10px 0;\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  overflow: auto;\n  position: relative;\n}\nbody .form label > span {\n  display: block;\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  left: 30px;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\nbody .form label > span > input,\nbody .form label > span > textarea {\n  text-indent: 15px;\n  margin: 0;\n  padding: 0;\n  height: 100%;\n  width: 100%;\n  border: 0;\n  background: transparent;\n}\nbody .form label > i {\n  display: inline-block;\n  height: 30px;\n  width: 30px;\n  line-height: 30px;\n  text-align: center;\n  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  box-shadow: 0 0 5px rgba(0,0,0,0.2);\n  margin: 0;\n  padding: 0;\n}\nbody .form label.large {\n  height: 75px;\n}\n"; element.id = "compiled_styles"; return element; };
                             window.isDev = true; 
 
 	(function(module){(function(){var CHARS="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz".split("");Math.uuid=function(len,radix){var chars=CHARS,uuid=[],i;radix=radix||chars.length;if(len){for(i=0;i<len;i++)uuid[i]=chars[0|Math.random()*radix]}else{var r;uuid[8]=uuid[13]=uuid[18]=uuid[23]="-";uuid[14]="4";for(i=0;i<36;i++){if(!uuid[i]){r=0|Math.random()*16;uuid[i]=chars[i==19?r&3|8:r]}}}return uuid.join("")};Math.uuidFast=function(){var chars=CHARS,uuid=new Array(36),rnd=0,r;for(var i=0;i<36;i++){if(i==8||i==13||i==18||i==23){uuid[i]="-"}else if(i==14){uuid[i]="4"}else{if(rnd<=2)rnd=33554432+Math.random()*16777216|0;r=rnd&15;rnd=rnd>>4;uuid[i]=chars[i==19?r&3|8:r]}}return uuid.join("")};Math.uuidCompact=function(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(c){var r=Math.random()*16|0,v=c=="x"?r:r&3|8;return v.toString(16)})}})();(function(){if(!this.require){var modules={},cache={},require=function(name,root){var path=expand(root,name),module=cache[path],fn;if(module){return module.exports}else if(fn=modules[path]||modules[path=expand(path,"./index")]){module={id:path,exports:{}};try{cache[path]=module;fn(module.exports,function(name){return require(name,dirname(path))},module);return module.exports}catch(err){delete cache[path];throw err}}else{throw"module '"+name+"' not found"}},expand=function(root,name){var results=[],parts,part;if(/^\.\.?(\/|$)/.test(name)){parts=[root,name].join("/").split("/")}else{parts=name.split("/")}for(var i=0,length=parts.length;i<length;i++){part=parts[i];if(part==".."){results.pop()}else if(part!="."&&part!=""){results.push(part)}}return results.join("/")},dirname=function(path){return path.split("/").slice(0,-1).join("/")};this.require=function(name){return require(name,"")};this.require.define=function(bundle){for(var key in bundle)modules[key]=bundle[key]}}return this.require.define}).call(this)({DefineProperty:function(exports,require,module){(function(){var DefineProperty,dp,_root,__slice=[].slice;_root=null;if(typeof root!=="undefined"&&root!==null){_root=root}else if(typeof window!=="undefined"&&window!==null){_root=window}else{_root={}}DefineProperty=function(){function DefineProperty(){}DefineProperty.prototype.define=function(property,getter,setter,parent){if(parent==null){parent=_root}this.defineSetter(property,setter,parent);return this.defineGetter(property,getter,parent)};DefineProperty.prototype.defineSetter=function(property,setter,parent){if(parent==null){parent=_root}if(property!=null&&setter!=null&&parent!=null){return parent.__defineSetter__(property,setter)}};DefineProperty.prototype.defineGetter=function(property,getter,parent){if(parent==null){parent=_root}if(property!=null&&getter!=null&&parent!=null){return parent.__defineGetter__(property,getter)}};return DefineProperty}();dp=new DefineProperty;module.exports=function(){var args;args=1<=arguments.length?__slice.call(arguments,0):[];return dp.define.apply(dp,args)};module.exports.extend={define:function(prop,getter,setter,parent){if(parent==null){parent=this.prototype}return dp.define.apply(this,[prop,getter,setter,parent])},defineSetter:function(prop,setter,parent){if(parent==null){parent=this.prototype}return dp.defineSetter.apply(this,[prop,setter,parent])},defineGetter:function(prop,getter,parent){if(parent==null){parent=this.prototype}return dp.defineGetter.apply(this,[prop,getter,parent])}}}).call(this)},Enum:function(exports,require,module){(function(){var Enum;Enum=function(){function Enum(items,offset){var item,key,_i,_len;if(offset==null){offset=0}for(key=_i=0,_len=items.length;_i<_len;key=++_i){item=items[key];this[item]=key+offset}}return Enum}();module.exports=Enum}).call(this)},ErrorReporter:function(exports,require,module){(function(){var ErrorReporter,__bind=function(fn,me){return function(){return fn.apply(me,arguments)}},__indexOf=[].indexOf||function(item){for(var i=0,l=this.length;i<l;i++){if(i in this&&this[i]===item)return i}return-1};ErrorReporter=function(){function ErrorReporter(){this.toString=__bind(this.toString,this)}ErrorReporter._errors={"Unknown Error":["An unknown error has occurred"]};ErrorReporter._indices=[ErrorReporter._errors["Unknown Error"][0]];ErrorReporter._groups=["Unknown Error"];ErrorReporter.wrapCustomError=function(error){return"["+error.name+"] "+error.message};ErrorReporter.generate=function(errorCode,extra){if(extra==null){extra=null}return(new this).generate(errorCode,extra)};ErrorReporter.extended=function(){var error,errors,group,key,_i,_len,_ref;_ref=this.errors;for(group in _ref){errors=_ref[group];this._errors[group]=errors;this._groups.push(group);for(key=_i=0,_len=errors.length;_i<_len;key=++_i){error=errors[key];this._indices.push(this._errors[group][key])}}this.prototype._=this;delete this.errors;return this.include(ErrorReporter.prototype)};ErrorReporter.prototype.generate=function(errCode,extra){var errors,group,_ref,_ref1;this.errCode=errCode;if(extra==null){extra=null}if(!this._._indices[this.errCode]){this.name=this._._groups[0];this.message=this._._errors[this._._groups[0]][0]}else{this.message=this._._indices[this.errCode];if(extra){this.message+=" - Extra Data : "+extra}_ref=this._._errors;for(group in _ref){errors=_ref[group];if(!(_ref1=this.message,__indexOf.call(errors,_ref1)>=0)){continue}this.name=group;break}}return this};ErrorReporter.prototype.toString=function(){return"["+this.name+"] "+this.message+" |"+this.errCode+"|"};return ErrorReporter}();module.exports=ErrorReporter}).call(this)},"Modules/Mediator":function(exports,require,module){(function(){var Modules;Modules={Observer:require("Modules/Observer")};Modules.Mediator=function(){var extended,included,installTo,key,value,_ref;function Mediator(){}_ref=Modules.Observer;for(key in _ref){value=_ref[key];Mediator.prototype[key]=value}installTo=function(object){this.delegate("publish",object);return this.delegate("subscribe",object)};included=function(){this.prototype.queue={};return this.prototype._delegates={publish:true,subscribe:true}};extended=function(){this.queue={};return this._delegates={publish:true,subscribe:true}};return Mediator}();module.exports=Modules.Mediator.prototype}).call(this)},"Modules/ORM":function(exports,require,module){(function(){var Modules,V,__indexOf=[].indexOf||function(item){for(var i=0,l=this.length;i<l;i++){if(i in this&&this[i]===item)return i}return-1};Modules={};V=require("Variable");Modules.ORM=function(){function ORM(){}ORM.prototype._identifier="BasicORM";ORM.prototype._reccords={};ORM.prototype._symlinks={};ORM.prototype._head=0;ORM.prototype._props=[];ORM.prototype.get=function(which){if(typeof which==="object"){return this.getAdv(which)}return this._symlinks[which]||this._reccords[which]||null};ORM.prototype.getAdv=function(what){var check,key,rec,results,_ref,_ref1;results=[];check=function(rec){var final,k,mod,modfinal,recs,v,val,value,_i,_len;for(k in what){v=what[k];final=false;if(rec[k]==null){break}if(typeof v==="object"){for(mod in v){val=v[mod];modfinal=true;switch(mod){case"$gt":if(rec[k].get()<=val){modfinal=false;break}break;case"$gte":if(rec[k].get()<val){modfinal=false;break}break;case"$lt":if(rec[k].get()>=val){modfinal=false;break}break;case"$lte":if(rec[k].get()>val){modfinal=false;break}break;case"$contains":recs=rec[k].get();if(recs.constructor!==Array){modfinal=false;break}modfinal=false;for(_i=0,_len=recs.length;_i<_len;_i++){value=recs[_i];if(value===val){modfinal=true;break}}}if(modfinal===false){break}}if(modfinal===true){final=true}}else if(rec[k].get()===v){final=true}else{break}}if(final){return results.push(rec)}};_ref=this._reccords;for(key in _ref){rec=_ref[key];check(rec)}_ref1=this._symlinks;for(key in _ref1){rec=_ref1[key];check(rec)}if(results.length===0){return null}if(results.length===1){return results[0]}return results};ORM.prototype["delete"]=function(which){var _base,_base1;if((_base=this._reccords)[which]==null){_base[which]=null}return(_base1=this._symlinks)[which]!=null?(_base1=this._symlinks)[which]:_base1[which]=null};ORM.prototype.create=function(id,args){var prop,uuid,_i,_len,_ref;if(this._reccords==null){this._reccords={}}if(args==null){args={}}uuid=id||args._id||this._head;if(args._id==null){args._id=uuid}uuid=Math.uuidFast(uuid);args._uuid=uuid;args._fn=this;if(typeof this.preCreate==="function"){this.preCreate(args)}this._reccords[uuid]=new this(args);this._reccords[uuid]._constructor(args);if(typeof this.postCreate==="function"){this.postCreate(this._reccords[uuid],args)}if(id!=null&&id!==this._head){this._symlinks[id]=this._reccords[uuid]}if(uuid===this._head){this._head++}_ref=this._props;for(_i=0,_len=_ref.length;_i<_len;_i++){prop=_ref[_i];this._reccords[uuid][prop]=V.spawn()}return this._reccords[uuid]};ORM.prototype.reuse=function(which,args){var rez;if(args==null){args={}}rez=this.get(which);if(rez!=null){return rez}return this.create(which,args)};ORM.prototype.addProp=function(prop){var key,rec,_ref,_results;this._props.push(prop);_ref=this._reccords;_results=[];for(key in _ref){rec=_ref[key];_results.push(rec[prop]!=null?rec[prop]:rec[prop]=V.spawn())}return _results};ORM.prototype.removeProp=function(prop){var k,key,p,rec,_i,_len,_ref,_ref1;_ref=this._reccords;for(key in _ref){rec=_ref[key];if(rec[prop]==null){rec[prop]=null}}_ref1=this._props;for(k=_i=0,_len=_ref1.length;_i<_len;k=++_i){p=_ref1[k];if(p===prop){return this._props.splice(k,1)}}};ORM.prototype.extended=function(){this._excludes=["_fn","_uuid","_id"];return this.include({_constructor:function(args){var key,value,valueSet;valueSet={};this._uuid=args._uuid||null;this._id=args._id||null;this.fn=args._fn;for(key in args){value=args[key];if(__indexOf.call(this.fn._excludes,key)<0&&this.constructFilter(key,value)!==false){valueSet[key]=value}}if(this.init!=null){return this.init.call(this,valueSet)}},constructFilter:function(key,value){return true},remove:function(){return this.parent.remove(this.id)}})};return ORM}();module.exports=Modules.ORM.prototype}).call(this)},"Modules/Observer":function(exports,require,module){(function(){var Modules,__slice=[].slice;Modules={};Modules.Observer=function(){function Observer(){}Observer.prototype.delegateEvent=function(event,handler,object){var c,_base;if(object==null){object=window}if(event.substr(0,2)==="on"){event=event.substr(2)}if((_base=this.queue)[event]==null){_base[event]=[]}c=this.queue[event].length;this.queue[event].unshift(function(){return handler.apply(object,arguments)});return c};Observer.prototype.subscribe=function(event,handler){return this.delegateEvent(event,handler,this)};Observer.prototype.publish=function(){var args,event,handler,key,_ref;args=1<=arguments.length?__slice.call(arguments,0):[];event=args[0];args=args.splice(1);if(!event||this.queue[event]==null){return this}_ref=this.queue[event];for(key in _ref){handler=_ref[key];if(key!=="__head"){handler.apply(this,args)}}return this};Observer.prototype.unsubscribe=function(event,id){if(!this.queue[event]){return null}if(!this.queue[event][id]){return null}return this.queue[event].splice(id,1)};Observer.prototype.included=function(){return this.prototype.queue={}};Observer.prototype.extended=function(){return this.queue={}};return Observer}();module.exports=Modules.Observer.prototype}).call(this)},"Modules/Overload":function(exports,require,module){(function(){var CRITERIA,Include,Modules,_count,__slice=[].slice,__bind=function(fn,me){return function(){return fn.apply(me,arguments)}};Modules={};_count=function(object){var key,nr,value;nr=0;for(key in object){value=object[key];nr++}return nr};CRITERIA={args:function(crit,args){return args.length===crit}};Include=function(){function Include(){}Include.prototype.overload=function(sets){var helper;helper=new Modules.Overload(sets,this);return function(){var args;args=1<=arguments.length?__slice.call(arguments,0):[];helper.parent=this;return helper.verifyAll.apply(helper,args)}};return Include}();Modules.Overload=function(){function Overload(sets,parent){var aux,i,j,name,set,_i,_j,_ref,_ref1,_ref2;this.parent=parent;this.verify=__bind(this.verify,this);this.verifyAll=__bind(this.verifyAll,this);this.names=[];this.verifies=[];this.handles=[];for(name in sets){set=sets[name];this.names.push(name);this.verifies.push(set["if"]||null);this.handles.push(set.then||null)}for(i=_i=0,_ref=this.verifies.length-1;0<=_ref?_i<=_ref:_i>=_ref;i=0<=_ref?++_i:--_i){for(j=_j=_ref1=i+1,_ref2=this.verifies.length;_ref1<=_ref2?_j<=_ref2:_j>=_ref2;j=_ref1<=_ref2?++_j:--_j){if(_count(this.verifies[i])<_count(this.verifies[j])){aux=this.verifies[i];this.verifies[i]=this.verifies[j];this.verifies[j]=aux;aux=this.names[i];this.names[i]=this.names[j];this.names[j]=aux;aux=this.handles[i];this.handles[i]=this.handles[j];this.handles[j]=aux}}}}Overload.prototype.verifyAll=function(){var args,how,key,set,what,_i,_len,_ref;args=1<=arguments.length?__slice.call(arguments,0):[];this.args=args;_ref=this.verifies;for(key=_i=0,_len=_ref.length;_i<_len;key=++_i){set=_ref[key];if(set!=null){for(what in set){how=set[what];if(!this.verify(what,how)){break}return this.handles[key].apply(this.parent,this.args)}}}return(this.handles["default"]||this.handles[key-1]).apply(this.parent,this.args)};Overload.prototype.verify=function(what,how){if(CRITERIA[what]){return CRITERIA[what](how,this.args)}else{what=parseInt(what.replace("arg",""))-1;if(this.args[what]!=null){return how.apply(this.parent,this.args)}return false}};return Overload}();module.exports=Include.prototype}).call(this)},"Modules/Pythonize":function(exports,require,module){(function(){var CRITERIA,Include,Modules,_count,__slice=[].slice,__bind=function(fn,me){return function(){return fn.apply(me,arguments)}},__indexOf=[].indexOf||function(item){for(var i=0,l=this.length;i<l;i++){if(i in this&&this[i]===item)return i}return-1};Modules={};_count=function(object){var key,nr,value;nr=0;for(key in object){value=object[key];nr++}return nr};CRITERIA={args:function(crit,args){return args.length===crit}};Include=function(){function Include(){}Include.prototype.parameterize=function(sets,callback){var helper;helper=new Modules.Pythonize(sets,callback);return function(){var args;args=1<=arguments.length?__slice.call(arguments,0):[];helper.parent=this;return helper.verifyAll.apply(helper,args)}};return Include}();Modules.Pythonize=function(){function Pythonize(sets,callback){var item,newItem,_i,_len;this.callback=callback;this.verifyAll=__bind(this.verifyAll,this);this.parent=null;this._options=[];for(_i=0,_len=sets.length;_i<_len;_i++){item=sets[_i];newItem={name:item.name||item.toString(),"default":item["default"]||null};this._options.push(newItem)}}Pythonize.prototype.verifyAll=function(){var arg,args,curArg,i,items,lastarg,len,_i,_ref,_ref1,_ref2;args=1<=arguments.length?__slice.call(arguments,0):[];this.args=args;this.options={};len=this.args.length-1;i=0;while(this.args.length>1){curArg=this._options[i];arg=this.args.shift();this.options[curArg.name]=arg||curArg["default"];i++}lastarg=this.args.pop();items=this.verifyObject(lastarg,len);if(len<this._options.length-1){for(i=_i=_ref=len+(items.length===0),_ref1=this._options.length-1;_ref<=_ref1?_i<=_ref1:_i>=_ref1;i=_ref<=_ref1?++_i:--_i){if(!(_ref2=this._options[i].name,__indexOf.call(items,_ref2)>=0)){this.options[this._options[i].name]=this._options[i]["default"]}}}return this.callback.apply(this.parent,[this.options])};Pythonize.prototype.verifyObject=function(obj,id){var name,omits,option,valid,value,_i,_len,_ref;omits=[];if(typeof obj==="object"){for(name in obj){value=obj[name];valid=false;_ref=this._options;for(_i=0,_len=_ref.length;_i<_len;_i++){option=_ref[_i];if(option.name===name){valid=true;break}}if(!valid){this.options[this._options[id].name]=obj;return[]}else{omits.push(name);this.options[name]=value}}}else{this.options[this._options[id].name]=obj}return omits};return Pythonize}();module.exports=Include.prototype}).call(this)},"Modules/StateMachine":function(exports,require,module){(function(){var Modules,__bind=function(fn,me){return function(){return fn.apply(me,arguments)}};Modules={};Modules.StateMachine=function(){function StateMachine(){this.delegateContext=__bind(this.delegateContext,this)}StateMachine.prototype.extended=function(){this._contexts=[];return this._activeContext=null};StateMachine.prototype.included=function(){this.prototype._contexts=[];return this.prototype._activeContext=null};StateMachine.prototype.delegateContext=function(context){var l;if(this._find(context)){return null}l=this._contexts.length;this._contexts[l]=context;if(context.activate==null){context.activate=function(){}}if(context.deactivate==null){context.deactivate=function(){}}return this};StateMachine.prototype.getActiveContextID=function(){return this._activeContext};StateMachine.prototype.getActiveContext=function(){return this._activeContext};StateMachine.prototype.getContext=function(context){return this._contexts[context]||null};StateMachine.prototype._find=function(con){var key,value,_i,_len,_ref;_ref=this._contexts;for(value=_i=0,_len=_ref.length;_i<_len;value=++_i){key=_ref[value];if(con===key){return value}}return null};StateMachine.prototype.activateContext=function(context){var con;con=this._find(context);if(con==null){return null}if(this._activeContext===con){return true}this._activeContext=con;return context.activate()};StateMachine.prototype.deactivateContext=function(context){if(this._find(context)==null){return null}this._activeContext=null;return context.deactivate()};StateMachine.prototype.switchContext=function(context){var con;if(context==null){con=this._activeContext+1;if(con===this._contexts.length){con=0}}else{con=this._find(context);if(con==null){return null}}this.deactivateContext(this._contexts[this._activeContext]);this.activateContext(this._contexts[con]);return this._contexts[con]};return StateMachine}();module.exports=Modules.StateMachine.prototype}).call(this)},Object:function(exports,require,module){(function(){var $,Obiect,clone,_excludes,__indexOf=[].indexOf||function(item){for(var i=0,l=this.length;i<l;i++){if(i in this&&this[i]===item)return i}return-1},__slice=[].slice;_excludes=["included","extended"];clone=function(obj){var k,o,v;o=obj instanceof Array?[]:{};for(k in obj){v=obj[k];if(v!=null&&typeof v==="object"){o[k]=clone(v)}else{o[k]=v}}return o};$=function(what){return $[what]||null};Obiect=function(){var extended,included;function Obiect(){}Obiect.clone=function(obj){if(obj==null){obj=this}debugger;return Obiect.proxy(Obiect.include,Obiect.proxy(Obiect.extend,function(){})(obj))(obj.prototype)};Obiect.extend=function(obj,into){var k,value,_ref;if(into==null){into=this}obj=clone(obj);for(k in obj){value=obj[k];if(!(__indexOf.call(_excludes,k)>=0||obj._excludes!=null&&__indexOf.call(obj._excludes,k)>=0)){if(into[k]!=null){if(into["super"]==null){into["super"]={}}into["super"][k]=into[k]}into[k]=value}}if((_ref=obj.extended)!=null){_ref.call(into)}return this};Obiect.include=function(obj,into){var key,value,_ref;if(into==null){into=this}obj=clone(obj);for(key in obj){value=obj[key];into.prototype[key]=value}if((_ref=obj.included)!=null){_ref.call(into)}return this};Obiect.proxy=function(){var to,what,_this=this;what=arguments[0];to=arguments[1];if(typeof what==="function"){return function(){var args;args=1<=arguments.length?__slice.call(arguments,0):[];return what.apply(to,args)}}else{return this[what]}};Obiect.delegate=function(property,context){var _ref;if(((_ref=this._delegates)!=null?_ref[property]:void 0)!=null===false&&this._deleagates[property]!==false){trigger("Cannot delegate member "+property+" to "+context)}return context[property]=this.proxy(function(){return this[property](arguments)},this)};Obiect.echo=function(){var args,owner,prefix,_d;args=1<=arguments.length?__slice.call(arguments,0):[];_d=new Date;owner="<owner not supported>";if(this.__proto__!=null){owner=this.__proto__.constructor.name}prefix="["+_d.getHours()+":"+_d.getMinutes()+":"+_d.getSeconds()+"]["+(this.name||owner)+"]";if(args[0]===""){args[0]=prefix}else{args[0]=""+prefix+" "+args[0]}console.log(args);return this};Obiect.log=function(){var args;args=1<=arguments.length?__slice.call(arguments,0):[];if(typeof IS!=="undefined"&&IS!==null&&IS.isDev||typeof window!=="undefined"&&window!==null&&window.isDev||typeof root!=="undefined"&&root!==null&&root.isDev||isDev){args.unshift("");this.echo.apply(this,args)}return this};extended=function(){};included=function(){};Obiect.include({proxy:Obiect.proxy,log:Obiect.log,echo:Obiect.echo});return Obiect}();module.exports=Obiect}).call(this)},Promise:function(exports,require,module){(function(){var Promise,__slice=[].slice;Promise=function(){function Promise(promise){if(promise instanceof Promise){return promise}this.callbacks=[]}Promise.prototype.then=function(ok,err,progr){this.callbacks.push({ok:ok,error:err,progress:progr});return this};Promise.prototype.resolve=function(){var args,callback,time,_this=this;args=1<=arguments.length?__slice.call(arguments,0):[];callback=this.callbacks.shift();if(callback&&callback.ok){callback.ok.apply(this,args)}else{time=setTimeout(function(){clearTimeout(time);return _this.resolve.apply(_this,args)},50)}return this};Promise.prototype.reject=function(){var args,callback,time,_this=this;args=1<=arguments.length?__slice.call(arguments,0):[];callback=this.callbacks.shift();if(callback&&callback.error){callback.error.apply(this,args)}else{time=setTimeout(function(){clearTimeout(time);return _this.reject.apply(_this,args)},50)}return this};Promise.prototype.progress=function(){var args,callback;args=1<=arguments.length?__slice.call(arguments,0):[];callback=this.callbacks[0];if(callback&&callback.progress){callback.progress.apply(this,args)}return this};return Promise}();module.exports=Promise}).call(this)},Variable:function(exports,require,module){(function(){var Variable,_ref,__hasProp={}.hasOwnProperty,__extends=function(child,parent){for(var key in parent){if(__hasProp.call(parent,key))child[key]=parent[key]}function ctor(){this.constructor=child}ctor.prototype=parent.prototype;child.prototype=new ctor;child.__super__=parent.prototype;return child};Variable=function(_super){__extends(Variable,_super);function Variable(){_ref=Variable.__super__.constructor.apply(this,arguments);return _ref}Variable.spawn=function(){var x;x=new this;x._value=null;return x};Variable.prototype.get=function(){return this._value};Variable.prototype.set=function(value){return this._value=value};Variable.prototype.add=function(reccord){if(this._value==null||this._value.constructor!==Array){this._value=[]}return this._value.push(reccord)};return Variable}(require("Object"));if(typeof module!=="undefined"&&module!==null){module.exports=Variable}}).call(this)},async:function(exports,require,module){(function(){var async={};var root,previous_async;root=this;if(root!=null){previous_async=root.async}async.noConflict=function(){root.async=previous_async;return async};function only_once(fn){var called=false;return function(){if(called)throw new Error("Callback was already called.");called=true;fn.apply(root,arguments)}}var _each=function(arr,iterator){if(arr.forEach){return arr.forEach(iterator)}for(var i=0;i<arr.length;i+=1){iterator(arr[i],i,arr)}};var _map=function(arr,iterator){if(arr.map){return arr.map(iterator)}var results=[];_each(arr,function(x,i,a){results.push(iterator(x,i,a))});return results};var _reduce=function(arr,iterator,memo){if(arr.reduce){return arr.reduce(iterator,memo)}_each(arr,function(x,i,a){memo=iterator(memo,x,i,a)});return memo};var _keys=function(obj){if(Object.keys){return Object.keys(obj)}var keys=[];for(var k in obj){if(obj.hasOwnProperty(k)){keys.push(k)}}return keys};if(typeof process==="undefined"||!process.nextTick){if(typeof setImmediate==="function"){async.nextTick=function(fn){setImmediate(fn)};async.setImmediate=async.nextTick}else{async.nextTick=function(fn){setTimeout(fn,0)};async.setImmediate=async.nextTick}}else{async.nextTick=process.nextTick;if(typeof setImmediate!=="undefined"){async.setImmediate=setImmediate}else{async.setImmediate=async.nextTick}}async.each=function(arr,iterator,callback){callback=callback||function(){};if(!arr.length){return callback()}var completed=0;_each(arr,function(x){iterator(x,only_once(function(err){if(err){callback(err);callback=function(){}}else{completed+=1;if(completed>=arr.length){callback(null)}}}))})};async.forEach=async.each;async.eachSeries=function(arr,iterator,callback){callback=callback||function(){};if(!arr.length){return callback()}var completed=0;var iterate=function(){iterator(arr[completed],function(err){if(err){callback(err);callback=function(){}}else{completed+=1;if(completed>=arr.length){callback(null)}else{iterate()}}})};iterate()};async.forEachSeries=async.eachSeries;async.eachLimit=function(arr,limit,iterator,callback){var fn=_eachLimit(limit);fn.apply(null,[arr,iterator,callback])};async.forEachLimit=async.eachLimit;var _eachLimit=function(limit){return function(arr,iterator,callback){callback=callback||function(){};if(!arr.length||limit<=0){return callback()}var completed=0;var started=0;var running=0;(function replenish(){if(completed>=arr.length){return callback()}while(running<limit&&started<arr.length){started+=1;running+=1;iterator(arr[started-1],function(err){if(err){callback(err);callback=function(){}}else{completed+=1;running-=1;if(completed>=arr.length){callback()}else{replenish()}}})}})()}};var doParallel=function(fn){return function(){var args=Array.prototype.slice.call(arguments);return fn.apply(null,[async.each].concat(args))}};var doParallelLimit=function(limit,fn){return function(){var args=Array.prototype.slice.call(arguments);return fn.apply(null,[_eachLimit(limit)].concat(args))}};var doSeries=function(fn){return function(){var args=Array.prototype.slice.call(arguments);return fn.apply(null,[async.eachSeries].concat(args))}};var _asyncMap=function(eachfn,arr,iterator,callback){var results=[];arr=_map(arr,function(x,i){return{index:i,value:x}});eachfn(arr,function(x,callback){iterator(x.value,function(err,v){results[x.index]=v;callback(err)})},function(err){callback(err,results)})};async.map=doParallel(_asyncMap);async.mapSeries=doSeries(_asyncMap);async.mapLimit=function(arr,limit,iterator,callback){return _mapLimit(limit)(arr,iterator,callback)};var _mapLimit=function(limit){return doParallelLimit(limit,_asyncMap)};async.reduce=function(arr,memo,iterator,callback){async.eachSeries(arr,function(x,callback){iterator(memo,x,function(err,v){memo=v;callback(err)})},function(err){callback(err,memo)})};async.inject=async.reduce;async.foldl=async.reduce;async.reduceRight=function(arr,memo,iterator,callback){var reversed=_map(arr,function(x){return x}).reverse();async.reduce(reversed,memo,iterator,callback)};async.foldr=async.reduceRight;var _filter=function(eachfn,arr,iterator,callback){var results=[];arr=_map(arr,function(x,i){return{index:i,value:x}});eachfn(arr,function(x,callback){iterator(x.value,function(v){if(v){results.push(x)}callback()})},function(err){callback(_map(results.sort(function(a,b){return a.index-b.index}),function(x){return x.value}))})};async.filter=doParallel(_filter);async.filterSeries=doSeries(_filter);async.select=async.filter;async.selectSeries=async.filterSeries;var _reject=function(eachfn,arr,iterator,callback){var results=[];arr=_map(arr,function(x,i){return{index:i,value:x}});eachfn(arr,function(x,callback){iterator(x.value,function(v){if(!v){results.push(x)}callback()})},function(err){callback(_map(results.sort(function(a,b){return a.index-b.index}),function(x){return x.value}))})};async.reject=doParallel(_reject);async.rejectSeries=doSeries(_reject);var _detect=function(eachfn,arr,iterator,main_callback){eachfn(arr,function(x,callback){iterator(x,function(result){if(result){main_callback(x);main_callback=function(){}}else{callback()}})},function(err){main_callback()})};async.detect=doParallel(_detect);async.detectSeries=doSeries(_detect);async.some=function(arr,iterator,main_callback){async.each(arr,function(x,callback){iterator(x,function(v){if(v){main_callback(true);main_callback=function(){}}callback()})},function(err){main_callback(false)})};async.any=async.some;async.every=function(arr,iterator,main_callback){async.each(arr,function(x,callback){iterator(x,function(v){if(!v){main_callback(false);main_callback=function(){}}callback()})},function(err){main_callback(true)})};async.all=async.every;async.sortBy=function(arr,iterator,callback){async.map(arr,function(x,callback){iterator(x,function(err,criteria){if(err){callback(err)}else{callback(null,{value:x,criteria:criteria})}})},function(err,results){if(err){return callback(err)}else{var fn=function(left,right){var a=left.criteria,b=right.criteria;return a<b?-1:a>b?1:0};callback(null,_map(results.sort(fn),function(x){return x.value}))}})};async.auto=function(tasks,callback){callback=callback||function(){};var keys=_keys(tasks);if(!keys.length){return callback(null)}var results={};var listeners=[];var addListener=function(fn){listeners.unshift(fn)};var removeListener=function(fn){for(var i=0;i<listeners.length;i+=1){if(listeners[i]===fn){listeners.splice(i,1);return}}};var taskComplete=function(){_each(listeners.slice(0),function(fn){fn()})};addListener(function(){if(_keys(results).length===keys.length){callback(null,results);callback=function(){}}});_each(keys,function(k){var task=tasks[k]instanceof Function?[tasks[k]]:tasks[k];var taskCallback=function(err){var args=Array.prototype.slice.call(arguments,1);if(args.length<=1){args=args[0]}if(err){var safeResults={};_each(_keys(results),function(rkey){safeResults[rkey]=results[rkey]});safeResults[k]=args;callback(err,safeResults);callback=function(){}}else{results[k]=args;async.setImmediate(taskComplete)}};var requires=task.slice(0,Math.abs(task.length-1))||[];var ready=function(){return _reduce(requires,function(a,x){return a&&results.hasOwnProperty(x)},true)&&!results.hasOwnProperty(k)};if(ready()){task[task.length-1](taskCallback,results)}else{var listener=function(){if(ready()){removeListener(listener);task[task.length-1](taskCallback,results)}};addListener(listener)}})};async.waterfall=function(tasks,callback){callback=callback||function(){};if(tasks.constructor!==Array){var err=new Error("First argument to waterfall must be an array of functions");return callback(err)}if(!tasks.length){return callback()}var wrapIterator=function(iterator){return function(err){if(err){callback.apply(null,arguments);callback=function(){}}else{var args=Array.prototype.slice.call(arguments,1);var next=iterator.next();if(next){args.push(wrapIterator(next))}else{args.push(callback)}async.setImmediate(function(){iterator.apply(null,args)})}}};wrapIterator(async.iterator(tasks))()};var _parallel=function(eachfn,tasks,callback){callback=callback||function(){};if(tasks.constructor===Array){eachfn.map(tasks,function(fn,callback){if(fn){fn(function(err){var args=Array.prototype.slice.call(arguments,1);if(args.length<=1){args=args[0]}callback.call(null,err,args)})}},callback)}else{var results={};eachfn.each(_keys(tasks),function(k,callback){tasks[k](function(err){var args=Array.prototype.slice.call(arguments,1);if(args.length<=1){args=args[0]}results[k]=args;callback(err)})},function(err){callback(err,results)})}};async.parallel=function(tasks,callback){_parallel({map:async.map,each:async.each},tasks,callback)};async.parallelLimit=function(tasks,limit,callback){_parallel({map:_mapLimit(limit),each:_eachLimit(limit)},tasks,callback)};async.series=function(tasks,callback){callback=callback||function(){};if(tasks.constructor===Array){async.mapSeries(tasks,function(fn,callback){if(fn){fn(function(err){var args=Array.prototype.slice.call(arguments,1);if(args.length<=1){args=args[0]}callback.call(null,err,args)})}},callback)}else{var results={};async.eachSeries(_keys(tasks),function(k,callback){tasks[k](function(err){var args=Array.prototype.slice.call(arguments,1);if(args.length<=1){args=args[0]}results[k]=args;callback(err)})},function(err){callback(err,results)
@@ -127,6 +127,8 @@
       import$(window, DepMan.lib('jwerty'));
       import$(window, DepMan.lib('heatmap'));
       import$(window, DepMan.lib('annyang'));
+      import$(window, DepMan.lib('leap-0.4.3'));
+      import$(window, DepMan.lib('leap-plugins-0.1.3.min'));
       importAll$(window, window.require("prelude-ls"));
       return this.LifeCycle.resolve();
     };
@@ -253,16 +255,38 @@
   var ContentController;
   ContentController = (function(superclass){
     var prototype = extend$((import$(ContentController, superclass).displayName = 'ContentController', ContentController), superclass).prototype, constructor = ContentController;
-    function ContentController(scope){
+    function ContentController(scope, runtime){
       var this$ = this instanceof ctor$ ? this : new ctor$;
       this$.scope = scope;
+      this$.runtime = runtime;
       this$.configScope = bind$(this$, 'configScope', prototype);
+      this$.disableVoice = bind$(this$, 'disableVoice', prototype);
       this$.initRuntime = bind$(this$, 'initRuntime', prototype);
-      this$.configScope();
       this$.initRuntime();
+      this$.configScope();
       return this$;
     } function ctor$(){} ctor$.prototype = prototype;
-    prototype.initRuntime = function(){};
+    prototype.initRuntime = function(){
+      var this$ = this;
+      this.runtime.init("fullscreen", false);
+      if (annyang) {
+        return DBStorage.get("voiceDisabled", function(enabled){
+          if (!enabled) {
+            this$.scope.voiceCommand = true;
+            annyang.addCommands({
+              "show me more": this$.disableVoice
+            });
+            return annyang.start();
+          }
+        });
+      }
+    };
+    prototype.disableVoice = function(){
+      this.log("Recognized");
+      this.scope.voiceCommand = false;
+      DBStorage.set("voiceDisabled", true);
+      return this.safeApply();
+    };
     prototype.configScope = function(){
       var this$ = this;
       this.safeApply = function(fn){
@@ -280,7 +304,7 @@
     };
     return ContentController;
   }(IS.Object));
-  angular.module(AppInfo.displayname).controller("Content", ["$scope", ContentController]);
+  angular.module(AppInfo.displayname).controller("Content", ["$scope", "Runtime", ContentController]);
   module.exports = ContentController;
   function bind$(obj, key, target){
     return function(){ return (target || obj)[key].apply(obj, arguments) };
@@ -453,8 +477,8 @@
       this$.refresh = bind$(this$, 'refresh', prototype);
       this$.initRuntime = bind$(this$, 'initRuntime', prototype);
       window.HC = this$;
-      this$.configScope();
       this$.initRuntime();
+      this$.configScope();
       return this$;
     } function ctor$(){} ctor$.prototype = prototype;
     prototype.initRuntime = function(){
@@ -469,21 +493,30 @@
       });
       this.refresh();
       handler = function(it){
-        var _add, i$, ref$, len$, touch, results$ = [];
+        var _add, i$, ref$, len$, touch, hand, results$ = [];
         _add = function(it, amnt){
           var set, i$, x$, ref$, i, len$, results$ = [];
           amnt == null && (amnt = 1);
-          set = {
-            x: it.pageX,
-            y: it.pageY
-          };
-          set.x = window.innerWidth / 2 - set.x;
-          for (i$ = 0, len$ = (ref$ = i = (fn$())).length; i$ < len$; ++i$) {
-            x$ = ref$[i$];
-            this$.dataSet = (set.x + this$.flow.scrollLeft()) + "," + (set.y + this$.flow.scrollTop());
-            results$.push(this$.map.store.addDataPoint((window.innerWidth / 2 - set.x) + this$.flow.scrollLeft(), set.y + this$.flow.scrollTop()));
+          if ((it.pageX != null && it.pageY != null) || it.screenPosition != null) {
+            if (it.pageX != null && it.pageY != null) {
+              set = {
+                x: it.pageX,
+                y: it.pageY
+              };
+            } else {
+              set = {
+                x: it.screenPosition()[0],
+                y: it.screenPosition()[1]
+              };
+            }
+            set.x = window.innerWidth / 2 - set.x;
+            for (i$ = 0, len$ = (ref$ = i = (fn$())).length; i$ < len$; ++i$) {
+              x$ = ref$[i$];
+              this$.dataSet = (set.x + this$.flow.scrollLeft()) + "," + (set.y + this$.flow.scrollTop());
+              results$.push(this$.map.store.addDataPoint((window.innerWidth / 2 - set.x) + this$.flow.scrollLeft(), set.y + this$.flow.scrollTop()));
+            }
+            return results$;
           }
-          return results$;
           function fn$(){
             var i$, to$, results$ = [];
             for (i$ = 1, to$ = amnt; i$ <= to$; ++i$) {
@@ -496,6 +529,12 @@
           for (i$ = 0, len$ = (ref$ = it.touches).length; i$ < len$; ++i$) {
             touch = ref$[i$];
             results$.push(_add(touch, 5));
+          }
+          return results$;
+        } else if (it.hands != null && it.hands.length) {
+          for (i$ = 0, len$ = (ref$ = it.hands).length; i$ < len$; ++i$) {
+            hand = ref$[i$];
+            results$.push(_add(hand));
           }
           return results$;
         } else {
@@ -512,14 +551,30 @@
         this$.map.resize();
         return this$.refresh();
       };
-      resHandler();
       window.addEventListener("resize", resHandler);
       window.addEventListener("mousemove", handler);
       window.addEventListener("touchstart", handler);
       if (!Tester.ios) {
         window.addEventListener("touchmove", handler);
       }
-      return window.addEventListener("touchend", handler);
+      window.addEventListener("touchend", handler);
+      this.leap = new Leap.Controller();
+      this.leap.use('screenPosition', {
+        verticalOffset: 500
+      });
+      this.leap.on('connected', function(){
+        return this$.log("Leap Online");
+      });
+      this.leap.on('deviceConnected', function(){
+        return this$.log("Leap Connected");
+      });
+      this.leap.on('deviceDisconnected', function(){
+        return this$.log("Leap Disconnected");
+      });
+      this.leap.on('frame', handler);
+      this.leap.connect();
+      this.log("Leap Created");
+      return resHandler();
     };
     prototype.refresh = function(){
       var set, TOLERANCE, _set, i$, ref$, len$, i, max, item, e;
@@ -624,9 +679,10 @@
   var LanguageController;
   LanguageController = (function(superclass){
     var prototype = extend$((import$(LanguageController, superclass).displayName = 'LanguageController', LanguageController), superclass).prototype, constructor = LanguageController;
-    function LanguageController(scope){
+    function LanguageController(scope, runtime){
       var this$ = this instanceof ctor$ ? this : new ctor$;
       this$.scope = scope;
+      this$.runtime = runtime;
       this$.configScope = bind$(this$, 'configScope', prototype);
       this$.getImage = bind$(this$, 'getImage', prototype);
       this$.changeLanguage = bind$(this$, 'changeLanguage', prototype);
@@ -636,10 +692,11 @@
       return this$;
     } function ctor$(){} ctor$.prototype = prototype;
     prototype.initRuntime = function(){
-      return this.languages = {
+      this.languages = {
         "ro": "ro-RO",
         "gb": "en-US"
       };
+      return this.runtime.set("fullscreen", false);
     };
     prototype.changeLanguage = function(lang){
       return Runtime.set('language', lang);
@@ -664,7 +721,7 @@
     };
     return LanguageController;
   }(IS.Object));
-  angular.module(AppInfo.displayname).controller("Language", ["$scope", LanguageController]);
+  angular.module(AppInfo.displayname).controller("Language", ["$scope", "Runtime", LanguageController]);
   module.exports = LanguageController;
   function bind$(obj, key, target){
     return function(){ return (target || obj)[key].apply(obj, arguments) };
@@ -899,7 +956,6 @@
       var this$ = this;
       window.addEventListener("resize", this.headerResize);
       window.addEventListener("orientationchange", this.headerResize);
-      this.headerResize();
       this.runtime.init("contact-form-open", false);
       $(".app header nav").css("top", $(".app header h1").height());
       $('.flow').scroll(function(it){
@@ -930,6 +986,7 @@
           });
         }
       });
+      setTimeout(this.headerResize, 500);
       return this;
     };
     prototype.headerResize = function(){
@@ -1057,6 +1114,47 @@
   }(IS.Object));
   angular.module(AppInfo.displayname).controller("Signup", ["$scope", SignupController]);
   module.exports = SignupController;
+  function bind$(obj, key, target){
+    return function(){ return (target || obj)[key].apply(obj, arguments) };
+  }
+  function extend$(sub, sup){
+    function fun(){} fun.prototype = (sub.superclass = sup).prototype;
+    (sub.prototype = new fun).constructor = sub;
+    if (typeof sup.extended == 'function') sup.extended(sub);
+    return sub;
+  }
+  function import$(obj, src){
+    var own = {}.hasOwnProperty;
+    for (var key in src) if (own.call(src, key)) obj[key] = src[key];
+    return obj;
+  }
+}).call(this);
+}, "classes/helpers/Background": function(exports, require, module) {(function(){
+  var BackgroundHelper;
+  BackgroundHelper = (function(superclass){
+    var prototype = extend$((import$(BackgroundHelper, superclass).displayName = 'BackgroundHelper', BackgroundHelper), superclass).prototype, constructor = BackgroundHelper;
+    function BackgroundHelper(){
+      var this$ = this instanceof ctor$ ? this : new ctor$;
+      this$.change = bind$(this$, 'change', prototype);
+      this$.set = 0;
+      this$.timer = setInterval(this$.change, 3666);
+      this$.change();
+      this$.log("Started doing Background Changes");
+      this$.change();
+      return this$;
+    } function ctor$(){} ctor$.prototype = prototype;
+    prototype.change = function(){
+      this.log("Changing");
+      if (this.set % 2 === 0) {
+        $('.app').css("background", '#fff');
+      } else {
+        $('.app').css("background", '#666');
+      }
+      return this.set += 1;
+    };
+    return BackgroundHelper;
+  }(IS.Object));
+  module.exports = new BackgroundHelper;
   function bind$(obj, key, target){
     return function(){ return (target || obj)[key].apply(obj, arguments) };
   }
@@ -1202,7 +1300,7 @@
       }
       names = font.split(" ");
       _s = this.deps[font + ""] = document.createElement("link");
-      string = "http://fonts.googleapis.com/css?family=" + names.join("+") + ":" + sizes.join(",");
+      string = window.location.protocol + "//fonts.googleapis.com/css?family=" + names.join("+") + ":" + sizes.join(",");
       if (subsets != null) {
         string += "&subset=" + subsets.join(",");
       }
@@ -3829,7 +3927,7292 @@ $http:ld,$httpBackend:nd,$location:td,$log:ud,$parse:xd,$rootScope:Ad,$q:yd,$sce
         KEYS: _keys
     };
 
-}(this, (typeof module !== 'undefined' && module.exports ? module.exports : this)));}, "classes/libs/prelude-browser-min": function(exports, require, module) {window.require=function(n,r,t){function e(t,i){if(!r[t]){if(!n[t]){var o=typeof require=="function"&&require;if(!i&&o)return o(t,!0);if(u)return u(t,!0);throw new Error("Cannot find module '"+t+"'")}var a=r[t]={exports:{}};n[t][0].call(a.exports,function(r){var u=n[t][1][r];return e(u?u:r)},a,a.exports)}return r[t].exports}var u=typeof require=="function"&&require;for(var i=0;i<t.length;i++)e(t[i]);return e}({"prelude-ls":[function(n,r,t){r.exports=n("bcmc1g")},{}],bcmc1g:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h={}.toString;e=n("./Func.js");u=n("./List.js");i=n("./Obj.js");o=n("./Str.js");a=n("./Num.js");c=function(n){return n};f=p(function(n,r){return h.call(r).slice(8,-1)===n});l=p(function(n,r){var t,e=[];for(t=0;t<n;++t){e.push(r)}return e});o.empty=u.empty;o.slice=u.slice;o.take=u.take;o.drop=u.drop;o.splitAt=u.splitAt;o.takeWhile=u.takeWhile;o.dropWhile=u.dropWhile;o.span=u.span;o.breakStr=u.breakList;s={Func:e,List:u,Obj:i,Str:o,Num:a,id:c,isType:f,replicate:l};s.each=u.each;s.map=u.map;s.filter=u.filter;s.compact=u.compact;s.reject=u.reject;s.partition=u.partition;s.find=u.find;s.head=u.head;s.first=u.first;s.tail=u.tail;s.last=u.last;s.initial=u.initial;s.empty=u.empty;s.reverse=u.reverse;s.difference=u.difference;s.intersection=u.intersection;s.union=u.union;s.countBy=u.countBy;s.groupBy=u.groupBy;s.fold=u.fold;s.foldl=u.foldl;s.fold1=u.fold1;s.foldl1=u.foldl1;s.foldr=u.foldr;s.foldr1=u.foldr1;s.unfoldr=u.unfoldr;s.andList=u.andList;s.orList=u.orList;s.any=u.any;s.all=u.all;s.unique=u.unique;s.sort=u.sort;s.sortWith=u.sortWith;s.sortBy=u.sortBy;s.sum=u.sum;s.product=u.product;s.mean=u.mean;s.average=u.average;s.concat=u.concat;s.concatMap=u.concatMap;s.flatten=u.flatten;s.maximum=u.maximum;s.minimum=u.minimum;s.scan=u.scan;s.scanl=u.scanl;s.scan1=u.scan1;s.scanl1=u.scanl1;s.scanr=u.scanr;s.scanr1=u.scanr1;s.slice=u.slice;s.take=u.take;s.drop=u.drop;s.splitAt=u.splitAt;s.takeWhile=u.takeWhile;s.dropWhile=u.dropWhile;s.span=u.span;s.breakList=u.breakList;s.zip=u.zip;s.zipWith=u.zipWith;s.zipAll=u.zipAll;s.zipAllWith=u.zipAllWith;s.apply=e.apply;s.curry=e.curry;s.flip=e.flip;s.fix=e.fix;s.split=o.split;s.join=o.join;s.lines=o.lines;s.unlines=o.unlines;s.words=o.words;s.unwords=o.unwords;s.chars=o.chars;s.unchars=o.unchars;s.values=i.values;s.keys=i.keys;s.pairsToObj=i.pairsToObj;s.objToPairs=i.objToPairs;s.listsToObj=i.listsToObj;s.objToLists=i.objToLists;s.max=a.max;s.min=a.min;s.negate=a.negate;s.abs=a.abs;s.signum=a.signum;s.quot=a.quot;s.rem=a.rem;s.div=a.div;s.mod=a.mod;s.recip=a.recip;s.pi=a.pi;s.tau=a.tau;s.exp=a.exp;s.sqrt=a.sqrt;s.ln=a.ln;s.pow=a.pow;s.sin=a.sin;s.tan=a.tan;s.cos=a.cos;s.acos=a.acos;s.asin=a.asin;s.atan=a.atan;s.atan2=a.atan2;s.truncate=a.truncate;s.round=a.round;s.ceiling=a.ceiling;s.floor=a.floor;s.isItNaN=a.isItNaN;s.even=a.even;s.odd=a.odd;s.gcd=a.gcd;s.lcm=a.lcm;s.VERSION="1.0.3";r.exports=s;function p(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{"./Func.js":1,"./Obj.js":2,"./Num.js":3,"./List.js":4,"./Str.js":5}],1:[function(n,r,t){var e,u,i,o;e=function(n){return a(n)};u=a(function(n,r,t){return n(t,r)});i=function(n){return function(r,t){return function(){return n(r(r)).apply(null,arguments)}}(function(r,t){return function(){return n(r(r)).apply(null,arguments)}})};o=a(function(n,r){return n.apply(null,r)});r.exports={curry:e,flip:u,fix:i,apply:o};function a(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}],2:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h,p,g,v,m;e=function(n){var r,t,e=[];for(r in n){t=n[r];e.push(t)}return e};u=function(n){var r,t=[];for(r in n){t.push(r)}return t};i=function(n){var r,t,e,u={};for(r=0,t=n.length;r<t;++r){e=n[r];u[e[0]]=e[1]}return u};o=function(n){var r,t,e=[];for(r in n){t=n[r];e.push([r,t])}return e};a=d(function(n,r){var t,e,u,i,o={};for(t=0,e=n.length;t<e;++t){u=t;i=n[t];o[i]=r[u]}return o});c=function(n){var r,t,e,u;r=[];t=[];for(e in n){u=n[e];r.push(e);t.push(u)}return[r,t]};f=function(n){var r;for(r in n){return false}return true};l=d(function(n,r){var t,e;for(t in r){e=r[t];n(e)}return r});s=d(function(n,r){var t,e,u={};for(t in r){e=r[t];u[t]=n(e)}return u});h=d(function(n){var r,t,e={};for(r in n){t=n[r];if(t){e[r]=t}}return e});p=d(function(n,r){var t,e,u={};for(t in r){e=r[t];if(n(e)){u[t]=e}}return u});g=d(function(n,r){var t,e,u={};for(t in r){e=r[t];if(!n(e)){u[t]=e}}return u});v=d(function(n,r){var t,e,u,i;t={};e={};for(u in r){i=r[u];(n(i)?t:e)[u]=i}return[t,e]});m=d(function(n,r){var t,e;for(t in r){e=r[t];if(n(e)){return e}}});r.exports={values:e,keys:u,pairsToObj:i,objToPairs:o,listsToObj:a,objToLists:c,empty:f,each:l,map:s,filter:p,compact:h,reject:g,partition:v,find:m};function d(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}],3:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h,p,g,v,m,d,y,j,b,x,M,k,W,w,L,q,T,z,A,N,O,B,S;e=I(function(n,r){return n>r?n:r});u=I(function(n,r){return n<r?n:r});i=function(n){return-n};o=Math.abs;a=function(n){if(n<0){return-1}else if(n>0){return 1}else{return 0}};c=I(function(n,r){return~~(n/r)});f=I(function(n,r){return n%r});l=I(function(n,r){return Math.floor(n/r)});s=I(function(n,r){var t;return(n%(t=r)+t)%t});h=function(n){return 1/n};p=Math.PI;g=p*2;v=Math.exp;m=Math.sqrt;d=Math.log;y=I(function(n,r){return Math.pow(n,r)});j=Math.sin;b=Math.tan;x=Math.cos;M=Math.asin;k=Math.acos;W=Math.atan;w=I(function(n,r){return Math.atan2(n,r)});L=function(n){return~~n};q=Math.round;T=Math.ceil;z=Math.floor;A=function(n){return n!==n};N=function(n){return n%2===0};O=function(n){return n%2!==0};B=I(function(n,r){var t;n=Math.abs(n);r=Math.abs(r);while(r!==0){t=n%r;n=r;r=t}return n});S=I(function(n,r){return Math.abs(Math.floor(n/B(n,r)*r))});r.exports={max:e,min:u,negate:i,abs:o,signum:a,quot:c,rem:f,div:l,mod:s,recip:h,pi:p,tau:g,exp:v,sqrt:m,ln:d,pow:y,sin:j,tan:b,cos:x,acos:k,asin:M,atan:W,atan2:w,truncate:L,round:q,ceiling:T,floor:z,isItNaN:A,even:N,odd:O,gcd:B,lcm:S};function I(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}],4:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h,p,g,v,m,d,y,j,b,x,M,k,W,w,L,q,T,z,A,N,O,B,S,I,P,F,E,C,R,V,D,G,H,J,K,Q,U,X,Y,Z,$,_,nr,rr,tr,er,ur,ir,or,ar,cr,fr,lr={}.toString,sr=[].slice;e=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];n(u)}return r});u=hr(function(n,r){var t,e,u,i=[];for(t=0,e=r.length;t<e;++t){u=r[t];i.push(n(u))}return i});i=hr(function(n){var r,t,e,u=[];for(r=0,t=n.length;r<t;++r){e=n[r];if(e){u.push(e)}}return u});o=hr(function(n,r){var t,e,u,i=[];for(t=0,e=r.length;t<e;++t){u=r[t];if(n(u)){i.push(u)}}return i});a=hr(function(n,r){var t,e,u,i=[];for(t=0,e=r.length;t<e;++t){u=r[t];if(!n(u)){i.push(u)}}return i});c=hr(function(n,r){var t,e,u,i,o;t=[];e=[];for(u=0,i=r.length;u<i;++u){o=r[u];(n(o)?t:e).push(o)}return[t,e]});f=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];if(n(u)){return u}}});l=s=function(n){if(!n.length){return}return n[0]};h=function(n){if(!n.length){return}return n.slice(1)};p=function(n){if(!n.length){return}return n[n.length-1]};g=function(n){var r;r=n.length;if(!r){return}return n.slice(0,r-1)};v=function(n){return!n.length};m=function(n){return n.concat().reverse()};d=function(n){var r,t,e,u;r=[];for(t=0,e=n.length;t<e;++t){u=n[t];if(!pr(u,r)){r.push(u)}}return r};y=j=hr(function(n,r,t){var e,u,i;for(e=0,u=t.length;e<u;++e){i=t[e];r=n(r,i)}return r});b=x=hr(function(n,r){return y(n,r[0],r.slice(1))});M=hr(function(n,r,t){return y(n,r,t.concat().reverse())});k=hr(function(n,r){var t;t=r.concat().reverse();return y(n,t[0],t.slice(1))});W=hr(function(n,r){var t,e,u;t=[];e=r;while((u=n(e))!=null){t.push(u[0]);e=u[1]}return t});w=function(n){return[].concat.apply([],n)};L=hr(function(n,r){var t;return[].concat.apply([],function(){var e,u,i,o=[];for(e=0,i=(u=r).length;e<i;++e){t=u[e];o.push(n(t))}return o}())});q=hr(function(n){var r;return[].concat.apply([],function(){var t,e,u,i=[];for(t=0,u=(e=n).length;t<u;++t){r=e[t];if(lr.call(r).slice(8,-1)==="Array"){i.push(q(r))}else{i.push(r)}}return i}())});T=function(n){var r,t,e,u,i,o,a,c;r=sr.call(arguments,1);t=[];n:for(e=0,u=n.length;e<u;++e){i=n[e];for(o=0,a=r.length;o<a;++o){c=r[o];if(pr(i,c)){continue n}}t.push(i)}return t};z=function(n){var r,t,e,u,i,o,a,c;r=sr.call(arguments,1);t=[];n:for(e=0,u=n.length;e<u;++e){i=n[e];for(o=0,a=r.length;o<a;++o){c=r[o];if(!pr(i,c)){continue n}}t.push(i)}return t};A=function(){var n,r,t,e,u,i,o,a;n=sr.call(arguments);r=[];for(t=0,e=n.length;t<e;++t){u=n[t];for(i=0,o=u.length;i<o;++i){a=u[i];if(!pr(a,r)){r.push(a)}}}return r};N=hr(function(n,r){var t,e,u,i,o;t={};for(e=0,u=r.length;e<u;++e){i=r[e];o=n(i);if(o in t){t[o]+=1}else{t[o]=1}}return t});O=hr(function(n,r){var t,e,u,i,o;t={};for(e=0,u=r.length;e<u;++e){i=r[e];o=n(i);if(o in t){t[o].push(i)}else{t[o]=[i]}}return t});B=function(n){var r,t,e;for(r=0,t=n.length;r<t;++r){e=n[r];if(!e){return false}}return true};S=function(n){var r,t,e;for(r=0,t=n.length;r<t;++r){e=n[r];if(e){return true}}return false};I=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];if(n(u)){return true}}return false});P=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];if(!n(u)){return false}}return true});F=function(n){return n.concat().sort(function(n,r){if(n>r){return 1}else if(n<r){return-1}else{return 0}})};E=hr(function(n,r){if(!r.length){return[]}return r.concat().sort(n)});C=hr(function(n,r){if(!r.length){return[]}return r.concat().sort(function(r,t){if(n(r)>n(t)){return 1}else if(n(r)<n(t)){return-1}else{return 0}})});R=function(n){var r,t,e,u;r=0;for(t=0,e=n.length;t<e;++t){u=n[t];r+=u}return r};V=function(n){var r,t,e,u;r=1;for(t=0,e=n.length;t<e;++t){u=n[t];r*=u}return r};D=G=function(n){var r,t,e,u;r=0;t=n.length;for(e=0;e<t;++e){u=e;r+=n[u]}return r/t};H=function(n){var r,t,e,u,i;r=n[0];for(t=0,u=(e=n.slice(1)).length;t<u;++t){i=e[t];if(i>r){r=i}}return r};J=function(n){var r,t,e,u,i;r=n[0];for(t=0,u=(e=n.slice(1)).length;t<u;++t){i=e[t];if(i<r){r=i}}return r};K=Q=hr(function(n,r,t){var e,u;e=r;return[r].concat(function(){var r,i,o,a=[];for(r=0,o=(i=t).length;r<o;++r){u=i[r];a.push(e=n(e,u))}return a}())});U=X=hr(function(n,r){if(!r.length){return}return K(n,r[0],r.slice(1))});Y=hr(function(n,r,t){t=t.concat().reverse();return K(n,r,t).reverse()});Z=hr(function(n,r){if(!r.length){return}r=r.concat().reverse();return K(n,r[0],r.slice(1)).reverse()});$=hr(function(n,r,t){return t.slice(n,r)});_=hr(function(n,r){if(n<=0){return r.slice(0,0)}else if(!r.length){return r}else{return r.slice(0,n)}});nr=hr(function(n,r){if(n<=0||!r.length){return r}else{return r.slice(n)}});rr=hr(function(n,r){return[_(n,r),nr(n,r)]});tr=hr(function(n,r){var t,e;t=r.length;if(!t){return r}e=0;while(e<t&&n(r[e])){e+=1}return r.slice(0,e)});er=hr(function(n,r){var t,e;t=r.length;if(!t){return r}e=0;while(e<t&&n(r[e])){e+=1}return r.slice(e)});ur=hr(function(n,r){return[tr(n,r),er(n,r)]});ir=hr(function(n,r){return ur(gr([vr,n]),r)});or=hr(function(n,r){var t,e,u,i,o,a;t=[];e=r.length;for(u=0,i=n.length;u<i;++u){o=u;a=n[u];if(o===e){break}t.push([a,r[o]])}return t});ar=hr(function(n,r,t){var e,u,i,o,a,c;e=[];u=t.length;for(i=0,o=r.length;i<o;++i){a=i;c=r[i];if(a===u){break}e.push(n(c,t[a]))}return e});cr=function(){var n,r,t,e,u,i,o,a,c,f=[];n=sr.call(arguments);r=9e9;for(t=0,e=n.length;t<e;++t){u=n[t];r<=(i=u.length)||(r=i)}for(t=0;t<r;++t){o=t;a=[];for(c=0,e=n.length;c<e;++c){u=n[c];a.push(u[o])}f.push(a)}return f};fr=function(n){var r,t,e,u,i,o,a,c=[];r=sr.call(arguments,1);t=9e9;for(e=0,u=r.length;e<u;++e){i=r[e];t<=(o=i.length)||(t=o)}for(e=0;e<t;++e){a=e;c.push(n.apply(null,f()))}return c;function f(){var n,t,e,u=[];for(n=0,e=(t=r).length;n<e;++n){i=t[n];u.push(i[a])}return u}};r.exports={each:e,map:u,filter:o,compact:i,reject:a,partition:c,find:f,head:l,first:s,tail:h,last:p,initial:g,empty:v,reverse:m,difference:T,intersection:z,union:A,countBy:N,groupBy:O,fold:y,fold1:b,foldl:j,foldl1:x,foldr:M,foldr1:k,unfoldr:W,andList:B,orList:S,any:I,all:P,unique:d,sort:F,sortWith:E,sortBy:C,sum:R,product:V,mean:D,average:G,concat:w,concatMap:L,flatten:q,maximum:H,minimum:J,scan:K,scan1:U,scanl:Q,scanl1:X,scanr:Y,scanr1:Z,slice:$,take:_,drop:nr,splitAt:rr,takeWhile:tr,dropWhile:er,span:ur,breakList:ir,zip:or,zipWith:ar,zipAll:cr,zipAllWith:fr};function hr(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}function pr(n,r){var t=-1,e=r.length>>>0;while(++t<e)if(n===r[t]&&t in r)return true;return false}function gr(n){return function(){var r,t=arguments;for(r=n.length;r>0;--r){t=[n[r-1].apply(this,t)]}return t[0]}}function vr(n){return!n}},{}],5:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h;e=p(function(n,r){return r.split(n)});u=p(function(n,r){return r.join(n)});i=function(n){if(!n.length){return[]}return n.split("\n")};o=function(n){return n.join("\n")};a=function(n){if(!n.length){return[]}return n.split(/[ ]+/)};c=function(n){return n.join(" ")};f=function(n){return n.split("")};l=function(n){return n.join("")};s=function(n){return n.split("").reverse().join("")};h=p(function(n,r){var t,e,u;e=[];for(u=0;u<n;++u){e.push(r)}t=e;return t.join("")});r.exports={split:e,join:u,lines:i,unlines:o,words:a,unwords:c,chars:f,unchars:l,reverse:s,repeat:h};function p(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}]},{},[]);}, "data/images/gb": function(exports, require, module) {if (!window.imagePackage) window.imagePackage = function() { return "data:" + this.mime + ";base64," + this.content };
+}(this, (typeof module !== 'undefined' && module.exports ? module.exports : this)));}, "classes/libs/leap-0.4.3": function(exports, require, module) {;(function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require=="function"&&require;if(!s&&o)return o(n,!0);if(r)return r(n,!0);throw new Error("Cannot find module '"+n+"'")}var u=t[n]={exports:{}};e[n][0].call(u.exports,function(t){var r=e[n][1][t];return i(r?r:t)},u,u.exports)}return t[n].exports}var r=typeof require=="function"&&require;for(var s=0;s<n.length;s++)i(n[s]);return i})({1:[function(require,module,exports){
+/*!
+ * LeapJS v0.4.3
+ * http://github.com/leapmotion/leapjs/
+ *
+ * Copyright 2013 LeapMotion, Inc. and other contributors
+ * Released under the BSD-2-Clause license
+ * http://github.com/leapmotion/leapjs/blob/master/LICENSE.txt
+ */
+},{}],2:[function(require,module,exports){
+var CircularBuffer = module.exports = function(size) {
+  this.pos = 0;
+  this._buf = [];
+  this.size = size;
+}
+
+CircularBuffer.prototype.get = function(i) {
+  if (i == undefined) i = 0;
+  if (i >= this.size) return undefined;
+  if (i >= this._buf.length) return undefined;
+  return this._buf[(this.pos - i - 1) % this.size];
+}
+
+CircularBuffer.prototype.push = function(o) {
+  this._buf[this.pos % this.size] = o;
+  return this.pos++;
+}
+
+},{}],3:[function(require,module,exports){
+var chooseProtocol = require('../protocol').chooseProtocol
+  , EventEmitter = require('events').EventEmitter
+  , _ = require('underscore');
+
+var BaseConnection = module.exports = function(opts) {
+  this.opts = _.defaults(opts || {}, {
+    host : '127.0.0.1',
+    enableGestures: false,
+    port: 6437,
+    background: false,
+    requestProtocolVersion: 4
+  });
+  this.host = this.opts.host;
+  this.port = this.opts.port;
+  this.protocolVersionVerified = false;
+  this.on('ready', function() {
+    this.enableGestures(this.opts.enableGestures);
+    this.setBackground(this.opts.background);
+  });
+}
+
+BaseConnection.prototype.getUrl = function() {
+  return "ws://" + this.host + ":" + this.port + "/v" + this.opts.requestProtocolVersion + ".json";
+}
+
+BaseConnection.prototype.setBackground = function(state) {
+  this.opts.background = state;
+  if (this.protocol && this.protocol.sendBackground && this.background !== this.opts.background) {
+    this.background = this.opts.background;
+    this.protocol.sendBackground(this, this.opts.background);
+  }
+}
+
+BaseConnection.prototype.handleOpen = function() {
+  if (!this.connected) {
+    this.connected = true;
+    this.emit('connect');
+  }
+}
+
+BaseConnection.prototype.enableGestures = function(enabled) {
+  this.gesturesEnabled = enabled ? true : false;
+  this.send(this.protocol.encode({"enableGestures": this.gesturesEnabled}));
+}
+
+BaseConnection.prototype.handleClose = function(code, reason) {
+  if (!this.connected) return;
+  this.disconnect();
+
+  // 1001 - an active connection is closed
+  // 1006 - cannot connect
+  if (code === 1001 && this.opts.requestProtocolVersion > 1) {
+    if (this.protocolVersionVerified) {
+      this.protocolVersionVerified = false;
+    }else{
+      this.opts.requestProtocolVersion--;
+    }
+  }
+  this.startReconnection();
+}
+
+BaseConnection.prototype.startReconnection = function() {
+  var connection = this;
+  this.reconnectionTimer = setInterval(function() { connection.reconnect() }, 1000);
+}
+
+BaseConnection.prototype.disconnect = function() {
+  if (!this.socket) return;
+  this.socket.close();
+  delete this.socket;
+  delete this.protocol;
+  delete this.background; // This is not persisted when reconnecting to the web socket server
+  if (this.connected) {
+    this.connected = false;
+    this.emit('disconnect');
+  }
+  return true;
+}
+
+BaseConnection.prototype.reconnect = function() {
+  if (this.connected) {
+    clearInterval(this.reconnectionTimer);
+  } else {
+    this.disconnect();
+    this.connect();
+  }
+}
+
+BaseConnection.prototype.handleData = function(data) {
+  var message = JSON.parse(data);
+
+  var messageEvent;
+  if (this.protocol === undefined) {
+    messageEvent = this.protocol = chooseProtocol(message);
+    this.protocolVersionVerified = true;
+    this.emit('ready');
+  } else {
+    messageEvent = this.protocol(message);
+  }
+  this.emit(messageEvent.type, messageEvent);
+}
+
+BaseConnection.prototype.connect = function() {
+  if (this.socket) return;
+  this.socket = this.setupSocket();
+  return true;
+}
+
+BaseConnection.prototype.send = function(data) {
+  this.socket.send(data);
+}
+
+BaseConnection.prototype.reportFocus = function(state) {
+  if (this.focusedState === state) return;
+  this.focusedState = state;
+  this.emit(this.focusedState ? 'focus' : 'blur');
+  if (this.protocol && this.protocol.sendFocused) {
+    this.protocol.sendFocused(this, this.focusedState);
+  }
+}
+
+_.extend(BaseConnection.prototype, EventEmitter.prototype);
+
+
+},{"../protocol":13,"events":19,"underscore":22}],4:[function(require,module,exports){
+var BaseConnection = module.exports = require('./base')
+  , _ = require('underscore');
+
+var BrowserConnection = module.exports = function(opts) {
+  BaseConnection.call(this, opts);
+  var connection = this;
+  this.on('ready', function() { connection.startFocusLoop(); })
+  this.on('disconnect', function() { connection.stopFocusLoop(); })
+}
+
+_.extend(BrowserConnection.prototype, BaseConnection.prototype);
+
+BrowserConnection.prototype.setupSocket = function() {
+  var connection = this;
+  var socket = new WebSocket(this.getUrl());
+  socket.onopen = function() { connection.handleOpen(); };
+  socket.onclose = function(data) { connection.handleClose(data['code'], data['reason']); };
+  socket.onmessage = function(message) { connection.handleData(message.data) };
+  return socket;
+}
+
+BrowserConnection.prototype.startFocusLoop = function() {
+  if (this.focusDetectorTimer) return;
+  var connection = this;
+  var propertyName = null;
+  if (typeof document.hidden !== "undefined") {
+    propertyName = "hidden";
+  } else if (typeof document.mozHidden !== "undefined") {
+    propertyName = "mozHidden";
+  } else if (typeof document.msHidden !== "undefined") {
+    propertyName = "msHidden";
+  } else if (typeof document.webkitHidden !== "undefined") {
+    propertyName = "webkitHidden";
+  } else {
+    propertyName = undefined;
+  }
+
+  if (connection.windowVisible === undefined) {
+    connection.windowVisible = propertyName === undefined ? true : document[propertyName] === false;
+  }
+
+  var focusListener = window.addEventListener('focus', function(e) {
+    connection.windowVisible = true;
+    updateFocusState();
+  });
+
+  var blurListener = window.addEventListener('blur', function(e) {
+    connection.windowVisible = false;
+    updateFocusState();
+  });
+
+  this.on('disconnect', function() {
+    window.removeEventListener('focus', focusListener);
+    window.removeEventListener('blur', blurListener);
+  });
+
+  var updateFocusState = function() {
+    var isVisible = propertyName === undefined ? true : document[propertyName] === false;
+    connection.reportFocus(isVisible && connection.windowVisible);
+  }
+
+  this.focusDetectorTimer = setInterval(updateFocusState, 100);
+}
+
+BrowserConnection.prototype.stopFocusLoop = function() {
+  if (!this.focusDetectorTimer) return;
+  clearTimeout(this.focusDetectorTimer);
+  delete this.focusDetectorTimer;
+}
+
+},{"./base":3,"underscore":22}],5:[function(require,module,exports){
+var process=require("__browserify_process");var Frame = require('./frame')
+  , Hand = require('./hand')
+  , Pointable = require('./pointable')
+  , CircularBuffer = require("./circular_buffer")
+  , Pipeline = require("./pipeline")
+  , EventEmitter = require('events').EventEmitter
+  , gestureListener = require('./gesture').gestureListener
+  , _ = require('underscore');
+
+/**
+ * Constructs a Controller object.
+ *
+ * When creating a Controller object, you may optionally pass in options
+ * to set the host , set the port, enable gestures, or select the frame event type.
+ *
+ * ```javascript
+ * var controller = new Leap.Controller({
+ *   host: '127.0.0.1',
+ *   port: 6437,
+ *   enableGestures: true,
+ *   frameEventName: 'animationFrame'
+ * });
+ * ```
+ *
+ * @class Controller
+ * @memberof Leap
+ * @classdesc
+ * The Controller class is your main interface to the Leap Motion Controller.
+ *
+ * Create an instance of this Controller class to access frames of tracking data
+ * and configuration information. Frame data can be polled at any time using the
+ * [Controller.frame]{@link Leap.Controller#frame}() function. Call frame() or frame(0) to get the most recent
+ * frame. Set the history parameter to a positive integer to access previous frames.
+ * A controller stores up to 60 frames in its frame history.
+ *
+ * Polling is an appropriate strategy for applications which already have an
+ * intrinsic update loop, such as a game.
+ */
+
+
+var Controller = module.exports = function(opts) {
+  var inNode = (typeof(process) !== 'undefined' && process.versions && process.versions.node),
+    controller = this;
+
+  opts = _.defaults(opts || {}, {
+    inNode: inNode
+  });
+
+  this.inNode = opts.inNode;
+
+  opts = _.defaults(opts || {}, {
+    frameEventName: this.useAnimationLoop() ? 'animationFrame' : 'deviceFrame',
+    suppressAnimationLoop: !this.useAnimationLoop(),
+    loopWhileDisconnected: false,
+    useAllPlugins: false
+  });
+
+  this.animationFrameRequested = false;
+  this.onAnimationFrame = function() {
+    controller.emit('animationFrame', controller.lastConnectionFrame);
+    if (controller.loopWhileDisconnected && (controller.connection.focusedState || controller.connection.opts.background) ){
+      window.requestAnimationFrame(controller.onAnimationFrame);
+    }else{
+      controller.animationFrameRequested = false;
+    }
+  }
+  this.suppressAnimationLoop = opts.suppressAnimationLoop;
+  this.loopWhileDisconnected = opts.loopWhileDisconnected;
+  this.frameEventName = opts.frameEventName;
+  this.useAllPlugins = opts.useAllPlugins;
+  this.history = new CircularBuffer(200);
+  this.lastFrame = Frame.Invalid;
+  this.lastValidFrame = Frame.Invalid;
+  this.lastConnectionFrame = Frame.Invalid;
+  this.accumulatedGestures = [];
+  if (opts.connectionType === undefined) {
+    this.connectionType = (this.inBrowser() ? require('./connection/browser') : require('./connection/node'));
+  } else {
+    this.connectionType = opts.connectionType;
+  }
+  this.connection = new this.connectionType(opts);
+  this.plugins = {};
+  this._pluginPipelineSteps = {};
+  this._pluginExtendedMethods = {};
+  if (opts.useAllPlugins) this.useRegisteredPlugins();
+  this.setupConnectionEvents();
+}
+
+Controller.prototype.gesture = function(type, cb) {
+  var creator = gestureListener(this, type);
+  if (cb !== undefined) {
+    creator.stop(cb);
+  }
+  return creator;
+}
+
+/*
+ * @returns the controller
+ */
+Controller.prototype.setBackground = function(state) {
+  this.connection.setBackground(state);
+  return this;
+}
+
+Controller.prototype.inBrowser = function() {
+  return !this.inNode;
+}
+
+Controller.prototype.useAnimationLoop = function() {
+  return this.inBrowser() && !this.inBackgroundPage();
+}
+
+Controller.prototype.inBackgroundPage = function(){
+  // http://developer.chrome.com/extensions/extension#method-getBackgroundPage
+  return (typeof(chrome) !== "undefined") &&
+    chrome.extension &&
+    chrome.extension.getBackgroundPage &&
+    (chrome.extension.getBackgroundPage() === window)
+}
+
+/*
+ * @returns the controller
+ */
+Controller.prototype.connect = function() {
+  this.connection.connect();
+  return this;
+}
+
+Controller.prototype.runAnimationLoop = function(){
+  if (!this.suppressAnimationLoop && !this.animationFrameRequested) {
+    this.animationFrameRequested = true;
+    window.requestAnimationFrame(this.onAnimationFrame);
+  }
+}
+
+/*
+ * @returns the controller
+ */
+Controller.prototype.disconnect = function() {
+  this.connection.disconnect();
+  return this;
+}
+
+/**
+ * Returns a frame of tracking data from the Leap.
+ *
+ * Use the optional history parameter to specify which frame to retrieve.
+ * Call frame() or frame(0) to access the most recent frame; call frame(1) to
+ * access the previous frame, and so on. If you use a history value greater
+ * than the number of stored frames, then the controller returns an invalid frame.
+ *
+ * @method frame
+ * @memberof Leap.Controller.prototype
+ * @param {number} history The age of the frame to return, counting backwards from
+ * the most recent frame (0) into the past and up to the maximum age (59).
+ * @returns {Leap.Frame} The specified frame; or, if no history
+ * parameter is specified, the newest frame. If a frame is not available at
+ * the specified history position, an invalid Frame is returned.
+ */
+Controller.prototype.frame = function(num) {
+  return this.history.get(num) || Frame.Invalid;
+}
+
+Controller.prototype.loop = function(callback) {
+  switch (callback.length) {
+    case 1:
+      this.on(this.frameEventName, callback);
+      break;
+    case 2:
+      var controller = this;
+      var scheduler = null;
+      var immediateRunnerCallback = function(frame) {
+        callback(frame, function() {
+          if (controller.lastFrame != frame) {
+            immediateRunnerCallback(controller.lastFrame);
+          } else {
+            controller.once(controller.frameEventName, immediateRunnerCallback);
+          }
+        });
+      }
+      this.once(this.frameEventName, immediateRunnerCallback);
+      break;
+  }
+  return this.connect();
+}
+
+Controller.prototype.addStep = function(step) {
+  if (!this.pipeline) this.pipeline = new Pipeline(this);
+  this.pipeline.addStep(step);
+}
+
+// this is run on every deviceFrame
+Controller.prototype.processFrame = function(frame) {
+  if (frame.gestures) {
+    this.accumulatedGestures = this.accumulatedGestures.concat(frame.gestures);
+  }
+  // lastConnectionFrame is used by the animation loop
+  this.lastConnectionFrame = frame;
+  this.runAnimationLoop();
+  this.emit('deviceFrame', frame);
+}
+
+// on a this.deviceEventName (usually 'animationFrame' in browsers), this emits a 'frame'
+Controller.prototype.processFinishedFrame = function(frame) {
+  this.lastFrame = frame;
+  if (frame.valid) {
+    this.lastValidFrame = frame;
+  }
+  frame.controller = this;
+  frame.historyIdx = this.history.push(frame);
+  if (frame.gestures) {
+    frame.gestures = this.accumulatedGestures;
+    this.accumulatedGestures = [];
+    for (var gestureIdx = 0; gestureIdx != frame.gestures.length; gestureIdx++) {
+      this.emit("gesture", frame.gestures[gestureIdx], frame);
+    }
+  }
+  if (this.pipeline) {
+    frame = this.pipeline.run(frame);
+    if (!frame) frame = Frame.Invalid;
+  }
+  this.emit('frame', frame);
+}
+
+Controller.prototype.setupConnectionEvents = function() {
+  var controller = this;
+  this.connection.on('frame', function(frame) {
+    controller.processFrame(frame);
+  });
+  this.on(this.frameEventName, function(frame) {
+    controller.processFinishedFrame(frame);
+  });
+
+  // Delegate connection events
+  this.connection.on('disconnect', function() { controller.emit('disconnect'); });
+  this.connection.on('ready', function() { controller.emit('ready'); });
+  this.connection.on('connect', function() { controller.emit('connect'); });
+  this.connection.on('focus', function() { controller.emit('focus'); controller.runAnimationLoop(); });
+  this.connection.on('blur', function() { controller.emit('blur') });
+  this.connection.on('protocol', function(protocol) { controller.emit('protocol', protocol); });
+  this.connection.on('deviceConnect', function(evt) { controller.emit(evt.state ? 'deviceConnected' : 'deviceDisconnected'); });
+}
+
+
+Controller._pluginFactories = {};
+
+/*
+ * Registers a plugin, making is accessible to controller.use later on.
+ *
+ * @member plugin
+ * @memberof Leap.Controller.prototype
+ * @param {String} name The name of the plugin (usually camelCase).
+ * @param {function} factory A factory method which will return an instance of a plugin.
+ * The factory receives an optional hash of options, passed in via controller.use.
+ *
+ * Valid keys for the object include frame, hand, finger, tool, and pointable.  The value
+ * of each key can be either a function or an object.  If given a function, that function
+ * will be called once for every instance of the object, with that instance injected as an
+ * argument.  This allows decoration of objects with additional data:
+ *
+ * ```javascript
+ * Leap.Controller.plugin('testPlugin', function(options){
+ *   return {
+ *     frame: function(frame){
+ *       frame.foo = 'bar';
+ *     }
+ *   }
+ * });
+ * ```
+ *
+ * When hand is used, the callback is called for every hand in `frame.hands`.  Note that
+ * hand objects are recreated with every new frame, so that data saved on the hand will not
+ * persist.
+ *
+ * ```javascript
+ * Leap.Controller.plugin('testPlugin', function(){
+ *   return {
+ *     hand: function(hand){
+ *       console.log('testPlugin running on hand ' + hand.id);
+ *     }
+ *   }
+ * });
+ * ```
+ *
+ * A factory can return an object to add custom functionality to Frames, Hands, or Pointables.
+ * The methods are added directly to the object's prototype.  Finger and Tool cannot be used here, Pointable
+ * must be used instead.
+ * This is encouraged for calculations which may not be necessary on every frame.
+ * Memoization is also encouraged, for cases where the method may be called many times per frame by the application.
+ *
+ * ```javascript
+ * // This plugin allows hand.usefulData() to be called later.
+ * Leap.Controller.plugin('testPlugin', function(){
+ *   return {
+ *     hand: {
+ *       usefulData: function(){
+ *         console.log('usefulData on hand', this.id);
+ *         // memoize the results on to the hand, preventing repeat work:
+ *         this.x || this.x = someExpensiveCalculation();
+ *         return this.x;
+ *       }
+ *     }
+ *   }
+ * });
+ *
+ * Note that the factory pattern allows encapsulation for every plugin instance.
+ *
+ * ```javascript
+ * Leap.Controller.plugin('testPlugin', function(options){
+ *   options || options = {}
+ *   options.center || options.center = [0,0,0]
+ *
+ *   privatePrintingMethod = function(){
+ *     console.log('privatePrintingMethod - options', options);
+ *   }
+ *
+ *   return {
+ *     pointable: {
+ *       publicPrintingMethod: function(){
+ *         privatePrintingMethod();
+ *       }
+ *     }
+ *   }
+ * });
+ *
+ */
+Controller.plugin = function(pluginName, factory) {
+  if (this._pluginFactories[pluginName]) {
+    throw "Plugin \"" + pluginName + "\" already registered";
+  }
+  return this._pluginFactories[pluginName] = factory;
+};
+
+/*
+ * Returns a list of registered plugins.
+ * @returns {Array} Plugin Factories.
+ */
+Controller.plugins = function() {
+  return _.keys(this._pluginFactories);
+};
+
+/*
+ * Begin using a registered plugin.  The plugin's functionality will be added to all frames
+ * returned by the controller (and/or added to the objects within the frame).
+ *  - The order of plugin execution inside the loop will match the order in which use is called by the application.
+ *  - The plugin be run for both deviceFrames and animationFrames.
+ *
+ *  If called a second time, the options will be merged with those of the already instantiated plugin.
+ *
+ * @method use
+ * @memberOf Leap.Controller.prototype
+ * @param pluginName
+ * @param {Hash} Options to be passed to the plugin's factory.
+ * @returns the controller
+ */
+Controller.prototype.use = function(pluginName, options) {
+  var functionOrHash, pluginFactory, key, pluginInstance, klass;
+
+  pluginFactory = (typeof pluginName == 'function') ? pluginName : Controller._pluginFactories[pluginName];
+
+  if (!pluginFactory) {
+    throw 'Leap Plugin ' + pluginName + ' not found.';
+  }
+
+  options || (options = {});
+
+  if (this.plugins[pluginName]){
+    _.extend(this.plugins[pluginName], options)
+    return this;
+  }
+
+  this.plugins[pluginName] = options;
+
+  pluginInstance = pluginFactory.call(this, options);
+
+  for (key in pluginInstance) {
+    functionOrHash = pluginInstance[key];
+
+    if (typeof functionOrHash === 'function') {
+      if (!this.pipeline) this.pipeline = new Pipeline(this);
+      if (!this._pluginPipelineSteps[pluginName]) this._pluginPipelineSteps[pluginName] = [];
+
+      this._pluginPipelineSteps[pluginName].push( this.pipeline.addWrappedStep(key, functionOrHash) );
+    } else {
+      if (!this._pluginExtendedMethods[pluginName]) this._pluginExtendedMethods[pluginName] = [];
+
+      switch (key) {
+        case 'frame':
+          klass = Frame
+          break;
+        case 'hand':
+          klass = Hand
+          break;
+        case 'pointable':
+          klass = Pointable
+          break;
+        default:
+          throw pluginName + ' specifies invalid object type "' + key + '" for prototypical extension'
+      }
+
+      _.extend(klass.prototype, functionOrHash);
+      _.extend(klass.Invalid, functionOrHash);
+      this._pluginExtendedMethods[pluginName].push([klass, functionOrHash])
+    }
+  }
+  return this;
+};
+
+/*
+ * Stop using a used plugin.  This will remove any of the plugin's pipeline methods (those called on every frame)
+ * and remove any methods which extend frame-object prototypes.
+ *
+ * @method stopUsing
+ * @memberOf Leap.Controller.prototype
+ * @param pluginName
+ * @returns the controller
+ */
+Controller.prototype.stopUsing = function (pluginName) {
+  var steps = this._pluginPipelineSteps[pluginName],
+      extMethodHashes = this._pluginExtendedMethods[pluginName],
+      i = 0, klass, extMethodHash;
+
+  if (!this.plugins[pluginName]) return;
+
+  if (steps) {
+    for (i = 0; i < steps.length; i++) {
+      this.pipeline.removeStep(steps[i]);
+    }
+  }
+
+  if (extMethodHashes){
+    for (i = 0; i < extMethodHashes.length; i++){
+      klass = extMethodHashes[i][0]
+      extMethodHash = extMethodHashes[i][1]
+      for (var methodName in extMethodHash) {
+        delete klass.prototype[methodName]
+        delete klass.Invalid[methodName]
+      }
+    }
+  }
+
+  delete this.plugins[pluginName]
+
+  return this;
+}
+
+Controller.prototype.useRegisteredPlugins = function(){
+  for (var plugin in Controller._pluginFactories){
+    this.use(plugin);
+  }
+}
+
+
+_.extend(Controller.prototype, EventEmitter.prototype);
+
+},{"./circular_buffer":2,"./connection/browser":4,"./connection/node":18,"./frame":6,"./gesture":7,"./hand":8,"./pipeline":11,"./pointable":12,"__browserify_process":20,"events":19,"underscore":22}],6:[function(require,module,exports){
+var Hand = require("./hand")
+  , Pointable = require("./pointable")
+  , createGesture = require("./gesture").createGesture
+  , glMatrix = require("gl-matrix")
+  , mat3 = glMatrix.mat3
+  , vec3 = glMatrix.vec3
+  , InteractionBox = require("./interaction_box")
+  , _ = require("underscore");
+
+/**
+ * Constructs a Frame object.
+ *
+ * Frame instances created with this constructor are invalid.
+ * Get valid Frame objects by calling the
+ * [Controller.frame]{@link Leap.Controller#frame}() function.
+ *<C-D-Space>
+ * @class Frame
+ * @memberof Leap
+ * @classdesc
+ * The Frame class represents a set of hand and finger tracking data detected
+ * in a single frame.
+ *
+ * The Leap detects hands, fingers and tools within the tracking area, reporting
+ * their positions, orientations and motions in frames at the Leap frame rate.
+ *
+ * Access Frame objects using the [Controller.frame]{@link Leap.Controller#frame}() function.
+ */
+var Frame = module.exports = function(data) {
+  /**
+   * Reports whether this Frame instance is valid.
+   *
+   * A valid Frame is one generated by the Controller object that contains
+   * tracking data for all detected entities. An invalid Frame contains no
+   * actual tracking data, but you can call its functions without risk of a
+   * undefined object exception. The invalid Frame mechanism makes it more
+   * convenient to track individual data across the frame history. For example,
+   * you can invoke:
+   *
+   * ```javascript
+   * var finger = controller.frame(n).finger(fingerID);
+   * ```
+   *
+   * for an arbitrary Frame history value, "n", without first checking whether
+   * frame(n) returned a null object. (You should still check that the
+   * returned Finger instance is valid.)
+   *
+   * @member valid
+   * @memberof Leap.Frame.prototype
+   * @type {Boolean}
+   */
+  this.valid = true;
+  /**
+   * A unique ID for this Frame. Consecutive frames processed by the Leap
+   * have consecutive increasing values.
+   * @member id
+   * @memberof Leap.Frame.prototype
+   * @type {String}
+   */
+  this.id = data.id;
+  /**
+   * The frame capture time in microseconds elapsed since the Leap started.
+   * @member timestamp
+   * @memberof Leap.Frame.prototype
+   * @type {number}
+   */
+  this.timestamp = data.timestamp;
+  /**
+   * The list of Hand objects detected in this frame, given in arbitrary order.
+   * The list can be empty if no hands are detected.
+   *
+   * @member hands[]
+   * @memberof Leap.Frame.prototype
+   * @type {Leap.Hand}
+   */
+  this.hands = [];
+  this.handsMap = {};
+  /**
+   * The list of Pointable objects (fingers and tools) detected in this frame,
+   * given in arbitrary order. The list can be empty if no fingers or tools are
+   * detected.
+   *
+   * @member pointables[]
+   * @memberof Leap.Frame.prototype
+   * @type {Leap.Pointable}
+   */
+  this.pointables = [];
+  /**
+   * The list of Tool objects detected in this frame, given in arbitrary order.
+   * The list can be empty if no tools are detected.
+   *
+   * @member tools[]
+   * @memberof Leap.Frame.prototype
+   * @type {Leap.Pointable}
+   */
+  this.tools = [];
+  /**
+   * The list of Finger objects detected in this frame, given in arbitrary order.
+   * The list can be empty if no fingers are detected.
+   * @member fingers[]
+   * @memberof Leap.Frame.prototype
+   * @type {Leap.Pointable}
+   */
+  this.fingers = [];
+
+  /**
+   * The InteractionBox associated with the current frame.
+   *
+   * @member interactionBox
+   * @memberof Leap.Frame.prototype
+   * @type {Leap.InteractionBox}
+   */
+  if (data.interactionBox) {
+    this.interactionBox = new InteractionBox(data.interactionBox);
+  }
+  this.gestures = [];
+  this.pointablesMap = {};
+  this._translation = data.t;
+  this._rotation = _.flatten(data.r);
+  this._scaleFactor = data.s;
+  this.data = data;
+  this.type = 'frame'; // used by event emitting
+  this.currentFrameRate = data.currentFrameRate;
+  var handMap = {};
+  for (var handIdx = 0, handCount = data.hands.length; handIdx != handCount; handIdx++) {
+    var hand = new Hand(data.hands[handIdx]);
+    hand.frame = this;
+    this.hands.push(hand);
+    this.handsMap[hand.id] = hand;
+    handMap[hand.id] = handIdx;
+  }
+  for (var pointableIdx = 0, pointableCount = data.pointables.length; pointableIdx != pointableCount; pointableIdx++) {
+    var pointable = new Pointable(data.pointables[pointableIdx]);
+    pointable.frame = this;
+    this.pointables.push(pointable);
+    this.pointablesMap[pointable.id] = pointable;
+    (pointable.tool ? this.tools : this.fingers).push(pointable);
+    if (pointable.handId !== undefined && handMap.hasOwnProperty(pointable.handId)) {
+      var hand = this.hands[handMap[pointable.handId]];
+      hand.pointables.push(pointable);
+      (pointable.tool ? hand.tools : hand.fingers).push(pointable);
+    }
+  }
+
+  if (data.gestures) {
+   /**
+    * The list of Gesture objects detected in this frame, given in arbitrary order.
+    * The list can be empty if no gestures are detected.
+    *
+    * Circle and swipe gestures are updated every frame. Tap gestures
+    * only appear in the list for a single frame.
+    * @member gestures[]
+    * @memberof Leap.Frame.prototype
+    * @type {Leap.Gesture}
+    */
+    for (var gestureIdx = 0, gestureCount = data.gestures.length; gestureIdx != gestureCount; gestureIdx++) {
+      this.gestures.push(createGesture(data.gestures[gestureIdx]));
+    }
+  }
+}
+
+/**
+ * The tool with the specified ID in this frame.
+ *
+ * Use the Frame tool() function to retrieve a tool from
+ * this frame using an ID value obtained from a previous frame.
+ * This function always returns a Pointable object, but if no tool
+ * with the specified ID is present, an invalid Pointable object is returned.
+ *
+ * Note that ID values persist across frames, but only until tracking of a
+ * particular object is lost. If tracking of a tool is lost and subsequently
+ * regained, the new Pointable object representing that tool may have a
+ * different ID than that representing the tool in an earlier frame.
+ *
+ * @method tool
+ * @memberof Leap.Frame.prototype
+ * @param {String} id The ID value of a Tool object from a previous frame.
+ * @returns {Leap.Pointable} The tool with the
+ * matching ID if one exists in this frame; otherwise, an invalid Pointable object
+ * is returned.
+ */
+Frame.prototype.tool = function(id) {
+  var pointable = this.pointable(id);
+  return pointable.tool ? pointable : Pointable.Invalid;
+}
+
+/**
+ * The Pointable object with the specified ID in this frame.
+ *
+ * Use the Frame pointable() function to retrieve the Pointable object from
+ * this frame using an ID value obtained from a previous frame.
+ * This function always returns a Pointable object, but if no finger or tool
+ * with the specified ID is present, an invalid Pointable object is returned.
+ *
+ * Note that ID values persist across frames, but only until tracking of a
+ * particular object is lost. If tracking of a finger or tool is lost and subsequently
+ * regained, the new Pointable object representing that finger or tool may have
+ * a different ID than that representing the finger or tool in an earlier frame.
+ *
+ * @method pointable
+ * @memberof Leap.Frame.prototype
+ * @param {String} id The ID value of a Pointable object from a previous frame.
+ * @returns {Leap.Pointable} The Pointable object with
+ * the matching ID if one exists in this frame;
+ * otherwise, an invalid Pointable object is returned.
+ */
+Frame.prototype.pointable = function(id) {
+  return this.pointablesMap[id] || Pointable.Invalid;
+}
+
+/**
+ * The finger with the specified ID in this frame.
+ *
+ * Use the Frame finger() function to retrieve the finger from
+ * this frame using an ID value obtained from a previous frame.
+ * This function always returns a Finger object, but if no finger
+ * with the specified ID is present, an invalid Pointable object is returned.
+ *
+ * Note that ID values persist across frames, but only until tracking of a
+ * particular object is lost. If tracking of a finger is lost and subsequently
+ * regained, the new Pointable object representing that physical finger may have
+ * a different ID than that representing the finger in an earlier frame.
+ *
+ * @method finger
+ * @memberof Leap.Frame.prototype
+ * @param {String} id The ID value of a finger from a previous frame.
+ * @returns {Leap.Pointable} The finger with the
+ * matching ID if one exists in this frame; otherwise, an invalid Pointable
+ * object is returned.
+ */
+Frame.prototype.finger = function(id) {
+  var pointable = this.pointable(id);
+  return !pointable.tool ? pointable : Pointable.Invalid;
+}
+
+/**
+ * The Hand object with the specified ID in this frame.
+ *
+ * Use the Frame hand() function to retrieve the Hand object from
+ * this frame using an ID value obtained from a previous frame.
+ * This function always returns a Hand object, but if no hand
+ * with the specified ID is present, an invalid Hand object is returned.
+ *
+ * Note that ID values persist across frames, but only until tracking of a
+ * particular object is lost. If tracking of a hand is lost and subsequently
+ * regained, the new Hand object representing that physical hand may have
+ * a different ID than that representing the physical hand in an earlier frame.
+ *
+ * @method hand
+ * @memberof Leap.Frame.prototype
+ * @param {String} id The ID value of a Hand object from a previous frame.
+ * @returns {Leap.Hand} The Hand object with the matching
+ * ID if one exists in this frame; otherwise, an invalid Hand object is returned.
+ */
+Frame.prototype.hand = function(id) {
+  return this.handsMap[id] || Hand.Invalid;
+}
+
+/**
+ * The angle of rotation around the rotation axis derived from the overall
+ * rotational motion between the current frame and the specified frame.
+ *
+ * The returned angle is expressed in radians measured clockwise around
+ * the rotation axis (using the right-hand rule) between the start and end frames.
+ * The value is always between 0 and pi radians (0 and 180 degrees).
+ *
+ * The Leap derives frame rotation from the relative change in position and
+ * orientation of all objects detected in the field of view.
+ *
+ * If either this frame or sinceFrame is an invalid Frame object, then the
+ * angle of rotation is zero.
+ *
+ * @method rotationAngle
+ * @memberof Leap.Frame.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative rotation.
+ * @param {number[]} [axis] The axis to measure rotation around.
+ * @returns {number} A positive value containing the heuristically determined
+ * rotational change between the current frame and that specified in the sinceFrame parameter.
+ */
+Frame.prototype.rotationAngle = function(sinceFrame, axis) {
+  if (!this.valid || !sinceFrame.valid) return 0.0;
+
+  var rot = this.rotationMatrix(sinceFrame);
+  var cs = (rot[0] + rot[4] + rot[8] - 1.0)*0.5
+  var angle = Math.acos(cs);
+  angle = isNaN(angle) ? 0.0 : angle;
+
+  if (axis !== undefined) {
+    var rotAxis = this.rotationAxis(sinceFrame);
+    angle *= vec3.dot(rotAxis, vec3.normalize(vec3.create(), axis));
+  }
+
+  return angle;
+}
+
+/**
+ * The axis of rotation derived from the overall rotational motion between
+ * the current frame and the specified frame.
+ *
+ * The returned direction vector is normalized.
+ *
+ * The Leap derives frame rotation from the relative change in position and
+ * orientation of all objects detected in the field of view.
+ *
+ * If either this frame or sinceFrame is an invalid Frame object, or if no
+ * rotation is detected between the two frames, a zero vector is returned.
+ *
+ * @method rotationAxis
+ * @memberof Leap.Frame.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative rotation.
+ * @returns {number[]} A normalized direction vector representing the axis of the heuristically determined
+ * rotational change between the current frame and that specified in the sinceFrame parameter.
+ */
+Frame.prototype.rotationAxis = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return vec3.create();
+  return vec3.normalize(vec3.create(), [
+    this._rotation[7] - sinceFrame._rotation[5],
+    this._rotation[2] - sinceFrame._rotation[6],
+    this._rotation[3] - sinceFrame._rotation[1]
+  ]);
+}
+
+/**
+ * The transform matrix expressing the rotation derived from the overall
+ * rotational motion between the current frame and the specified frame.
+ *
+ * The Leap derives frame rotation from the relative change in position and
+ * orientation of all objects detected in the field of view.
+ *
+ * If either this frame or sinceFrame is an invalid Frame object, then
+ * this method returns an identity matrix.
+ *
+ * @method rotationMatrix
+ * @memberof Leap.Frame.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative rotation.
+ * @returns {number[]} A transformation matrix containing the heuristically determined
+ * rotational change between the current frame and that specified in the sinceFrame parameter.
+ */
+Frame.prototype.rotationMatrix = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return mat3.create();
+  var transpose = mat3.transpose(mat3.create(), this._rotation)
+  return mat3.multiply(mat3.create(), sinceFrame._rotation, transpose);
+}
+
+/**
+ * The scale factor derived from the overall motion between the current frame and the specified frame.
+ *
+ * The scale factor is always positive. A value of 1.0 indicates no scaling took place.
+ * Values between 0.0 and 1.0 indicate contraction and values greater than 1.0 indicate expansion.
+ *
+ * The Leap derives scaling from the relative inward or outward motion of all
+ * objects detected in the field of view (independent of translation and rotation).
+ *
+ * If either this frame or sinceFrame is an invalid Frame object, then this method returns 1.0.
+ *
+ * @method scaleFactor
+ * @memberof Leap.Frame.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative scaling.
+ * @returns {number} A positive value representing the heuristically determined
+ * scaling change ratio between the current frame and that specified in the sinceFrame parameter.
+ */
+Frame.prototype.scaleFactor = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return 1.0;
+  return Math.exp(this._scaleFactor - sinceFrame._scaleFactor);
+}
+
+/**
+ * The change of position derived from the overall linear motion between the
+ * current frame and the specified frame.
+ *
+ * The returned translation vector provides the magnitude and direction of the
+ * movement in millimeters.
+ *
+ * The Leap derives frame translation from the linear motion of all objects
+ * detected in the field of view.
+ *
+ * If either this frame or sinceFrame is an invalid Frame object, then this
+ * method returns a zero vector.
+ *
+ * @method translation
+ * @memberof Leap.Frame.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative translation.
+ * @returns {number[]} A vector representing the heuristically determined change in
+ * position of all objects between the current frame and that specified in the sinceFrame parameter.
+ */
+Frame.prototype.translation = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return vec3.create();
+  return vec3.subtract(vec3.create(), this._translation, sinceFrame._translation);
+}
+
+/**
+ * A string containing a brief, human readable description of the Frame object.
+ *
+ * @method toString
+ * @memberof Leap.Frame.prototype
+ * @returns {String} A brief description of this frame.
+ */
+Frame.prototype.toString = function() {
+  var str = "Frame [ id:"+this.id+" | timestamp:"+this.timestamp+" | Hand count:("+this.hands.length+") | Pointable count:("+this.pointables.length+")";
+  if (this.gestures) str += " | Gesture count:("+this.gestures.length+")";
+  str += " ]";
+  return str;
+}
+
+/**
+ * Returns a JSON-formatted string containing the hands, pointables and gestures
+ * in this frame.
+ *
+ * @method dump
+ * @memberof Leap.Frame.prototype
+ * @returns {String} A JSON-formatted string.
+ */
+Frame.prototype.dump = function() {
+  var out = '';
+  out += "Frame Info:<br/>";
+  out += this.toString();
+  out += "<br/><br/>Hands:<br/>"
+  for (var handIdx = 0, handCount = this.hands.length; handIdx != handCount; handIdx++) {
+    out += "  "+ this.hands[handIdx].toString() + "<br/>";
+  }
+  out += "<br/><br/>Pointables:<br/>";
+  for (var pointableIdx = 0, pointableCount = this.pointables.length; pointableIdx != pointableCount; pointableIdx++) {
+      out += "  "+ this.pointables[pointableIdx].toString() + "<br/>";
+  }
+  if (this.gestures) {
+    out += "<br/><br/>Gestures:<br/>";
+    for (var gestureIdx = 0, gestureCount = this.gestures.length; gestureIdx != gestureCount; gestureIdx++) {
+        out += "  "+ this.gestures[gestureIdx].toString() + "<br/>";
+    }
+  }
+  out += "<br/><br/>Raw JSON:<br/>";
+  out += JSON.stringify(this.data);
+  return out;
+}
+
+/**
+ * An invalid Frame object.
+ *
+ * You can use this invalid Frame in comparisons testing
+ * whether a given Frame instance is valid or invalid. (You can also check the
+ * [Frame.valid]{@link Leap.Frame#valid} property.)
+ *
+ * @static
+ * @type {Leap.Frame}
+ * @name Invalid
+ * @memberof Leap.Frame
+ */
+Frame.Invalid = {
+  valid: false,
+  hands: [],
+  fingers: [],
+  tools: [],
+  gestures: [],
+  pointables: [],
+  pointable: function() { return Pointable.Invalid },
+  finger: function() { return Pointable.Invalid },
+  hand: function() { return Hand.Invalid },
+  toString: function() { return "invalid frame" },
+  dump: function() { return this.toString() },
+  rotationAngle: function() { return 0.0; },
+  rotationMatrix: function() { return mat3.create(); },
+  rotationAxis: function() { return vec3.create(); },
+  scaleFactor: function() { return 1.0; },
+  translation: function() { return vec3.create(); }
+};
+
+},{"./gesture":7,"./hand":8,"./interaction_box":10,"./pointable":12,"gl-matrix":21,"underscore":22}],7:[function(require,module,exports){
+var glMatrix = require("gl-matrix")
+  , vec3 = glMatrix.vec3
+  , EventEmitter = require('events').EventEmitter
+  , _ = require('underscore');
+
+/**
+ * Constructs a new Gesture object.
+ *
+ * An uninitialized Gesture object is considered invalid. Get valid instances
+ * of the Gesture class, which will be one of the Gesture subclasses, from a
+ * Frame object.
+ *
+ * @class Gesture
+ * @abstract
+ * @memberof Leap
+ * @classdesc
+ * The Gesture class represents a recognized movement by the user.
+ *
+ * The Leap watches the activity within its field of view for certain movement
+ * patterns typical of a user gesture or command. For example, a movement from side to
+ * side with the hand can indicate a swipe gesture, while a finger poking forward
+ * can indicate a screen tap gesture.
+ *
+ * When the Leap recognizes a gesture, it assigns an ID and adds a
+ * Gesture object to the frame gesture list. For continuous gestures, which
+ * occur over many frames, the Leap updates the gesture by adding
+ * a Gesture object having the same ID and updated properties in each
+ * subsequent frame.
+ *
+ * **Important:** Recognition for each type of gesture must be enabled;
+ * otherwise **no gestures are recognized or reported**.
+ *
+ * Subclasses of Gesture define the properties for the specific movement patterns
+ * recognized by the Leap.
+ *
+ * The Gesture subclasses for include:
+ *
+ * * CircleGesture -- A circular movement by a finger.
+ * * SwipeGesture -- A straight line movement by the hand with fingers extended.
+ * * ScreenTapGesture -- A forward tapping movement by a finger.
+ * * KeyTapGesture -- A downward tapping movement by a finger.
+ *
+ * Circle and swipe gestures are continuous and these objects can have a
+ * state of start, update, and stop.
+ *
+ * The screen tap gesture is a discrete gesture. The Leap only creates a single
+ * ScreenTapGesture object appears for each tap and it always has a stop state.
+ *
+ * Get valid Gesture instances from a Frame object. You can get a list of gestures
+ * from the Frame gestures array. You can also use the Frame gesture() method
+ * to find a gesture in the current frame using an ID value obtained in a
+ * previous frame.
+ *
+ * Gesture objects can be invalid. For example, when you get a gesture by ID
+ * using Frame.gesture(), and there is no gesture with that ID in the current
+ * frame, then gesture() returns an Invalid Gesture object (rather than a null
+ * value). Always check object validity in situations where a gesture might be
+ * invalid.
+ */
+var createGesture = exports.createGesture = function(data) {
+  var gesture;
+  switch (data.type) {
+    case 'circle':
+      gesture = new CircleGesture(data);
+      break;
+    case 'swipe':
+      gesture = new SwipeGesture(data);
+      break;
+    case 'screenTap':
+      gesture = new ScreenTapGesture(data);
+      break;
+    case 'keyTap':
+      gesture = new KeyTapGesture(data);
+      break;
+    default:
+      throw "unkown gesture type";
+  }
+ /**
+  * The gesture ID.
+  *
+  * All Gesture objects belonging to the same recognized movement share the
+  * same ID value. Use the ID value with the Frame::gesture() method to
+  * find updates related to this Gesture object in subsequent frames.
+  *
+  * @member id
+  * @memberof Leap.Gesture.prototype
+  * @type {number}
+  */
+  gesture.id = data.id;
+ /**
+  * The list of hands associated with this Gesture, if any.
+  *
+  * If no hands are related to this gesture, the list is empty.
+  *
+  * @member handIds
+  * @memberof Leap.Gesture.prototype
+  * @type {Array}
+  */
+  gesture.handIds = data.handIds;
+ /**
+  * The list of fingers and tools associated with this Gesture, if any.
+  *
+  * If no Pointable objects are related to this gesture, the list is empty.
+  *
+  * @member pointableIds
+  * @memberof Leap.Gesture.prototype
+  * @type {Array}
+  */
+  gesture.pointableIds = data.pointableIds;
+ /**
+  * The elapsed duration of the recognized movement up to the
+  * frame containing this Gesture object, in microseconds.
+  *
+  * The duration reported for the first Gesture in the sequence (with the
+  * start state) will typically be a small positive number since
+  * the movement must progress far enough for the Leap to recognize it as
+  * an intentional gesture.
+  *
+  * @member duration
+  * @memberof Leap.Gesture.prototype
+  * @type {number}
+  */
+  gesture.duration = data.duration;
+ /**
+  * The gesture ID.
+  *
+  * Recognized movements occur over time and have a beginning, a middle,
+  * and an end. The 'state()' attribute reports where in that sequence this
+  * Gesture object falls.
+  *
+  * Possible values for the state field are:
+  *
+  * * start
+  * * update
+  * * stop
+  *
+  * @member state
+  * @memberof Leap.Gesture.prototype
+  * @type {String}
+  */
+  gesture.state = data.state;
+ /**
+  * The gesture type.
+  *
+  * Possible values for the type field are:
+  *
+  * * circle
+  * * swipe
+  * * screenTap
+  * * keyTap
+  *
+  * @member type
+  * @memberof Leap.Gesture.prototype
+  * @type {String}
+  */
+  gesture.type = data.type;
+  return gesture;
+}
+
+/*
+ * Returns a builder object, which uses method chaining for gesture callback binding.
+ */
+var gestureListener = exports.gestureListener = function(controller, type) {
+  var handlers = {};
+  var gestureMap = {};
+
+  controller.on('gesture', function(gesture, frame) {
+    if (gesture.type == type) {
+      if (gesture.state == "start" || gesture.state == "stop") {
+        if (gestureMap[gesture.id] === undefined) {
+          var gestureTracker = new Gesture(gesture, frame);
+          gestureMap[gesture.id] = gestureTracker;
+          _.each(handlers, function(cb, name) {
+            gestureTracker.on(name, cb);
+          });
+        }
+      }
+      gestureMap[gesture.id].update(gesture, frame);
+      if (gesture.state == "stop") {
+        delete gestureMap[gesture.id];
+      }
+    }
+  });
+  var builder = {
+    start: function(cb) {
+      handlers['start'] = cb;
+      return builder;
+    },
+    stop: function(cb) {
+      handlers['stop'] = cb;
+      return builder;
+    },
+    complete: function(cb) {
+      handlers['stop'] = cb;
+      return builder;
+    },
+    update: function(cb) {
+      handlers['update'] = cb;
+      return builder;
+    }
+  }
+  return builder;
+}
+
+var Gesture = exports.Gesture = function(gesture, frame) {
+  this.gestures = [gesture];
+  this.frames = [frame];
+}
+
+Gesture.prototype.update = function(gesture, frame) {
+  this.lastGesture = gesture;
+  this.lastFrame = frame;
+  this.gestures.push(gesture);
+  this.frames.push(frame);
+  this.emit(gesture.state, this);
+}
+
+Gesture.prototype.translation = function() {
+  return vec3.subtract(vec3.create(), this.lastGesture.startPosition, this.lastGesture.position);
+}
+
+_.extend(Gesture.prototype, EventEmitter.prototype);
+
+/**
+ * Constructs a new CircleGesture object.
+ *
+ * An uninitialized CircleGesture object is considered invalid. Get valid instances
+ * of the CircleGesture class from a Frame object.
+ *
+ * @class CircleGesture
+ * @memberof Leap
+ * @augments Leap.Gesture
+ * @classdesc
+ * The CircleGesture classes represents a circular finger movement.
+ *
+ * A circle movement is recognized when the tip of a finger draws a circle
+ * within the Leap field of view.
+ *
+ * ![CircleGesture](images/Leap_Gesture_Circle.png)
+ *
+ * Circle gestures are continuous. The CircleGesture objects for the gesture have
+ * three possible states:
+ *
+ * * start -- The circle gesture has just started. The movement has
+ *  progressed far enough for the recognizer to classify it as a circle.
+ * * update -- The circle gesture is continuing.
+ * * stop -- The circle gesture is finished.
+ */
+var CircleGesture = function(data) {
+ /**
+  * The center point of the circle within the Leap frame of reference.
+  *
+  * @member center
+  * @memberof Leap.CircleGesture.prototype
+  * @type {number[]}
+  */
+  this.center = data.center;
+ /**
+  * The normal vector for the circle being traced.
+  *
+  * If you draw the circle clockwise, the normal vector points in the same
+  * general direction as the pointable object drawing the circle. If you draw
+  * the circle counterclockwise, the normal points back toward the
+  * pointable. If the angle between the normal and the pointable object
+  * drawing the circle is less than 90 degrees, then the circle is clockwise.
+  *
+  * ```javascript
+  *    var clockwiseness;
+  *    if (circle.pointable.direction.angleTo(circle.normal) <= PI/4) {
+  *        clockwiseness = "clockwise";
+  *    }
+  *    else
+  *    {
+  *        clockwiseness = "counterclockwise";
+  *    }
+  * ```
+  *
+  * @member normal
+  * @memberof Leap.CircleGesture.prototype
+  * @type {number[]}
+  */
+  this.normal = data.normal;
+ /**
+  * The number of times the finger tip has traversed the circle.
+  *
+  * Progress is reported as a positive number of the number. For example,
+  * a progress value of .5 indicates that the finger has gone halfway
+  * around, while a value of 3 indicates that the finger has gone around
+  * the the circle three times.
+  *
+  * Progress starts where the circle gesture began. Since the circle
+  * must be partially formed before the Leap can recognize it, progress
+  * will be greater than zero when a circle gesture first appears in the
+  * frame.
+  *
+  * @member progress
+  * @memberof Leap.CircleGesture.prototype
+  * @type {number}
+  */
+  this.progress = data.progress;
+ /**
+  * The radius of the circle in mm.
+  *
+  * @member radius
+  * @memberof Leap.CircleGesture.prototype
+  * @type {number}
+  */
+  this.radius = data.radius;
+}
+
+CircleGesture.prototype.toString = function() {
+  return "CircleGesture ["+JSON.stringify(this)+"]";
+}
+
+/**
+ * Constructs a new SwipeGesture object.
+ *
+ * An uninitialized SwipeGesture object is considered invalid. Get valid instances
+ * of the SwipeGesture class from a Frame object.
+ *
+ * @class SwipeGesture
+ * @memberof Leap
+ * @augments Leap.Gesture
+ * @classdesc
+ * The SwipeGesture class represents a swiping motion of a finger or tool.
+ *
+ * ![SwipeGesture](images/Leap_Gesture_Swipe.png)
+ *
+ * Swipe gestures are continuous.
+ */
+var SwipeGesture = function(data) {
+ /**
+  * The starting position within the Leap frame of
+  * reference, in mm.
+  *
+  * @member startPosition
+  * @memberof Leap.SwipeGesture.prototype
+  * @type {number[]}
+  */
+  this.startPosition = data.startPosition;
+ /**
+  * The current swipe position within the Leap frame of
+  * reference, in mm.
+  *
+  * @member position
+  * @memberof Leap.SwipeGesture.prototype
+  * @type {number[]}
+  */
+  this.position = data.position;
+ /**
+  * The unit direction vector parallel to the swipe motion.
+  *
+  * You can compare the components of the vector to classify the swipe as
+  * appropriate for your application. For example, if you are using swipes
+  * for two dimensional scrolling, you can compare the x and y values to
+  * determine if the swipe is primarily horizontal or vertical.
+  *
+  * @member direction
+  * @memberof Leap.SwipeGesture.prototype
+  * @type {number[]}
+  */
+  this.direction = data.direction;
+ /**
+  * The speed of the finger performing the swipe gesture in
+  * millimeters per second.
+  *
+  * @member speed
+  * @memberof Leap.SwipeGesture.prototype
+  * @type {number}
+  */
+  this.speed = data.speed;
+}
+
+SwipeGesture.prototype.toString = function() {
+  return "SwipeGesture ["+JSON.stringify(this)+"]";
+}
+
+/**
+ * Constructs a new ScreenTapGesture object.
+ *
+ * An uninitialized ScreenTapGesture object is considered invalid. Get valid instances
+ * of the ScreenTapGesture class from a Frame object.
+ *
+ * @class ScreenTapGesture
+ * @memberof Leap
+ * @augments Leap.Gesture
+ * @classdesc
+ * The ScreenTapGesture class represents a tapping gesture by a finger or tool.
+ *
+ * A screen tap gesture is recognized when the tip of a finger pokes forward
+ * and then springs back to approximately the original postion, as if
+ * tapping a vertical screen. The tapping finger must pause briefly before beginning the tap.
+ *
+ * ![ScreenTap](images/Leap_Gesture_Tap2.png)
+ *
+ * ScreenTap gestures are discrete. The ScreenTapGesture object representing a tap always
+ * has the state, STATE_STOP. Only one ScreenTapGesture object is created for each
+ * screen tap gesture recognized.
+ */
+var ScreenTapGesture = function(data) {
+ /**
+  * The position where the screen tap is registered.
+  *
+  * @member position
+  * @memberof Leap.ScreenTapGesture.prototype
+  * @type {number[]}
+  */
+  this.position = data.position;
+ /**
+  * The direction of finger tip motion.
+  *
+  * @member direction
+  * @memberof Leap.ScreenTapGesture.prototype
+  * @type {number[]}
+  */
+  this.direction = data.direction;
+ /**
+  * The progess value is always 1.0 for a screen tap gesture.
+  *
+  * @member progress
+  * @memberof Leap.ScreenTapGesture.prototype
+  * @type {number}
+  */
+  this.progress = data.progress;
+}
+
+ScreenTapGesture.prototype.toString = function() {
+  return "ScreenTapGesture ["+JSON.stringify(this)+"]";
+}
+
+/**
+ * Constructs a new KeyTapGesture object.
+ *
+ * An uninitialized KeyTapGesture object is considered invalid. Get valid instances
+ * of the KeyTapGesture class from a Frame object.
+ *
+ * @class KeyTapGesture
+ * @memberof Leap
+ * @augments Leap.Gesture
+ * @classdesc
+ * The KeyTapGesture class represents a tapping gesture by a finger or tool.
+ *
+ * A key tap gesture is recognized when the tip of a finger rotates down toward the
+ * palm and then springs back to approximately the original postion, as if
+ * tapping. The tapping finger must pause briefly before beginning the tap.
+ *
+ * ![KeyTap](images/Leap_Gesture_Tap.png)
+ *
+ * Key tap gestures are discrete. The KeyTapGesture object representing a tap always
+ * has the state, STATE_STOP. Only one KeyTapGesture object is created for each
+ * key tap gesture recognized.
+ */
+var KeyTapGesture = function(data) {
+    /**
+     * The position where the key tap is registered.
+     *
+     * @member position
+     * @memberof Leap.KeyTapGesture.prototype
+     * @type {number[]}
+     */
+    this.position = data.position;
+    /**
+     * The direction of finger tip motion.
+     *
+     * @member direction
+     * @memberof Leap.KeyTapGesture.prototype
+     * @type {number[]}
+     */
+    this.direction = data.direction;
+    /**
+     * The progess value is always 1.0 for a key tap gesture.
+     *
+     * @member progress
+     * @memberof Leap.KeyTapGesture.prototype
+     * @type {number}
+     */
+    this.progress = data.progress;
+}
+
+KeyTapGesture.prototype.toString = function() {
+  return "KeyTapGesture ["+JSON.stringify(this)+"]";
+}
+
+},{"events":19,"gl-matrix":21,"underscore":22}],8:[function(require,module,exports){
+var Pointable = require("./pointable")
+  , glMatrix = require("gl-matrix")
+  , mat3 = glMatrix.mat3
+  , vec3 = glMatrix.vec3
+  , _ = require("underscore");
+
+/**
+ * Constructs a Hand object.
+ *
+ * An uninitialized hand is considered invalid.
+ * Get valid Hand objects from a Frame object.
+ * @class Hand
+ * @memberof Leap
+ * @classdesc
+ * The Hand class reports the physical characteristics of a detected hand.
+ *
+ * Hand tracking data includes a palm position and velocity; vectors for
+ * the palm normal and direction to the fingers; properties of a sphere fit
+ * to the hand; and lists of the attached fingers and tools.
+ *
+ * Note that Hand objects can be invalid, which means that they do not contain
+ * valid tracking data and do not correspond to a physical entity. Invalid Hand
+ * objects can be the result of asking for a Hand object using an ID from an
+ * earlier frame when no Hand objects with that ID exist in the current frame.
+ * A Hand object created from the Hand constructor is also invalid.
+ * Test for validity with the [Hand.valid]{@link Leap.Hand#valid} property.
+ */
+var Hand = module.exports = function(data) {
+  /**
+   * A unique ID assigned to this Hand object, whose value remains the same
+   * across consecutive frames while the tracked hand remains visible. If
+   * tracking is lost (for example, when a hand is occluded by another hand
+   * or when it is withdrawn from or reaches the edge of the Leap field of view),
+   * the Leap may assign a new ID when it detects the hand in a future frame.
+   *
+   * Use the ID value with the {@link Frame.hand}() function to find this
+   * Hand object in future frames.
+   *
+   * @member id
+   * @memberof Leap.Hand.prototype
+   * @type {String}
+   */
+  this.id = data.id;
+  /**
+   * The center position of the palm in millimeters from the Leap origin.
+   * @member palmPosition
+   * @memberof Leap.Hand.prototype
+   * @type {number[]}
+   */
+  this.palmPosition = data.palmPosition;
+  /**
+   * The direction from the palm position toward the fingers.
+   *
+   * The direction is expressed as a unit vector pointing in the same
+   * direction as the directed line from the palm position to the fingers.
+   *
+   * @member direction
+   * @memberof Leap.Hand.prototype
+   * @type {number[]}
+   */
+  this.direction = data.direction;
+  /**
+   * The rate of change of the palm position in millimeters/second.
+   *
+   * @member palmVeclocity
+   * @memberof Leap.Hand.prototype
+   * @type {number[]}
+   */
+  this.palmVelocity = data.palmVelocity;
+  /**
+   * The normal vector to the palm. If your hand is flat, this vector will
+   * point downward, or "out" of the front surface of your palm.
+   *
+   * ![Palm Vectors](images/Leap_Palm_Vectors.png)
+   *
+   * The direction is expressed as a unit vector pointing in the same
+   * direction as the palm normal (that is, a vector orthogonal to the palm).
+   * @member palmNormal
+   * @memberof Leap.Hand.prototype
+   * @type {number[]}
+   */
+  this.palmNormal = data.palmNormal;
+  /**
+   * The center of a sphere fit to the curvature of this hand.
+   *
+   * This sphere is placed roughly as if the hand were holding a ball.
+   *
+   * ![Hand Ball](images/Leap_Hand_Ball.png)
+   * @member sphereCenter
+   * @memberof Leap.Hand.prototype
+   * @type {number[]}
+   */
+  this.sphereCenter = data.sphereCenter;
+  /**
+   * The radius of a sphere fit to the curvature of this hand, in millimeters.
+   *
+   * This sphere is placed roughly as if the hand were holding a ball. Thus the
+   * size of the sphere decreases as the fingers are curled into a fist.
+   *
+   * @member sphereRadius
+   * @memberof Leap.Hand.prototype
+   * @type {number}
+   */
+  this.sphereRadius = data.sphereRadius;
+  /**
+   * Reports whether this is a valid Hand object.
+   *
+   * @member valid
+   * @memberof Leap.Hand.prototype
+   * @type {boolean}
+   */
+  this.valid = true;
+  /**
+   * The list of Pointable objects (fingers and tools) detected in this frame
+   * that are associated with this hand, given in arbitrary order. The list
+   * can be empty if no fingers or tools associated with this hand are detected.
+   *
+   * Use the {@link Pointable} tool property to determine
+   * whether or not an item in the list represents a tool or finger.
+   * You can also get only the tools using the Hand.tools[] list or
+   * only the fingers using the Hand.fingers[] list.
+   *
+   * @member pointables[]
+   * @memberof Leap.Hand.prototype
+   * @type {Leap.Pointable[]}
+   */
+  this.pointables = [];
+  /**
+   * The list of fingers detected in this frame that are attached to
+   * this hand, given in arbitrary order.
+   *
+   * The list can be empty if no fingers attached to this hand are detected.
+   *
+   * @member fingers[]
+   * @memberof Leap.Hand.prototype
+   * @type {Leap.Pointable[]}
+   */
+  this.fingers = [];
+  /**
+   * The list of tools detected in this frame that are held by this
+   * hand, given in arbitrary order.
+   *
+   * The list can be empty if no tools held by this hand are detected.
+   *
+   * @member tools[]
+   * @memberof Leap.Hand.prototype
+   * @type {Leap.Pointable[]}
+   */
+  this.tools = [];
+  this._translation = data.t;
+  this._rotation = _.flatten(data.r);
+  this._scaleFactor = data.s;
+
+  /**
+   * Time the hand has been visible in seconds.
+   *
+   * @member timeVisible
+   * @memberof Leap.Hand.prototype
+   * @type {number}
+   */
+   this.timeVisible = data.timeVisible;
+
+  /**
+   * The palm position with stabalization
+   * @member stabilizedPalmPosition
+   * @memberof Leap.Hand.prototype
+   * @type {number[]}
+   */
+   this.stabilizedPalmPosition = data.stabilizedPalmPosition;
+}
+
+/**
+ * The finger with the specified ID attached to this hand.
+ *
+ * Use this function to retrieve a Pointable object representing a finger
+ * attached to this hand using an ID value obtained from a previous frame.
+ * This function always returns a Pointable object, but if no finger
+ * with the specified ID is present, an invalid Pointable object is returned.
+ *
+ * Note that the ID values assigned to fingers persist across frames, but only
+ * until tracking of a particular finger is lost. If tracking of a finger is
+ * lost and subsequently regained, the new Finger object representing that
+ * finger may have a different ID than that representing the finger in an
+ * earlier frame.
+ *
+ * @method finger
+ * @memberof Leap.Hand.prototype
+ * @param {String} id The ID value of a finger from a previous frame.
+ * @returns {Leap.Pointable} The Finger object with
+ * the matching ID if one exists for this hand in this frame; otherwise, an
+ * invalid Finger object is returned.
+ */
+Hand.prototype.finger = function(id) {
+  var finger = this.frame.finger(id);
+  return (finger && finger.handId == this.id) ? finger : Pointable.Invalid;
+}
+
+/**
+ * The angle of rotation around the rotation axis derived from the change in
+ * orientation of this hand, and any associated fingers and tools, between the
+ * current frame and the specified frame.
+ *
+ * The returned angle is expressed in radians measured clockwise around the
+ * rotation axis (using the right-hand rule) between the start and end frames.
+ * The value is always between 0 and pi radians (0 and 180 degrees).
+ *
+ * If a corresponding Hand object is not found in sinceFrame, or if either
+ * this frame or sinceFrame are invalid Frame objects, then the angle of rotation is zero.
+ *
+ * @method rotationAngle
+ * @memberof Leap.Hand.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative rotation.
+ * @param {numnber[]} [axis] The axis to measure rotation around.
+ * @returns {number} A positive value representing the heuristically determined
+ * rotational change of the hand between the current frame and that specified in
+ * the sinceFrame parameter.
+ */
+Hand.prototype.rotationAngle = function(sinceFrame, axis) {
+  if (!this.valid || !sinceFrame.valid) return 0.0;
+  var sinceHand = sinceFrame.hand(this.id);
+  if(!sinceHand.valid) return 0.0;
+  var rot = this.rotationMatrix(sinceFrame);
+  var cs = (rot[0] + rot[4] + rot[8] - 1.0)*0.5
+  var angle = Math.acos(cs);
+  angle = isNaN(angle) ? 0.0 : angle;
+  if (axis !== undefined) {
+    var rotAxis = this.rotationAxis(sinceFrame);
+    angle *= vec3.dot(rotAxis, vec3.normalize(vec3.create(), axis));
+  }
+  return angle;
+}
+
+/**
+ * The axis of rotation derived from the change in orientation of this hand, and
+ * any associated fingers and tools, between the current frame and the specified frame.
+ *
+ * The returned direction vector is normalized.
+ *
+ * If a corresponding Hand object is not found in sinceFrame, or if either
+ * this frame or sinceFrame are invalid Frame objects, then this method returns a zero vector.
+ *
+ * @method rotationAxis
+ * @memberof Leap.Hand.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative rotation.
+ * @returns {number[]} A normalized direction Vector representing the axis of the heuristically determined
+ * rotational change of the hand between the current frame and that specified in the sinceFrame parameter.
+ */
+Hand.prototype.rotationAxis = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return vec3.create();
+  var sinceHand = sinceFrame.hand(this.id);
+  if (!sinceHand.valid) return vec3.create();
+  return vec3.normalize(vec3.create(), [
+    this._rotation[7] - sinceHand._rotation[5],
+    this._rotation[2] - sinceHand._rotation[6],
+    this._rotation[3] - sinceHand._rotation[1]
+  ]);
+}
+
+/**
+ * The transform matrix expressing the rotation derived from the change in
+ * orientation of this hand, and any associated fingers and tools, between
+ * the current frame and the specified frame.
+ *
+ * If a corresponding Hand object is not found in sinceFrame, or if either
+ * this frame or sinceFrame are invalid Frame objects, then this method returns
+ * an identity matrix.
+ *
+ * @method rotationMatrix
+ * @memberof Leap.Hand.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative rotation.
+ * @returns {number[]} A transformation Matrix containing the heuristically determined
+ * rotational change of the hand between the current frame and that specified in the sinceFrame parameter.
+ */
+Hand.prototype.rotationMatrix = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return mat3.create();
+  var sinceHand = sinceFrame.hand(this.id);
+  if(!sinceHand.valid) return mat3.create();
+  var transpose = mat3.transpose(mat3.create(), this._rotation);
+  var m = mat3.multiply(mat3.create(), sinceHand._rotation, transpose);
+  return m;
+}
+
+/**
+ * The scale factor derived from the hand's motion between the current frame and the specified frame.
+ *
+ * The scale factor is always positive. A value of 1.0 indicates no scaling took place.
+ * Values between 0.0 and 1.0 indicate contraction and values greater than 1.0 indicate expansion.
+ *
+ * The Leap derives scaling from the relative inward or outward motion of a hand
+ * and its associated fingers and tools (independent of translation and rotation).
+ *
+ * If a corresponding Hand object is not found in sinceFrame, or if either this frame or sinceFrame
+ * are invalid Frame objects, then this method returns 1.0.
+ *
+ * @method scaleFactor
+ * @memberof Leap.Hand.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative scaling.
+ * @returns {number} A positive value representing the heuristically determined
+ * scaling change ratio of the hand between the current frame and that specified in the sinceFrame parameter.
+ */
+Hand.prototype.scaleFactor = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return 1.0;
+  var sinceHand = sinceFrame.hand(this.id);
+  if(!sinceHand.valid) return 1.0;
+
+  return Math.exp(this._scaleFactor - sinceHand._scaleFactor);
+}
+
+/**
+ * The change of position of this hand between the current frame and the specified frame
+ *
+ * The returned translation vector provides the magnitude and direction of the
+ * movement in millimeters.
+ *
+ * If a corresponding Hand object is not found in sinceFrame, or if either this frame or
+ * sinceFrame are invalid Frame objects, then this method returns a zero vector.
+ *
+ * @method translation
+ * @memberof Leap.Hand.prototype
+ * @param {Leap.Frame} sinceFrame The starting frame for computing the relative translation.
+ * @returns {number[]} A Vector representing the heuristically determined change in hand
+ * position between the current frame and that specified in the sinceFrame parameter.
+ */
+Hand.prototype.translation = function(sinceFrame) {
+  if (!this.valid || !sinceFrame.valid) return vec3.create();
+  var sinceHand = sinceFrame.hand(this.id);
+  if(!sinceHand.valid) return vec3.create();
+  return [
+    this._translation[0] - sinceHand._translation[0],
+    this._translation[1] - sinceHand._translation[1],
+    this._translation[2] - sinceHand._translation[2]
+  ];
+}
+
+/**
+ * A string containing a brief, human readable description of the Hand object.
+ * @method toString
+ * @memberof Leap.Hand.prototype
+ * @returns {String} A description of the Hand as a string.
+ */
+Hand.prototype.toString = function() {
+  return "Hand [ id: "+ this.id + " | palm velocity:"+this.palmVelocity+" | sphere center:"+this.sphereCenter+" ] ";
+}
+
+/**
+ * The pitch angle in radians.
+ *
+ * Pitch is the angle between the negative z-axis and the projection of
+ * the vector onto the y-z plane. In other words, pitch represents rotation
+ * around the x-axis.
+ * If the vector points upward, the returned angle is between 0 and pi radians
+ * (180 degrees); if it points downward, the angle is between 0 and -pi radians.
+ *
+ * @method pitch
+ * @memberof Leap.Hand.prototype
+ * @returns {number} The angle of this vector above or below the horizon (x-z plane).
+ *
+ */
+Hand.prototype.pitch = function() {
+  return Math.atan2(this.direction[1], -this.direction[2]);
+}
+
+/**
+ *  The yaw angle in radians.
+ *
+ * Yaw is the angle between the negative z-axis and the projection of
+ * the vector onto the x-z plane. In other words, yaw represents rotation
+ * around the y-axis. If the vector points to the right of the negative z-axis,
+ * then the returned angle is between 0 and pi radians (180 degrees);
+ * if it points to the left, the angle is between 0 and -pi radians.
+ *
+ * @method yaw
+ * @memberof Leap.Hand.prototype
+ * @returns {number} The angle of this vector to the right or left of the y-axis.
+ *
+ */
+Hand.prototype.yaw = function() {
+  return Math.atan2(this.direction[0], -this.direction[2]);
+}
+
+/**
+ *  The roll angle in radians.
+ *
+ * Roll is the angle between the y-axis and the projection of
+ * the vector onto the x-y plane. In other words, roll represents rotation
+ * around the z-axis. If the vector points to the left of the y-axis,
+ * then the returned angle is between 0 and pi radians (180 degrees);
+ * if it points to the right, the angle is between 0 and -pi radians.
+ *
+ * @method roll
+ * @memberof Leap.Hand.prototype
+ * @returns {number} The angle of this vector to the right or left of the y-axis.
+ *
+ */
+Hand.prototype.roll = function() {
+  return Math.atan2(this.palmNormal[0], -this.palmNormal[1]);
+}
+
+/**
+ * An invalid Hand object.
+ *
+ * You can use an invalid Hand object in comparisons testing
+ * whether a given Hand instance is valid or invalid. (You can also use the
+ * Hand valid property.)
+ *
+ * @static
+ * @type {Leap.Hand}
+ * @name Invalid
+ * @memberof Leap.Hand
+ */
+Hand.Invalid = {
+  valid: false,
+  fingers: [],
+  tools: [],
+  pointables: [],
+  pointable: function() { return Pointable.Invalid },
+  finger: function() { return Pointable.Invalid },
+  toString: function() { return "invalid frame" },
+  dump: function() { return this.toString(); },
+  rotationAngle: function() { return 0.0; },
+  rotationMatrix: function() { return mat3.create(); },
+  rotationAxis: function() { return vec3.create(); },
+  scaleFactor: function() { return 1.0; },
+  translation: function() { return vec3.create(); }
+};
+
+},{"./pointable":12,"gl-matrix":21,"underscore":22}],9:[function(require,module,exports){
+require("./_header")
+/**
+ * Leap is the global namespace of the Leap API.
+ * @namespace Leap
+ */
+module.exports = {
+  Controller: require("./controller"),
+  Frame: require("./frame"),
+  Gesture: require("./gesture"),
+  Hand: require("./hand"),
+  Pointable: require("./pointable"),
+  InteractionBox: require("./interaction_box"),
+  CircularBuffer: require("./circular_buffer"),
+  UI: require("./ui"),
+  glMatrix: require("gl-matrix"),
+  mat3: require("gl-matrix").mat3,
+  vec3: require("gl-matrix").vec3,
+  loopController: undefined,
+  version: require('./version.js'),
+  /**
+   * The Leap.loop() function passes a frame of Leap data to your
+   * callback function and then calls window.requestAnimationFrame() after
+   * executing your callback function.
+   *
+   * Leap.loop() sets up the Leap controller and WebSocket connection for you.
+   * You do not need to create your own controller when using this method.
+   *
+   * Your callback function is called on an interval determined by the client
+   * browser. Typically, this is on an interval of 60 frames/second. The most
+   * recent frame of Leap data is passed to your callback function. If the Leap
+   * is producing frames at a slower rate than the browser frame rate, the same
+   * frame of Leap data can be passed to your function in successive animation
+   * updates.
+   *
+   * As an alternative, you can create your own Controller object and use a
+   * {@link Controller#onFrame onFrame} callback to process the data at
+   * the frame rate of the Leap device. See {@link Controller} for an
+   * example.
+   *
+   * @method Leap.loop
+   * @param {function} callback A function called when the browser is ready to
+   * draw to the screen. The most recent {@link Frame} object is passed to
+   * your callback function.
+   *
+   * ```javascript
+   *    Leap.loop( function( frame ) {
+   *        // ... your code here
+   *    })
+   * ```
+   */
+  loop: function(opts, callback) {
+    if (callback === undefined) {
+      callback = opts;
+      opts = {};
+    }
+    opts.useAllPlugins || (opts.useAllPlugins = true)
+    if (!this.loopController) this.loopController = new this.Controller(opts);
+    this.loopController.loop(callback);
+    return this.loopController;
+  },
+
+  /*
+   * Convenience method for Leap.Controller.plugin
+   */
+  plugin: function(name, options){
+    this.Controller.plugin(name, options)
+  }
+}
+
+},{"./_header":1,"./circular_buffer":2,"./controller":5,"./frame":6,"./gesture":7,"./hand":8,"./interaction_box":10,"./pointable":12,"./ui":14,"./version.js":17,"gl-matrix":21}],10:[function(require,module,exports){
+var glMatrix = require("gl-matrix")
+  , vec3 = glMatrix.vec3;
+
+/**
+ * Constructs a InteractionBox object.
+ *
+ * @class InteractionBox
+ * @memberof Leap
+ * @classdesc
+ * The InteractionBox class represents a box-shaped region completely within
+ * the field of view of the Leap Motion controller.
+ *
+ * The interaction box is an axis-aligned rectangular prism and provides
+ * normalized coordinates for hands, fingers, and tools within this box.
+ * The InteractionBox class can make it easier to map positions in the
+ * Leap Motion coordinate system to 2D or 3D coordinate systems used
+ * for application drawing.
+ *
+ * ![Interaction Box](images/Leap_InteractionBox.png)
+ *
+ * The InteractionBox region is defined by a center and dimensions along the x, y, and z axes.
+ */
+var InteractionBox = module.exports = function(data) {
+  /**
+   * Indicates whether this is a valid InteractionBox object.
+   *
+   * @member valid
+   * @type {Boolean}
+   * @memberof Leap.InteractionBox.prototype
+   */
+  this.valid = true;
+  /**
+   * The center of the InteractionBox in device coordinates (millimeters).
+   * This point is equidistant from all sides of the box.
+   *
+   * @member center
+   * @type {number[]}
+   * @memberof Leap.InteractionBox.prototype
+   */
+  this.center = data.center;
+
+  this.size = data.size;
+  /**
+   * The width of the InteractionBox in millimeters, measured along the x-axis.
+   *
+   * @member width
+   * @type {number}
+   * @memberof Leap.InteractionBox.prototype
+   */
+  this.width = data.size[0];
+  /**
+   * The height of the InteractionBox in millimeters, measured along the y-axis.
+   *
+   * @member height
+   * @type {number}
+   * @memberof Leap.InteractionBox.prototype
+   */
+  this.height = data.size[1];
+  /**
+   * The depth of the InteractionBox in millimeters, measured along the z-axis.
+   *
+   * @member depth
+   * @type {number}
+   * @memberof Leap.InteractionBox.prototype
+   */
+  this.depth = data.size[2];
+}
+
+/**
+ * Converts a position defined by normalized InteractionBox coordinates
+ * into device coordinates in millimeters.
+ *
+ * This function performs the inverse of normalizePoint().
+ *
+ * @method denormalizePoint
+ * @memberof Leap.InteractionBox.prototype
+ * @param {number[]} normalizedPosition The input position in InteractionBox coordinates.
+ * @returns {number[]} The corresponding denormalized position in device coordinates.
+ */
+InteractionBox.prototype.denormalizePoint = function(normalizedPosition) {
+  return vec3.fromValues(
+    (normalizedPosition[0] - 0.5) * this.size[0] + this.center[0],
+    (normalizedPosition[1] - 0.5) * this.size[1] + this.center[1],
+    (normalizedPosition[2] - 0.5) * this.size[2] + this.center[2]
+  );
+}
+
+/**
+ * Normalizes the coordinates of a point using the interaction box.
+ *
+ * Coordinates from the Leap Motion frame of reference (millimeters) are
+ * converted to a range of [0..1] such that the minimum value of the
+ * InteractionBox maps to 0 and the maximum value of the InteractionBox maps to 1.
+ *
+ * @method normalizePoint
+ * @memberof Leap.InteractionBox.prototype
+ * @param {number[]} position The input position in device coordinates.
+ * @param {Boolean} clamp Whether or not to limit the output value to the range [0,1]
+ * when the input position is outside the InteractionBox. Defaults to true.
+ * @returns {number[]} The normalized position.
+ */
+InteractionBox.prototype.normalizePoint = function(position, clamp) {
+  var vec = vec3.fromValues(
+    ((position[0] - this.center[0]) / this.size[0]) + 0.5,
+    ((position[1] - this.center[1]) / this.size[1]) + 0.5,
+    ((position[2] - this.center[2]) / this.size[2]) + 0.5
+  );
+
+  if (clamp) {
+    vec[0] = Math.min(Math.max(vec[0], 0), 1);
+    vec[1] = Math.min(Math.max(vec[1], 0), 1);
+    vec[2] = Math.min(Math.max(vec[2], 0), 1);
+  }
+  return vec;
+}
+
+/**
+ * Writes a brief, human readable description of the InteractionBox object.
+ *
+ * @method toString
+ * @memberof Leap.InteractionBox.prototype
+ * @returns {String} A description of the InteractionBox object as a string.
+ */
+InteractionBox.prototype.toString = function() {
+  return "InteractionBox [ width:" + this.width + " | height:" + this.height + " | depth:" + this.depth + " ]";
+}
+
+/**
+ * An invalid InteractionBox object.
+ *
+ * You can use this InteractionBox instance in comparisons testing
+ * whether a given InteractionBox instance is valid or invalid. (You can also use the
+ * InteractionBox.valid property.)
+ *
+ * @static
+ * @type {Leap.InteractionBox}
+ * @name Invalid
+ * @memberof Leap.InteractionBox
+ */
+InteractionBox.Invalid = { valid: false };
+
+},{"gl-matrix":21}],11:[function(require,module,exports){
+var Pipeline = module.exports = function (controller) {
+  this.steps = [];
+  this.controller = controller;
+}
+
+Pipeline.prototype.addStep = function (step) {
+  this.steps.push(step);
+}
+
+Pipeline.prototype.run = function (frame) {
+  var stepsLength = this.steps.length;
+  for (var i = 0; i != stepsLength; i++) {
+    if (!frame) break;
+    frame = this.steps[i](frame);
+  }
+  return frame;
+}
+
+Pipeline.prototype.removeStep = function(step){
+  var index = this.steps.indexOf(step);
+  if (index === -1) throw "Step not found in pipeline";
+  this.steps.splice(index, 1);
+}
+
+/*
+ * Wraps a plugin callback method in method which can be run inside the pipeline.
+ * This wrapper method loops the callback over objects within the frame as is appropriate,
+ * calling the callback for each in turn.
+ *
+ * @method createStepFunction
+ * @memberOf Leap.Controller.prototype
+ * @param {Controller} The controller on which the callback is called.
+ * @param {String} type What frame object the callback is run for and receives.
+ *       Can be one of 'frame', 'finger', 'hand', 'pointable', 'tool'
+ * @param {function} callback The method which will be run inside the pipeline loop.  Receives one argument, such as a hand.
+ * @private
+ */
+Pipeline.prototype.addWrappedStep = function (type, callback) {
+  var controller = this.controller,
+    step = function (frame) {
+      var dependencies, i, len;
+      dependencies = (type == 'frame') ? [frame] : (frame[type + 's'] || []);
+
+      for (i = 0, len = dependencies.length; i < len; i++) {
+        callback.call(controller, dependencies[i]);
+      }
+
+      return frame;
+    };
+
+  this.addStep(step);
+  return step;
+};
+},{}],12:[function(require,module,exports){
+var glMatrix = require("gl-matrix")
+  , vec3 = glMatrix.vec3;
+
+/**
+ * Constructs a Pointable object.
+ *
+ * An uninitialized pointable is considered invalid.
+ * Get valid Pointable objects from a Frame or a Hand object.
+ *
+ * @class Pointable
+ * @memberof Leap
+ * @classdesc
+ * The Pointable class reports the physical characteristics of a detected
+ * finger or tool.
+ *
+ * Both fingers and tools are classified as Pointable objects. Use the
+ * Pointable.tool property to determine whether a Pointable object represents a
+ * tool or finger. The Leap classifies a detected entity as a tool when it is
+ * thinner, straighter, and longer than a typical finger.
+ *
+ * Note that Pointable objects can be invalid, which means that they do not
+ * contain valid tracking data and do not correspond to a physical entity.
+ * Invalid Pointable objects can be the result of asking for a Pointable object
+ * using an ID from an earlier frame when no Pointable objects with that ID
+ * exist in the current frame. A Pointable object created from the Pointable
+ * constructor is also invalid. Test for validity with the Pointable.valid
+ * property.
+ */
+var Pointable = module.exports = function(data) {
+  /**
+   * Indicates whether this is a valid Pointable object.
+   *
+   * @member valid
+   * @type {Boolean}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.valid = true;
+  /**
+   * A unique ID assigned to this Pointable object, whose value remains the
+   * same across consecutive frames while the tracked finger or tool remains
+   * visible. If tracking is lost (for example, when a finger is occluded by
+   * another finger or when it is withdrawn from the Leap field of view), the
+   * Leap may assign a new ID when it detects the entity in a future frame.
+   *
+   * Use the ID value with the pointable() functions defined for the
+   * {@link Frame} and {@link Frame.Hand} classes to find this
+   * Pointable object in future frames.
+   *
+   * @member id
+   * @type {String}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.id = data.id;
+  this.handId = data.handId;
+  /**
+   * The estimated length of the finger or tool in millimeters.
+   *
+   * The reported length is the visible length of the finger or tool from the
+   * hand to tip. If the length isn't known, then a value of 0 is returned.
+   *
+   * @member length
+   * @type {number}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.length = data.length;
+  /**
+   * Whether or not the Pointable is believed to be a tool.
+   * Tools are generally longer, thinner, and straighter than fingers.
+   *
+   * If tool is false, then this Pointable must be a finger.
+   *
+   * @member tool
+   * @type {Boolean}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.tool = data.tool;
+  /**
+   * The estimated width of the tool in millimeters.
+   *
+   * The reported width is the average width of the visible portion of the
+   * tool from the hand to the tip. If the width isn't known,
+   * then a value of 0 is returned.
+   *
+   * Pointable objects representing fingers do not have a width property.
+   *
+   * @member width
+   * @type {number}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.width = data.width;
+  /**
+   * The direction in which this finger or tool is pointing.
+   *
+   * The direction is expressed as a unit vector pointing in the same
+   * direction as the tip.
+   *
+   * ![Finger](images/Leap_Finger_Model.png)
+   * @member direction
+   * @type {number[]}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.direction = data.direction;
+  /**
+   * The tip position in millimeters from the Leap origin.
+   * Stabilized
+   *
+   * @member stabilizedTipPosition
+   * @type {number[]}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.stabilizedTipPosition = data.stabilizedTipPosition;
+  /**
+   * The tip position in millimeters from the Leap origin.
+   *
+   * @member tipPosition
+   * @type {number[]}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.tipPosition = data.tipPosition;
+  /**
+   * The rate of change of the tip position in millimeters/second.
+   *
+   * @member tipVelocity
+   * @type {number[]}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.tipVelocity = data.tipVelocity;
+  /**
+   * The current touch zone of this Pointable object.
+   *
+   * The Leap Motion software computes the touch zone based on a floating touch
+   * plane that adapts to the user's finger movement and hand posture. The Leap
+   * Motion software interprets purposeful movements toward this plane as potential touch
+   * points. When a Pointable moves close to the adaptive touch plane, it enters the
+   * "hovering" zone. When a Pointable reaches or passes through the plane, it enters
+   * the "touching" zone.
+   *
+   * The possible states include:
+   *
+   * * "none" -- The Pointable is outside the hovering zone.
+   * * "hovering" -- The Pointable is close to, but not touching the touch plane.
+   * * "touching" -- The Pointable has penetrated the touch plane.
+   *
+   * The touchDistance value provides a normalized indication of the distance to
+   * the touch plane when the Pointable is in the hovering or touching zones.
+   *
+   * @member touchZone
+   * @type {String}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.touchZone = data.touchZone;
+  /**
+   * A value proportional to the distance between this Pointable object and the
+   * adaptive touch plane.
+   *
+   * ![Touch Distance](images/Leap_Touch_Plane.png)
+   *
+   * The touch distance is a value in the range [-1, 1]. The value 1.0 indicates the
+   * Pointable is at the far edge of the hovering zone. The value 0 indicates the
+   * Pointable is just entering the touching zone. A value of -1.0 indicates the
+   * Pointable is firmly within the touching zone. Values in between are
+   * proportional to the distance from the plane. Thus, the touchDistance of 0.5
+   * indicates that the Pointable is halfway into the hovering zone.
+   *
+   * You can use the touchDistance value to modulate visual feedback given to the
+   * user as their fingers close in on a touch target, such as a button.
+   *
+   * @member touchDistance
+   * @type {number}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.touchDistance = data.touchDistance;
+
+  /**
+   * How long the pointable has been visible in seconds.
+   *
+   * @member timeVisible
+   * @type {number}
+   * @memberof Leap.Pointable.prototype
+   */
+  this.timeVisible = data.timeVisible;
+}
+
+/**
+ * A string containing a brief, human readable description of the Pointable
+ * object.
+ *
+ * @method toString
+ * @memberof Leap.Pointable.prototype
+ * @returns {String} A description of the Pointable object as a string.
+ */
+Pointable.prototype.toString = function() {
+  if(this.tool == true){
+    return "Pointable [ id:" + this.id + " " + this.length + "mmx | with:" + this.width + "mm | direction:" + this.direction + ' ]';
+  } else {
+    return "Pointable [ id:" + this.id + " " + this.length + "mmx | direction: " + this.direction + ' ]';
+  }
+}
+
+/**
+ * Returns the hand which the pointable is attached to.
+ */
+Pointable.prototype.hand = function(){
+  return this.frame.hand(this.handId);
+}
+
+/**
+ * An invalid Pointable object.
+ *
+ * You can use this Pointable instance in comparisons testing
+ * whether a given Pointable instance is valid or invalid. (You can also use the
+ * Pointable.valid property.)
+
+ * @static
+ * @type {Leap.Pointable}
+ * @name Invalid
+ * @memberof Leap.Pointable
+ */
+Pointable.Invalid = { valid: false };
+
+},{"gl-matrix":21}],13:[function(require,module,exports){
+var Frame = require('./frame')
+
+var Event = function(data) {
+  this.type = data.type;
+  this.state = data.state;
+};
+
+var chooseProtocol = exports.chooseProtocol = function(header) {
+  var protocol;
+  switch(header.version) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+      protocol = JSONProtocol(header.version, function(data) {
+        return data.event ? new Event(data.event) : new Frame(data);
+      });
+      protocol.sendBackground = function(connection, state) {
+        connection.send(protocol.encode({background: state}));
+      }
+      protocol.sendFocused = function(connection, state) {
+        connection.send(protocol.encode({focused: state}));
+      }
+      break;
+    default:
+      throw "unrecognized version";
+  }
+  return protocol;
+}
+
+var JSONProtocol = function(version, cb) {
+  var protocol = cb;
+  protocol.encode = function(message) {
+    return JSON.stringify(message);
+  }
+  protocol.version = version;
+  protocol.versionLong = 'Version ' + version;
+  protocol.type = 'protocol';
+  return protocol;
+};
+
+},{"./frame":6}],14:[function(require,module,exports){
+exports.UI = {
+  Region: require("./ui/region"),
+  Cursor: require("./ui/cursor")
+};
+},{"./ui/cursor":15,"./ui/region":16}],15:[function(require,module,exports){
+var Cursor = module.exports = function() {
+  return function(frame) {
+    var pointable = frame.pointables.sort(function(a, b) { return a.z - b.z })[0]
+    if (pointable && pointable.valid) {
+      frame.cursorPosition = pointable.tipPosition
+    }
+    return frame
+  }
+}
+
+},{}],16:[function(require,module,exports){
+var EventEmitter = require('events').EventEmitter
+  , _ = require('underscore')
+
+var Region = module.exports = function(start, end) {
+  this.start = new Vector(start)
+  this.end = new Vector(end)
+  this.enteredFrame = null
+}
+
+Region.prototype.hasPointables = function(frame) {
+  for (var i = 0; i != frame.pointables.length; i++) {
+    var position = frame.pointables[i].tipPosition
+    if (position.x >= this.start.x && position.x <= this.end.x && position.y >= this.start.y && position.y <= this.end.y && position.z >= this.start.z && position.z <= this.end.z) {
+      return true
+    }
+  }
+  return false
+}
+
+Region.prototype.listener = function(opts) {
+  var region = this
+  if (opts && opts.nearThreshold) this.setupNearRegion(opts.nearThreshold)
+  return function(frame) {
+    return region.updatePosition(frame)
+  }
+}
+
+Region.prototype.clipper = function() {
+  var region = this
+  return function(frame) {
+    region.updatePosition(frame)
+    return region.enteredFrame ? frame : null
+  }
+}
+
+Region.prototype.setupNearRegion = function(distance) {
+  var nearRegion = this.nearRegion = new Region(
+    [this.start.x - distance, this.start.y - distance, this.start.z - distance],
+    [this.end.x + distance, this.end.y + distance, this.end.z + distance]
+  )
+  var region = this
+  nearRegion.on("enter", function(frame) {
+    region.emit("near", frame)
+  })
+  nearRegion.on("exit", function(frame) {
+    region.emit("far", frame)
+  })
+  region.on('exit', function(frame) {
+    region.emit("near", frame)
+  })
+}
+
+Region.prototype.updatePosition = function(frame) {
+  if (this.nearRegion) this.nearRegion.updatePosition(frame)
+  if (this.hasPointables(frame) && this.enteredFrame == null) {
+    this.enteredFrame = frame
+    this.emit("enter", this.enteredFrame)
+  } else if (!this.hasPointables(frame) && this.enteredFrame != null) {
+    this.enteredFrame = null
+    this.emit("exit", this.enteredFrame)
+  }
+  return frame
+}
+
+Region.prototype.normalize = function(position) {
+  return new Vector([
+    (position.x - this.start.x) / (this.end.x - this.start.x),
+    (position.y - this.start.y) / (this.end.y - this.start.y),
+    (position.z - this.start.z) / (this.end.z - this.start.z)
+  ])
+}
+
+Region.prototype.mapToXY = function(position, width, height) {
+  var normalized = this.normalize(position)
+  var x = normalized.x, y = normalized.y
+  if (x > 1) x = 1
+  else if (x < -1) x = -1
+  if (y > 1) y = 1
+  else if (y < -1) y = -1
+  return [
+    (x + 1) / 2 * width,
+    (1 - y) / 2 * height,
+    normalized.z
+  ]
+}
+
+_.extend(Region.prototype, EventEmitter.prototype)
+},{"events":19,"underscore":22}],17:[function(require,module,exports){
+module.exports = {
+  full: "0.4.3",
+  major: 0,
+  minor: 4,
+  dot: 3
+}
+},{}],18:[function(require,module,exports){
+
+},{}],19:[function(require,module,exports){
+var process=require("__browserify_process");if (!process.EventEmitter) process.EventEmitter = function () {};
+
+var EventEmitter = exports.EventEmitter = process.EventEmitter;
+var isArray = typeof Array.isArray === 'function'
+    ? Array.isArray
+    : function (xs) {
+        return Object.prototype.toString.call(xs) === '[object Array]'
+    }
+;
+function indexOf (xs, x) {
+    if (xs.indexOf) return xs.indexOf(x);
+    for (var i = 0; i < xs.length; i++) {
+        if (x === xs[i]) return i;
+    }
+    return -1;
+}
+
+// By default EventEmitters will print a warning if more than
+// 10 listeners are added to it. This is a useful default which
+// helps finding memory leaks.
+//
+// Obviously not all Emitters should be limited to 10. This function allows
+// that to be increased. Set to zero for unlimited.
+var defaultMaxListeners = 10;
+EventEmitter.prototype.setMaxListeners = function(n) {
+  if (!this._events) this._events = {};
+  this._events.maxListeners = n;
+};
+
+
+EventEmitter.prototype.emit = function(type) {
+  // If there is no 'error' event listener then throw.
+  if (type === 'error') {
+    if (!this._events || !this._events.error ||
+        (isArray(this._events.error) && !this._events.error.length))
+    {
+      if (arguments[1] instanceof Error) {
+        throw arguments[1]; // Unhandled 'error' event
+      } else {
+        throw new Error("Uncaught, unspecified 'error' event.");
+      }
+      return false;
+    }
+  }
+
+  if (!this._events) return false;
+  var handler = this._events[type];
+  if (!handler) return false;
+
+  if (typeof handler == 'function') {
+    switch (arguments.length) {
+      // fast cases
+      case 1:
+        handler.call(this);
+        break;
+      case 2:
+        handler.call(this, arguments[1]);
+        break;
+      case 3:
+        handler.call(this, arguments[1], arguments[2]);
+        break;
+      // slower
+      default:
+        var args = Array.prototype.slice.call(arguments, 1);
+        handler.apply(this, args);
+    }
+    return true;
+
+  } else if (isArray(handler)) {
+    var args = Array.prototype.slice.call(arguments, 1);
+
+    var listeners = handler.slice();
+    for (var i = 0, l = listeners.length; i < l; i++) {
+      listeners[i].apply(this, args);
+    }
+    return true;
+
+  } else {
+    return false;
+  }
+};
+
+// EventEmitter is defined in src/node_events.cc
+// EventEmitter.prototype.emit() is also defined there.
+EventEmitter.prototype.addListener = function(type, listener) {
+  if ('function' !== typeof listener) {
+    throw new Error('addListener only takes instances of Function');
+  }
+
+  if (!this._events) this._events = {};
+
+  // To avoid recursion in the case that type == "newListeners"! Before
+  // adding it to the listeners, first emit "newListeners".
+  this.emit('newListener', type, listener);
+
+  if (!this._events[type]) {
+    // Optimize the case of one listener. Don't need the extra array object.
+    this._events[type] = listener;
+  } else if (isArray(this._events[type])) {
+
+    // Check for listener leak
+    if (!this._events[type].warned) {
+      var m;
+      if (this._events.maxListeners !== undefined) {
+        m = this._events.maxListeners;
+      } else {
+        m = defaultMaxListeners;
+      }
+
+      if (m && m > 0 && this._events[type].length > m) {
+        this._events[type].warned = true;
+        console.error('(node) warning: possible EventEmitter memory ' +
+                      'leak detected. %d listeners added. ' +
+                      'Use emitter.setMaxListeners() to increase limit.',
+                      this._events[type].length);
+        console.trace();
+      }
+    }
+
+    // If we've already got an array, just append.
+    this._events[type].push(listener);
+  } else {
+    // Adding the second element, need to change to array.
+    this._events[type] = [this._events[type], listener];
+  }
+
+  return this;
+};
+
+EventEmitter.prototype.on = EventEmitter.prototype.addListener;
+
+EventEmitter.prototype.once = function(type, listener) {
+  var self = this;
+  self.on(type, function g() {
+    self.removeListener(type, g);
+    listener.apply(this, arguments);
+  });
+
+  return this;
+};
+
+EventEmitter.prototype.removeListener = function(type, listener) {
+  if ('function' !== typeof listener) {
+    throw new Error('removeListener only takes instances of Function');
+  }
+
+  // does not use listeners(), so no side effect of creating _events[type]
+  if (!this._events || !this._events[type]) return this;
+
+  var list = this._events[type];
+
+  if (isArray(list)) {
+    var i = indexOf(list, listener);
+    if (i < 0) return this;
+    list.splice(i, 1);
+    if (list.length == 0)
+      delete this._events[type];
+  } else if (this._events[type] === listener) {
+    delete this._events[type];
+  }
+
+  return this;
+};
+
+EventEmitter.prototype.removeAllListeners = function(type) {
+  if (arguments.length === 0) {
+    this._events = {};
+    return this;
+  }
+
+  // does not use listeners(), so no side effect of creating _events[type]
+  if (type && this._events && this._events[type]) this._events[type] = null;
+  return this;
+};
+
+EventEmitter.prototype.listeners = function(type) {
+  if (!this._events) this._events = {};
+  if (!this._events[type]) this._events[type] = [];
+  if (!isArray(this._events[type])) {
+    this._events[type] = [this._events[type]];
+  }
+  return this._events[type];
+};
+
+EventEmitter.listenerCount = function(emitter, type) {
+  var ret;
+  if (!emitter._events || !emitter._events[type])
+    ret = 0;
+  else if (typeof emitter._events[type] === 'function')
+    ret = 1;
+  else
+    ret = emitter._events[type].length;
+  return ret;
+};
+
+},{"__browserify_process":20}],20:[function(require,module,exports){
+// shim for using process in browser
+
+var process = module.exports = {};
+
+process.nextTick = (function () {
+    var canSetImmediate = typeof window !== 'undefined'
+    && window.setImmediate;
+    var canPost = typeof window !== 'undefined'
+    && window.postMessage && window.addEventListener
+    ;
+
+    if (canSetImmediate) {
+        return function (f) { return window.setImmediate(f) };
+    }
+
+    if (canPost) {
+        var queue = [];
+        window.addEventListener('message', function (ev) {
+            if (ev.source === window && ev.data === 'process-tick') {
+                ev.stopPropagation();
+                if (queue.length > 0) {
+                    var fn = queue.shift();
+                    fn();
+                }
+            }
+        }, true);
+
+        return function nextTick(fn) {
+            queue.push(fn);
+            window.postMessage('process-tick', '*');
+        };
+    }
+
+    return function nextTick(fn) {
+        setTimeout(fn, 0);
+    };
+})();
+
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+}
+
+// TODO(shtylman)
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+
+},{}],21:[function(require,module,exports){
+/**
+ * @fileoverview gl-matrix - High performance matrix and vector operations
+ * @author Brandon Jones
+ * @author Colin MacKenzie IV
+ * @version 2.0.0
+ */
+
+/* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+
+(function() {
+  "use strict";
+
+  var shim = {};
+  if (typeof(exports) === 'undefined') {
+    if(typeof define == 'function' && typeof define.amd == 'object' && define.amd) {
+      shim.exports = {};
+      define(function() {
+        return shim.exports;
+      });
+    } else {
+      // gl-matrix lives in a browser, define its namespaces in global
+      shim.exports = window;
+    }    
+  }
+  else {
+    // gl-matrix lives in commonjs, define its namespaces in exports
+    shim.exports = exports;
+  }
+
+  (function(exports) {
+    /* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+/**
+ * @class 2 Dimensional Vector
+ * @name vec2
+ */
+
+var vec2 = {};
+
+if(!GLMAT_EPSILON) {
+    var GLMAT_EPSILON = 0.000001;
+}
+ 
+/**
+ * Creates a new, empty vec2
+ *
+ * @returns {vec2} a new 2D vector
+ */
+vec2.create = function() {
+    return new Float32Array(2);
+};
+
+/**
+ * Creates a new vec2 initialized with values from an existing vector
+ *
+ * @param {vec2} a vector to clone
+ * @returns {vec2} a new 2D vector
+ */
+vec2.clone = function(a) {
+    var out = new Float32Array(2);
+    out[0] = a[0];
+    out[1] = a[1];
+    return out;
+};
+
+/**
+ * Creates a new vec2 initialized with the given values
+ *
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @returns {vec2} a new 2D vector
+ */
+vec2.fromValues = function(x, y) {
+    var out = new Float32Array(2);
+    out[0] = x;
+    out[1] = y;
+    return out;
+};
+
+/**
+ * Copy the values from one vec2 to another
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the source vector
+ * @returns {vec2} out
+ */
+vec2.copy = function(out, a) {
+    out[0] = a[0];
+    out[1] = a[1];
+    return out;
+};
+
+/**
+ * Set the components of a vec2 to the given values
+ *
+ * @param {vec2} out the receiving vector
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @returns {vec2} out
+ */
+vec2.set = function(out, x, y) {
+    out[0] = x;
+    out[1] = y;
+    return out;
+};
+
+/**
+ * Adds two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {vec2} out
+ */
+vec2.add = function(out, a, b) {
+    out[0] = a[0] + b[0];
+    out[1] = a[1] + b[1];
+    return out;
+};
+
+/**
+ * Subtracts two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {vec2} out
+ */
+vec2.sub = vec2.subtract = function(out, a, b) {
+    out[0] = a[0] - b[0];
+    out[1] = a[1] - b[1];
+    return out;
+};
+
+/**
+ * Multiplies two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {vec2} out
+ */
+vec2.mul = vec2.multiply = function(out, a, b) {
+    out[0] = a[0] * b[0];
+    out[1] = a[1] * b[1];
+    return out;
+};
+
+/**
+ * Divides two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {vec2} out
+ */
+vec2.div = vec2.divide = function(out, a, b) {
+    out[0] = a[0] / b[0];
+    out[1] = a[1] / b[1];
+    return out;
+};
+
+/**
+ * Returns the minimum of two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {vec2} out
+ */
+vec2.min = function(out, a, b) {
+    out[0] = Math.min(a[0], b[0]);
+    out[1] = Math.min(a[1], b[1]);
+    return out;
+};
+
+/**
+ * Returns the maximum of two vec2's
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {vec2} out
+ */
+vec2.max = function(out, a, b) {
+    out[0] = Math.max(a[0], b[0]);
+    out[1] = Math.max(a[1], b[1]);
+    return out;
+};
+
+/**
+ * Scales a vec2 by a scalar number
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the vector to scale
+ * @param {vec2} b amount to scale the vector by
+ * @returns {vec2} out
+ */
+vec2.scale = function(out, a, b) {
+    out[0] = a[0] * b;
+    out[1] = a[1] * b;
+    return out;
+};
+
+/**
+ * Calculates the euclidian distance between two vec2's
+ *
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {Number} distance between a and b
+ */
+vec2.dist = vec2.distance = function(a, b) {
+    var x = b[0] - a[0],
+        y = b[1] - a[1];
+    return Math.sqrt(x*x + y*y);
+};
+
+/**
+ * Calculates the squared euclidian distance between two vec2's
+ *
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {Number} squared distance between a and b
+ */
+vec2.sqrDist = vec2.squaredDistance = function(a, b) {
+    var x = b[0] - a[0],
+        y = b[1] - a[1];
+    return x*x + y*y;
+};
+
+/**
+ * Caclulates the length of a vec2
+ *
+ * @param {vec2} a vector to calculate length of
+ * @returns {Number} length of a
+ */
+vec2.len = vec2.length = function (a) {
+    var x = a[0],
+        y = a[1];
+    return Math.sqrt(x*x + y*y);
+};
+
+/**
+ * Caclulates the squared length of a vec2
+ *
+ * @param {vec2} a vector to calculate squared length of
+ * @returns {Number} squared length of a
+ */
+vec2.sqrLen = vec2.squaredLength = function (a) {
+    var x = a[0],
+        y = a[1];
+    return x*x + y*y;
+};
+
+/**
+ * Negates the components of a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a vector to negate
+ * @returns {vec2} out
+ */
+vec2.negate = function(out, a) {
+    out[0] = -a[0];
+    out[1] = -a[1];
+    return out;
+};
+
+/**
+ * Normalize a vec2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a vector to normalize
+ * @returns {vec2} out
+ */
+vec2.normalize = function(out, a) {
+    var x = a[0],
+        y = a[1];
+    var len = x*x + y*y;
+    if (len > 0) {
+        //TODO: evaluate use of glm_invsqrt here?
+        len = 1 / Math.sqrt(len);
+        out[0] = a[0] * len;
+        out[1] = a[1] * len;
+    }
+    return out;
+};
+
+/**
+ * Caclulates the dot product of two vec2's
+ *
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {Number} dot product of a and b
+ */
+vec2.dot = function (a, b) {
+    return a[0] * b[0] + a[1] * b[1];
+};
+
+/**
+ * Computes the cross product of two vec2's
+ * Note that the cross product must by definition produce a 3D vector
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @returns {vec3} out
+ */
+vec2.cross = function(out, a, b) {
+    var z = a[0] * b[1] - a[1] * b[0];
+    out[0] = out[1] = 0;
+    out[2] = z;
+    return out;
+};
+
+/**
+ * Performs a linear interpolation between two vec2's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec2} a the first operand
+ * @param {vec2} b the second operand
+ * @param {Number} t interpolation amount between the two inputs
+ * @returns {vec2} out
+ */
+vec2.lerp = function (out, a, b, t) {
+    var ax = a[0],
+        ay = a[1];
+    out[0] = ax + t * (b[0] - ax);
+    out[1] = ay + t * (b[1] - ay);
+    return out;
+};
+
+/**
+ * Transforms the vec2 with a mat2
+ *
+ * @param {vec2} out the receiving vector
+ * @param {vec2} a the vector to transform
+ * @param {mat2} m matrix to transform with
+ * @returns {vec2} out
+ */
+vec2.transformMat2 = function(out, a, m) {
+    var x = a[0],
+        y = a[1];
+    out[0] = x * m[0] + y * m[1];
+    out[1] = x * m[2] + y * m[3];
+    return out;
+};
+
+/**
+ * Perform some operation over an array of vec2s.
+ *
+ * @param {Array} a the array of vectors to iterate over
+ * @param {Number} stride Number of elements between the start of each vec2. If 0 assumes tightly packed
+ * @param {Number} offset Number of elements to skip at the beginning of the array
+ * @param {Number} count Number of vec2s to iterate over. If 0 iterates over entire array
+ * @param {Function} fn Function to call for each vector in the array
+ * @param {Object} [arg] additional argument to pass to fn
+ * @returns {Array} a
+ */
+vec2.forEach = (function() {
+    var vec = new Float32Array(2);
+
+    return function(a, stride, offset, count, fn, arg) {
+        var i, l;
+        if(!stride) {
+            stride = 2;
+        }
+
+        if(!offset) {
+            offset = 0;
+        }
+        
+        if(count) {
+            l = Math.min((count * stride) + offset, a.length);
+        } else {
+            l = a.length;
+        }
+
+        for(i = offset; i < l; i += stride) {
+            vec[0] = a[i]; vec[1] = a[i+1];
+            fn(vec, vec, arg);
+            a[i] = vec[0]; a[i+1] = vec[1];
+        }
+        
+        return a;
+    };
+})();
+
+/**
+ * Returns a string representation of a vector
+ *
+ * @param {vec2} vec vector to represent as a string
+ * @returns {String} string representation of the vector
+ */
+vec2.str = function (a) {
+    return 'vec2(' + a[0] + ', ' + a[1] + ')';
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.vec2 = vec2;
+}
+;
+/* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+/**
+ * @class 3 Dimensional Vector
+ * @name vec3
+ */
+
+var vec3 = {};
+
+if(!GLMAT_EPSILON) {
+    var GLMAT_EPSILON = 0.000001;
+}
+ 
+/**
+ * Creates a new, empty vec3
+ *
+ * @returns {vec3} a new 3D vector
+ */
+vec3.create = function() {
+    return new Float32Array(3);
+};
+
+/**
+ * Creates a new vec3 initialized with values from an existing vector
+ *
+ * @param {vec3} a vector to clone
+ * @returns {vec3} a new 3D vector
+ */
+vec3.clone = function(a) {
+    var out = new Float32Array(3);
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    return out;
+};
+
+/**
+ * Creates a new vec3 initialized with the given values
+ *
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @returns {vec3} a new 3D vector
+ */
+vec3.fromValues = function(x, y, z) {
+    var out = new Float32Array(3);
+    out[0] = x;
+    out[1] = y;
+    out[2] = z;
+    return out;
+};
+
+/**
+ * Copy the values from one vec3 to another
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the source vector
+ * @returns {vec3} out
+ */
+vec3.copy = function(out, a) {
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    return out;
+};
+
+/**
+ * Set the components of a vec3 to the given values
+ *
+ * @param {vec3} out the receiving vector
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @returns {vec3} out
+ */
+vec3.set = function(out, x, y, z) {
+    out[0] = x;
+    out[1] = y;
+    out[2] = z;
+    return out;
+};
+
+/**
+ * Adds two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {vec3} out
+ */
+vec3.add = function(out, a, b) {
+    out[0] = a[0] + b[0];
+    out[1] = a[1] + b[1];
+    out[2] = a[2] + b[2];
+    return out;
+};
+
+/**
+ * Subtracts two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {vec3} out
+ */
+vec3.sub = vec3.subtract = function(out, a, b) {
+    out[0] = a[0] - b[0];
+    out[1] = a[1] - b[1];
+    out[2] = a[2] - b[2];
+    return out;
+};
+
+/**
+ * Multiplies two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {vec3} out
+ */
+vec3.mul = vec3.multiply = function(out, a, b) {
+    out[0] = a[0] * b[0];
+    out[1] = a[1] * b[1];
+    out[2] = a[2] * b[2];
+    return out;
+};
+
+/**
+ * Divides two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {vec3} out
+ */
+vec3.div = vec3.divide = function(out, a, b) {
+    out[0] = a[0] / b[0];
+    out[1] = a[1] / b[1];
+    out[2] = a[2] / b[2];
+    return out;
+};
+
+/**
+ * Returns the minimum of two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {vec3} out
+ */
+vec3.min = function(out, a, b) {
+    out[0] = Math.min(a[0], b[0]);
+    out[1] = Math.min(a[1], b[1]);
+    out[2] = Math.min(a[2], b[2]);
+    return out;
+};
+
+/**
+ * Returns the maximum of two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {vec3} out
+ */
+vec3.max = function(out, a, b) {
+    out[0] = Math.max(a[0], b[0]);
+    out[1] = Math.max(a[1], b[1]);
+    out[2] = Math.max(a[2], b[2]);
+    return out;
+};
+
+/**
+ * Scales a vec3 by a scalar number
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the vector to scale
+ * @param {vec3} b amount to scale the vector by
+ * @returns {vec3} out
+ */
+vec3.scale = function(out, a, b) {
+    out[0] = a[0] * b;
+    out[1] = a[1] * b;
+    out[2] = a[2] * b;
+    return out;
+};
+
+/**
+ * Calculates the euclidian distance between two vec3's
+ *
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {Number} distance between a and b
+ */
+vec3.dist = vec3.distance = function(a, b) {
+    var x = b[0] - a[0],
+        y = b[1] - a[1],
+        z = b[2] - a[2];
+    return Math.sqrt(x*x + y*y + z*z);
+};
+
+/**
+ * Calculates the squared euclidian distance between two vec3's
+ *
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {Number} squared distance between a and b
+ */
+vec3.sqrDist = vec3.squaredDistance = function(a, b) {
+    var x = b[0] - a[0],
+        y = b[1] - a[1],
+        z = b[2] - a[2];
+    return x*x + y*y + z*z;
+};
+
+/**
+ * Caclulates the length of a vec3
+ *
+ * @param {vec3} a vector to calculate length of
+ * @returns {Number} length of a
+ */
+vec3.len = vec3.length = function (a) {
+    var x = a[0],
+        y = a[1],
+        z = a[2];
+    return Math.sqrt(x*x + y*y + z*z);
+};
+
+/**
+ * Caclulates the squared length of a vec3
+ *
+ * @param {vec3} a vector to calculate squared length of
+ * @returns {Number} squared length of a
+ */
+vec3.sqrLen = vec3.squaredLength = function (a) {
+    var x = a[0],
+        y = a[1],
+        z = a[2];
+    return x*x + y*y + z*z;
+};
+
+/**
+ * Negates the components of a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a vector to negate
+ * @returns {vec3} out
+ */
+vec3.negate = function(out, a) {
+    out[0] = -a[0];
+    out[1] = -a[1];
+    out[2] = -a[2];
+    return out;
+};
+
+/**
+ * Normalize a vec3
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a vector to normalize
+ * @returns {vec3} out
+ */
+vec3.normalize = function(out, a) {
+    var x = a[0],
+        y = a[1],
+        z = a[2];
+    var len = x*x + y*y + z*z;
+    if (len > 0) {
+        //TODO: evaluate use of glm_invsqrt here?
+        len = 1 / Math.sqrt(len);
+        out[0] = a[0] * len;
+        out[1] = a[1] * len;
+        out[2] = a[2] * len;
+    }
+    return out;
+};
+
+/**
+ * Caclulates the dot product of two vec3's
+ *
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {Number} dot product of a and b
+ */
+vec3.dot = function (a, b) {
+    return a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+};
+
+/**
+ * Computes the cross product of two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @returns {vec3} out
+ */
+vec3.cross = function(out, a, b) {
+    var ax = a[0], ay = a[1], az = a[2],
+        bx = b[0], by = b[1], bz = b[2];
+
+    out[0] = ay * bz - az * by;
+    out[1] = az * bx - ax * bz;
+    out[2] = ax * by - ay * bx;
+    return out;
+};
+
+/**
+ * Performs a linear interpolation between two vec3's
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the first operand
+ * @param {vec3} b the second operand
+ * @param {Number} t interpolation amount between the two inputs
+ * @returns {vec3} out
+ */
+vec3.lerp = function (out, a, b, t) {
+    var ax = a[0],
+        ay = a[1],
+        az = a[2];
+    out[0] = ax + t * (b[0] - ax);
+    out[1] = ay + t * (b[1] - ay);
+    out[2] = az + t * (b[2] - az);
+    return out;
+};
+
+/**
+ * Transforms the vec3 with a mat4.
+ * 4th vector component is implicitly '1'
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the vector to transform
+ * @param {mat4} m matrix to transform with
+ * @returns {vec3} out
+ */
+vec3.transformMat4 = function(out, a, m) {
+    var x = a[0], y = a[1], z = a[2];
+    out[0] = m[0] * x + m[4] * y + m[8] * z + m[12];
+    out[1] = m[1] * x + m[5] * y + m[9] * z + m[13];
+    out[2] = m[2] * x + m[6] * y + m[10] * z + m[14];
+    return out;
+};
+
+/**
+ * Transforms the vec3 with a quat
+ *
+ * @param {vec3} out the receiving vector
+ * @param {vec3} a the vector to transform
+ * @param {quat} q quaternion to transform with
+ * @returns {vec3} out
+ */
+vec3.transformQuat = function(out, a, q) {
+    var x = a[0], y = a[1], z = a[2],
+        qx = q[0], qy = q[1], qz = q[2], qw = q[3],
+
+        // calculate quat * vec
+        ix = qw * x + qy * z - qz * y,
+        iy = qw * y + qz * x - qx * z,
+        iz = qw * z + qx * y - qy * x,
+        iw = -qx * x - qy * y - qz * z;
+
+    // calculate result * inverse quat
+    out[0] = ix * qw + iw * -qx + iy * -qz - iz * -qy;
+    out[1] = iy * qw + iw * -qy + iz * -qx - ix * -qz;
+    out[2] = iz * qw + iw * -qz + ix * -qy - iy * -qx;
+    return out;
+};
+
+/**
+ * Perform some operation over an array of vec3s.
+ *
+ * @param {Array} a the array of vectors to iterate over
+ * @param {Number} stride Number of elements between the start of each vec3. If 0 assumes tightly packed
+ * @param {Number} offset Number of elements to skip at the beginning of the array
+ * @param {Number} count Number of vec3s to iterate over. If 0 iterates over entire array
+ * @param {Function} fn Function to call for each vector in the array
+ * @param {Object} [arg] additional argument to pass to fn
+ * @returns {Array} a
+ */
+vec3.forEach = (function() {
+    var vec = new Float32Array(3);
+
+    return function(a, stride, offset, count, fn, arg) {
+        var i, l;
+        if(!stride) {
+            stride = 3;
+        }
+
+        if(!offset) {
+            offset = 0;
+        }
+        
+        if(count) {
+            l = Math.min((count * stride) + offset, a.length);
+        } else {
+            l = a.length;
+        }
+
+        for(i = offset; i < l; i += stride) {
+            vec[0] = a[i]; vec[1] = a[i+1]; vec[2] = a[i+2];
+            fn(vec, vec, arg);
+            a[i] = vec[0]; a[i+1] = vec[1]; a[i+2] = vec[2];
+        }
+        
+        return a;
+    };
+})();
+
+/**
+ * Returns a string representation of a vector
+ *
+ * @param {vec3} vec vector to represent as a string
+ * @returns {String} string representation of the vector
+ */
+vec3.str = function (a) {
+    return 'vec3(' + a[0] + ', ' + a[1] + ', ' + a[2] + ')';
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.vec3 = vec3;
+}
+;
+/* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+/**
+ * @class 4 Dimensional Vector
+ * @name vec4
+ */
+
+var vec4 = {};
+
+if(!GLMAT_EPSILON) {
+    var GLMAT_EPSILON = 0.000001;
+}
+
+/**
+ * Creates a new, empty vec4
+ *
+ * @returns {vec4} a new 4D vector
+ */
+vec4.create = function() {
+    return new Float32Array(4);
+};
+
+/**
+ * Creates a new vec4 initialized with values from an existing vector
+ *
+ * @param {vec4} a vector to clone
+ * @returns {vec4} a new 4D vector
+ */
+vec4.clone = function(a) {
+    var out = new Float32Array(4);
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    return out;
+};
+
+/**
+ * Creates a new vec4 initialized with the given values
+ *
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @param {Number} w W component
+ * @returns {vec4} a new 4D vector
+ */
+vec4.fromValues = function(x, y, z, w) {
+    var out = new Float32Array(4);
+    out[0] = x;
+    out[1] = y;
+    out[2] = z;
+    out[3] = w;
+    return out;
+};
+
+/**
+ * Copy the values from one vec4 to another
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the source vector
+ * @returns {vec4} out
+ */
+vec4.copy = function(out, a) {
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    return out;
+};
+
+/**
+ * Set the components of a vec4 to the given values
+ *
+ * @param {vec4} out the receiving vector
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @param {Number} w W component
+ * @returns {vec4} out
+ */
+vec4.set = function(out, x, y, z, w) {
+    out[0] = x;
+    out[1] = y;
+    out[2] = z;
+    out[3] = w;
+    return out;
+};
+
+/**
+ * Adds two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {vec4} out
+ */
+vec4.add = function(out, a, b) {
+    out[0] = a[0] + b[0];
+    out[1] = a[1] + b[1];
+    out[2] = a[2] + b[2];
+    out[3] = a[3] + b[3];
+    return out;
+};
+
+/**
+ * Subtracts two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {vec4} out
+ */
+vec4.sub = vec4.subtract = function(out, a, b) {
+    out[0] = a[0] - b[0];
+    out[1] = a[1] - b[1];
+    out[2] = a[2] - b[2];
+    out[3] = a[3] - b[3];
+    return out;
+};
+
+/**
+ * Multiplies two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {vec4} out
+ */
+vec4.mul = vec4.multiply = function(out, a, b) {
+    out[0] = a[0] * b[0];
+    out[1] = a[1] * b[1];
+    out[2] = a[2] * b[2];
+    out[3] = a[3] * b[3];
+    return out;
+};
+
+/**
+ * Divides two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {vec4} out
+ */
+vec4.div = vec4.divide = function(out, a, b) {
+    out[0] = a[0] / b[0];
+    out[1] = a[1] / b[1];
+    out[2] = a[2] / b[2];
+    out[3] = a[3] / b[3];
+    return out;
+};
+
+/**
+ * Returns the minimum of two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {vec4} out
+ */
+vec4.min = function(out, a, b) {
+    out[0] = Math.min(a[0], b[0]);
+    out[1] = Math.min(a[1], b[1]);
+    out[2] = Math.min(a[2], b[2]);
+    out[3] = Math.min(a[3], b[3]);
+    return out;
+};
+
+/**
+ * Returns the maximum of two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {vec4} out
+ */
+vec4.max = function(out, a, b) {
+    out[0] = Math.max(a[0], b[0]);
+    out[1] = Math.max(a[1], b[1]);
+    out[2] = Math.max(a[2], b[2]);
+    out[3] = Math.max(a[3], b[3]);
+    return out;
+};
+
+/**
+ * Scales a vec4 by a scalar number
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the vector to scale
+ * @param {vec4} b amount to scale the vector by
+ * @returns {vec4} out
+ */
+vec4.scale = function(out, a, b) {
+    out[0] = a[0] * b;
+    out[1] = a[1] * b;
+    out[2] = a[2] * b;
+    out[3] = a[3] * b;
+    return out;
+};
+
+/**
+ * Calculates the euclidian distance between two vec4's
+ *
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {Number} distance between a and b
+ */
+vec4.dist = vec4.distance = function(a, b) {
+    var x = b[0] - a[0],
+        y = b[1] - a[1],
+        z = b[2] - a[2],
+        w = b[3] - a[3];
+    return Math.sqrt(x*x + y*y + z*z + w*w);
+};
+
+/**
+ * Calculates the squared euclidian distance between two vec4's
+ *
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {Number} squared distance between a and b
+ */
+vec4.sqrDist = vec4.squaredDistance = function(a, b) {
+    var x = b[0] - a[0],
+        y = b[1] - a[1],
+        z = b[2] - a[2],
+        w = b[3] - a[3];
+    return x*x + y*y + z*z + w*w;
+};
+
+/**
+ * Caclulates the length of a vec4
+ *
+ * @param {vec4} a vector to calculate length of
+ * @returns {Number} length of a
+ */
+vec4.len = vec4.length = function (a) {
+    var x = a[0],
+        y = a[1],
+        z = a[2],
+        w = a[3];
+    return Math.sqrt(x*x + y*y + z*z + w*w);
+};
+
+/**
+ * Caclulates the squared length of a vec4
+ *
+ * @param {vec4} a vector to calculate squared length of
+ * @returns {Number} squared length of a
+ */
+vec4.sqrLen = vec4.squaredLength = function (a) {
+    var x = a[0],
+        y = a[1],
+        z = a[2],
+        w = a[3];
+    return x*x + y*y + z*z + w*w;
+};
+
+/**
+ * Negates the components of a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a vector to negate
+ * @returns {vec4} out
+ */
+vec4.negate = function(out, a) {
+    out[0] = -a[0];
+    out[1] = -a[1];
+    out[2] = -a[2];
+    out[3] = -a[3];
+    return out;
+};
+
+/**
+ * Normalize a vec4
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a vector to normalize
+ * @returns {vec4} out
+ */
+vec4.normalize = function(out, a) {
+    var x = a[0],
+        y = a[1],
+        z = a[2],
+        w = a[3];
+    var len = x*x + y*y + z*z + w*w;
+    if (len > 0) {
+        len = 1 / Math.sqrt(len);
+        out[0] = a[0] * len;
+        out[1] = a[1] * len;
+        out[2] = a[2] * len;
+        out[3] = a[3] * len;
+    }
+    return out;
+};
+
+/**
+ * Caclulates the dot product of two vec4's
+ *
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @returns {Number} dot product of a and b
+ */
+vec4.dot = function (a, b) {
+    return a[0] * b[0] + a[1] * b[1] + a[2] * b[2] + a[3] * b[3];
+};
+
+/**
+ * Performs a linear interpolation between two vec4's
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the first operand
+ * @param {vec4} b the second operand
+ * @param {Number} t interpolation amount between the two inputs
+ * @returns {vec4} out
+ */
+vec4.lerp = function (out, a, b, t) {
+    var ax = a[0],
+        ay = a[1],
+        az = a[2],
+        aw = a[3];
+    out[0] = ax + t * (b[0] - ax);
+    out[1] = ay + t * (b[1] - ay);
+    out[2] = az + t * (b[2] - az);
+    out[3] = aw + t * (b[3] - aw);
+    return out;
+};
+
+/**
+ * Transforms the vec4 with a mat4.
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the vector to transform
+ * @param {mat4} m matrix to transform with
+ * @returns {vec4} out
+ */
+vec4.transformMat4 = function(out, a, m) {
+    var x = a[0], y = a[1], z = a[2], w = a[3];
+    out[0] = m[0] * x + m[4] * y + m[8] * z + m[12] * w;
+    out[1] = m[1] * x + m[5] * y + m[9] * z + m[13] * w;
+    out[2] = m[2] * x + m[6] * y + m[10] * z + m[14] * w;
+    out[3] = m[3] * x + m[7] * y + m[11] * z + m[15] * w;
+    return out;
+};
+
+/**
+ * Transforms the vec4 with a quat
+ *
+ * @param {vec4} out the receiving vector
+ * @param {vec4} a the vector to transform
+ * @param {quat} q quaternion to transform with
+ * @returns {vec4} out
+ */
+vec4.transformQuat = function(out, a, q) {
+    var x = a[0], y = a[1], z = a[2],
+        qx = q[0], qy = q[1], qz = q[2], qw = q[3],
+
+        // calculate quat * vec
+        ix = qw * x + qy * z - qz * y,
+        iy = qw * y + qz * x - qx * z,
+        iz = qw * z + qx * y - qy * x,
+        iw = -qx * x - qy * y - qz * z;
+
+    // calculate result * inverse quat
+    out[0] = ix * qw + iw * -qx + iy * -qz - iz * -qy;
+    out[1] = iy * qw + iw * -qy + iz * -qx - ix * -qz;
+    out[2] = iz * qw + iw * -qz + ix * -qy - iy * -qx;
+    return out;
+};
+
+/**
+ * Perform some operation over an array of vec4s.
+ *
+ * @param {Array} a the array of vectors to iterate over
+ * @param {Number} stride Number of elements between the start of each vec4. If 0 assumes tightly packed
+ * @param {Number} offset Number of elements to skip at the beginning of the array
+ * @param {Number} count Number of vec2s to iterate over. If 0 iterates over entire array
+ * @param {Function} fn Function to call for each vector in the array
+ * @param {Object} [arg] additional argument to pass to fn
+ * @returns {Array} a
+ */
+vec4.forEach = (function() {
+    var vec = new Float32Array(4);
+
+    return function(a, stride, offset, count, fn, arg) {
+        var i, l;
+        if(!stride) {
+            stride = 4;
+        }
+
+        if(!offset) {
+            offset = 0;
+        }
+        
+        if(count) {
+            l = Math.min((count * stride) + offset, a.length);
+        } else {
+            l = a.length;
+        }
+
+        for(i = offset; i < l; i += stride) {
+            vec[0] = a[i]; vec[1] = a[i+1]; vec[2] = a[i+2]; vec[3] = a[i+3];
+            fn(vec, vec, arg);
+            a[i] = vec[0]; a[i+1] = vec[1]; a[i+2] = vec[2]; a[i+3] = vec[3];
+        }
+        
+        return a;
+    };
+})();
+
+/**
+ * Returns a string representation of a vector
+ *
+ * @param {vec4} vec vector to represent as a string
+ * @returns {String} string representation of the vector
+ */
+vec4.str = function (a) {
+    return 'vec4(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ')';
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.vec4 = vec4;
+}
+;
+/* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+/**
+ * @class 2x2 Matrix
+ * @name mat2
+ */
+
+var mat2 = {};
+
+var mat2Identity = new Float32Array([
+    1, 0,
+    0, 1
+]);
+
+if(!GLMAT_EPSILON) {
+    var GLMAT_EPSILON = 0.000001;
+}
+
+/**
+ * Creates a new identity mat2
+ *
+ * @returns {mat2} a new 2x2 matrix
+ */
+mat2.create = function() {
+    return new Float32Array(mat2Identity);
+};
+
+/**
+ * Creates a new mat2 initialized with values from an existing matrix
+ *
+ * @param {mat2} a matrix to clone
+ * @returns {mat2} a new 2x2 matrix
+ */
+mat2.clone = function(a) {
+    var out = new Float32Array(4);
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    return out;
+};
+
+/**
+ * Copy the values from one mat2 to another
+ *
+ * @param {mat2} out the receiving matrix
+ * @param {mat2} a the source matrix
+ * @returns {mat2} out
+ */
+mat2.copy = function(out, a) {
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    return out;
+};
+
+/**
+ * Set a mat2 to the identity matrix
+ *
+ * @param {mat2} out the receiving matrix
+ * @returns {mat2} out
+ */
+mat2.identity = function(out) {
+    out[0] = 1;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 1;
+    return out;
+};
+
+/**
+ * Transpose the values of a mat2
+ *
+ * @param {mat2} out the receiving matrix
+ * @param {mat2} a the source matrix
+ * @returns {mat2} out
+ */
+mat2.transpose = function(out, a) {
+    // If we are transposing ourselves we can skip a few steps but have to cache some values
+    if (out === a) {
+        var a1 = a[1];
+        out[1] = a[2];
+        out[2] = a1;
+    } else {
+        out[0] = a[0];
+        out[1] = a[2];
+        out[2] = a[1];
+        out[3] = a[3];
+    }
+    
+    return out;
+};
+
+/**
+ * Inverts a mat2
+ *
+ * @param {mat2} out the receiving matrix
+ * @param {mat2} a the source matrix
+ * @returns {mat2} out
+ */
+mat2.invert = function(out, a) {
+    var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+
+        // Calculate the determinant
+        det = a0 * a3 - a2 * a1;
+
+    if (!det) {
+        return null;
+    }
+    det = 1.0 / det;
+    
+    out[0] =  a3 * det;
+    out[1] = -a1 * det;
+    out[2] = -a2 * det;
+    out[3] =  a0 * det;
+
+    return out;
+};
+
+/**
+ * Caclulates the adjugate of a mat2
+ *
+ * @param {mat2} out the receiving matrix
+ * @param {mat2} a the source matrix
+ * @returns {mat2} out
+ */
+mat2.adjoint = function(out, a) {
+    // Caching this value is nessecary if out == a
+    var a0 = a[0];
+    out[0] =  a[3];
+    out[1] = -a[1];
+    out[2] = -a[2];
+    out[3] =  a0;
+
+    return out;
+};
+
+/**
+ * Calculates the determinant of a mat2
+ *
+ * @param {mat2} a the source matrix
+ * @returns {Number} determinant of a
+ */
+mat2.determinant = function (a) {
+    return a[0] * a[3] - a[2] * a[1];
+};
+
+/**
+ * Multiplies two mat2's
+ *
+ * @param {mat2} out the receiving matrix
+ * @param {mat2} a the first operand
+ * @param {mat2} b the second operand
+ * @returns {mat2} out
+ */
+mat2.mul = mat2.multiply = function (out, a, b) {
+    var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3];
+    var b0 = b[0], b1 = b[1], b2 = b[2], b3 = b[3];
+    out[0] = a0 * b0 + a1 * b2;
+    out[1] = a0 * b1 + a1 * b3;
+    out[2] = a2 * b0 + a3 * b2;
+    out[3] = a2 * b1 + a3 * b3;
+    return out;
+};
+
+/**
+ * Rotates a mat2 by the given angle
+ *
+ * @param {mat2} out the receiving matrix
+ * @param {mat2} a the matrix to rotate
+ * @param {mat2} rad the angle to rotate the matrix by
+ * @returns {mat2} out
+ */
+mat2.rotate = function (out, a, rad) {
+    var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+        s = Math.sin(rad),
+        c = Math.cos(rad);
+    out[0] = a0 *  c + a1 * s;
+    out[1] = a0 * -s + a1 * c;
+    out[2] = a2 *  c + a3 * s;
+    out[3] = a2 * -s + a3 * c;
+    return out;
+};
+
+/**
+ * Scales the mat2 by the dimensions in the given vec2
+ *
+ * @param {mat2} out the receiving matrix
+ * @param {mat2} a the matrix to rotate
+ * @param {mat2} v the vec2 to scale the matrix by
+ * @returns {mat2} out
+ **/
+mat2.scale = function(out, a, v) {
+    var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+        v0 = v[0], v1 = v[1];
+    out[0] = a0 * v0;
+    out[1] = a1 * v1;
+    out[2] = a2 * v0;
+    out[3] = a3 * v1;
+    return out;
+};
+
+/**
+ * Returns a string representation of a mat2
+ *
+ * @param {mat2} mat matrix to represent as a string
+ * @returns {String} string representation of the matrix
+ */
+mat2.str = function (a) {
+    return 'mat2(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ')';
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.mat2 = mat2;
+}
+;
+/* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+/**
+ * @class 3x3 Matrix
+ * @name mat3
+ */
+
+var mat3 = {};
+
+var mat3Identity = new Float32Array([
+    1, 0, 0,
+    0, 1, 0,
+    0, 0, 1
+]);
+
+if(!GLMAT_EPSILON) {
+    var GLMAT_EPSILON = 0.000001;
+}
+
+/**
+ * Creates a new identity mat3
+ *
+ * @returns {mat3} a new 3x3 matrix
+ */
+mat3.create = function() {
+    return new Float32Array(mat3Identity);
+};
+
+/**
+ * Creates a new mat3 initialized with values from an existing matrix
+ *
+ * @param {mat3} a matrix to clone
+ * @returns {mat3} a new 3x3 matrix
+ */
+mat3.clone = function(a) {
+    var out = new Float32Array(9);
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    out[4] = a[4];
+    out[5] = a[5];
+    out[6] = a[6];
+    out[7] = a[7];
+    out[8] = a[8];
+    return out;
+};
+
+/**
+ * Copy the values from one mat3 to another
+ *
+ * @param {mat3} out the receiving matrix
+ * @param {mat3} a the source matrix
+ * @returns {mat3} out
+ */
+mat3.copy = function(out, a) {
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    out[4] = a[4];
+    out[5] = a[5];
+    out[6] = a[6];
+    out[7] = a[7];
+    out[8] = a[8];
+    return out;
+};
+
+/**
+ * Set a mat3 to the identity matrix
+ *
+ * @param {mat3} out the receiving matrix
+ * @returns {mat3} out
+ */
+mat3.identity = function(out) {
+    out[0] = 1;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 0;
+    out[4] = 1;
+    out[5] = 0;
+    out[6] = 0;
+    out[7] = 0;
+    out[8] = 1;
+    return out;
+};
+
+/**
+ * Transpose the values of a mat3
+ *
+ * @param {mat3} out the receiving matrix
+ * @param {mat3} a the source matrix
+ * @returns {mat3} out
+ */
+mat3.transpose = function(out, a) {
+    // If we are transposing ourselves we can skip a few steps but have to cache some values
+    if (out === a) {
+        var a01 = a[1], a02 = a[2], a12 = a[5];
+        out[1] = a[3];
+        out[2] = a[6];
+        out[3] = a01;
+        out[5] = a[7];
+        out[6] = a02;
+        out[7] = a12;
+    } else {
+        out[0] = a[0];
+        out[1] = a[3];
+        out[2] = a[6];
+        out[3] = a[1];
+        out[4] = a[4];
+        out[5] = a[7];
+        out[6] = a[2];
+        out[7] = a[5];
+        out[8] = a[8];
+    }
+    
+    return out;
+};
+
+/**
+ * Inverts a mat3
+ *
+ * @param {mat3} out the receiving matrix
+ * @param {mat3} a the source matrix
+ * @returns {mat3} out
+ */
+mat3.invert = function(out, a) {
+    var a00 = a[0], a01 = a[1], a02 = a[2],
+        a10 = a[3], a11 = a[4], a12 = a[5],
+        a20 = a[6], a21 = a[7], a22 = a[8],
+
+        b01 = a22 * a11 - a12 * a21,
+        b11 = -a22 * a10 + a12 * a20,
+        b21 = a21 * a10 - a11 * a20,
+
+        // Calculate the determinant
+        det = a00 * b01 + a01 * b11 + a02 * b21;
+
+    if (!det) { 
+        return null; 
+    }
+    det = 1.0 / det;
+
+    out[0] = b01 * det;
+    out[1] = (-a22 * a01 + a02 * a21) * det;
+    out[2] = (a12 * a01 - a02 * a11) * det;
+    out[3] = b11 * det;
+    out[4] = (a22 * a00 - a02 * a20) * det;
+    out[5] = (-a12 * a00 + a02 * a10) * det;
+    out[6] = b21 * det;
+    out[7] = (-a21 * a00 + a01 * a20) * det;
+    out[8] = (a11 * a00 - a01 * a10) * det;
+    return out;
+};
+
+/**
+ * Caclulates the adjugate of a mat3
+ *
+ * @param {mat3} out the receiving matrix
+ * @param {mat3} a the source matrix
+ * @returns {mat3} out
+ */
+mat3.adjoint = function(out, a) {
+    var a00 = a[0], a01 = a[1], a02 = a[2],
+        a10 = a[3], a11 = a[4], a12 = a[5],
+        a20 = a[6], a21 = a[7], a22 = a[8];
+
+    out[0] = (a11 * a22 - a12 * a21);
+    out[1] = (a02 * a21 - a01 * a22);
+    out[2] = (a01 * a12 - a02 * a11);
+    out[3] = (a12 * a20 - a10 * a22);
+    out[4] = (a00 * a22 - a02 * a20);
+    out[5] = (a02 * a10 - a00 * a12);
+    out[6] = (a10 * a21 - a11 * a20);
+    out[7] = (a01 * a20 - a00 * a21);
+    out[8] = (a00 * a11 - a01 * a10);
+    return out;
+};
+
+/**
+ * Calculates the determinant of a mat3
+ *
+ * @param {mat3} a the source matrix
+ * @returns {Number} determinant of a
+ */
+mat3.determinant = function (a) {
+    var a00 = a[0], a01 = a[1], a02 = a[2],
+        a10 = a[3], a11 = a[4], a12 = a[5],
+        a20 = a[6], a21 = a[7], a22 = a[8];
+
+    return a00 * (a22 * a11 - a12 * a21) + a01 * (-a22 * a10 + a12 * a20) + a02 * (a21 * a10 - a11 * a20);
+};
+
+/**
+ * Multiplies two mat3's
+ *
+ * @param {mat3} out the receiving matrix
+ * @param {mat3} a the first operand
+ * @param {mat3} b the second operand
+ * @returns {mat3} out
+ */
+mat3.mul = mat3.multiply = function (out, a, b) {
+    var a00 = a[0], a01 = a[1], a02 = a[2],
+        a10 = a[3], a11 = a[4], a12 = a[5],
+        a20 = a[6], a21 = a[7], a22 = a[8],
+
+        b00 = b[0], b01 = b[1], b02 = b[2],
+        b10 = b[3], b11 = b[4], b12 = b[5],
+        b20 = b[6], b21 = b[7], b22 = b[8];
+
+    out[0] = b00 * a00 + b01 * a10 + b02 * a20;
+    out[1] = b00 * a01 + b01 * a11 + b02 * a21;
+    out[2] = b00 * a02 + b01 * a12 + b02 * a22;
+
+    out[3] = b10 * a00 + b11 * a10 + b12 * a20;
+    out[4] = b10 * a01 + b11 * a11 + b12 * a21;
+    out[5] = b10 * a02 + b11 * a12 + b12 * a22;
+
+    out[6] = b20 * a00 + b21 * a10 + b22 * a20;
+    out[7] = b20 * a01 + b21 * a11 + b22 * a21;
+    out[8] = b20 * a02 + b21 * a12 + b22 * a22;
+    return out;
+};
+
+/**
+ * Returns a string representation of a mat3
+ *
+ * @param {mat3} mat matrix to represent as a string
+ * @returns {String} string representation of the matrix
+ */
+mat3.str = function (a) {
+    return 'mat3(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + 
+                    a[3] + ', ' + a[4] + ', ' + a[5] + ', ' + 
+                    a[6] + ', ' + a[7] + ', ' + a[8] + ')';
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.mat3 = mat3;
+}
+;
+/* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+/**
+ * @class 4x4 Matrix
+ * @name mat4
+ */
+
+var mat4 = {};
+
+var mat4Identity = new Float32Array([
+    1, 0, 0, 0,
+    0, 1, 0, 0,
+    0, 0, 1, 0,
+    0, 0, 0, 1
+]);
+
+if(!GLMAT_EPSILON) {
+    var GLMAT_EPSILON = 0.000001;
+}
+
+/**
+ * Creates a new identity mat4
+ *
+ * @returns {mat4} a new 4x4 matrix
+ */
+mat4.create = function() {
+    return new Float32Array(mat4Identity);
+};
+
+/**
+ * Creates a new mat4 initialized with values from an existing matrix
+ *
+ * @param {mat4} a matrix to clone
+ * @returns {mat4} a new 4x4 matrix
+ */
+mat4.clone = function(a) {
+    var out = new Float32Array(16);
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    out[4] = a[4];
+    out[5] = a[5];
+    out[6] = a[6];
+    out[7] = a[7];
+    out[8] = a[8];
+    out[9] = a[9];
+    out[10] = a[10];
+    out[11] = a[11];
+    out[12] = a[12];
+    out[13] = a[13];
+    out[14] = a[14];
+    out[15] = a[15];
+    return out;
+};
+
+/**
+ * Copy the values from one mat4 to another
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the source matrix
+ * @returns {mat4} out
+ */
+mat4.copy = function(out, a) {
+    out[0] = a[0];
+    out[1] = a[1];
+    out[2] = a[2];
+    out[3] = a[3];
+    out[4] = a[4];
+    out[5] = a[5];
+    out[6] = a[6];
+    out[7] = a[7];
+    out[8] = a[8];
+    out[9] = a[9];
+    out[10] = a[10];
+    out[11] = a[11];
+    out[12] = a[12];
+    out[13] = a[13];
+    out[14] = a[14];
+    out[15] = a[15];
+    return out;
+};
+
+/**
+ * Set a mat4 to the identity matrix
+ *
+ * @param {mat4} out the receiving matrix
+ * @returns {mat4} out
+ */
+mat4.identity = function(out) {
+    out[0] = 1;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 0;
+    out[4] = 0;
+    out[5] = 1;
+    out[6] = 0;
+    out[7] = 0;
+    out[8] = 0;
+    out[9] = 0;
+    out[10] = 1;
+    out[11] = 0;
+    out[12] = 0;
+    out[13] = 0;
+    out[14] = 0;
+    out[15] = 1;
+    return out;
+};
+
+/**
+ * Transpose the values of a mat4
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the source matrix
+ * @returns {mat4} out
+ */
+mat4.transpose = function(out, a) {
+    // If we are transposing ourselves we can skip a few steps but have to cache some values
+    if (out === a) {
+        var a01 = a[1], a02 = a[2], a03 = a[3],
+            a12 = a[6], a13 = a[7],
+            a23 = a[11];
+
+        out[1] = a[4];
+        out[2] = a[8];
+        out[3] = a[12];
+        out[4] = a01;
+        out[6] = a[9];
+        out[7] = a[13];
+        out[8] = a02;
+        out[9] = a12;
+        out[11] = a[14];
+        out[12] = a03;
+        out[13] = a13;
+        out[14] = a23;
+    } else {
+        out[0] = a[0];
+        out[1] = a[4];
+        out[2] = a[8];
+        out[3] = a[12];
+        out[4] = a[1];
+        out[5] = a[5];
+        out[6] = a[9];
+        out[7] = a[13];
+        out[8] = a[2];
+        out[9] = a[6];
+        out[10] = a[10];
+        out[11] = a[14];
+        out[12] = a[3];
+        out[13] = a[7];
+        out[14] = a[11];
+        out[15] = a[15];
+    }
+    
+    return out;
+};
+
+/**
+ * Inverts a mat4
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the source matrix
+ * @returns {mat4} out
+ */
+mat4.invert = function(out, a) {
+    var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+        a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+        a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+        a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15],
+
+        b00 = a00 * a11 - a01 * a10,
+        b01 = a00 * a12 - a02 * a10,
+        b02 = a00 * a13 - a03 * a10,
+        b03 = a01 * a12 - a02 * a11,
+        b04 = a01 * a13 - a03 * a11,
+        b05 = a02 * a13 - a03 * a12,
+        b06 = a20 * a31 - a21 * a30,
+        b07 = a20 * a32 - a22 * a30,
+        b08 = a20 * a33 - a23 * a30,
+        b09 = a21 * a32 - a22 * a31,
+        b10 = a21 * a33 - a23 * a31,
+        b11 = a22 * a33 - a23 * a32,
+
+        // Calculate the determinant
+        det = b00 * b11 - b01 * b10 + b02 * b09 + b03 * b08 - b04 * b07 + b05 * b06;
+
+    if (!det) { 
+        return null; 
+    }
+    det = 1.0 / det;
+
+    out[0] = (a11 * b11 - a12 * b10 + a13 * b09) * det;
+    out[1] = (a02 * b10 - a01 * b11 - a03 * b09) * det;
+    out[2] = (a31 * b05 - a32 * b04 + a33 * b03) * det;
+    out[3] = (a22 * b04 - a21 * b05 - a23 * b03) * det;
+    out[4] = (a12 * b08 - a10 * b11 - a13 * b07) * det;
+    out[5] = (a00 * b11 - a02 * b08 + a03 * b07) * det;
+    out[6] = (a32 * b02 - a30 * b05 - a33 * b01) * det;
+    out[7] = (a20 * b05 - a22 * b02 + a23 * b01) * det;
+    out[8] = (a10 * b10 - a11 * b08 + a13 * b06) * det;
+    out[9] = (a01 * b08 - a00 * b10 - a03 * b06) * det;
+    out[10] = (a30 * b04 - a31 * b02 + a33 * b00) * det;
+    out[11] = (a21 * b02 - a20 * b04 - a23 * b00) * det;
+    out[12] = (a11 * b07 - a10 * b09 - a12 * b06) * det;
+    out[13] = (a00 * b09 - a01 * b07 + a02 * b06) * det;
+    out[14] = (a31 * b01 - a30 * b03 - a32 * b00) * det;
+    out[15] = (a20 * b03 - a21 * b01 + a22 * b00) * det;
+
+    return out;
+};
+
+/**
+ * Caclulates the adjugate of a mat4
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the source matrix
+ * @returns {mat4} out
+ */
+mat4.adjoint = function(out, a) {
+    var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+        a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+        a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+        a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15];
+
+    out[0]  =  (a11 * (a22 * a33 - a23 * a32) - a21 * (a12 * a33 - a13 * a32) + a31 * (a12 * a23 - a13 * a22));
+    out[1]  = -(a01 * (a22 * a33 - a23 * a32) - a21 * (a02 * a33 - a03 * a32) + a31 * (a02 * a23 - a03 * a22));
+    out[2]  =  (a01 * (a12 * a33 - a13 * a32) - a11 * (a02 * a33 - a03 * a32) + a31 * (a02 * a13 - a03 * a12));
+    out[3]  = -(a01 * (a12 * a23 - a13 * a22) - a11 * (a02 * a23 - a03 * a22) + a21 * (a02 * a13 - a03 * a12));
+    out[4]  = -(a10 * (a22 * a33 - a23 * a32) - a20 * (a12 * a33 - a13 * a32) + a30 * (a12 * a23 - a13 * a22));
+    out[5]  =  (a00 * (a22 * a33 - a23 * a32) - a20 * (a02 * a33 - a03 * a32) + a30 * (a02 * a23 - a03 * a22));
+    out[6]  = -(a00 * (a12 * a33 - a13 * a32) - a10 * (a02 * a33 - a03 * a32) + a30 * (a02 * a13 - a03 * a12));
+    out[7]  =  (a00 * (a12 * a23 - a13 * a22) - a10 * (a02 * a23 - a03 * a22) + a20 * (a02 * a13 - a03 * a12));
+    out[8]  =  (a10 * (a21 * a33 - a23 * a31) - a20 * (a11 * a33 - a13 * a31) + a30 * (a11 * a23 - a13 * a21));
+    out[9]  = -(a00 * (a21 * a33 - a23 * a31) - a20 * (a01 * a33 - a03 * a31) + a30 * (a01 * a23 - a03 * a21));
+    out[10] =  (a00 * (a11 * a33 - a13 * a31) - a10 * (a01 * a33 - a03 * a31) + a30 * (a01 * a13 - a03 * a11));
+    out[11] = -(a00 * (a11 * a23 - a13 * a21) - a10 * (a01 * a23 - a03 * a21) + a20 * (a01 * a13 - a03 * a11));
+    out[12] = -(a10 * (a21 * a32 - a22 * a31) - a20 * (a11 * a32 - a12 * a31) + a30 * (a11 * a22 - a12 * a21));
+    out[13] =  (a00 * (a21 * a32 - a22 * a31) - a20 * (a01 * a32 - a02 * a31) + a30 * (a01 * a22 - a02 * a21));
+    out[14] = -(a00 * (a11 * a32 - a12 * a31) - a10 * (a01 * a32 - a02 * a31) + a30 * (a01 * a12 - a02 * a11));
+    out[15] =  (a00 * (a11 * a22 - a12 * a21) - a10 * (a01 * a22 - a02 * a21) + a20 * (a01 * a12 - a02 * a11));
+    return out;
+};
+
+/**
+ * Calculates the determinant of a mat4
+ *
+ * @param {mat4} a the source matrix
+ * @returns {Number} determinant of a
+ */
+mat4.determinant = function (a) {
+    var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+        a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+        a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+        a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15],
+
+        b00 = a00 * a11 - a01 * a10,
+        b01 = a00 * a12 - a02 * a10,
+        b02 = a00 * a13 - a03 * a10,
+        b03 = a01 * a12 - a02 * a11,
+        b04 = a01 * a13 - a03 * a11,
+        b05 = a02 * a13 - a03 * a12,
+        b06 = a20 * a31 - a21 * a30,
+        b07 = a20 * a32 - a22 * a30,
+        b08 = a20 * a33 - a23 * a30,
+        b09 = a21 * a32 - a22 * a31,
+        b10 = a21 * a33 - a23 * a31,
+        b11 = a22 * a33 - a23 * a32;
+
+    // Calculate the determinant
+    return b00 * b11 - b01 * b10 + b02 * b09 + b03 * b08 - b04 * b07 + b05 * b06;
+};
+
+/**
+ * Multiplies two mat4's
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the first operand
+ * @param {mat4} b the second operand
+ * @returns {mat4} out
+ */
+mat4.mul = mat4.multiply = function (out, a, b) {
+    var a00 = a[0], a01 = a[1], a02 = a[2], a03 = a[3],
+        a10 = a[4], a11 = a[5], a12 = a[6], a13 = a[7],
+        a20 = a[8], a21 = a[9], a22 = a[10], a23 = a[11],
+        a30 = a[12], a31 = a[13], a32 = a[14], a33 = a[15];
+
+    // Cache only the current line of the second matrix
+    var b0  = b[0], b1 = b[1], b2 = b[2], b3 = b[3];  
+    out[0] = b0*a00 + b1*a10 + b2*a20 + b3*a30;
+    out[1] = b0*a01 + b1*a11 + b2*a21 + b3*a31;
+    out[2] = b0*a02 + b1*a12 + b2*a22 + b3*a32;
+    out[3] = b0*a03 + b1*a13 + b2*a23 + b3*a33;
+
+    b0 = b[4]; b1 = b[5]; b2 = b[6]; b3 = b[7];
+    out[4] = b0*a00 + b1*a10 + b2*a20 + b3*a30;
+    out[5] = b0*a01 + b1*a11 + b2*a21 + b3*a31;
+    out[6] = b0*a02 + b1*a12 + b2*a22 + b3*a32;
+    out[7] = b0*a03 + b1*a13 + b2*a23 + b3*a33;
+
+    b0 = b[8]; b1 = b[9]; b2 = b[10]; b3 = b[11];
+    out[8] = b0*a00 + b1*a10 + b2*a20 + b3*a30;
+    out[9] = b0*a01 + b1*a11 + b2*a21 + b3*a31;
+    out[10] = b0*a02 + b1*a12 + b2*a22 + b3*a32;
+    out[11] = b0*a03 + b1*a13 + b2*a23 + b3*a33;
+
+    b0 = b[12]; b1 = b[13]; b2 = b[14]; b3 = b[15];
+    out[12] = b0*a00 + b1*a10 + b2*a20 + b3*a30;
+    out[13] = b0*a01 + b1*a11 + b2*a21 + b3*a31;
+    out[14] = b0*a02 + b1*a12 + b2*a22 + b3*a32;
+    out[15] = b0*a03 + b1*a13 + b2*a23 + b3*a33;
+    return out;
+};
+
+/**
+ * Translate a mat4 by the given vector
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the matrix to translate
+ * @param {vec3} v vector to translate by
+ * @returns {mat4} out
+ */
+mat4.translate = function (out, a, v) {
+    var x = v[0], y = v[1], z = v[2],
+        a00, a01, a02, a03,
+        a10, a11, a12, a13,
+        a20, a21, a22, a23;
+
+    if (a === out) {
+        out[12] = a[0] * x + a[4] * y + a[8] * z + a[12];
+        out[13] = a[1] * x + a[5] * y + a[9] * z + a[13];
+        out[14] = a[2] * x + a[6] * y + a[10] * z + a[14];
+        out[15] = a[3] * x + a[7] * y + a[11] * z + a[15];
+    } else {
+        a00 = a[0]; a01 = a[1]; a02 = a[2]; a03 = a[3];
+        a10 = a[4]; a11 = a[5]; a12 = a[6]; a13 = a[7];
+        a20 = a[8]; a21 = a[9]; a22 = a[10]; a23 = a[11];
+
+        out[0] = a00; out[1] = a01; out[2] = a02; out[3] = a03;
+        out[4] = a10; out[5] = a11; out[6] = a12; out[7] = a13;
+        out[8] = a20; out[9] = a21; out[10] = a22; out[11] = a23;
+
+        out[12] = a00 * x + a10 * y + a20 * z + a[12];
+        out[13] = a01 * x + a11 * y + a21 * z + a[13];
+        out[14] = a02 * x + a12 * y + a22 * z + a[14];
+        out[15] = a03 * x + a13 * y + a23 * z + a[15];
+    }
+
+    return out;
+};
+
+/**
+ * Scales the mat4 by the dimensions in the given vec3
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the matrix to scale
+ * @param {vec3} v the vec3 to scale the matrix by
+ * @returns {mat4} out
+ **/
+mat4.scale = function(out, a, v) {
+    var x = v[0], y = v[1], z = v[2];
+
+    out[0] = a[0] * x;
+    out[1] = a[1] * x;
+    out[2] = a[2] * x;
+    out[3] = a[3] * x;
+    out[4] = a[4] * y;
+    out[5] = a[5] * y;
+    out[6] = a[6] * y;
+    out[7] = a[7] * y;
+    out[8] = a[8] * z;
+    out[9] = a[9] * z;
+    out[10] = a[10] * z;
+    out[11] = a[11] * z;
+    out[12] = a[12];
+    out[13] = a[13];
+    out[14] = a[14];
+    out[15] = a[15];
+    return out;
+};
+
+/**
+ * Rotates a mat4 by the given angle
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @param {vec3} axis the axis to rotate around
+ * @returns {mat4} out
+ */
+mat4.rotate = function (out, a, rad, axis) {
+    var x = axis[0], y = axis[1], z = axis[2],
+        len = Math.sqrt(x * x + y * y + z * z),
+        s, c, t,
+        a00, a01, a02, a03,
+        a10, a11, a12, a13,
+        a20, a21, a22, a23,
+        b00, b01, b02,
+        b10, b11, b12,
+        b20, b21, b22;
+
+    if (Math.abs(len) < GLMAT_EPSILON) { return null; }
+    
+    len = 1 / len;
+    x *= len;
+    y *= len;
+    z *= len;
+
+    s = Math.sin(rad);
+    c = Math.cos(rad);
+    t = 1 - c;
+
+    a00 = a[0]; a01 = a[1]; a02 = a[2]; a03 = a[3];
+    a10 = a[4]; a11 = a[5]; a12 = a[6]; a13 = a[7];
+    a20 = a[8]; a21 = a[9]; a22 = a[10]; a23 = a[11];
+
+    // Construct the elements of the rotation matrix
+    b00 = x * x * t + c; b01 = y * x * t + z * s; b02 = z * x * t - y * s;
+    b10 = x * y * t - z * s; b11 = y * y * t + c; b12 = z * y * t + x * s;
+    b20 = x * z * t + y * s; b21 = y * z * t - x * s; b22 = z * z * t + c;
+
+    // Perform rotation-specific matrix multiplication
+    out[0] = a00 * b00 + a10 * b01 + a20 * b02;
+    out[1] = a01 * b00 + a11 * b01 + a21 * b02;
+    out[2] = a02 * b00 + a12 * b01 + a22 * b02;
+    out[3] = a03 * b00 + a13 * b01 + a23 * b02;
+    out[4] = a00 * b10 + a10 * b11 + a20 * b12;
+    out[5] = a01 * b10 + a11 * b11 + a21 * b12;
+    out[6] = a02 * b10 + a12 * b11 + a22 * b12;
+    out[7] = a03 * b10 + a13 * b11 + a23 * b12;
+    out[8] = a00 * b20 + a10 * b21 + a20 * b22;
+    out[9] = a01 * b20 + a11 * b21 + a21 * b22;
+    out[10] = a02 * b20 + a12 * b21 + a22 * b22;
+    out[11] = a03 * b20 + a13 * b21 + a23 * b22;
+
+    if (a !== out) { // If the source and destination differ, copy the unchanged last row
+        out[12] = a[12];
+        out[13] = a[13];
+        out[14] = a[14];
+        out[15] = a[15];
+    }
+    return out;
+};
+
+/**
+ * Rotates a matrix by the given angle around the X axis
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+mat4.rotateX = function (out, a, rad) {
+    var s = Math.sin(rad),
+        c = Math.cos(rad),
+        a10 = a[4],
+        a11 = a[5],
+        a12 = a[6],
+        a13 = a[7],
+        a20 = a[8],
+        a21 = a[9],
+        a22 = a[10],
+        a23 = a[11];
+
+    if (a !== out) { // If the source and destination differ, copy the unchanged rows
+        out[0]  = a[0];
+        out[1]  = a[1];
+        out[2]  = a[2];
+        out[3]  = a[3];
+        out[12] = a[12];
+        out[13] = a[13];
+        out[14] = a[14];
+        out[15] = a[15];
+    }
+
+    // Perform axis-specific matrix multiplication
+    out[4] = a10 * c + a20 * s;
+    out[5] = a11 * c + a21 * s;
+    out[6] = a12 * c + a22 * s;
+    out[7] = a13 * c + a23 * s;
+    out[8] = a20 * c - a10 * s;
+    out[9] = a21 * c - a11 * s;
+    out[10] = a22 * c - a12 * s;
+    out[11] = a23 * c - a13 * s;
+    return out;
+};
+
+/**
+ * Rotates a matrix by the given angle around the Y axis
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+mat4.rotateY = function (out, a, rad) {
+    var s = Math.sin(rad),
+        c = Math.cos(rad),
+        a00 = a[0],
+        a01 = a[1],
+        a02 = a[2],
+        a03 = a[3],
+        a20 = a[8],
+        a21 = a[9],
+        a22 = a[10],
+        a23 = a[11];
+
+    if (a !== out) { // If the source and destination differ, copy the unchanged rows
+        out[4]  = a[4];
+        out[5]  = a[5];
+        out[6]  = a[6];
+        out[7]  = a[7];
+        out[12] = a[12];
+        out[13] = a[13];
+        out[14] = a[14];
+        out[15] = a[15];
+    }
+
+    // Perform axis-specific matrix multiplication
+    out[0] = a00 * c - a20 * s;
+    out[1] = a01 * c - a21 * s;
+    out[2] = a02 * c - a22 * s;
+    out[3] = a03 * c - a23 * s;
+    out[8] = a00 * s + a20 * c;
+    out[9] = a01 * s + a21 * c;
+    out[10] = a02 * s + a22 * c;
+    out[11] = a03 * s + a23 * c;
+    return out;
+};
+
+/**
+ * Rotates a matrix by the given angle around the Z axis
+ *
+ * @param {mat4} out the receiving matrix
+ * @param {mat4} a the matrix to rotate
+ * @param {Number} rad the angle to rotate the matrix by
+ * @returns {mat4} out
+ */
+mat4.rotateZ = function (out, a, rad) {
+    var s = Math.sin(rad),
+        c = Math.cos(rad),
+        a00 = a[0],
+        a01 = a[1],
+        a02 = a[2],
+        a03 = a[3],
+        a10 = a[4],
+        a11 = a[5],
+        a12 = a[6],
+        a13 = a[7];
+
+    if (a !== out) { // If the source and destination differ, copy the unchanged last row
+        out[8]  = a[8];
+        out[9]  = a[9];
+        out[10] = a[10];
+        out[11] = a[11];
+        out[12] = a[12];
+        out[13] = a[13];
+        out[14] = a[14];
+        out[15] = a[15];
+    }
+
+    // Perform axis-specific matrix multiplication
+    out[0] = a00 * c + a10 * s;
+    out[1] = a01 * c + a11 * s;
+    out[2] = a02 * c + a12 * s;
+    out[3] = a03 * c + a13 * s;
+    out[4] = a10 * c - a00 * s;
+    out[5] = a11 * c - a01 * s;
+    out[6] = a12 * c - a02 * s;
+    out[7] = a13 * c - a03 * s;
+    return out;
+};
+
+/**
+ * Creates a matrix from a quaternion rotation and vector translation
+ * This is equivalent to (but much faster than):
+ *
+ *     mat4.identity(dest);
+ *     mat4.translate(dest, vec);
+ *     var quatMat = mat4.create();
+ *     quat4.toMat4(quat, quatMat);
+ *     mat4.multiply(dest, quatMat);
+ *
+ * @param {mat4} out mat4 receiving operation result
+ * @param {quat4} q Rotation quaternion
+ * @param {vec3} v Translation vector
+ * @returns {mat4} out
+ */
+mat4.fromRotationTranslation = function (out, q, v) {
+    // Quaternion math
+    var x = q[0], y = q[1], z = q[2], w = q[3],
+        x2 = x + x,
+        y2 = y + y,
+        z2 = z + z,
+
+        xx = x * x2,
+        xy = x * y2,
+        xz = x * z2,
+        yy = y * y2,
+        yz = y * z2,
+        zz = z * z2,
+        wx = w * x2,
+        wy = w * y2,
+        wz = w * z2;
+
+    out[0] = 1 - (yy + zz);
+    out[1] = xy + wz;
+    out[2] = xz - wy;
+    out[3] = 0;
+    out[4] = xy - wz;
+    out[5] = 1 - (xx + zz);
+    out[6] = yz + wx;
+    out[7] = 0;
+    out[8] = xz + wy;
+    out[9] = yz - wx;
+    out[10] = 1 - (xx + yy);
+    out[11] = 0;
+    out[12] = v[0];
+    out[13] = v[1];
+    out[14] = v[2];
+    out[15] = 1;
+    
+    return out;
+};
+
+/**
+ * Generates a frustum matrix with the given bounds
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {Number} left Left bound of the frustum
+ * @param {Number} right Right bound of the frustum
+ * @param {Number} bottom Bottom bound of the frustum
+ * @param {Number} top Top bound of the frustum
+ * @param {Number} near Near bound of the frustum
+ * @param {Number} far Far bound of the frustum
+ * @returns {mat4} out
+ */
+mat4.frustum = function (out, left, right, bottom, top, near, far) {
+    var rl = 1 / (right - left),
+        tb = 1 / (top - bottom),
+        nf = 1 / (near - far);
+    out[0] = (near * 2) * rl;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 0;
+    out[4] = 0;
+    out[5] = (near * 2) * tb;
+    out[6] = 0;
+    out[7] = 0;
+    out[8] = (right + left) * rl;
+    out[9] = (top + bottom) * tb;
+    out[10] = (far + near) * nf;
+    out[11] = -1;
+    out[12] = 0;
+    out[13] = 0;
+    out[14] = (far * near * 2) * nf;
+    out[15] = 0;
+    return out;
+};
+
+/**
+ * Generates a perspective projection matrix with the given bounds
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {number} fovy Vertical field of view in radians
+ * @param {number} aspect Aspect ratio. typically viewport width/height
+ * @param {number} near Near bound of the frustum
+ * @param {number} far Far bound of the frustum
+ * @returns {mat4} out
+ */
+mat4.perspective = function (out, fovy, aspect, near, far) {
+    var f = 1.0 / Math.tan(fovy / 2),
+        nf = 1 / (near - far);
+    out[0] = f / aspect;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 0;
+    out[4] = 0;
+    out[5] = f;
+    out[6] = 0;
+    out[7] = 0;
+    out[8] = 0;
+    out[9] = 0;
+    out[10] = (far + near) * nf;
+    out[11] = -1;
+    out[12] = 0;
+    out[13] = 0;
+    out[14] = (2 * far * near) * nf;
+    out[15] = 0;
+    return out;
+};
+
+/**
+ * Generates a orthogonal projection matrix with the given bounds
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {number} left Left bound of the frustum
+ * @param {number} right Right bound of the frustum
+ * @param {number} bottom Bottom bound of the frustum
+ * @param {number} top Top bound of the frustum
+ * @param {number} near Near bound of the frustum
+ * @param {number} far Far bound of the frustum
+ * @returns {mat4} out
+ */
+mat4.ortho = function (out, left, right, bottom, top, near, far) {
+    var lr = 1 / (left - right),
+        bt = 1 / (bottom - top),
+        nf = 1 / (near - far);
+    out[0] = -2 * lr;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 0;
+    out[4] = 0;
+    out[5] = -2 * bt;
+    out[6] = 0;
+    out[7] = 0;
+    out[8] = 0;
+    out[9] = 0;
+    out[10] = 2 * nf;
+    out[11] = 0;
+    out[12] = (left + right) * lr;
+    out[13] = (top + bottom) * bt;
+    out[14] = (far + near) * nf;
+    out[15] = 1;
+    return out;
+};
+
+/**
+ * Generates a look-at matrix with the given eye position, focal point, and up axis
+ *
+ * @param {mat4} out mat4 frustum matrix will be written into
+ * @param {vec3} eye Position of the viewer
+ * @param {vec3} center Point the viewer is looking at
+ * @param {vec3} up vec3 pointing up
+ * @returns {mat4} out
+ */
+mat4.lookAt = function (out, eye, center, up) {
+    var x0, x1, x2, y0, y1, y2, z0, z1, z2, len,
+        eyex = eye[0],
+        eyey = eye[1],
+        eyez = eye[2],
+        upx = up[0],
+        upy = up[1],
+        upz = up[2],
+        centerx = center[0],
+        centery = center[1],
+        centerz = center[2];
+
+    if (Math.abs(eyex - centerx) < GLMAT_EPSILON &&
+        Math.abs(eyey - centery) < GLMAT_EPSILON &&
+        Math.abs(eyez - centerz) < GLMAT_EPSILON) {
+        return mat4.identity(out);
+    }
+
+    z0 = eyex - centerx;
+    z1 = eyey - centery;
+    z2 = eyez - centerz;
+
+    len = 1 / Math.sqrt(z0 * z0 + z1 * z1 + z2 * z2);
+    z0 *= len;
+    z1 *= len;
+    z2 *= len;
+
+    x0 = upy * z2 - upz * z1;
+    x1 = upz * z0 - upx * z2;
+    x2 = upx * z1 - upy * z0;
+    len = Math.sqrt(x0 * x0 + x1 * x1 + x2 * x2);
+    if (!len) {
+        x0 = 0;
+        x1 = 0;
+        x2 = 0;
+    } else {
+        len = 1 / len;
+        x0 *= len;
+        x1 *= len;
+        x2 *= len;
+    }
+
+    y0 = z1 * x2 - z2 * x1;
+    y1 = z2 * x0 - z0 * x2;
+    y2 = z0 * x1 - z1 * x0;
+
+    len = Math.sqrt(y0 * y0 + y1 * y1 + y2 * y2);
+    if (!len) {
+        y0 = 0;
+        y1 = 0;
+        y2 = 0;
+    } else {
+        len = 1 / len;
+        y0 *= len;
+        y1 *= len;
+        y2 *= len;
+    }
+
+    out[0] = x0;
+    out[1] = y0;
+    out[2] = z0;
+    out[3] = 0;
+    out[4] = x1;
+    out[5] = y1;
+    out[6] = z1;
+    out[7] = 0;
+    out[8] = x2;
+    out[9] = y2;
+    out[10] = z2;
+    out[11] = 0;
+    out[12] = -(x0 * eyex + x1 * eyey + x2 * eyez);
+    out[13] = -(y0 * eyex + y1 * eyey + y2 * eyez);
+    out[14] = -(z0 * eyex + z1 * eyey + z2 * eyez);
+    out[15] = 1;
+
+    return out;
+};
+
+/**
+ * Returns a string representation of a mat4
+ *
+ * @param {mat4} mat matrix to represent as a string
+ * @returns {String} string representation of the matrix
+ */
+mat4.str = function (a) {
+    return 'mat4(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ', ' +
+                    a[4] + ', ' + a[5] + ', ' + a[6] + ', ' + a[7] + ', ' +
+                    a[8] + ', ' + a[9] + ', ' + a[10] + ', ' + a[11] + ', ' + 
+                    a[12] + ', ' + a[13] + ', ' + a[14] + ', ' + a[15] + ')';
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.mat4 = mat4;
+}
+;
+/* Copyright (c) 2012, Brandon Jones, Colin MacKenzie IV. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
+
+  * Redistributions of source code must retain the above copyright notice, this
+    list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation 
+    and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. */
+
+/**
+ * @class Quaternion
+ * @name quat
+ */
+
+var quat = {};
+
+var quatIdentity = new Float32Array([0, 0, 0, 1]);
+
+if(!GLMAT_EPSILON) {
+    var GLMAT_EPSILON = 0.000001;
+}
+
+/**
+ * Creates a new identity quat
+ *
+ * @returns {quat} a new quaternion
+ */
+quat.create = function() {
+    return new Float32Array(quatIdentity);
+};
+
+/**
+ * Creates a new quat initialized with values from an existing quaternion
+ *
+ * @param {quat} a quaternion to clone
+ * @returns {quat} a new quaternion
+ */
+quat.clone = vec4.clone;
+
+/**
+ * Creates a new quat initialized with the given values
+ *
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @param {Number} w W component
+ * @returns {quat} a new quaternion
+ */
+quat.fromValues = vec4.fromValues;
+
+/**
+ * Copy the values from one quat to another
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a the source quaternion
+ * @returns {quat} out
+ */
+quat.copy = vec4.copy;
+
+/**
+ * Set the components of a quat to the given values
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {Number} x X component
+ * @param {Number} y Y component
+ * @param {Number} z Z component
+ * @param {Number} w W component
+ * @returns {quat} out
+ */
+quat.set = vec4.set;
+
+/**
+ * Set a quat to the identity quaternion
+ *
+ * @param {quat} out the receiving quaternion
+ * @returns {quat} out
+ */
+quat.identity = function(out) {
+    out[0] = 0;
+    out[1] = 0;
+    out[2] = 0;
+    out[3] = 1;
+    return out;
+};
+
+/**
+ * Sets a quat from the given angle and rotation axis,
+ * then returns it.
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {vec3} axis the axis around which to rotate
+ * @param {Number} rad the angle in radians
+ * @returns {quat} out
+ **/
+quat.setAxisAngle = function(out, axis, rad) {
+    rad = rad * 0.5;
+    var s = Math.sin(rad);
+    out[0] = s * axis[0];
+    out[1] = s * axis[1];
+    out[2] = s * axis[2];
+    out[3] = Math.cos(rad);
+    return out;
+};
+
+/**
+ * Adds two quat's
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a the first operand
+ * @param {quat} b the second operand
+ * @returns {quat} out
+ */
+quat.add = vec4.add;
+
+/**
+ * Multiplies two quat's
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a the first operand
+ * @param {quat} b the second operand
+ * @returns {quat} out
+ */
+quat.mul = quat.multiply = function(out, a, b) {
+    var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+        bx = b[0], by = b[1], bz = b[2], bw = b[3];
+
+    out[0] = ax * bw + aw * bx + ay * bz - az * by;
+    out[1] = ay * bw + aw * by + az * bx - ax * bz;
+    out[2] = az * bw + aw * bz + ax * by - ay * bx;
+    out[3] = aw * bw - ax * bx - ay * by - az * bz;
+    return out;
+};
+
+/**
+ * Scales a quat by a scalar number
+ *
+ * @param {quat} out the receiving vector
+ * @param {quat} a the vector to scale
+ * @param {quat} b amount to scale the vector by
+ * @returns {quat} out
+ */
+quat.scale = vec4.scale;
+
+/**
+ * Rotates a quaternion by the given angle around the X axis
+ *
+ * @param {quat} out quat receiving operation result
+ * @param {quat} a quat to rotate
+ * @param {number} rad angle (in radians) to rotate
+ * @returns {quat} out
+ */
+quat.rotateX = function (out, a, rad) {
+    rad *= 0.5; 
+
+    var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+        bx = Math.sin(rad), bw = Math.cos(rad);
+
+    out[0] = ax * bw + aw * bx;
+    out[1] = ay * bw + az * bx;
+    out[2] = az * bw - ay * bx;
+    out[3] = aw * bw - ax * bx;
+    return out;
+};
+
+/**
+ * Rotates a quaternion by the given angle around the X axis
+ *
+ * @param {quat} out quat receiving operation result
+ * @param {quat} a quat to rotate
+ * @param {number} rad angle (in radians) to rotate
+ * @returns {quat} out
+ */
+quat.rotateY = function (out, a, rad) {
+    rad *= 0.5; 
+
+    var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+        by = Math.sin(rad), bw = Math.cos(rad);
+
+    out[0] = ax * bw - az * by;
+    out[1] = ay * bw + aw * by;
+    out[2] = az * bw + ax * by;
+    out[3] = aw * bw - ay * by;
+    return out;
+};
+
+/**
+ * Rotates a quaternion by the given angle around the X axis
+ *
+ * @param {quat} out quat receiving operation result
+ * @param {quat} a quat to rotate
+ * @param {number} rad angle (in radians) to rotate
+ * @returns {quat} out
+ */
+quat.rotateZ = function (out, a, rad) {
+    rad *= 0.5; 
+
+    var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+        bz = Math.sin(rad), bw = Math.cos(rad);
+
+    out[0] = ax * bw + ay * bz;
+    out[1] = ay * bw - ax * bz;
+    out[2] = az * bw + aw * bz;
+    out[3] = aw * bw - az * bz;
+    return out;
+};
+
+/**
+ * Calculates the W component of a quat from the X, Y, and Z components.
+ * Assumes that quaternion is 1 unit in length.
+ * Any existing W component will be ignored.
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a quat to calculate W component of
+ * @returns {quat} out
+ */
+quat.calculateW = function (out, a) {
+    var x = a[0], y = a[1], z = a[2];
+
+    out[0] = x;
+    out[1] = y;
+    out[2] = z;
+    out[3] = -Math.sqrt(Math.abs(1.0 - x * x - y * y - z * z));
+    return out;
+};
+
+/**
+ * Caclulates the dot product of two quat's
+ *
+ * @param {quat} a the first operand
+ * @param {quat} b the second operand
+ * @returns {Number} dot product of a and b
+ */
+quat.dot = vec4.dot;
+
+/**
+ * Performs a linear interpolation between two quat's
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a the first operand
+ * @param {quat} b the second operand
+ * @param {Number} t interpolation amount between the two inputs
+ * @returns {quat} out
+ */
+quat.lerp = vec4.lerp;
+
+/**
+ * Performs a spherical linear interpolation between two quat
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a the first operand
+ * @param {quat} b the second operand
+ * @param {Number} t interpolation amount between the two inputs
+ * @returns {quat} out
+ */
+quat.slerp = function (out, a, b, t) {
+    var ax = a[0], ay = a[1], az = a[2], aw = a[3],
+        bx = b[0], by = b[1], bz = b[2], bw = a[3];
+
+    var cosHalfTheta = ax * bx + ay * by + az * bz + aw * bw,
+        halfTheta,
+        sinHalfTheta,
+        ratioA,
+        ratioB;
+
+    if (Math.abs(cosHalfTheta) >= 1.0) {
+        if (out !== a) {
+            out[0] = ax;
+            out[1] = ay;
+            out[2] = az;
+            out[3] = aw;
+        }
+        return out;
+    }
+
+    halfTheta = Math.acos(cosHalfTheta);
+    sinHalfTheta = Math.sqrt(1.0 - cosHalfTheta * cosHalfTheta);
+
+    if (Math.abs(sinHalfTheta) < 0.001) {
+        out[0] = (ax * 0.5 + bx * 0.5);
+        out[1] = (ay * 0.5 + by * 0.5);
+        out[2] = (az * 0.5 + bz * 0.5);
+        out[3] = (aw * 0.5 + bw * 0.5);
+        return out;
+    }
+
+    ratioA = Math.sin((1 - t) * halfTheta) / sinHalfTheta;
+    ratioB = Math.sin(t * halfTheta) / sinHalfTheta;
+
+    out[0] = (ax * ratioA + bx * ratioB);
+    out[1] = (ay * ratioA + by * ratioB);
+    out[2] = (az * ratioA + bz * ratioB);
+    out[3] = (aw * ratioA + bw * ratioB);
+
+    return out;
+};
+
+/**
+ * Calculates the inverse of a quat
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a quat to calculate inverse of
+ * @returns {quat} out
+ */
+quat.invert = function(out, a) {
+    var a0 = a[0], a1 = a[1], a2 = a[2], a3 = a[3],
+        dot = a0*a0 + a1*a1 + a2*a2 + a3*a3,
+        invDot = dot ? 1.0/dot : 0;
+    
+    // TODO: Would be faster to return [0,0,0,0] immediately if dot == 0
+
+    out[0] = -a0*invDot;
+    out[1] = -a1*invDot;
+    out[2] = -a2*invDot;
+    out[3] = a3*invDot;
+    return out;
+};
+
+/**
+ * Calculates the conjugate of a quat
+ * If the quaternion is normalized, this function is faster than quat.inverse and produces the same result.
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a quat to calculate conjugate of
+ * @returns {quat} out
+ */
+quat.conjugate = function (out, a) {
+    out[0] = -a[0];
+    out[1] = -a[1];
+    out[2] = -a[2];
+    out[3] = a[3];
+    return out;
+};
+
+/**
+ * Caclulates the length of a quat
+ *
+ * @param {quat} a vector to calculate length of
+ * @returns {Number} length of a
+ */
+quat.len = quat.length = vec4.length;
+
+/**
+ * Caclulates the squared length of a quat
+ *
+ * @param {quat} a vector to calculate squared length of
+ * @returns {Number} squared length of a
+ */
+quat.sqrLen = quat.squaredLength = vec4.squaredLength;
+
+/**
+ * Normalize a quat
+ *
+ * @param {quat} out the receiving quaternion
+ * @param {quat} a quaternion to normalize
+ * @returns {quat} out
+ */
+quat.normalize = vec4.normalize;
+
+/**
+ * Returns a string representation of a quatenion
+ *
+ * @param {quat} vec vector to represent as a string
+ * @returns {String} string representation of the vector
+ */
+quat.str = function (a) {
+    return 'quat(' + a[0] + ', ' + a[1] + ', ' + a[2] + ', ' + a[3] + ')';
+};
+
+if(typeof(exports) !== 'undefined') {
+    exports.quat = quat;
+}
+;
+
+
+
+
+
+
+
+
+
+
+  })(shim.exports);
+})();
+
+},{}],22:[function(require,module,exports){
+//     Underscore.js 1.4.4
+//     http://underscorejs.org
+//     (c) 2009-2013 Jeremy Ashkenas, DocumentCloud Inc.
+//     Underscore may be freely distributed under the MIT license.
+
+(function() {
+
+  // Baseline setup
+  // --------------
+
+  // Establish the root object, `window` in the browser, or `global` on the server.
+  var root = this;
+
+  // Save the previous value of the `_` variable.
+  var previousUnderscore = root._;
+
+  // Establish the object that gets returned to break out of a loop iteration.
+  var breaker = {};
+
+  // Save bytes in the minified (but not gzipped) version:
+  var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
+
+  // Create quick reference variables for speed access to core prototypes.
+  var push             = ArrayProto.push,
+      slice            = ArrayProto.slice,
+      concat           = ArrayProto.concat,
+      toString         = ObjProto.toString,
+      hasOwnProperty   = ObjProto.hasOwnProperty;
+
+  // All **ECMAScript 5** native function implementations that we hope to use
+  // are declared here.
+  var
+    nativeForEach      = ArrayProto.forEach,
+    nativeMap          = ArrayProto.map,
+    nativeReduce       = ArrayProto.reduce,
+    nativeReduceRight  = ArrayProto.reduceRight,
+    nativeFilter       = ArrayProto.filter,
+    nativeEvery        = ArrayProto.every,
+    nativeSome         = ArrayProto.some,
+    nativeIndexOf      = ArrayProto.indexOf,
+    nativeLastIndexOf  = ArrayProto.lastIndexOf,
+    nativeIsArray      = Array.isArray,
+    nativeKeys         = Object.keys,
+    nativeBind         = FuncProto.bind;
+
+  // Create a safe reference to the Underscore object for use below.
+  var _ = function(obj) {
+    if (obj instanceof _) return obj;
+    if (!(this instanceof _)) return new _(obj);
+    this._wrapped = obj;
+  };
+
+  // Export the Underscore object for **Node.js**, with
+  // backwards-compatibility for the old `require()` API. If we're in
+  // the browser, add `_` as a global object via a string identifier,
+  // for Closure Compiler "advanced" mode.
+  if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = _;
+    }
+    exports._ = _;
+  } else {
+    root._ = _;
+  }
+
+  // Current version.
+  _.VERSION = '1.4.4';
+
+  // Collection Functions
+  // --------------------
+
+  // The cornerstone, an `each` implementation, aka `forEach`.
+  // Handles objects with the built-in `forEach`, arrays, and raw objects.
+  // Delegates to **ECMAScript 5**'s native `forEach` if available.
+  var each = _.each = _.forEach = function(obj, iterator, context) {
+    if (obj == null) return;
+    if (nativeForEach && obj.forEach === nativeForEach) {
+      obj.forEach(iterator, context);
+    } else if (obj.length === +obj.length) {
+      for (var i = 0, l = obj.length; i < l; i++) {
+        if (iterator.call(context, obj[i], i, obj) === breaker) return;
+      }
+    } else {
+      for (var key in obj) {
+        if (_.has(obj, key)) {
+          if (iterator.call(context, obj[key], key, obj) === breaker) return;
+        }
+      }
+    }
+  };
+
+  // Return the results of applying the iterator to each element.
+  // Delegates to **ECMAScript 5**'s native `map` if available.
+  _.map = _.collect = function(obj, iterator, context) {
+    var results = [];
+    if (obj == null) return results;
+    if (nativeMap && obj.map === nativeMap) return obj.map(iterator, context);
+    each(obj, function(value, index, list) {
+      results[results.length] = iterator.call(context, value, index, list);
+    });
+    return results;
+  };
+
+  var reduceError = 'Reduce of empty array with no initial value';
+
+  // **Reduce** builds up a single result from a list of values, aka `inject`,
+  // or `foldl`. Delegates to **ECMAScript 5**'s native `reduce` if available.
+  _.reduce = _.foldl = _.inject = function(obj, iterator, memo, context) {
+    var initial = arguments.length > 2;
+    if (obj == null) obj = [];
+    if (nativeReduce && obj.reduce === nativeReduce) {
+      if (context) iterator = _.bind(iterator, context);
+      return initial ? obj.reduce(iterator, memo) : obj.reduce(iterator);
+    }
+    each(obj, function(value, index, list) {
+      if (!initial) {
+        memo = value;
+        initial = true;
+      } else {
+        memo = iterator.call(context, memo, value, index, list);
+      }
+    });
+    if (!initial) throw new TypeError(reduceError);
+    return memo;
+  };
+
+  // The right-associative version of reduce, also known as `foldr`.
+  // Delegates to **ECMAScript 5**'s native `reduceRight` if available.
+  _.reduceRight = _.foldr = function(obj, iterator, memo, context) {
+    var initial = arguments.length > 2;
+    if (obj == null) obj = [];
+    if (nativeReduceRight && obj.reduceRight === nativeReduceRight) {
+      if (context) iterator = _.bind(iterator, context);
+      return initial ? obj.reduceRight(iterator, memo) : obj.reduceRight(iterator);
+    }
+    var length = obj.length;
+    if (length !== +length) {
+      var keys = _.keys(obj);
+      length = keys.length;
+    }
+    each(obj, function(value, index, list) {
+      index = keys ? keys[--length] : --length;
+      if (!initial) {
+        memo = obj[index];
+        initial = true;
+      } else {
+        memo = iterator.call(context, memo, obj[index], index, list);
+      }
+    });
+    if (!initial) throw new TypeError(reduceError);
+    return memo;
+  };
+
+  // Return the first value which passes a truth test. Aliased as `detect`.
+  _.find = _.detect = function(obj, iterator, context) {
+    var result;
+    any(obj, function(value, index, list) {
+      if (iterator.call(context, value, index, list)) {
+        result = value;
+        return true;
+      }
+    });
+    return result;
+  };
+
+  // Return all the elements that pass a truth test.
+  // Delegates to **ECMAScript 5**'s native `filter` if available.
+  // Aliased as `select`.
+  _.filter = _.select = function(obj, iterator, context) {
+    var results = [];
+    if (obj == null) return results;
+    if (nativeFilter && obj.filter === nativeFilter) return obj.filter(iterator, context);
+    each(obj, function(value, index, list) {
+      if (iterator.call(context, value, index, list)) results[results.length] = value;
+    });
+    return results;
+  };
+
+  // Return all the elements for which a truth test fails.
+  _.reject = function(obj, iterator, context) {
+    return _.filter(obj, function(value, index, list) {
+      return !iterator.call(context, value, index, list);
+    }, context);
+  };
+
+  // Determine whether all of the elements match a truth test.
+  // Delegates to **ECMAScript 5**'s native `every` if available.
+  // Aliased as `all`.
+  _.every = _.all = function(obj, iterator, context) {
+    iterator || (iterator = _.identity);
+    var result = true;
+    if (obj == null) return result;
+    if (nativeEvery && obj.every === nativeEvery) return obj.every(iterator, context);
+    each(obj, function(value, index, list) {
+      if (!(result = result && iterator.call(context, value, index, list))) return breaker;
+    });
+    return !!result;
+  };
+
+  // Determine if at least one element in the object matches a truth test.
+  // Delegates to **ECMAScript 5**'s native `some` if available.
+  // Aliased as `any`.
+  var any = _.some = _.any = function(obj, iterator, context) {
+    iterator || (iterator = _.identity);
+    var result = false;
+    if (obj == null) return result;
+    if (nativeSome && obj.some === nativeSome) return obj.some(iterator, context);
+    each(obj, function(value, index, list) {
+      if (result || (result = iterator.call(context, value, index, list))) return breaker;
+    });
+    return !!result;
+  };
+
+  // Determine if the array or object contains a given value (using `===`).
+  // Aliased as `include`.
+  _.contains = _.include = function(obj, target) {
+    if (obj == null) return false;
+    if (nativeIndexOf && obj.indexOf === nativeIndexOf) return obj.indexOf(target) != -1;
+    return any(obj, function(value) {
+      return value === target;
+    });
+  };
+
+  // Invoke a method (with arguments) on every item in a collection.
+  _.invoke = function(obj, method) {
+    var args = slice.call(arguments, 2);
+    var isFunc = _.isFunction(method);
+    return _.map(obj, function(value) {
+      return (isFunc ? method : value[method]).apply(value, args);
+    });
+  };
+
+  // Convenience version of a common use case of `map`: fetching a property.
+  _.pluck = function(obj, key) {
+    return _.map(obj, function(value){ return value[key]; });
+  };
+
+  // Convenience version of a common use case of `filter`: selecting only objects
+  // containing specific `key:value` pairs.
+  _.where = function(obj, attrs, first) {
+    if (_.isEmpty(attrs)) return first ? null : [];
+    return _[first ? 'find' : 'filter'](obj, function(value) {
+      for (var key in attrs) {
+        if (attrs[key] !== value[key]) return false;
+      }
+      return true;
+    });
+  };
+
+  // Convenience version of a common use case of `find`: getting the first object
+  // containing specific `key:value` pairs.
+  _.findWhere = function(obj, attrs) {
+    return _.where(obj, attrs, true);
+  };
+
+  // Return the maximum element or (element-based computation).
+  // Can't optimize arrays of integers longer than 65,535 elements.
+  // See: https://bugs.webkit.org/show_bug.cgi?id=80797
+  _.max = function(obj, iterator, context) {
+    if (!iterator && _.isArray(obj) && obj[0] === +obj[0] && obj.length < 65535) {
+      return Math.max.apply(Math, obj);
+    }
+    if (!iterator && _.isEmpty(obj)) return -Infinity;
+    var result = {computed : -Infinity, value: -Infinity};
+    each(obj, function(value, index, list) {
+      var computed = iterator ? iterator.call(context, value, index, list) : value;
+      computed >= result.computed && (result = {value : value, computed : computed});
+    });
+    return result.value;
+  };
+
+  // Return the minimum element (or element-based computation).
+  _.min = function(obj, iterator, context) {
+    if (!iterator && _.isArray(obj) && obj[0] === +obj[0] && obj.length < 65535) {
+      return Math.min.apply(Math, obj);
+    }
+    if (!iterator && _.isEmpty(obj)) return Infinity;
+    var result = {computed : Infinity, value: Infinity};
+    each(obj, function(value, index, list) {
+      var computed = iterator ? iterator.call(context, value, index, list) : value;
+      computed < result.computed && (result = {value : value, computed : computed});
+    });
+    return result.value;
+  };
+
+  // Shuffle an array.
+  _.shuffle = function(obj) {
+    var rand;
+    var index = 0;
+    var shuffled = [];
+    each(obj, function(value) {
+      rand = _.random(index++);
+      shuffled[index - 1] = shuffled[rand];
+      shuffled[rand] = value;
+    });
+    return shuffled;
+  };
+
+  // An internal function to generate lookup iterators.
+  var lookupIterator = function(value) {
+    return _.isFunction(value) ? value : function(obj){ return obj[value]; };
+  };
+
+  // Sort the object's values by a criterion produced by an iterator.
+  _.sortBy = function(obj, value, context) {
+    var iterator = lookupIterator(value);
+    return _.pluck(_.map(obj, function(value, index, list) {
+      return {
+        value : value,
+        index : index,
+        criteria : iterator.call(context, value, index, list)
+      };
+    }).sort(function(left, right) {
+      var a = left.criteria;
+      var b = right.criteria;
+      if (a !== b) {
+        if (a > b || a === void 0) return 1;
+        if (a < b || b === void 0) return -1;
+      }
+      return left.index < right.index ? -1 : 1;
+    }), 'value');
+  };
+
+  // An internal function used for aggregate "group by" operations.
+  var group = function(obj, value, context, behavior) {
+    var result = {};
+    var iterator = lookupIterator(value || _.identity);
+    each(obj, function(value, index) {
+      var key = iterator.call(context, value, index, obj);
+      behavior(result, key, value);
+    });
+    return result;
+  };
+
+  // Groups the object's values by a criterion. Pass either a string attribute
+  // to group by, or a function that returns the criterion.
+  _.groupBy = function(obj, value, context) {
+    return group(obj, value, context, function(result, key, value) {
+      (_.has(result, key) ? result[key] : (result[key] = [])).push(value);
+    });
+  };
+
+  // Counts instances of an object that group by a certain criterion. Pass
+  // either a string attribute to count by, or a function that returns the
+  // criterion.
+  _.countBy = function(obj, value, context) {
+    return group(obj, value, context, function(result, key) {
+      if (!_.has(result, key)) result[key] = 0;
+      result[key]++;
+    });
+  };
+
+  // Use a comparator function to figure out the smallest index at which
+  // an object should be inserted so as to maintain order. Uses binary search.
+  _.sortedIndex = function(array, obj, iterator, context) {
+    iterator = iterator == null ? _.identity : lookupIterator(iterator);
+    var value = iterator.call(context, obj);
+    var low = 0, high = array.length;
+    while (low < high) {
+      var mid = (low + high) >>> 1;
+      iterator.call(context, array[mid]) < value ? low = mid + 1 : high = mid;
+    }
+    return low;
+  };
+
+  // Safely convert anything iterable into a real, live array.
+  _.toArray = function(obj) {
+    if (!obj) return [];
+    if (_.isArray(obj)) return slice.call(obj);
+    if (obj.length === +obj.length) return _.map(obj, _.identity);
+    return _.values(obj);
+  };
+
+  // Return the number of elements in an object.
+  _.size = function(obj) {
+    if (obj == null) return 0;
+    return (obj.length === +obj.length) ? obj.length : _.keys(obj).length;
+  };
+
+  // Array Functions
+  // ---------------
+
+  // Get the first element of an array. Passing **n** will return the first N
+  // values in the array. Aliased as `head` and `take`. The **guard** check
+  // allows it to work with `_.map`.
+  _.first = _.head = _.take = function(array, n, guard) {
+    if (array == null) return void 0;
+    return (n != null) && !guard ? slice.call(array, 0, n) : array[0];
+  };
+
+  // Returns everything but the last entry of the array. Especially useful on
+  // the arguments object. Passing **n** will return all the values in
+  // the array, excluding the last N. The **guard** check allows it to work with
+  // `_.map`.
+  _.initial = function(array, n, guard) {
+    return slice.call(array, 0, array.length - ((n == null) || guard ? 1 : n));
+  };
+
+  // Get the last element of an array. Passing **n** will return the last N
+  // values in the array. The **guard** check allows it to work with `_.map`.
+  _.last = function(array, n, guard) {
+    if (array == null) return void 0;
+    if ((n != null) && !guard) {
+      return slice.call(array, Math.max(array.length - n, 0));
+    } else {
+      return array[array.length - 1];
+    }
+  };
+
+  // Returns everything but the first entry of the array. Aliased as `tail` and `drop`.
+  // Especially useful on the arguments object. Passing an **n** will return
+  // the rest N values in the array. The **guard**
+  // check allows it to work with `_.map`.
+  _.rest = _.tail = _.drop = function(array, n, guard) {
+    return slice.call(array, (n == null) || guard ? 1 : n);
+  };
+
+  // Trim out all falsy values from an array.
+  _.compact = function(array) {
+    return _.filter(array, _.identity);
+  };
+
+  // Internal implementation of a recursive `flatten` function.
+  var flatten = function(input, shallow, output) {
+    each(input, function(value) {
+      if (_.isArray(value)) {
+        shallow ? push.apply(output, value) : flatten(value, shallow, output);
+      } else {
+        output.push(value);
+      }
+    });
+    return output;
+  };
+
+  // Return a completely flattened version of an array.
+  _.flatten = function(array, shallow) {
+    return flatten(array, shallow, []);
+  };
+
+  // Return a version of the array that does not contain the specified value(s).
+  _.without = function(array) {
+    return _.difference(array, slice.call(arguments, 1));
+  };
+
+  // Produce a duplicate-free version of the array. If the array has already
+  // been sorted, you have the option of using a faster algorithm.
+  // Aliased as `unique`.
+  _.uniq = _.unique = function(array, isSorted, iterator, context) {
+    if (_.isFunction(isSorted)) {
+      context = iterator;
+      iterator = isSorted;
+      isSorted = false;
+    }
+    var initial = iterator ? _.map(array, iterator, context) : array;
+    var results = [];
+    var seen = [];
+    each(initial, function(value, index) {
+      if (isSorted ? (!index || seen[seen.length - 1] !== value) : !_.contains(seen, value)) {
+        seen.push(value);
+        results.push(array[index]);
+      }
+    });
+    return results;
+  };
+
+  // Produce an array that contains the union: each distinct element from all of
+  // the passed-in arrays.
+  _.union = function() {
+    return _.uniq(concat.apply(ArrayProto, arguments));
+  };
+
+  // Produce an array that contains every item shared between all the
+  // passed-in arrays.
+  _.intersection = function(array) {
+    var rest = slice.call(arguments, 1);
+    return _.filter(_.uniq(array), function(item) {
+      return _.every(rest, function(other) {
+        return _.indexOf(other, item) >= 0;
+      });
+    });
+  };
+
+  // Take the difference between one array and a number of other arrays.
+  // Only the elements present in just the first array will remain.
+  _.difference = function(array) {
+    var rest = concat.apply(ArrayProto, slice.call(arguments, 1));
+    return _.filter(array, function(value){ return !_.contains(rest, value); });
+  };
+
+  // Zip together multiple lists into a single array -- elements that share
+  // an index go together.
+  _.zip = function() {
+    var args = slice.call(arguments);
+    var length = _.max(_.pluck(args, 'length'));
+    var results = new Array(length);
+    for (var i = 0; i < length; i++) {
+      results[i] = _.pluck(args, "" + i);
+    }
+    return results;
+  };
+
+  // Converts lists into objects. Pass either a single array of `[key, value]`
+  // pairs, or two parallel arrays of the same length -- one of keys, and one of
+  // the corresponding values.
+  _.object = function(list, values) {
+    if (list == null) return {};
+    var result = {};
+    for (var i = 0, l = list.length; i < l; i++) {
+      if (values) {
+        result[list[i]] = values[i];
+      } else {
+        result[list[i][0]] = list[i][1];
+      }
+    }
+    return result;
+  };
+
+  // If the browser doesn't supply us with indexOf (I'm looking at you, **MSIE**),
+  // we need this function. Return the position of the first occurrence of an
+  // item in an array, or -1 if the item is not included in the array.
+  // Delegates to **ECMAScript 5**'s native `indexOf` if available.
+  // If the array is large and already in sort order, pass `true`
+  // for **isSorted** to use binary search.
+  _.indexOf = function(array, item, isSorted) {
+    if (array == null) return -1;
+    var i = 0, l = array.length;
+    if (isSorted) {
+      if (typeof isSorted == 'number') {
+        i = (isSorted < 0 ? Math.max(0, l + isSorted) : isSorted);
+      } else {
+        i = _.sortedIndex(array, item);
+        return array[i] === item ? i : -1;
+      }
+    }
+    if (nativeIndexOf && array.indexOf === nativeIndexOf) return array.indexOf(item, isSorted);
+    for (; i < l; i++) if (array[i] === item) return i;
+    return -1;
+  };
+
+  // Delegates to **ECMAScript 5**'s native `lastIndexOf` if available.
+  _.lastIndexOf = function(array, item, from) {
+    if (array == null) return -1;
+    var hasIndex = from != null;
+    if (nativeLastIndexOf && array.lastIndexOf === nativeLastIndexOf) {
+      return hasIndex ? array.lastIndexOf(item, from) : array.lastIndexOf(item);
+    }
+    var i = (hasIndex ? from : array.length);
+    while (i--) if (array[i] === item) return i;
+    return -1;
+  };
+
+  // Generate an integer Array containing an arithmetic progression. A port of
+  // the native Python `range()` function. See
+  // [the Python documentation](http://docs.python.org/library/functions.html#range).
+  _.range = function(start, stop, step) {
+    if (arguments.length <= 1) {
+      stop = start || 0;
+      start = 0;
+    }
+    step = arguments[2] || 1;
+
+    var len = Math.max(Math.ceil((stop - start) / step), 0);
+    var idx = 0;
+    var range = new Array(len);
+
+    while(idx < len) {
+      range[idx++] = start;
+      start += step;
+    }
+
+    return range;
+  };
+
+  // Function (ahem) Functions
+  // ------------------
+
+  // Create a function bound to a given object (assigning `this`, and arguments,
+  // optionally). Delegates to **ECMAScript 5**'s native `Function.bind` if
+  // available.
+  _.bind = function(func, context) {
+    if (func.bind === nativeBind && nativeBind) return nativeBind.apply(func, slice.call(arguments, 1));
+    var args = slice.call(arguments, 2);
+    return function() {
+      return func.apply(context, args.concat(slice.call(arguments)));
+    };
+  };
+
+  // Partially apply a function by creating a version that has had some of its
+  // arguments pre-filled, without changing its dynamic `this` context.
+  _.partial = function(func) {
+    var args = slice.call(arguments, 1);
+    return function() {
+      return func.apply(this, args.concat(slice.call(arguments)));
+    };
+  };
+
+  // Bind all of an object's methods to that object. Useful for ensuring that
+  // all callbacks defined on an object belong to it.
+  _.bindAll = function(obj) {
+    var funcs = slice.call(arguments, 1);
+    if (funcs.length === 0) funcs = _.functions(obj);
+    each(funcs, function(f) { obj[f] = _.bind(obj[f], obj); });
+    return obj;
+  };
+
+  // Memoize an expensive function by storing its results.
+  _.memoize = function(func, hasher) {
+    var memo = {};
+    hasher || (hasher = _.identity);
+    return function() {
+      var key = hasher.apply(this, arguments);
+      return _.has(memo, key) ? memo[key] : (memo[key] = func.apply(this, arguments));
+    };
+  };
+
+  // Delays a function for the given number of milliseconds, and then calls
+  // it with the arguments supplied.
+  _.delay = function(func, wait) {
+    var args = slice.call(arguments, 2);
+    return setTimeout(function(){ return func.apply(null, args); }, wait);
+  };
+
+  // Defers a function, scheduling it to run after the current call stack has
+  // cleared.
+  _.defer = function(func) {
+    return _.delay.apply(_, [func, 1].concat(slice.call(arguments, 1)));
+  };
+
+  // Returns a function, that, when invoked, will only be triggered at most once
+  // during a given window of time.
+  _.throttle = function(func, wait) {
+    var context, args, timeout, result;
+    var previous = 0;
+    var later = function() {
+      previous = new Date;
+      timeout = null;
+      result = func.apply(context, args);
+    };
+    return function() {
+      var now = new Date;
+      var remaining = wait - (now - previous);
+      context = this;
+      args = arguments;
+      if (remaining <= 0) {
+        clearTimeout(timeout);
+        timeout = null;
+        previous = now;
+        result = func.apply(context, args);
+      } else if (!timeout) {
+        timeout = setTimeout(later, remaining);
+      }
+      return result;
+    };
+  };
+
+  // Returns a function, that, as long as it continues to be invoked, will not
+  // be triggered. The function will be called after it stops being called for
+  // N milliseconds. If `immediate` is passed, trigger the function on the
+  // leading edge, instead of the trailing.
+  _.debounce = function(func, wait, immediate) {
+    var timeout, result;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+        timeout = null;
+        if (!immediate) result = func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) result = func.apply(context, args);
+      return result;
+    };
+  };
+
+  // Returns a function that will be executed at most one time, no matter how
+  // often you call it. Useful for lazy initialization.
+  _.once = function(func) {
+    var ran = false, memo;
+    return function() {
+      if (ran) return memo;
+      ran = true;
+      memo = func.apply(this, arguments);
+      func = null;
+      return memo;
+    };
+  };
+
+  // Returns the first function passed as an argument to the second,
+  // allowing you to adjust arguments, run code before and after, and
+  // conditionally execute the original function.
+  _.wrap = function(func, wrapper) {
+    return function() {
+      var args = [func];
+      push.apply(args, arguments);
+      return wrapper.apply(this, args);
+    };
+  };
+
+  // Returns a function that is the composition of a list of functions, each
+  // consuming the return value of the function that follows.
+  _.compose = function() {
+    var funcs = arguments;
+    return function() {
+      var args = arguments;
+      for (var i = funcs.length - 1; i >= 0; i--) {
+        args = [funcs[i].apply(this, args)];
+      }
+      return args[0];
+    };
+  };
+
+  // Returns a function that will only be executed after being called N times.
+  _.after = function(times, func) {
+    if (times <= 0) return func();
+    return function() {
+      if (--times < 1) {
+        return func.apply(this, arguments);
+      }
+    };
+  };
+
+  // Object Functions
+  // ----------------
+
+  // Retrieve the names of an object's properties.
+  // Delegates to **ECMAScript 5**'s native `Object.keys`
+  _.keys = nativeKeys || function(obj) {
+    if (obj !== Object(obj)) throw new TypeError('Invalid object');
+    var keys = [];
+    for (var key in obj) if (_.has(obj, key)) keys[keys.length] = key;
+    return keys;
+  };
+
+  // Retrieve the values of an object's properties.
+  _.values = function(obj) {
+    var values = [];
+    for (var key in obj) if (_.has(obj, key)) values.push(obj[key]);
+    return values;
+  };
+
+  // Convert an object into a list of `[key, value]` pairs.
+  _.pairs = function(obj) {
+    var pairs = [];
+    for (var key in obj) if (_.has(obj, key)) pairs.push([key, obj[key]]);
+    return pairs;
+  };
+
+  // Invert the keys and values of an object. The values must be serializable.
+  _.invert = function(obj) {
+    var result = {};
+    for (var key in obj) if (_.has(obj, key)) result[obj[key]] = key;
+    return result;
+  };
+
+  // Return a sorted list of the function names available on the object.
+  // Aliased as `methods`
+  _.functions = _.methods = function(obj) {
+    var names = [];
+    for (var key in obj) {
+      if (_.isFunction(obj[key])) names.push(key);
+    }
+    return names.sort();
+  };
+
+  // Extend a given object with all the properties in passed-in object(s).
+  _.extend = function(obj) {
+    each(slice.call(arguments, 1), function(source) {
+      if (source) {
+        for (var prop in source) {
+          obj[prop] = source[prop];
+        }
+      }
+    });
+    return obj;
+  };
+
+  // Return a copy of the object only containing the whitelisted properties.
+  _.pick = function(obj) {
+    var copy = {};
+    var keys = concat.apply(ArrayProto, slice.call(arguments, 1));
+    each(keys, function(key) {
+      if (key in obj) copy[key] = obj[key];
+    });
+    return copy;
+  };
+
+   // Return a copy of the object without the blacklisted properties.
+  _.omit = function(obj) {
+    var copy = {};
+    var keys = concat.apply(ArrayProto, slice.call(arguments, 1));
+    for (var key in obj) {
+      if (!_.contains(keys, key)) copy[key] = obj[key];
+    }
+    return copy;
+  };
+
+  // Fill in a given object with default properties.
+  _.defaults = function(obj) {
+    each(slice.call(arguments, 1), function(source) {
+      if (source) {
+        for (var prop in source) {
+          if (obj[prop] == null) obj[prop] = source[prop];
+        }
+      }
+    });
+    return obj;
+  };
+
+  // Create a (shallow-cloned) duplicate of an object.
+  _.clone = function(obj) {
+    if (!_.isObject(obj)) return obj;
+    return _.isArray(obj) ? obj.slice() : _.extend({}, obj);
+  };
+
+  // Invokes interceptor with the obj, and then returns obj.
+  // The primary purpose of this method is to "tap into" a method chain, in
+  // order to perform operations on intermediate results within the chain.
+  _.tap = function(obj, interceptor) {
+    interceptor(obj);
+    return obj;
+  };
+
+  // Internal recursive comparison function for `isEqual`.
+  var eq = function(a, b, aStack, bStack) {
+    // Identical objects are equal. `0 === -0`, but they aren't identical.
+    // See the Harmony `egal` proposal: http://wiki.ecmascript.org/doku.php?id=harmony:egal.
+    if (a === b) return a !== 0 || 1 / a == 1 / b;
+    // A strict comparison is necessary because `null == undefined`.
+    if (a == null || b == null) return a === b;
+    // Unwrap any wrapped objects.
+    if (a instanceof _) a = a._wrapped;
+    if (b instanceof _) b = b._wrapped;
+    // Compare `[[Class]]` names.
+    var className = toString.call(a);
+    if (className != toString.call(b)) return false;
+    switch (className) {
+      // Strings, numbers, dates, and booleans are compared by value.
+      case '[object String]':
+        // Primitives and their corresponding object wrappers are equivalent; thus, `"5"` is
+        // equivalent to `new String("5")`.
+        return a == String(b);
+      case '[object Number]':
+        // `NaN`s are equivalent, but non-reflexive. An `egal` comparison is performed for
+        // other numeric values.
+        return a != +a ? b != +b : (a == 0 ? 1 / a == 1 / b : a == +b);
+      case '[object Date]':
+      case '[object Boolean]':
+        // Coerce dates and booleans to numeric primitive values. Dates are compared by their
+        // millisecond representations. Note that invalid dates with millisecond representations
+        // of `NaN` are not equivalent.
+        return +a == +b;
+      // RegExps are compared by their source patterns and flags.
+      case '[object RegExp]':
+        return a.source == b.source &&
+               a.global == b.global &&
+               a.multiline == b.multiline &&
+               a.ignoreCase == b.ignoreCase;
+    }
+    if (typeof a != 'object' || typeof b != 'object') return false;
+    // Assume equality for cyclic structures. The algorithm for detecting cyclic
+    // structures is adapted from ES 5.1 section 15.12.3, abstract operation `JO`.
+    var length = aStack.length;
+    while (length--) {
+      // Linear search. Performance is inversely proportional to the number of
+      // unique nested structures.
+      if (aStack[length] == a) return bStack[length] == b;
+    }
+    // Add the first object to the stack of traversed objects.
+    aStack.push(a);
+    bStack.push(b);
+    var size = 0, result = true;
+    // Recursively compare objects and arrays.
+    if (className == '[object Array]') {
+      // Compare array lengths to determine if a deep comparison is necessary.
+      size = a.length;
+      result = size == b.length;
+      if (result) {
+        // Deep compare the contents, ignoring non-numeric properties.
+        while (size--) {
+          if (!(result = eq(a[size], b[size], aStack, bStack))) break;
+        }
+      }
+    } else {
+      // Objects with different constructors are not equivalent, but `Object`s
+      // from different frames are.
+      var aCtor = a.constructor, bCtor = b.constructor;
+      if (aCtor !== bCtor && !(_.isFunction(aCtor) && (aCtor instanceof aCtor) &&
+                               _.isFunction(bCtor) && (bCtor instanceof bCtor))) {
+        return false;
+      }
+      // Deep compare objects.
+      for (var key in a) {
+        if (_.has(a, key)) {
+          // Count the expected number of properties.
+          size++;
+          // Deep compare each member.
+          if (!(result = _.has(b, key) && eq(a[key], b[key], aStack, bStack))) break;
+        }
+      }
+      // Ensure that both objects contain the same number of properties.
+      if (result) {
+        for (key in b) {
+          if (_.has(b, key) && !(size--)) break;
+        }
+        result = !size;
+      }
+    }
+    // Remove the first object from the stack of traversed objects.
+    aStack.pop();
+    bStack.pop();
+    return result;
+  };
+
+  // Perform a deep comparison to check if two objects are equal.
+  _.isEqual = function(a, b) {
+    return eq(a, b, [], []);
+  };
+
+  // Is a given array, string, or object empty?
+  // An "empty" object has no enumerable own-properties.
+  _.isEmpty = function(obj) {
+    if (obj == null) return true;
+    if (_.isArray(obj) || _.isString(obj)) return obj.length === 0;
+    for (var key in obj) if (_.has(obj, key)) return false;
+    return true;
+  };
+
+  // Is a given value a DOM element?
+  _.isElement = function(obj) {
+    return !!(obj && obj.nodeType === 1);
+  };
+
+  // Is a given value an array?
+  // Delegates to ECMA5's native Array.isArray
+  _.isArray = nativeIsArray || function(obj) {
+    return toString.call(obj) == '[object Array]';
+  };
+
+  // Is a given variable an object?
+  _.isObject = function(obj) {
+    return obj === Object(obj);
+  };
+
+  // Add some isType methods: isArguments, isFunction, isString, isNumber, isDate, isRegExp.
+  each(['Arguments', 'Function', 'String', 'Number', 'Date', 'RegExp'], function(name) {
+    _['is' + name] = function(obj) {
+      return toString.call(obj) == '[object ' + name + ']';
+    };
+  });
+
+  // Define a fallback version of the method in browsers (ahem, IE), where
+  // there isn't any inspectable "Arguments" type.
+  if (!_.isArguments(arguments)) {
+    _.isArguments = function(obj) {
+      return !!(obj && _.has(obj, 'callee'));
+    };
+  }
+
+  // Optimize `isFunction` if appropriate.
+  if (typeof (/./) !== 'function') {
+    _.isFunction = function(obj) {
+      return typeof obj === 'function';
+    };
+  }
+
+  // Is a given object a finite number?
+  _.isFinite = function(obj) {
+    return isFinite(obj) && !isNaN(parseFloat(obj));
+  };
+
+  // Is the given value `NaN`? (NaN is the only number which does not equal itself).
+  _.isNaN = function(obj) {
+    return _.isNumber(obj) && obj != +obj;
+  };
+
+  // Is a given value a boolean?
+  _.isBoolean = function(obj) {
+    return obj === true || obj === false || toString.call(obj) == '[object Boolean]';
+  };
+
+  // Is a given value equal to null?
+  _.isNull = function(obj) {
+    return obj === null;
+  };
+
+  // Is a given variable undefined?
+  _.isUndefined = function(obj) {
+    return obj === void 0;
+  };
+
+  // Shortcut function for checking if an object has a given property directly
+  // on itself (in other words, not on a prototype).
+  _.has = function(obj, key) {
+    return hasOwnProperty.call(obj, key);
+  };
+
+  // Utility Functions
+  // -----------------
+
+  // Run Underscore.js in *noConflict* mode, returning the `_` variable to its
+  // previous owner. Returns a reference to the Underscore object.
+  _.noConflict = function() {
+    root._ = previousUnderscore;
+    return this;
+  };
+
+  // Keep the identity function around for default iterators.
+  _.identity = function(value) {
+    return value;
+  };
+
+  // Run a function **n** times.
+  _.times = function(n, iterator, context) {
+    var accum = Array(n);
+    for (var i = 0; i < n; i++) accum[i] = iterator.call(context, i);
+    return accum;
+  };
+
+  // Return a random integer between min and max (inclusive).
+  _.random = function(min, max) {
+    if (max == null) {
+      max = min;
+      min = 0;
+    }
+    return min + Math.floor(Math.random() * (max - min + 1));
+  };
+
+  // List of HTML entities for escaping.
+  var entityMap = {
+    escape: {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#x27;',
+      '/': '&#x2F;'
+    }
+  };
+  entityMap.unescape = _.invert(entityMap.escape);
+
+  // Regexes containing the keys and values listed immediately above.
+  var entityRegexes = {
+    escape:   new RegExp('[' + _.keys(entityMap.escape).join('') + ']', 'g'),
+    unescape: new RegExp('(' + _.keys(entityMap.unescape).join('|') + ')', 'g')
+  };
+
+  // Functions for escaping and unescaping strings to/from HTML interpolation.
+  _.each(['escape', 'unescape'], function(method) {
+    _[method] = function(string) {
+      if (string == null) return '';
+      return ('' + string).replace(entityRegexes[method], function(match) {
+        return entityMap[method][match];
+      });
+    };
+  });
+
+  // If the value of the named property is a function then invoke it;
+  // otherwise, return it.
+  _.result = function(object, property) {
+    if (object == null) return null;
+    var value = object[property];
+    return _.isFunction(value) ? value.call(object) : value;
+  };
+
+  // Add your own custom functions to the Underscore object.
+  _.mixin = function(obj) {
+    each(_.functions(obj), function(name){
+      var func = _[name] = obj[name];
+      _.prototype[name] = function() {
+        var args = [this._wrapped];
+        push.apply(args, arguments);
+        return result.call(this, func.apply(_, args));
+      };
+    });
+  };
+
+  // Generate a unique integer id (unique within the entire client session).
+  // Useful for temporary DOM ids.
+  var idCounter = 0;
+  _.uniqueId = function(prefix) {
+    var id = ++idCounter + '';
+    return prefix ? prefix + id : id;
+  };
+
+  // By default, Underscore uses ERB-style template delimiters, change the
+  // following template settings to use alternative delimiters.
+  _.templateSettings = {
+    evaluate    : /<%([\s\S]+?)%>/g,
+    interpolate : /<%=([\s\S]+?)%>/g,
+    escape      : /<%-([\s\S]+?)%>/g
+  };
+
+  // When customizing `templateSettings`, if you don't want to define an
+  // interpolation, evaluation or escaping regex, we need one that is
+  // guaranteed not to match.
+  var noMatch = /(.)^/;
+
+  // Certain characters need to be escaped so that they can be put into a
+  // string literal.
+  var escapes = {
+    "'":      "'",
+    '\\':     '\\',
+    '\r':     'r',
+    '\n':     'n',
+    '\t':     't',
+    '\u2028': 'u2028',
+    '\u2029': 'u2029'
+  };
+
+  var escaper = /\\|'|\r|\n|\t|\u2028|\u2029/g;
+
+  // JavaScript micro-templating, similar to John Resig's implementation.
+  // Underscore templating handles arbitrary delimiters, preserves whitespace,
+  // and correctly escapes quotes within interpolated code.
+  _.template = function(text, data, settings) {
+    var render;
+    settings = _.defaults({}, settings, _.templateSettings);
+
+    // Combine delimiters into one regular expression via alternation.
+    var matcher = new RegExp([
+      (settings.escape || noMatch).source,
+      (settings.interpolate || noMatch).source,
+      (settings.evaluate || noMatch).source
+    ].join('|') + '|$', 'g');
+
+    // Compile the template source, escaping string literals appropriately.
+    var index = 0;
+    var source = "__p+='";
+    text.replace(matcher, function(match, escape, interpolate, evaluate, offset) {
+      source += text.slice(index, offset)
+        .replace(escaper, function(match) { return '\\' + escapes[match]; });
+
+      if (escape) {
+        source += "'+\n((__t=(" + escape + "))==null?'':_.escape(__t))+\n'";
+      }
+      if (interpolate) {
+        source += "'+\n((__t=(" + interpolate + "))==null?'':__t)+\n'";
+      }
+      if (evaluate) {
+        source += "';\n" + evaluate + "\n__p+='";
+      }
+      index = offset + match.length;
+      return match;
+    });
+    source += "';\n";
+
+    // If a variable is not specified, place data values in local scope.
+    if (!settings.variable) source = 'with(obj||{}){\n' + source + '}\n';
+
+    source = "var __t,__p='',__j=Array.prototype.join," +
+      "print=function(){__p+=__j.call(arguments,'');};\n" +
+      source + "return __p;\n";
+
+    try {
+      render = new Function(settings.variable || 'obj', '_', source);
+    } catch (e) {
+      e.source = source;
+      throw e;
+    }
+
+    if (data) return render(data, _);
+    var template = function(data) {
+      return render.call(this, data, _);
+    };
+
+    // Provide the compiled function source as a convenience for precompilation.
+    template.source = 'function(' + (settings.variable || 'obj') + '){\n' + source + '}';
+
+    return template;
+  };
+
+  // Add a "chain" function, which will delegate to the wrapper.
+  _.chain = function(obj) {
+    return _(obj).chain();
+  };
+
+  // OOP
+  // ---------------
+  // If Underscore is called as a function, it returns a wrapped object that
+  // can be used OO-style. This wrapper holds altered versions of all the
+  // underscore functions. Wrapped objects may be chained.
+
+  // Helper function to continue chaining intermediate results.
+  var result = function(obj) {
+    return this._chain ? _(obj).chain() : obj;
+  };
+
+  // Add all of the Underscore functions to the wrapper object.
+  _.mixin(_);
+
+  // Add all mutator Array functions to the wrapper.
+  each(['pop', 'push', 'reverse', 'shift', 'sort', 'splice', 'unshift'], function(name) {
+    var method = ArrayProto[name];
+    _.prototype[name] = function() {
+      var obj = this._wrapped;
+      method.apply(obj, arguments);
+      if ((name == 'shift' || name == 'splice') && obj.length === 0) delete obj[0];
+      return result.call(this, obj);
+    };
+  });
+
+  // Add all accessor Array functions to the wrapper.
+  each(['concat', 'join', 'slice'], function(name) {
+    var method = ArrayProto[name];
+    _.prototype[name] = function() {
+      return result.call(this, method.apply(this._wrapped, arguments));
+    };
+  });
+
+  _.extend(_.prototype, {
+
+    // Start chaining a wrapped Underscore object.
+    chain: function() {
+      this._chain = true;
+      return this;
+    },
+
+    // Extracts the result from a wrapped and chained object.
+    value: function() {
+      return this._wrapped;
+    }
+
+  });
+
+}).call(this);
+
+},{}],23:[function(require,module,exports){
+if (typeof(window) !== 'undefined' && typeof(window.requestAnimationFrame) !== 'function') {
+  window.requestAnimationFrame = (
+    window.webkitRequestAnimationFrame   ||
+    window.mozRequestAnimationFrame      ||
+    window.oRequestAnimationFrame        ||
+    window.msRequestAnimationFrame       ||
+    function(callback) { setTimeout(callback, 1000 / 60); }
+  );
+}
+
+Leap = require("../lib/index");
+
+},{"../lib/index":9}]},{},[23])
+;}, "classes/libs/leap-0.4.3.min": function(exports, require, module) {!function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require=="function"&&require;if(!s&&o)return o(n,!0);if(r)return r(n,!0);throw new Error("Cannot find module '"+n+"'")}var u=t[n]={exports:{}};e[n][0].call(u.exports,function(t){var r=e[n][1][t];return i(r?r:t)},u,u.exports)}return t[n].exports}var r=typeof require=="function"&&require;for(var s=0;s<n.length;s++)i(n[s]);return i}({1:[function(require,module,exports){},{}],2:[function(require,module,exports){var CircularBuffer=module.exports=function(size){this.pos=0;this._buf=[];this.size=size};CircularBuffer.prototype.get=function(i){if(i==undefined)i=0;if(i>=this.size)return undefined;if(i>=this._buf.length)return undefined;return this._buf[(this.pos-i-1)%this.size]};CircularBuffer.prototype.push=function(o){this._buf[this.pos%this.size]=o;return this.pos++}},{}],3:[function(require,module,exports){var chooseProtocol=require("../protocol").chooseProtocol,EventEmitter=require("events").EventEmitter,_=require("underscore");var BaseConnection=module.exports=function(opts){this.opts=_.defaults(opts||{},{host:"127.0.0.1",enableGestures:false,port:6437,background:false,requestProtocolVersion:4});this.host=this.opts.host;this.port=this.opts.port;this.protocolVersionVerified=false;this.on("ready",function(){this.enableGestures(this.opts.enableGestures);this.setBackground(this.opts.background)})};BaseConnection.prototype.getUrl=function(){return"ws://"+this.host+":"+this.port+"/v"+this.opts.requestProtocolVersion+".json"};BaseConnection.prototype.setBackground=function(state){this.opts.background=state;if(this.protocol&&this.protocol.sendBackground&&this.background!==this.opts.background){this.background=this.opts.background;this.protocol.sendBackground(this,this.opts.background)}};BaseConnection.prototype.handleOpen=function(){if(!this.connected){this.connected=true;this.emit("connect")}};BaseConnection.prototype.enableGestures=function(enabled){this.gesturesEnabled=enabled?true:false;this.send(this.protocol.encode({enableGestures:this.gesturesEnabled}))};BaseConnection.prototype.handleClose=function(code,reason){if(!this.connected)return;this.disconnect();if(code===1001&&this.opts.requestProtocolVersion>1){if(this.protocolVersionVerified){this.protocolVersionVerified=false}else{this.opts.requestProtocolVersion--}}this.startReconnection()};BaseConnection.prototype.startReconnection=function(){var connection=this;this.reconnectionTimer=setInterval(function(){connection.reconnect()},1e3)};BaseConnection.prototype.disconnect=function(){if(!this.socket)return;this.socket.close();delete this.socket;delete this.protocol;delete this.background;if(this.connected){this.connected=false;this.emit("disconnect")}return true};BaseConnection.prototype.reconnect=function(){if(this.connected){clearInterval(this.reconnectionTimer)}else{this.disconnect();this.connect()}};BaseConnection.prototype.handleData=function(data){var message=JSON.parse(data);var messageEvent;if(this.protocol===undefined){messageEvent=this.protocol=chooseProtocol(message);this.protocolVersionVerified=true;this.emit("ready")}else{messageEvent=this.protocol(message)}this.emit(messageEvent.type,messageEvent)};BaseConnection.prototype.connect=function(){if(this.socket)return;this.socket=this.setupSocket();return true};BaseConnection.prototype.send=function(data){this.socket.send(data)};BaseConnection.prototype.reportFocus=function(state){if(this.focusedState===state)return;this.focusedState=state;this.emit(this.focusedState?"focus":"blur");if(this.protocol&&this.protocol.sendFocused){this.protocol.sendFocused(this,this.focusedState)}};_.extend(BaseConnection.prototype,EventEmitter.prototype)},{"../protocol":13,events:19,underscore:22}],4:[function(require,module,exports){var BaseConnection=module.exports=require("./base"),_=require("underscore");var BrowserConnection=module.exports=function(opts){BaseConnection.call(this,opts);var connection=this;this.on("ready",function(){connection.startFocusLoop()});this.on("disconnect",function(){connection.stopFocusLoop()})};_.extend(BrowserConnection.prototype,BaseConnection.prototype);BrowserConnection.prototype.setupSocket=function(){var connection=this;var socket=new WebSocket(this.getUrl());socket.onopen=function(){connection.handleOpen()};socket.onclose=function(data){connection.handleClose(data["code"],data["reason"])};socket.onmessage=function(message){connection.handleData(message.data)};return socket};BrowserConnection.prototype.startFocusLoop=function(){if(this.focusDetectorTimer)return;var connection=this;var propertyName=null;if(typeof document.hidden!=="undefined"){propertyName="hidden"}else if(typeof document.mozHidden!=="undefined"){propertyName="mozHidden"}else if(typeof document.msHidden!=="undefined"){propertyName="msHidden"}else if(typeof document.webkitHidden!=="undefined"){propertyName="webkitHidden"}else{propertyName=undefined}if(connection.windowVisible===undefined){connection.windowVisible=propertyName===undefined?true:document[propertyName]===false}var focusListener=window.addEventListener("focus",function(e){connection.windowVisible=true;updateFocusState()});var blurListener=window.addEventListener("blur",function(e){connection.windowVisible=false;updateFocusState()});this.on("disconnect",function(){window.removeEventListener("focus",focusListener);window.removeEventListener("blur",blurListener)});var updateFocusState=function(){var isVisible=propertyName===undefined?true:document[propertyName]===false;connection.reportFocus(isVisible&&connection.windowVisible)};this.focusDetectorTimer=setInterval(updateFocusState,100)};BrowserConnection.prototype.stopFocusLoop=function(){if(!this.focusDetectorTimer)return;clearTimeout(this.focusDetectorTimer);delete this.focusDetectorTimer}},{"./base":3,underscore:22}],5:[function(require,module,exports){var process=require("__browserify_process");var Frame=require("./frame"),Hand=require("./hand"),Pointable=require("./pointable"),CircularBuffer=require("./circular_buffer"),Pipeline=require("./pipeline"),EventEmitter=require("events").EventEmitter,gestureListener=require("./gesture").gestureListener,_=require("underscore");var Controller=module.exports=function(opts){var inNode=typeof process!=="undefined"&&process.versions&&process.versions.node,controller=this;opts=_.defaults(opts||{},{inNode:inNode});this.inNode=opts.inNode;opts=_.defaults(opts||{},{frameEventName:this.useAnimationLoop()?"animationFrame":"deviceFrame",suppressAnimationLoop:!this.useAnimationLoop(),loopWhileDisconnected:false,useAllPlugins:false});this.animationFrameRequested=false;this.onAnimationFrame=function(){controller.emit("animationFrame",controller.lastConnectionFrame);if(controller.loopWhileDisconnected&&(controller.connection.focusedState||controller.connection.opts.background)){window.requestAnimationFrame(controller.onAnimationFrame)}else{controller.animationFrameRequested=false}};this.suppressAnimationLoop=opts.suppressAnimationLoop;this.loopWhileDisconnected=opts.loopWhileDisconnected;this.frameEventName=opts.frameEventName;this.useAllPlugins=opts.useAllPlugins;this.history=new CircularBuffer(200);this.lastFrame=Frame.Invalid;this.lastValidFrame=Frame.Invalid;this.lastConnectionFrame=Frame.Invalid;this.accumulatedGestures=[];if(opts.connectionType===undefined){this.connectionType=this.inBrowser()?require("./connection/browser"):require("./connection/node")}else{this.connectionType=opts.connectionType}this.connection=new this.connectionType(opts);this.plugins={};this._pluginPipelineSteps={};this._pluginExtendedMethods={};if(opts.useAllPlugins)this.useRegisteredPlugins();this.setupConnectionEvents()};Controller.prototype.gesture=function(type,cb){var creator=gestureListener(this,type);if(cb!==undefined){creator.stop(cb)}return creator};Controller.prototype.setBackground=function(state){this.connection.setBackground(state);return this};Controller.prototype.inBrowser=function(){return!this.inNode};Controller.prototype.useAnimationLoop=function(){return this.inBrowser()&&!this.inBackgroundPage()};Controller.prototype.inBackgroundPage=function(){return typeof chrome!=="undefined"&&chrome.extension&&chrome.extension.getBackgroundPage&&chrome.extension.getBackgroundPage()===window};Controller.prototype.connect=function(){this.connection.connect();return this};Controller.prototype.runAnimationLoop=function(){if(!this.suppressAnimationLoop&&!this.animationFrameRequested){this.animationFrameRequested=true;window.requestAnimationFrame(this.onAnimationFrame)}};Controller.prototype.disconnect=function(){this.connection.disconnect();return this};Controller.prototype.frame=function(num){return this.history.get(num)||Frame.Invalid};Controller.prototype.loop=function(callback){switch(callback.length){case 1:this.on(this.frameEventName,callback);break;case 2:var controller=this;var scheduler=null;var immediateRunnerCallback=function(frame){callback(frame,function(){if(controller.lastFrame!=frame){immediateRunnerCallback(controller.lastFrame)}else{controller.once(controller.frameEventName,immediateRunnerCallback)}})};this.once(this.frameEventName,immediateRunnerCallback);break}return this.connect()};Controller.prototype.addStep=function(step){if(!this.pipeline)this.pipeline=new Pipeline(this);this.pipeline.addStep(step)};Controller.prototype.processFrame=function(frame){if(frame.gestures){this.accumulatedGestures=this.accumulatedGestures.concat(frame.gestures)}this.lastConnectionFrame=frame;this.runAnimationLoop();this.emit("deviceFrame",frame)};Controller.prototype.processFinishedFrame=function(frame){this.lastFrame=frame;if(frame.valid){this.lastValidFrame=frame}frame.controller=this;frame.historyIdx=this.history.push(frame);if(frame.gestures){frame.gestures=this.accumulatedGestures;this.accumulatedGestures=[];for(var gestureIdx=0;gestureIdx!=frame.gestures.length;gestureIdx++){this.emit("gesture",frame.gestures[gestureIdx],frame)}}if(this.pipeline){frame=this.pipeline.run(frame);if(!frame)frame=Frame.Invalid}this.emit("frame",frame)};Controller.prototype.setupConnectionEvents=function(){var controller=this;this.connection.on("frame",function(frame){controller.processFrame(frame)});this.on(this.frameEventName,function(frame){controller.processFinishedFrame(frame)});this.connection.on("disconnect",function(){controller.emit("disconnect")});this.connection.on("ready",function(){controller.emit("ready")});this.connection.on("connect",function(){controller.emit("connect")});this.connection.on("focus",function(){controller.emit("focus");controller.runAnimationLoop()});this.connection.on("blur",function(){controller.emit("blur")});this.connection.on("protocol",function(protocol){controller.emit("protocol",protocol)});this.connection.on("deviceConnect",function(evt){controller.emit(evt.state?"deviceConnected":"deviceDisconnected")})};Controller._pluginFactories={};Controller.plugin=function(pluginName,factory){if(this._pluginFactories[pluginName]){throw'Plugin "'+pluginName+'" already registered'}return this._pluginFactories[pluginName]=factory};Controller.plugins=function(){return _.keys(this._pluginFactories)};Controller.prototype.use=function(pluginName,options){var functionOrHash,pluginFactory,key,pluginInstance,klass;pluginFactory=typeof pluginName=="function"?pluginName:Controller._pluginFactories[pluginName];if(!pluginFactory){throw"Leap Plugin "+pluginName+" not found."}options||(options={});if(this.plugins[pluginName]){_.extend(this.plugins[pluginName],options);return this}this.plugins[pluginName]=options;pluginInstance=pluginFactory.call(this,options);for(key in pluginInstance){functionOrHash=pluginInstance[key];if(typeof functionOrHash==="function"){if(!this.pipeline)this.pipeline=new Pipeline(this);if(!this._pluginPipelineSteps[pluginName])this._pluginPipelineSteps[pluginName]=[];this._pluginPipelineSteps[pluginName].push(this.pipeline.addWrappedStep(key,functionOrHash))}else{if(!this._pluginExtendedMethods[pluginName])this._pluginExtendedMethods[pluginName]=[];switch(key){case"frame":klass=Frame;break;case"hand":klass=Hand;break;case"pointable":klass=Pointable;break;default:throw pluginName+' specifies invalid object type "'+key+'" for prototypical extension'}_.extend(klass.prototype,functionOrHash);_.extend(klass.Invalid,functionOrHash);this._pluginExtendedMethods[pluginName].push([klass,functionOrHash])}}return this};Controller.prototype.stopUsing=function(pluginName){var steps=this._pluginPipelineSteps[pluginName],extMethodHashes=this._pluginExtendedMethods[pluginName],i=0,klass,extMethodHash;if(!this.plugins[pluginName])return;if(steps){for(i=0;i<steps.length;i++){this.pipeline.removeStep(steps[i])}}if(extMethodHashes){for(i=0;i<extMethodHashes.length;i++){klass=extMethodHashes[i][0];extMethodHash=extMethodHashes[i][1];for(var methodName in extMethodHash){delete klass.prototype[methodName];delete klass.Invalid[methodName]}}}delete this.plugins[pluginName];return this};Controller.prototype.useRegisteredPlugins=function(){for(var plugin in Controller._pluginFactories){this.use(plugin)}};_.extend(Controller.prototype,EventEmitter.prototype)},{"./circular_buffer":2,"./connection/browser":4,"./connection/node":18,"./frame":6,"./gesture":7,"./hand":8,"./pipeline":11,"./pointable":12,__browserify_process:20,events:19,underscore:22}],6:[function(require,module,exports){var Hand=require("./hand"),Pointable=require("./pointable"),createGesture=require("./gesture").createGesture,glMatrix=require("gl-matrix"),mat3=glMatrix.mat3,vec3=glMatrix.vec3,InteractionBox=require("./interaction_box"),_=require("underscore");var Frame=module.exports=function(data){this.valid=true;this.id=data.id;this.timestamp=data.timestamp;this.hands=[];this.handsMap={};this.pointables=[];this.tools=[];this.fingers=[];if(data.interactionBox){this.interactionBox=new InteractionBox(data.interactionBox)}this.gestures=[];this.pointablesMap={};this._translation=data.t;this._rotation=_.flatten(data.r);this._scaleFactor=data.s;this.data=data;this.type="frame";this.currentFrameRate=data.currentFrameRate;var handMap={};for(var handIdx=0,handCount=data.hands.length;handIdx!=handCount;handIdx++){var hand=new Hand(data.hands[handIdx]);hand.frame=this;this.hands.push(hand);this.handsMap[hand.id]=hand;handMap[hand.id]=handIdx}for(var pointableIdx=0,pointableCount=data.pointables.length;pointableIdx!=pointableCount;pointableIdx++){var pointable=new Pointable(data.pointables[pointableIdx]);pointable.frame=this;this.pointables.push(pointable);this.pointablesMap[pointable.id]=pointable;(pointable.tool?this.tools:this.fingers).push(pointable);if(pointable.handId!==undefined&&handMap.hasOwnProperty(pointable.handId)){var hand=this.hands[handMap[pointable.handId]];hand.pointables.push(pointable);(pointable.tool?hand.tools:hand.fingers).push(pointable)}}if(data.gestures){for(var gestureIdx=0,gestureCount=data.gestures.length;gestureIdx!=gestureCount;gestureIdx++){this.gestures.push(createGesture(data.gestures[gestureIdx]))}}};Frame.prototype.tool=function(id){var pointable=this.pointable(id);return pointable.tool?pointable:Pointable.Invalid};Frame.prototype.pointable=function(id){return this.pointablesMap[id]||Pointable.Invalid};Frame.prototype.finger=function(id){var pointable=this.pointable(id);return!pointable.tool?pointable:Pointable.Invalid};Frame.prototype.hand=function(id){return this.handsMap[id]||Hand.Invalid};Frame.prototype.rotationAngle=function(sinceFrame,axis){if(!this.valid||!sinceFrame.valid)return 0;var rot=this.rotationMatrix(sinceFrame);var cs=(rot[0]+rot[4]+rot[8]-1)*.5;var angle=Math.acos(cs);angle=isNaN(angle)?0:angle;if(axis!==undefined){var rotAxis=this.rotationAxis(sinceFrame);angle*=vec3.dot(rotAxis,vec3.normalize(vec3.create(),axis))}return angle};Frame.prototype.rotationAxis=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return vec3.create();return vec3.normalize(vec3.create(),[this._rotation[7]-sinceFrame._rotation[5],this._rotation[2]-sinceFrame._rotation[6],this._rotation[3]-sinceFrame._rotation[1]])};Frame.prototype.rotationMatrix=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return mat3.create();var transpose=mat3.transpose(mat3.create(),this._rotation);return mat3.multiply(mat3.create(),sinceFrame._rotation,transpose)};Frame.prototype.scaleFactor=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return 1;return Math.exp(this._scaleFactor-sinceFrame._scaleFactor)};Frame.prototype.translation=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return vec3.create();return vec3.subtract(vec3.create(),this._translation,sinceFrame._translation)};Frame.prototype.toString=function(){var str="Frame [ id:"+this.id+" | timestamp:"+this.timestamp+" | Hand count:("+this.hands.length+") | Pointable count:("+this.pointables.length+")";if(this.gestures)str+=" | Gesture count:("+this.gestures.length+")";str+=" ]";return str};Frame.prototype.dump=function(){var out="";out+="Frame Info:<br/>";out+=this.toString();out+="<br/><br/>Hands:<br/>";for(var handIdx=0,handCount=this.hands.length;handIdx!=handCount;handIdx++){out+="  "+this.hands[handIdx].toString()+"<br/>"}out+="<br/><br/>Pointables:<br/>";for(var pointableIdx=0,pointableCount=this.pointables.length;pointableIdx!=pointableCount;pointableIdx++){out+="  "+this.pointables[pointableIdx].toString()+"<br/>"}if(this.gestures){out+="<br/><br/>Gestures:<br/>";for(var gestureIdx=0,gestureCount=this.gestures.length;gestureIdx!=gestureCount;gestureIdx++){out+="  "+this.gestures[gestureIdx].toString()+"<br/>"}}out+="<br/><br/>Raw JSON:<br/>";out+=JSON.stringify(this.data);return out};Frame.Invalid={valid:false,hands:[],fingers:[],tools:[],gestures:[],pointables:[],pointable:function(){return Pointable.Invalid},finger:function(){return Pointable.Invalid},hand:function(){return Hand.Invalid},toString:function(){return"invalid frame"},dump:function(){return this.toString()},rotationAngle:function(){return 0},rotationMatrix:function(){return mat3.create()},rotationAxis:function(){return vec3.create()},scaleFactor:function(){return 1},translation:function(){return vec3.create()}}},{"./gesture":7,"./hand":8,"./interaction_box":10,"./pointable":12,"gl-matrix":21,underscore:22}],7:[function(require,module,exports){var glMatrix=require("gl-matrix"),vec3=glMatrix.vec3,EventEmitter=require("events").EventEmitter,_=require("underscore");var createGesture=exports.createGesture=function(data){var gesture;switch(data.type){case"circle":gesture=new CircleGesture(data);break;case"swipe":gesture=new SwipeGesture(data);break;case"screenTap":gesture=new ScreenTapGesture(data);break;case"keyTap":gesture=new KeyTapGesture(data);break;default:throw"unkown gesture type"}gesture.id=data.id;gesture.handIds=data.handIds;gesture.pointableIds=data.pointableIds;gesture.duration=data.duration;gesture.state=data.state;gesture.type=data.type;return gesture};var gestureListener=exports.gestureListener=function(controller,type){var handlers={};var gestureMap={};controller.on("gesture",function(gesture,frame){if(gesture.type==type){if(gesture.state=="start"||gesture.state=="stop"){if(gestureMap[gesture.id]===undefined){var gestureTracker=new Gesture(gesture,frame);gestureMap[gesture.id]=gestureTracker;_.each(handlers,function(cb,name){gestureTracker.on(name,cb)})}}gestureMap[gesture.id].update(gesture,frame);if(gesture.state=="stop"){delete gestureMap[gesture.id]}}});var builder={start:function(cb){handlers["start"]=cb;return builder},stop:function(cb){handlers["stop"]=cb;return builder},complete:function(cb){handlers["stop"]=cb;return builder},update:function(cb){handlers["update"]=cb;return builder}};return builder};var Gesture=exports.Gesture=function(gesture,frame){this.gestures=[gesture];this.frames=[frame]};Gesture.prototype.update=function(gesture,frame){this.lastGesture=gesture;this.lastFrame=frame;this.gestures.push(gesture);this.frames.push(frame);this.emit(gesture.state,this)};Gesture.prototype.translation=function(){return vec3.subtract(vec3.create(),this.lastGesture.startPosition,this.lastGesture.position)};_.extend(Gesture.prototype,EventEmitter.prototype);var CircleGesture=function(data){this.center=data.center;this.normal=data.normal;this.progress=data.progress;this.radius=data.radius};CircleGesture.prototype.toString=function(){return"CircleGesture ["+JSON.stringify(this)+"]"};var SwipeGesture=function(data){this.startPosition=data.startPosition;this.position=data.position;this.direction=data.direction;this.speed=data.speed};SwipeGesture.prototype.toString=function(){return"SwipeGesture ["+JSON.stringify(this)+"]"};var ScreenTapGesture=function(data){this.position=data.position;this.direction=data.direction;this.progress=data.progress};ScreenTapGesture.prototype.toString=function(){return"ScreenTapGesture ["+JSON.stringify(this)+"]"};var KeyTapGesture=function(data){this.position=data.position;this.direction=data.direction;this.progress=data.progress};KeyTapGesture.prototype.toString=function(){return"KeyTapGesture ["+JSON.stringify(this)+"]"}},{events:19,"gl-matrix":21,underscore:22}],8:[function(require,module,exports){var Pointable=require("./pointable"),glMatrix=require("gl-matrix"),mat3=glMatrix.mat3,vec3=glMatrix.vec3,_=require("underscore");var Hand=module.exports=function(data){this.id=data.id;this.palmPosition=data.palmPosition;this.direction=data.direction;this.palmVelocity=data.palmVelocity;this.palmNormal=data.palmNormal;this.sphereCenter=data.sphereCenter;this.sphereRadius=data.sphereRadius;this.valid=true;this.pointables=[];this.fingers=[];this.tools=[];this._translation=data.t;this._rotation=_.flatten(data.r);this._scaleFactor=data.s;this.timeVisible=data.timeVisible;this.stabilizedPalmPosition=data.stabilizedPalmPosition};Hand.prototype.finger=function(id){var finger=this.frame.finger(id);return finger&&finger.handId==this.id?finger:Pointable.Invalid};Hand.prototype.rotationAngle=function(sinceFrame,axis){if(!this.valid||!sinceFrame.valid)return 0;var sinceHand=sinceFrame.hand(this.id);if(!sinceHand.valid)return 0;var rot=this.rotationMatrix(sinceFrame);var cs=(rot[0]+rot[4]+rot[8]-1)*.5;var angle=Math.acos(cs);angle=isNaN(angle)?0:angle;if(axis!==undefined){var rotAxis=this.rotationAxis(sinceFrame);angle*=vec3.dot(rotAxis,vec3.normalize(vec3.create(),axis))}return angle};Hand.prototype.rotationAxis=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return vec3.create();var sinceHand=sinceFrame.hand(this.id);if(!sinceHand.valid)return vec3.create();return vec3.normalize(vec3.create(),[this._rotation[7]-sinceHand._rotation[5],this._rotation[2]-sinceHand._rotation[6],this._rotation[3]-sinceHand._rotation[1]])};Hand.prototype.rotationMatrix=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return mat3.create();var sinceHand=sinceFrame.hand(this.id);if(!sinceHand.valid)return mat3.create();var transpose=mat3.transpose(mat3.create(),this._rotation);var m=mat3.multiply(mat3.create(),sinceHand._rotation,transpose);return m};Hand.prototype.scaleFactor=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return 1;var sinceHand=sinceFrame.hand(this.id);if(!sinceHand.valid)return 1;return Math.exp(this._scaleFactor-sinceHand._scaleFactor)};Hand.prototype.translation=function(sinceFrame){if(!this.valid||!sinceFrame.valid)return vec3.create();var sinceHand=sinceFrame.hand(this.id);if(!sinceHand.valid)return vec3.create();return[this._translation[0]-sinceHand._translation[0],this._translation[1]-sinceHand._translation[1],this._translation[2]-sinceHand._translation[2]]};Hand.prototype.toString=function(){return"Hand [ id: "+this.id+" | palm velocity:"+this.palmVelocity+" | sphere center:"+this.sphereCenter+" ] "};Hand.prototype.pitch=function(){return Math.atan2(this.direction[1],-this.direction[2])};Hand.prototype.yaw=function(){return Math.atan2(this.direction[0],-this.direction[2])};Hand.prototype.roll=function(){return Math.atan2(this.palmNormal[0],-this.palmNormal[1])};Hand.Invalid={valid:false,fingers:[],tools:[],pointables:[],pointable:function(){return Pointable.Invalid},finger:function(){return Pointable.Invalid},toString:function(){return"invalid frame"},dump:function(){return this.toString()},rotationAngle:function(){return 0},rotationMatrix:function(){return mat3.create()},rotationAxis:function(){return vec3.create()},scaleFactor:function(){return 1},translation:function(){return vec3.create()}}},{"./pointable":12,"gl-matrix":21,underscore:22}],9:[function(require,module,exports){require("./_header");module.exports={Controller:require("./controller"),Frame:require("./frame"),Gesture:require("./gesture"),Hand:require("./hand"),Pointable:require("./pointable"),InteractionBox:require("./interaction_box"),CircularBuffer:require("./circular_buffer"),UI:require("./ui"),glMatrix:require("gl-matrix"),mat3:require("gl-matrix").mat3,vec3:require("gl-matrix").vec3,loopController:undefined,version:require("./version.js"),loop:function(opts,callback){if(callback===undefined){callback=opts;opts={}}opts.useAllPlugins||(opts.useAllPlugins=true);if(!this.loopController)this.loopController=new this.Controller(opts);this.loopController.loop(callback);return this.loopController},plugin:function(name,options){this.Controller.plugin(name,options)}}},{"./_header":1,"./circular_buffer":2,"./controller":5,"./frame":6,"./gesture":7,"./hand":8,"./interaction_box":10,"./pointable":12,"./ui":14,"./version.js":17,"gl-matrix":21}],10:[function(require,module,exports){var glMatrix=require("gl-matrix"),vec3=glMatrix.vec3;var InteractionBox=module.exports=function(data){this.valid=true;this.center=data.center;this.size=data.size;this.width=data.size[0];this.height=data.size[1];this.depth=data.size[2]};InteractionBox.prototype.denormalizePoint=function(normalizedPosition){return vec3.fromValues((normalizedPosition[0]-.5)*this.size[0]+this.center[0],(normalizedPosition[1]-.5)*this.size[1]+this.center[1],(normalizedPosition[2]-.5)*this.size[2]+this.center[2])};InteractionBox.prototype.normalizePoint=function(position,clamp){var vec=vec3.fromValues((position[0]-this.center[0])/this.size[0]+.5,(position[1]-this.center[1])/this.size[1]+.5,(position[2]-this.center[2])/this.size[2]+.5);if(clamp){vec[0]=Math.min(Math.max(vec[0],0),1);vec[1]=Math.min(Math.max(vec[1],0),1);vec[2]=Math.min(Math.max(vec[2],0),1)}return vec};InteractionBox.prototype.toString=function(){return"InteractionBox [ width:"+this.width+" | height:"+this.height+" | depth:"+this.depth+" ]"};InteractionBox.Invalid={valid:false}},{"gl-matrix":21}],11:[function(require,module,exports){var Pipeline=module.exports=function(controller){this.steps=[];this.controller=controller};Pipeline.prototype.addStep=function(step){this.steps.push(step)};Pipeline.prototype.run=function(frame){var stepsLength=this.steps.length;for(var i=0;i!=stepsLength;i++){if(!frame)break;frame=this.steps[i](frame)}return frame};Pipeline.prototype.removeStep=function(step){var index=this.steps.indexOf(step);if(index===-1)throw"Step not found in pipeline";this.steps.splice(index,1)};Pipeline.prototype.addWrappedStep=function(type,callback){var controller=this.controller,step=function(frame){var dependencies,i,len;dependencies=type=="frame"?[frame]:frame[type+"s"]||[];for(i=0,len=dependencies.length;i<len;i++){callback.call(controller,dependencies[i])}return frame};this.addStep(step);return step}},{}],12:[function(require,module,exports){var glMatrix=require("gl-matrix"),vec3=glMatrix.vec3;var Pointable=module.exports=function(data){this.valid=true;this.id=data.id;this.handId=data.handId;this.length=data.length;this.tool=data.tool;this.width=data.width;this.direction=data.direction;this.stabilizedTipPosition=data.stabilizedTipPosition;this.tipPosition=data.tipPosition;this.tipVelocity=data.tipVelocity;this.touchZone=data.touchZone;this.touchDistance=data.touchDistance;this.timeVisible=data.timeVisible};Pointable.prototype.toString=function(){if(this.tool==true){return"Pointable [ id:"+this.id+" "+this.length+"mmx | with:"+this.width+"mm | direction:"+this.direction+" ]"}else{return"Pointable [ id:"+this.id+" "+this.length+"mmx | direction: "+this.direction+" ]"}};Pointable.prototype.hand=function(){return this.frame.hand(this.handId)};Pointable.Invalid={valid:false}},{"gl-matrix":21}],13:[function(require,module,exports){var Frame=require("./frame");var Event=function(data){this.type=data.type;this.state=data.state};var chooseProtocol=exports.chooseProtocol=function(header){var protocol;switch(header.version){case 1:case 2:case 3:case 4:protocol=JSONProtocol(header.version,function(data){return data.event?new Event(data.event):new Frame(data)});protocol.sendBackground=function(connection,state){connection.send(protocol.encode({background:state}))};protocol.sendFocused=function(connection,state){connection.send(protocol.encode({focused:state}))};break;default:throw"unrecognized version"}return protocol};var JSONProtocol=function(version,cb){var protocol=cb;protocol.encode=function(message){return JSON.stringify(message)};protocol.version=version;protocol.versionLong="Version "+version;protocol.type="protocol";return protocol}},{"./frame":6}],14:[function(require,module,exports){exports.UI={Region:require("./ui/region"),Cursor:require("./ui/cursor")}},{"./ui/cursor":15,"./ui/region":16}],15:[function(require,module,exports){var Cursor=module.exports=function(){return function(frame){var pointable=frame.pointables.sort(function(a,b){return a.z-b.z})[0];if(pointable&&pointable.valid){frame.cursorPosition=pointable.tipPosition}return frame}}},{}],16:[function(require,module,exports){var EventEmitter=require("events").EventEmitter,_=require("underscore");var Region=module.exports=function(start,end){this.start=new Vector(start);this.end=new Vector(end);this.enteredFrame=null};Region.prototype.hasPointables=function(frame){for(var i=0;i!=frame.pointables.length;i++){var position=frame.pointables[i].tipPosition;if(position.x>=this.start.x&&position.x<=this.end.x&&position.y>=this.start.y&&position.y<=this.end.y&&position.z>=this.start.z&&position.z<=this.end.z){return true}}return false};Region.prototype.listener=function(opts){var region=this;if(opts&&opts.nearThreshold)this.setupNearRegion(opts.nearThreshold);return function(frame){return region.updatePosition(frame)}};Region.prototype.clipper=function(){var region=this;return function(frame){region.updatePosition(frame);return region.enteredFrame?frame:null}};Region.prototype.setupNearRegion=function(distance){var nearRegion=this.nearRegion=new Region([this.start.x-distance,this.start.y-distance,this.start.z-distance],[this.end.x+distance,this.end.y+distance,this.end.z+distance]);var region=this;nearRegion.on("enter",function(frame){region.emit("near",frame)});nearRegion.on("exit",function(frame){region.emit("far",frame)});region.on("exit",function(frame){region.emit("near",frame)})};Region.prototype.updatePosition=function(frame){if(this.nearRegion)this.nearRegion.updatePosition(frame);if(this.hasPointables(frame)&&this.enteredFrame==null){this.enteredFrame=frame;this.emit("enter",this.enteredFrame)}else if(!this.hasPointables(frame)&&this.enteredFrame!=null){this.enteredFrame=null;this.emit("exit",this.enteredFrame)}return frame};Region.prototype.normalize=function(position){return new Vector([(position.x-this.start.x)/(this.end.x-this.start.x),(position.y-this.start.y)/(this.end.y-this.start.y),(position.z-this.start.z)/(this.end.z-this.start.z)])};Region.prototype.mapToXY=function(position,width,height){var normalized=this.normalize(position);var x=normalized.x,y=normalized.y;if(x>1)x=1;else if(x<-1)x=-1;if(y>1)y=1;else if(y<-1)y=-1;return[(x+1)/2*width,(1-y)/2*height,normalized.z]};_.extend(Region.prototype,EventEmitter.prototype)},{events:19,underscore:22}],17:[function(require,module,exports){module.exports={full:"0.4.3",major:0,minor:4,dot:3}},{}],18:[function(require,module,exports){},{}],19:[function(require,module,exports){var process=require("__browserify_process");if(!process.EventEmitter)process.EventEmitter=function(){};var EventEmitter=exports.EventEmitter=process.EventEmitter;var isArray=typeof Array.isArray==="function"?Array.isArray:function(xs){return Object.prototype.toString.call(xs)==="[object Array]"
+};function indexOf(xs,x){if(xs.indexOf)return xs.indexOf(x);for(var i=0;i<xs.length;i++){if(x===xs[i])return i}return-1}var defaultMaxListeners=10;EventEmitter.prototype.setMaxListeners=function(n){if(!this._events)this._events={};this._events.maxListeners=n};EventEmitter.prototype.emit=function(type){if(type==="error"){if(!this._events||!this._events.error||isArray(this._events.error)&&!this._events.error.length){if(arguments[1]instanceof Error){throw arguments[1]}else{throw new Error("Uncaught, unspecified 'error' event.")}return false}}if(!this._events)return false;var handler=this._events[type];if(!handler)return false;if(typeof handler=="function"){switch(arguments.length){case 1:handler.call(this);break;case 2:handler.call(this,arguments[1]);break;case 3:handler.call(this,arguments[1],arguments[2]);break;default:var args=Array.prototype.slice.call(arguments,1);handler.apply(this,args)}return true}else if(isArray(handler)){var args=Array.prototype.slice.call(arguments,1);var listeners=handler.slice();for(var i=0,l=listeners.length;i<l;i++){listeners[i].apply(this,args)}return true}else{return false}};EventEmitter.prototype.addListener=function(type,listener){if("function"!==typeof listener){throw new Error("addListener only takes instances of Function")}if(!this._events)this._events={};this.emit("newListener",type,listener);if(!this._events[type]){this._events[type]=listener}else if(isArray(this._events[type])){if(!this._events[type].warned){var m;if(this._events.maxListeners!==undefined){m=this._events.maxListeners}else{m=defaultMaxListeners}if(m&&m>0&&this._events[type].length>m){this._events[type].warned=true;console.error("(node) warning: possible EventEmitter memory "+"leak detected. %d listeners added. "+"Use emitter.setMaxListeners() to increase limit.",this._events[type].length);console.trace()}}this._events[type].push(listener)}else{this._events[type]=[this._events[type],listener]}return this};EventEmitter.prototype.on=EventEmitter.prototype.addListener;EventEmitter.prototype.once=function(type,listener){var self=this;self.on(type,function g(){self.removeListener(type,g);listener.apply(this,arguments)});return this};EventEmitter.prototype.removeListener=function(type,listener){if("function"!==typeof listener){throw new Error("removeListener only takes instances of Function")}if(!this._events||!this._events[type])return this;var list=this._events[type];if(isArray(list)){var i=indexOf(list,listener);if(i<0)return this;list.splice(i,1);if(list.length==0)delete this._events[type]}else if(this._events[type]===listener){delete this._events[type]}return this};EventEmitter.prototype.removeAllListeners=function(type){if(arguments.length===0){this._events={};return this}if(type&&this._events&&this._events[type])this._events[type]=null;return this};EventEmitter.prototype.listeners=function(type){if(!this._events)this._events={};if(!this._events[type])this._events[type]=[];if(!isArray(this._events[type])){this._events[type]=[this._events[type]]}return this._events[type]};EventEmitter.listenerCount=function(emitter,type){var ret;if(!emitter._events||!emitter._events[type])ret=0;else if(typeof emitter._events[type]==="function")ret=1;else ret=emitter._events[type].length;return ret}},{__browserify_process:20}],20:[function(require,module,exports){var process=module.exports={};process.nextTick=function(){var canSetImmediate=typeof window!=="undefined"&&window.setImmediate;var canPost=typeof window!=="undefined"&&window.postMessage&&window.addEventListener;if(canSetImmediate){return function(f){return window.setImmediate(f)}}if(canPost){var queue=[];window.addEventListener("message",function(ev){if(ev.source===window&&ev.data==="process-tick"){ev.stopPropagation();if(queue.length>0){var fn=queue.shift();fn()}}},true);return function nextTick(fn){queue.push(fn);window.postMessage("process-tick","*")}}return function nextTick(fn){setTimeout(fn,0)}}();process.title="browser";process.browser=true;process.env={};process.argv=[];process.binding=function(name){throw new Error("process.binding is not supported")};process.cwd=function(){return"/"};process.chdir=function(dir){throw new Error("process.chdir is not supported")}},{}],21:[function(require,module,exports){!function(){"use strict";var shim={};if(typeof exports==="undefined"){if(typeof define=="function"&&typeof define.amd=="object"&&define.amd){shim.exports={};define(function(){return shim.exports})}else{shim.exports=window}}else{shim.exports=exports}!function(exports){var vec2={};if(!GLMAT_EPSILON){var GLMAT_EPSILON=1e-6}vec2.create=function(){return new Float32Array(2)};vec2.clone=function(a){var out=new Float32Array(2);out[0]=a[0];out[1]=a[1];return out};vec2.fromValues=function(x,y){var out=new Float32Array(2);out[0]=x;out[1]=y;return out};vec2.copy=function(out,a){out[0]=a[0];out[1]=a[1];return out};vec2.set=function(out,x,y){out[0]=x;out[1]=y;return out};vec2.add=function(out,a,b){out[0]=a[0]+b[0];out[1]=a[1]+b[1];return out};vec2.sub=vec2.subtract=function(out,a,b){out[0]=a[0]-b[0];out[1]=a[1]-b[1];return out};vec2.mul=vec2.multiply=function(out,a,b){out[0]=a[0]*b[0];out[1]=a[1]*b[1];return out};vec2.div=vec2.divide=function(out,a,b){out[0]=a[0]/b[0];out[1]=a[1]/b[1];return out};vec2.min=function(out,a,b){out[0]=Math.min(a[0],b[0]);out[1]=Math.min(a[1],b[1]);return out};vec2.max=function(out,a,b){out[0]=Math.max(a[0],b[0]);out[1]=Math.max(a[1],b[1]);return out};vec2.scale=function(out,a,b){out[0]=a[0]*b;out[1]=a[1]*b;return out};vec2.dist=vec2.distance=function(a,b){var x=b[0]-a[0],y=b[1]-a[1];return Math.sqrt(x*x+y*y)};vec2.sqrDist=vec2.squaredDistance=function(a,b){var x=b[0]-a[0],y=b[1]-a[1];return x*x+y*y};vec2.len=vec2.length=function(a){var x=a[0],y=a[1];return Math.sqrt(x*x+y*y)};vec2.sqrLen=vec2.squaredLength=function(a){var x=a[0],y=a[1];return x*x+y*y};vec2.negate=function(out,a){out[0]=-a[0];out[1]=-a[1];return out};vec2.normalize=function(out,a){var x=a[0],y=a[1];var len=x*x+y*y;if(len>0){len=1/Math.sqrt(len);out[0]=a[0]*len;out[1]=a[1]*len}return out};vec2.dot=function(a,b){return a[0]*b[0]+a[1]*b[1]};vec2.cross=function(out,a,b){var z=a[0]*b[1]-a[1]*b[0];out[0]=out[1]=0;out[2]=z;return out};vec2.lerp=function(out,a,b,t){var ax=a[0],ay=a[1];out[0]=ax+t*(b[0]-ax);out[1]=ay+t*(b[1]-ay);return out};vec2.transformMat2=function(out,a,m){var x=a[0],y=a[1];out[0]=x*m[0]+y*m[1];out[1]=x*m[2]+y*m[3];return out};vec2.forEach=function(){var vec=new Float32Array(2);return function(a,stride,offset,count,fn,arg){var i,l;if(!stride){stride=2}if(!offset){offset=0}if(count){l=Math.min(count*stride+offset,a.length)}else{l=a.length}for(i=offset;i<l;i+=stride){vec[0]=a[i];vec[1]=a[i+1];fn(vec,vec,arg);a[i]=vec[0];a[i+1]=vec[1]}return a}}();vec2.str=function(a){return"vec2("+a[0]+", "+a[1]+")"};if(typeof exports!=="undefined"){exports.vec2=vec2}var vec3={};if(!GLMAT_EPSILON){var GLMAT_EPSILON=1e-6}vec3.create=function(){return new Float32Array(3)};vec3.clone=function(a){var out=new Float32Array(3);out[0]=a[0];out[1]=a[1];out[2]=a[2];return out};vec3.fromValues=function(x,y,z){var out=new Float32Array(3);out[0]=x;out[1]=y;out[2]=z;return out};vec3.copy=function(out,a){out[0]=a[0];out[1]=a[1];out[2]=a[2];return out};vec3.set=function(out,x,y,z){out[0]=x;out[1]=y;out[2]=z;return out};vec3.add=function(out,a,b){out[0]=a[0]+b[0];out[1]=a[1]+b[1];out[2]=a[2]+b[2];return out};vec3.sub=vec3.subtract=function(out,a,b){out[0]=a[0]-b[0];out[1]=a[1]-b[1];out[2]=a[2]-b[2];return out};vec3.mul=vec3.multiply=function(out,a,b){out[0]=a[0]*b[0];out[1]=a[1]*b[1];out[2]=a[2]*b[2];return out};vec3.div=vec3.divide=function(out,a,b){out[0]=a[0]/b[0];out[1]=a[1]/b[1];out[2]=a[2]/b[2];return out};vec3.min=function(out,a,b){out[0]=Math.min(a[0],b[0]);out[1]=Math.min(a[1],b[1]);out[2]=Math.min(a[2],b[2]);return out};vec3.max=function(out,a,b){out[0]=Math.max(a[0],b[0]);out[1]=Math.max(a[1],b[1]);out[2]=Math.max(a[2],b[2]);return out};vec3.scale=function(out,a,b){out[0]=a[0]*b;out[1]=a[1]*b;out[2]=a[2]*b;return out};vec3.dist=vec3.distance=function(a,b){var x=b[0]-a[0],y=b[1]-a[1],z=b[2]-a[2];return Math.sqrt(x*x+y*y+z*z)};vec3.sqrDist=vec3.squaredDistance=function(a,b){var x=b[0]-a[0],y=b[1]-a[1],z=b[2]-a[2];return x*x+y*y+z*z};vec3.len=vec3.length=function(a){var x=a[0],y=a[1],z=a[2];return Math.sqrt(x*x+y*y+z*z)};vec3.sqrLen=vec3.squaredLength=function(a){var x=a[0],y=a[1],z=a[2];return x*x+y*y+z*z};vec3.negate=function(out,a){out[0]=-a[0];out[1]=-a[1];out[2]=-a[2];return out};vec3.normalize=function(out,a){var x=a[0],y=a[1],z=a[2];var len=x*x+y*y+z*z;if(len>0){len=1/Math.sqrt(len);out[0]=a[0]*len;out[1]=a[1]*len;out[2]=a[2]*len}return out};vec3.dot=function(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]};vec3.cross=function(out,a,b){var ax=a[0],ay=a[1],az=a[2],bx=b[0],by=b[1],bz=b[2];out[0]=ay*bz-az*by;out[1]=az*bx-ax*bz;out[2]=ax*by-ay*bx;return out};vec3.lerp=function(out,a,b,t){var ax=a[0],ay=a[1],az=a[2];out[0]=ax+t*(b[0]-ax);out[1]=ay+t*(b[1]-ay);out[2]=az+t*(b[2]-az);return out};vec3.transformMat4=function(out,a,m){var x=a[0],y=a[1],z=a[2];out[0]=m[0]*x+m[4]*y+m[8]*z+m[12];out[1]=m[1]*x+m[5]*y+m[9]*z+m[13];out[2]=m[2]*x+m[6]*y+m[10]*z+m[14];return out};vec3.transformQuat=function(out,a,q){var x=a[0],y=a[1],z=a[2],qx=q[0],qy=q[1],qz=q[2],qw=q[3],ix=qw*x+qy*z-qz*y,iy=qw*y+qz*x-qx*z,iz=qw*z+qx*y-qy*x,iw=-qx*x-qy*y-qz*z;out[0]=ix*qw+iw*-qx+iy*-qz-iz*-qy;out[1]=iy*qw+iw*-qy+iz*-qx-ix*-qz;out[2]=iz*qw+iw*-qz+ix*-qy-iy*-qx;return out};vec3.forEach=function(){var vec=new Float32Array(3);return function(a,stride,offset,count,fn,arg){var i,l;if(!stride){stride=3}if(!offset){offset=0}if(count){l=Math.min(count*stride+offset,a.length)}else{l=a.length}for(i=offset;i<l;i+=stride){vec[0]=a[i];vec[1]=a[i+1];vec[2]=a[i+2];fn(vec,vec,arg);a[i]=vec[0];a[i+1]=vec[1];a[i+2]=vec[2]}return a}}();vec3.str=function(a){return"vec3("+a[0]+", "+a[1]+", "+a[2]+")"};if(typeof exports!=="undefined"){exports.vec3=vec3}var vec4={};if(!GLMAT_EPSILON){var GLMAT_EPSILON=1e-6}vec4.create=function(){return new Float32Array(4)};vec4.clone=function(a){var out=new Float32Array(4);out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];return out};vec4.fromValues=function(x,y,z,w){var out=new Float32Array(4);out[0]=x;out[1]=y;out[2]=z;out[3]=w;return out};vec4.copy=function(out,a){out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];return out};vec4.set=function(out,x,y,z,w){out[0]=x;out[1]=y;out[2]=z;out[3]=w;return out};vec4.add=function(out,a,b){out[0]=a[0]+b[0];out[1]=a[1]+b[1];out[2]=a[2]+b[2];out[3]=a[3]+b[3];return out};vec4.sub=vec4.subtract=function(out,a,b){out[0]=a[0]-b[0];out[1]=a[1]-b[1];out[2]=a[2]-b[2];out[3]=a[3]-b[3];return out};vec4.mul=vec4.multiply=function(out,a,b){out[0]=a[0]*b[0];out[1]=a[1]*b[1];out[2]=a[2]*b[2];out[3]=a[3]*b[3];return out};vec4.div=vec4.divide=function(out,a,b){out[0]=a[0]/b[0];out[1]=a[1]/b[1];out[2]=a[2]/b[2];out[3]=a[3]/b[3];return out};vec4.min=function(out,a,b){out[0]=Math.min(a[0],b[0]);out[1]=Math.min(a[1],b[1]);out[2]=Math.min(a[2],b[2]);out[3]=Math.min(a[3],b[3]);return out};vec4.max=function(out,a,b){out[0]=Math.max(a[0],b[0]);out[1]=Math.max(a[1],b[1]);out[2]=Math.max(a[2],b[2]);out[3]=Math.max(a[3],b[3]);return out};vec4.scale=function(out,a,b){out[0]=a[0]*b;out[1]=a[1]*b;out[2]=a[2]*b;out[3]=a[3]*b;return out};vec4.dist=vec4.distance=function(a,b){var x=b[0]-a[0],y=b[1]-a[1],z=b[2]-a[2],w=b[3]-a[3];return Math.sqrt(x*x+y*y+z*z+w*w)};vec4.sqrDist=vec4.squaredDistance=function(a,b){var x=b[0]-a[0],y=b[1]-a[1],z=b[2]-a[2],w=b[3]-a[3];return x*x+y*y+z*z+w*w};vec4.len=vec4.length=function(a){var x=a[0],y=a[1],z=a[2],w=a[3];return Math.sqrt(x*x+y*y+z*z+w*w)};vec4.sqrLen=vec4.squaredLength=function(a){var x=a[0],y=a[1],z=a[2],w=a[3];return x*x+y*y+z*z+w*w};vec4.negate=function(out,a){out[0]=-a[0];out[1]=-a[1];out[2]=-a[2];out[3]=-a[3];return out};vec4.normalize=function(out,a){var x=a[0],y=a[1],z=a[2],w=a[3];var len=x*x+y*y+z*z+w*w;if(len>0){len=1/Math.sqrt(len);out[0]=a[0]*len;out[1]=a[1]*len;out[2]=a[2]*len;out[3]=a[3]*len}return out};vec4.dot=function(a,b){return a[0]*b[0]+a[1]*b[1]+a[2]*b[2]+a[3]*b[3]};vec4.lerp=function(out,a,b,t){var ax=a[0],ay=a[1],az=a[2],aw=a[3];out[0]=ax+t*(b[0]-ax);out[1]=ay+t*(b[1]-ay);out[2]=az+t*(b[2]-az);out[3]=aw+t*(b[3]-aw);return out};vec4.transformMat4=function(out,a,m){var x=a[0],y=a[1],z=a[2],w=a[3];out[0]=m[0]*x+m[4]*y+m[8]*z+m[12]*w;out[1]=m[1]*x+m[5]*y+m[9]*z+m[13]*w;out[2]=m[2]*x+m[6]*y+m[10]*z+m[14]*w;out[3]=m[3]*x+m[7]*y+m[11]*z+m[15]*w;return out};vec4.transformQuat=function(out,a,q){var x=a[0],y=a[1],z=a[2],qx=q[0],qy=q[1],qz=q[2],qw=q[3],ix=qw*x+qy*z-qz*y,iy=qw*y+qz*x-qx*z,iz=qw*z+qx*y-qy*x,iw=-qx*x-qy*y-qz*z;out[0]=ix*qw+iw*-qx+iy*-qz-iz*-qy;out[1]=iy*qw+iw*-qy+iz*-qx-ix*-qz;out[2]=iz*qw+iw*-qz+ix*-qy-iy*-qx;return out};vec4.forEach=function(){var vec=new Float32Array(4);return function(a,stride,offset,count,fn,arg){var i,l;if(!stride){stride=4}if(!offset){offset=0}if(count){l=Math.min(count*stride+offset,a.length)}else{l=a.length}for(i=offset;i<l;i+=stride){vec[0]=a[i];vec[1]=a[i+1];vec[2]=a[i+2];vec[3]=a[i+3];fn(vec,vec,arg);a[i]=vec[0];a[i+1]=vec[1];a[i+2]=vec[2];a[i+3]=vec[3]}return a}}();vec4.str=function(a){return"vec4("+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+")"};if(typeof exports!=="undefined"){exports.vec4=vec4}var mat2={};var mat2Identity=new Float32Array([1,0,0,1]);if(!GLMAT_EPSILON){var GLMAT_EPSILON=1e-6}mat2.create=function(){return new Float32Array(mat2Identity)};mat2.clone=function(a){var out=new Float32Array(4);out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];return out};mat2.copy=function(out,a){out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];return out};mat2.identity=function(out){out[0]=1;out[1]=0;out[2]=0;out[3]=1;return out};mat2.transpose=function(out,a){if(out===a){var a1=a[1];out[1]=a[2];out[2]=a1}else{out[0]=a[0];out[1]=a[2];out[2]=a[1];out[3]=a[3]}return out};mat2.invert=function(out,a){var a0=a[0],a1=a[1],a2=a[2],a3=a[3],det=a0*a3-a2*a1;if(!det){return null}det=1/det;out[0]=a3*det;out[1]=-a1*det;out[2]=-a2*det;out[3]=a0*det;return out};mat2.adjoint=function(out,a){var a0=a[0];out[0]=a[3];out[1]=-a[1];out[2]=-a[2];out[3]=a0;return out};mat2.determinant=function(a){return a[0]*a[3]-a[2]*a[1]};mat2.mul=mat2.multiply=function(out,a,b){var a0=a[0],a1=a[1],a2=a[2],a3=a[3];var b0=b[0],b1=b[1],b2=b[2],b3=b[3];out[0]=a0*b0+a1*b2;out[1]=a0*b1+a1*b3;out[2]=a2*b0+a3*b2;out[3]=a2*b1+a3*b3;return out};mat2.rotate=function(out,a,rad){var a0=a[0],a1=a[1],a2=a[2],a3=a[3],s=Math.sin(rad),c=Math.cos(rad);out[0]=a0*c+a1*s;out[1]=a0*-s+a1*c;out[2]=a2*c+a3*s;out[3]=a2*-s+a3*c;return out};mat2.scale=function(out,a,v){var a0=a[0],a1=a[1],a2=a[2],a3=a[3],v0=v[0],v1=v[1];out[0]=a0*v0;out[1]=a1*v1;out[2]=a2*v0;out[3]=a3*v1;return out};mat2.str=function(a){return"mat2("+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+")"};if(typeof exports!=="undefined"){exports.mat2=mat2}var mat3={};var mat3Identity=new Float32Array([1,0,0,0,1,0,0,0,1]);if(!GLMAT_EPSILON){var GLMAT_EPSILON=1e-6}mat3.create=function(){return new Float32Array(mat3Identity)};mat3.clone=function(a){var out=new Float32Array(9);out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];out[4]=a[4];out[5]=a[5];out[6]=a[6];out[7]=a[7];out[8]=a[8];return out};mat3.copy=function(out,a){out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];out[4]=a[4];out[5]=a[5];out[6]=a[6];out[7]=a[7];out[8]=a[8];return out};mat3.identity=function(out){out[0]=1;out[1]=0;out[2]=0;out[3]=0;out[4]=1;out[5]=0;out[6]=0;out[7]=0;out[8]=1;return out};mat3.transpose=function(out,a){if(out===a){var a01=a[1],a02=a[2],a12=a[5];out[1]=a[3];out[2]=a[6];out[3]=a01;out[5]=a[7];out[6]=a02;out[7]=a12}else{out[0]=a[0];out[1]=a[3];out[2]=a[6];out[3]=a[1];out[4]=a[4];out[5]=a[7];out[6]=a[2];out[7]=a[5];out[8]=a[8]}return out};mat3.invert=function(out,a){var a00=a[0],a01=a[1],a02=a[2],a10=a[3],a11=a[4],a12=a[5],a20=a[6],a21=a[7],a22=a[8],b01=a22*a11-a12*a21,b11=-a22*a10+a12*a20,b21=a21*a10-a11*a20,det=a00*b01+a01*b11+a02*b21;if(!det){return null}det=1/det;out[0]=b01*det;out[1]=(-a22*a01+a02*a21)*det;out[2]=(a12*a01-a02*a11)*det;out[3]=b11*det;out[4]=(a22*a00-a02*a20)*det;out[5]=(-a12*a00+a02*a10)*det;out[6]=b21*det;out[7]=(-a21*a00+a01*a20)*det;out[8]=(a11*a00-a01*a10)*det;return out};mat3.adjoint=function(out,a){var a00=a[0],a01=a[1],a02=a[2],a10=a[3],a11=a[4],a12=a[5],a20=a[6],a21=a[7],a22=a[8];out[0]=a11*a22-a12*a21;out[1]=a02*a21-a01*a22;out[2]=a01*a12-a02*a11;out[3]=a12*a20-a10*a22;out[4]=a00*a22-a02*a20;out[5]=a02*a10-a00*a12;out[6]=a10*a21-a11*a20;out[7]=a01*a20-a00*a21;out[8]=a00*a11-a01*a10;return out};mat3.determinant=function(a){var a00=a[0],a01=a[1],a02=a[2],a10=a[3],a11=a[4],a12=a[5],a20=a[6],a21=a[7],a22=a[8];return a00*(a22*a11-a12*a21)+a01*(-a22*a10+a12*a20)+a02*(a21*a10-a11*a20)};mat3.mul=mat3.multiply=function(out,a,b){var a00=a[0],a01=a[1],a02=a[2],a10=a[3],a11=a[4],a12=a[5],a20=a[6],a21=a[7],a22=a[8],b00=b[0],b01=b[1],b02=b[2],b10=b[3],b11=b[4],b12=b[5],b20=b[6],b21=b[7],b22=b[8];out[0]=b00*a00+b01*a10+b02*a20;out[1]=b00*a01+b01*a11+b02*a21;out[2]=b00*a02+b01*a12+b02*a22;out[3]=b10*a00+b11*a10+b12*a20;out[4]=b10*a01+b11*a11+b12*a21;out[5]=b10*a02+b11*a12+b12*a22;out[6]=b20*a00+b21*a10+b22*a20;out[7]=b20*a01+b21*a11+b22*a21;out[8]=b20*a02+b21*a12+b22*a22;return out};mat3.str=function(a){return"mat3("+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+", "+a[4]+", "+a[5]+", "+a[6]+", "+a[7]+", "+a[8]+")"};if(typeof exports!=="undefined"){exports.mat3=mat3}var mat4={};var mat4Identity=new Float32Array([1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]);if(!GLMAT_EPSILON){var GLMAT_EPSILON=1e-6}mat4.create=function(){return new Float32Array(mat4Identity)};mat4.clone=function(a){var out=new Float32Array(16);out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];out[4]=a[4];out[5]=a[5];out[6]=a[6];out[7]=a[7];out[8]=a[8];out[9]=a[9];out[10]=a[10];out[11]=a[11];out[12]=a[12];out[13]=a[13];out[14]=a[14];out[15]=a[15];return out};mat4.copy=function(out,a){out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];out[4]=a[4];out[5]=a[5];out[6]=a[6];out[7]=a[7];out[8]=a[8];out[9]=a[9];out[10]=a[10];out[11]=a[11];out[12]=a[12];out[13]=a[13];out[14]=a[14];out[15]=a[15];return out};mat4.identity=function(out){out[0]=1;out[1]=0;out[2]=0;out[3]=0;out[4]=0;out[5]=1;out[6]=0;out[7]=0;out[8]=0;out[9]=0;out[10]=1;out[11]=0;out[12]=0;out[13]=0;out[14]=0;out[15]=1;return out};mat4.transpose=function(out,a){if(out===a){var a01=a[1],a02=a[2],a03=a[3],a12=a[6],a13=a[7],a23=a[11];out[1]=a[4];out[2]=a[8];out[3]=a[12];out[4]=a01;out[6]=a[9];out[7]=a[13];out[8]=a02;out[9]=a12;out[11]=a[14];out[12]=a03;out[13]=a13;out[14]=a23}else{out[0]=a[0];out[1]=a[4];out[2]=a[8];out[3]=a[12];out[4]=a[1];out[5]=a[5];out[6]=a[9];out[7]=a[13];out[8]=a[2];out[9]=a[6];out[10]=a[10];out[11]=a[14];out[12]=a[3];out[13]=a[7];out[14]=a[11];out[15]=a[15]}return out};mat4.invert=function(out,a){var a00=a[0],a01=a[1],a02=a[2],a03=a[3],a10=a[4],a11=a[5],a12=a[6],a13=a[7],a20=a[8],a21=a[9],a22=a[10],a23=a[11],a30=a[12],a31=a[13],a32=a[14],a33=a[15],b00=a00*a11-a01*a10,b01=a00*a12-a02*a10,b02=a00*a13-a03*a10,b03=a01*a12-a02*a11,b04=a01*a13-a03*a11,b05=a02*a13-a03*a12,b06=a20*a31-a21*a30,b07=a20*a32-a22*a30,b08=a20*a33-a23*a30,b09=a21*a32-a22*a31,b10=a21*a33-a23*a31,b11=a22*a33-a23*a32,det=b00*b11-b01*b10+b02*b09+b03*b08-b04*b07+b05*b06;if(!det){return null}det=1/det;out[0]=(a11*b11-a12*b10+a13*b09)*det;out[1]=(a02*b10-a01*b11-a03*b09)*det;out[2]=(a31*b05-a32*b04+a33*b03)*det;out[3]=(a22*b04-a21*b05-a23*b03)*det;out[4]=(a12*b08-a10*b11-a13*b07)*det;out[5]=(a00*b11-a02*b08+a03*b07)*det;out[6]=(a32*b02-a30*b05-a33*b01)*det;out[7]=(a20*b05-a22*b02+a23*b01)*det;out[8]=(a10*b10-a11*b08+a13*b06)*det;out[9]=(a01*b08-a00*b10-a03*b06)*det;out[10]=(a30*b04-a31*b02+a33*b00)*det;out[11]=(a21*b02-a20*b04-a23*b00)*det;out[12]=(a11*b07-a10*b09-a12*b06)*det;out[13]=(a00*b09-a01*b07+a02*b06)*det;out[14]=(a31*b01-a30*b03-a32*b00)*det;out[15]=(a20*b03-a21*b01+a22*b00)*det;return out};mat4.adjoint=function(out,a){var a00=a[0],a01=a[1],a02=a[2],a03=a[3],a10=a[4],a11=a[5],a12=a[6],a13=a[7],a20=a[8],a21=a[9],a22=a[10],a23=a[11],a30=a[12],a31=a[13],a32=a[14],a33=a[15];out[0]=a11*(a22*a33-a23*a32)-a21*(a12*a33-a13*a32)+a31*(a12*a23-a13*a22);out[1]=-(a01*(a22*a33-a23*a32)-a21*(a02*a33-a03*a32)+a31*(a02*a23-a03*a22));out[2]=a01*(a12*a33-a13*a32)-a11*(a02*a33-a03*a32)+a31*(a02*a13-a03*a12);out[3]=-(a01*(a12*a23-a13*a22)-a11*(a02*a23-a03*a22)+a21*(a02*a13-a03*a12));out[4]=-(a10*(a22*a33-a23*a32)-a20*(a12*a33-a13*a32)+a30*(a12*a23-a13*a22));out[5]=a00*(a22*a33-a23*a32)-a20*(a02*a33-a03*a32)+a30*(a02*a23-a03*a22);out[6]=-(a00*(a12*a33-a13*a32)-a10*(a02*a33-a03*a32)+a30*(a02*a13-a03*a12));out[7]=a00*(a12*a23-a13*a22)-a10*(a02*a23-a03*a22)+a20*(a02*a13-a03*a12);out[8]=a10*(a21*a33-a23*a31)-a20*(a11*a33-a13*a31)+a30*(a11*a23-a13*a21);out[9]=-(a00*(a21*a33-a23*a31)-a20*(a01*a33-a03*a31)+a30*(a01*a23-a03*a21));out[10]=a00*(a11*a33-a13*a31)-a10*(a01*a33-a03*a31)+a30*(a01*a13-a03*a11);out[11]=-(a00*(a11*a23-a13*a21)-a10*(a01*a23-a03*a21)+a20*(a01*a13-a03*a11));out[12]=-(a10*(a21*a32-a22*a31)-a20*(a11*a32-a12*a31)+a30*(a11*a22-a12*a21));out[13]=a00*(a21*a32-a22*a31)-a20*(a01*a32-a02*a31)+a30*(a01*a22-a02*a21);out[14]=-(a00*(a11*a32-a12*a31)-a10*(a01*a32-a02*a31)+a30*(a01*a12-a02*a11));out[15]=a00*(a11*a22-a12*a21)-a10*(a01*a22-a02*a21)+a20*(a01*a12-a02*a11);return out};mat4.determinant=function(a){var a00=a[0],a01=a[1],a02=a[2],a03=a[3],a10=a[4],a11=a[5],a12=a[6],a13=a[7],a20=a[8],a21=a[9],a22=a[10],a23=a[11],a30=a[12],a31=a[13],a32=a[14],a33=a[15],b00=a00*a11-a01*a10,b01=a00*a12-a02*a10,b02=a00*a13-a03*a10,b03=a01*a12-a02*a11,b04=a01*a13-a03*a11,b05=a02*a13-a03*a12,b06=a20*a31-a21*a30,b07=a20*a32-a22*a30,b08=a20*a33-a23*a30,b09=a21*a32-a22*a31,b10=a21*a33-a23*a31,b11=a22*a33-a23*a32;return b00*b11-b01*b10+b02*b09+b03*b08-b04*b07+b05*b06};mat4.mul=mat4.multiply=function(out,a,b){var a00=a[0],a01=a[1],a02=a[2],a03=a[3],a10=a[4],a11=a[5],a12=a[6],a13=a[7],a20=a[8],a21=a[9],a22=a[10],a23=a[11],a30=a[12],a31=a[13],a32=a[14],a33=a[15];var b0=b[0],b1=b[1],b2=b[2],b3=b[3];out[0]=b0*a00+b1*a10+b2*a20+b3*a30;out[1]=b0*a01+b1*a11+b2*a21+b3*a31;out[2]=b0*a02+b1*a12+b2*a22+b3*a32;out[3]=b0*a03+b1*a13+b2*a23+b3*a33;b0=b[4];b1=b[5];b2=b[6];b3=b[7];out[4]=b0*a00+b1*a10+b2*a20+b3*a30;out[5]=b0*a01+b1*a11+b2*a21+b3*a31;out[6]=b0*a02+b1*a12+b2*a22+b3*a32;out[7]=b0*a03+b1*a13+b2*a23+b3*a33;b0=b[8];b1=b[9];b2=b[10];b3=b[11];out[8]=b0*a00+b1*a10+b2*a20+b3*a30;out[9]=b0*a01+b1*a11+b2*a21+b3*a31;out[10]=b0*a02+b1*a12+b2*a22+b3*a32;out[11]=b0*a03+b1*a13+b2*a23+b3*a33;b0=b[12];b1=b[13];b2=b[14];b3=b[15];out[12]=b0*a00+b1*a10+b2*a20+b3*a30;out[13]=b0*a01+b1*a11+b2*a21+b3*a31;out[14]=b0*a02+b1*a12+b2*a22+b3*a32;out[15]=b0*a03+b1*a13+b2*a23+b3*a33;return out};mat4.translate=function(out,a,v){var x=v[0],y=v[1],z=v[2],a00,a01,a02,a03,a10,a11,a12,a13,a20,a21,a22,a23;if(a===out){out[12]=a[0]*x+a[4]*y+a[8]*z+a[12];out[13]=a[1]*x+a[5]*y+a[9]*z+a[13];out[14]=a[2]*x+a[6]*y+a[10]*z+a[14];out[15]=a[3]*x+a[7]*y+a[11]*z+a[15]}else{a00=a[0];a01=a[1];a02=a[2];a03=a[3];a10=a[4];a11=a[5];a12=a[6];a13=a[7];a20=a[8];a21=a[9];a22=a[10];a23=a[11];out[0]=a00;out[1]=a01;out[2]=a02;out[3]=a03;out[4]=a10;out[5]=a11;out[6]=a12;out[7]=a13;out[8]=a20;out[9]=a21;out[10]=a22;out[11]=a23;out[12]=a00*x+a10*y+a20*z+a[12];out[13]=a01*x+a11*y+a21*z+a[13];out[14]=a02*x+a12*y+a22*z+a[14];out[15]=a03*x+a13*y+a23*z+a[15]}return out};mat4.scale=function(out,a,v){var x=v[0],y=v[1],z=v[2];out[0]=a[0]*x;out[1]=a[1]*x;out[2]=a[2]*x;out[3]=a[3]*x;out[4]=a[4]*y;out[5]=a[5]*y;out[6]=a[6]*y;out[7]=a[7]*y;out[8]=a[8]*z;out[9]=a[9]*z;out[10]=a[10]*z;out[11]=a[11]*z;out[12]=a[12];out[13]=a[13];out[14]=a[14];out[15]=a[15];return out};mat4.rotate=function(out,a,rad,axis){var x=axis[0],y=axis[1],z=axis[2],len=Math.sqrt(x*x+y*y+z*z),s,c,t,a00,a01,a02,a03,a10,a11,a12,a13,a20,a21,a22,a23,b00,b01,b02,b10,b11,b12,b20,b21,b22;if(Math.abs(len)<GLMAT_EPSILON){return null}len=1/len;x*=len;y*=len;z*=len;s=Math.sin(rad);c=Math.cos(rad);t=1-c;a00=a[0];a01=a[1];a02=a[2];a03=a[3];a10=a[4];a11=a[5];a12=a[6];a13=a[7];a20=a[8];a21=a[9];a22=a[10];a23=a[11];b00=x*x*t+c;b01=y*x*t+z*s;b02=z*x*t-y*s;b10=x*y*t-z*s;b11=y*y*t+c;b12=z*y*t+x*s;b20=x*z*t+y*s;b21=y*z*t-x*s;b22=z*z*t+c;out[0]=a00*b00+a10*b01+a20*b02;out[1]=a01*b00+a11*b01+a21*b02;out[2]=a02*b00+a12*b01+a22*b02;out[3]=a03*b00+a13*b01+a23*b02;out[4]=a00*b10+a10*b11+a20*b12;out[5]=a01*b10+a11*b11+a21*b12;out[6]=a02*b10+a12*b11+a22*b12;out[7]=a03*b10+a13*b11+a23*b12;out[8]=a00*b20+a10*b21+a20*b22;out[9]=a01*b20+a11*b21+a21*b22;out[10]=a02*b20+a12*b21+a22*b22;out[11]=a03*b20+a13*b21+a23*b22;if(a!==out){out[12]=a[12];out[13]=a[13];out[14]=a[14];out[15]=a[15]}return out};mat4.rotateX=function(out,a,rad){var s=Math.sin(rad),c=Math.cos(rad),a10=a[4],a11=a[5],a12=a[6],a13=a[7],a20=a[8],a21=a[9],a22=a[10],a23=a[11];if(a!==out){out[0]=a[0];out[1]=a[1];out[2]=a[2];out[3]=a[3];out[12]=a[12];out[13]=a[13];out[14]=a[14];out[15]=a[15]}out[4]=a10*c+a20*s;out[5]=a11*c+a21*s;out[6]=a12*c+a22*s;out[7]=a13*c+a23*s;out[8]=a20*c-a10*s;out[9]=a21*c-a11*s;out[10]=a22*c-a12*s;out[11]=a23*c-a13*s;return out};mat4.rotateY=function(out,a,rad){var s=Math.sin(rad),c=Math.cos(rad),a00=a[0],a01=a[1],a02=a[2],a03=a[3],a20=a[8],a21=a[9],a22=a[10],a23=a[11];if(a!==out){out[4]=a[4];out[5]=a[5];out[6]=a[6];out[7]=a[7];out[12]=a[12];out[13]=a[13];out[14]=a[14];out[15]=a[15]}out[0]=a00*c-a20*s;out[1]=a01*c-a21*s;out[2]=a02*c-a22*s;out[3]=a03*c-a23*s;out[8]=a00*s+a20*c;out[9]=a01*s+a21*c;out[10]=a02*s+a22*c;out[11]=a03*s+a23*c;return out};mat4.rotateZ=function(out,a,rad){var s=Math.sin(rad),c=Math.cos(rad),a00=a[0],a01=a[1],a02=a[2],a03=a[3],a10=a[4],a11=a[5],a12=a[6],a13=a[7];if(a!==out){out[8]=a[8];out[9]=a[9];out[10]=a[10];out[11]=a[11];out[12]=a[12];out[13]=a[13];out[14]=a[14];out[15]=a[15]}out[0]=a00*c+a10*s;out[1]=a01*c+a11*s;out[2]=a02*c+a12*s;out[3]=a03*c+a13*s;out[4]=a10*c-a00*s;out[5]=a11*c-a01*s;out[6]=a12*c-a02*s;out[7]=a13*c-a03*s;return out};mat4.fromRotationTranslation=function(out,q,v){var x=q[0],y=q[1],z=q[2],w=q[3],x2=x+x,y2=y+y,z2=z+z,xx=x*x2,xy=x*y2,xz=x*z2,yy=y*y2,yz=y*z2,zz=z*z2,wx=w*x2,wy=w*y2,wz=w*z2;out[0]=1-(yy+zz);out[1]=xy+wz;out[2]=xz-wy;out[3]=0;out[4]=xy-wz;out[5]=1-(xx+zz);out[6]=yz+wx;out[7]=0;out[8]=xz+wy;out[9]=yz-wx;out[10]=1-(xx+yy);out[11]=0;out[12]=v[0];out[13]=v[1];out[14]=v[2];out[15]=1;return out};mat4.frustum=function(out,left,right,bottom,top,near,far){var rl=1/(right-left),tb=1/(top-bottom),nf=1/(near-far);out[0]=near*2*rl;out[1]=0;out[2]=0;out[3]=0;out[4]=0;out[5]=near*2*tb;out[6]=0;out[7]=0;out[8]=(right+left)*rl;out[9]=(top+bottom)*tb;out[10]=(far+near)*nf;out[11]=-1;out[12]=0;out[13]=0;out[14]=far*near*2*nf;out[15]=0;return out};mat4.perspective=function(out,fovy,aspect,near,far){var f=1/Math.tan(fovy/2),nf=1/(near-far);out[0]=f/aspect;out[1]=0;out[2]=0;out[3]=0;out[4]=0;out[5]=f;out[6]=0;out[7]=0;out[8]=0;out[9]=0;out[10]=(far+near)*nf;out[11]=-1;out[12]=0;out[13]=0;out[14]=2*far*near*nf;out[15]=0;return out};mat4.ortho=function(out,left,right,bottom,top,near,far){var lr=1/(left-right),bt=1/(bottom-top),nf=1/(near-far);out[0]=-2*lr;out[1]=0;out[2]=0;out[3]=0;out[4]=0;out[5]=-2*bt;out[6]=0;out[7]=0;out[8]=0;out[9]=0;out[10]=2*nf;out[11]=0;out[12]=(left+right)*lr;out[13]=(top+bottom)*bt;out[14]=(far+near)*nf;out[15]=1;return out};mat4.lookAt=function(out,eye,center,up){var x0,x1,x2,y0,y1,y2,z0,z1,z2,len,eyex=eye[0],eyey=eye[1],eyez=eye[2],upx=up[0],upy=up[1],upz=up[2],centerx=center[0],centery=center[1],centerz=center[2];if(Math.abs(eyex-centerx)<GLMAT_EPSILON&&Math.abs(eyey-centery)<GLMAT_EPSILON&&Math.abs(eyez-centerz)<GLMAT_EPSILON){return mat4.identity(out)}z0=eyex-centerx;z1=eyey-centery;z2=eyez-centerz;len=1/Math.sqrt(z0*z0+z1*z1+z2*z2);z0*=len;z1*=len;z2*=len;x0=upy*z2-upz*z1;x1=upz*z0-upx*z2;x2=upx*z1-upy*z0;len=Math.sqrt(x0*x0+x1*x1+x2*x2);if(!len){x0=0;x1=0;x2=0}else{len=1/len;x0*=len;x1*=len;x2*=len}y0=z1*x2-z2*x1;y1=z2*x0-z0*x2;y2=z0*x1-z1*x0;len=Math.sqrt(y0*y0+y1*y1+y2*y2);if(!len){y0=0;y1=0;y2=0}else{len=1/len;y0*=len;y1*=len;y2*=len}out[0]=x0;out[1]=y0;out[2]=z0;out[3]=0;out[4]=x1;out[5]=y1;out[6]=z1;out[7]=0;out[8]=x2;out[9]=y2;out[10]=z2;out[11]=0;out[12]=-(x0*eyex+x1*eyey+x2*eyez);out[13]=-(y0*eyex+y1*eyey+y2*eyez);out[14]=-(z0*eyex+z1*eyey+z2*eyez);out[15]=1;return out};mat4.str=function(a){return"mat4("+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+", "+a[4]+", "+a[5]+", "+a[6]+", "+a[7]+", "+a[8]+", "+a[9]+", "+a[10]+", "+a[11]+", "+a[12]+", "+a[13]+", "+a[14]+", "+a[15]+")"};if(typeof exports!=="undefined"){exports.mat4=mat4}var quat={};var quatIdentity=new Float32Array([0,0,0,1]);if(!GLMAT_EPSILON){var GLMAT_EPSILON=1e-6}quat.create=function(){return new Float32Array(quatIdentity)};quat.clone=vec4.clone;quat.fromValues=vec4.fromValues;quat.copy=vec4.copy;quat.set=vec4.set;quat.identity=function(out){out[0]=0;out[1]=0;out[2]=0;out[3]=1;return out};quat.setAxisAngle=function(out,axis,rad){rad=rad*.5;var s=Math.sin(rad);out[0]=s*axis[0];out[1]=s*axis[1];out[2]=s*axis[2];out[3]=Math.cos(rad);return out};quat.add=vec4.add;quat.mul=quat.multiply=function(out,a,b){var ax=a[0],ay=a[1],az=a[2],aw=a[3],bx=b[0],by=b[1],bz=b[2],bw=b[3];out[0]=ax*bw+aw*bx+ay*bz-az*by;out[1]=ay*bw+aw*by+az*bx-ax*bz;out[2]=az*bw+aw*bz+ax*by-ay*bx;out[3]=aw*bw-ax*bx-ay*by-az*bz;return out};quat.scale=vec4.scale;quat.rotateX=function(out,a,rad){rad*=.5;var ax=a[0],ay=a[1],az=a[2],aw=a[3],bx=Math.sin(rad),bw=Math.cos(rad);out[0]=ax*bw+aw*bx;out[1]=ay*bw+az*bx;out[2]=az*bw-ay*bx;out[3]=aw*bw-ax*bx;return out};quat.rotateY=function(out,a,rad){rad*=.5;var ax=a[0],ay=a[1],az=a[2],aw=a[3],by=Math.sin(rad),bw=Math.cos(rad);out[0]=ax*bw-az*by;out[1]=ay*bw+aw*by;out[2]=az*bw+ax*by;out[3]=aw*bw-ay*by;return out};quat.rotateZ=function(out,a,rad){rad*=.5;var ax=a[0],ay=a[1],az=a[2],aw=a[3],bz=Math.sin(rad),bw=Math.cos(rad);out[0]=ax*bw+ay*bz;out[1]=ay*bw-ax*bz;out[2]=az*bw+aw*bz;out[3]=aw*bw-az*bz;return out};quat.calculateW=function(out,a){var x=a[0],y=a[1],z=a[2];out[0]=x;out[1]=y;out[2]=z;out[3]=-Math.sqrt(Math.abs(1-x*x-y*y-z*z));return out};quat.dot=vec4.dot;quat.lerp=vec4.lerp;quat.slerp=function(out,a,b,t){var ax=a[0],ay=a[1],az=a[2],aw=a[3],bx=b[0],by=b[1],bz=b[2],bw=a[3];var cosHalfTheta=ax*bx+ay*by+az*bz+aw*bw,halfTheta,sinHalfTheta,ratioA,ratioB;if(Math.abs(cosHalfTheta)>=1){if(out!==a){out[0]=ax;out[1]=ay;out[2]=az;out[3]=aw}return out}halfTheta=Math.acos(cosHalfTheta);sinHalfTheta=Math.sqrt(1-cosHalfTheta*cosHalfTheta);if(Math.abs(sinHalfTheta)<.001){out[0]=ax*.5+bx*.5;out[1]=ay*.5+by*.5;out[2]=az*.5+bz*.5;out[3]=aw*.5+bw*.5;return out}ratioA=Math.sin((1-t)*halfTheta)/sinHalfTheta;ratioB=Math.sin(t*halfTheta)/sinHalfTheta;out[0]=ax*ratioA+bx*ratioB;out[1]=ay*ratioA+by*ratioB;out[2]=az*ratioA+bz*ratioB;out[3]=aw*ratioA+bw*ratioB;return out};quat.invert=function(out,a){var a0=a[0],a1=a[1],a2=a[2],a3=a[3],dot=a0*a0+a1*a1+a2*a2+a3*a3,invDot=dot?1/dot:0;out[0]=-a0*invDot;out[1]=-a1*invDot;out[2]=-a2*invDot;out[3]=a3*invDot;return out};quat.conjugate=function(out,a){out[0]=-a[0];out[1]=-a[1];out[2]=-a[2];out[3]=a[3];return out};quat.len=quat.length=vec4.length;quat.sqrLen=quat.squaredLength=vec4.squaredLength;quat.normalize=vec4.normalize;quat.str=function(a){return"quat("+a[0]+", "+a[1]+", "+a[2]+", "+a[3]+")"};if(typeof exports!=="undefined"){exports.quat=quat}}(shim.exports)}()},{}],22:[function(require,module,exports){!function(){var root=this;var previousUnderscore=root._;var breaker={};var ArrayProto=Array.prototype,ObjProto=Object.prototype,FuncProto=Function.prototype;var push=ArrayProto.push,slice=ArrayProto.slice,concat=ArrayProto.concat,toString=ObjProto.toString,hasOwnProperty=ObjProto.hasOwnProperty;var nativeForEach=ArrayProto.forEach,nativeMap=ArrayProto.map,nativeReduce=ArrayProto.reduce,nativeReduceRight=ArrayProto.reduceRight,nativeFilter=ArrayProto.filter,nativeEvery=ArrayProto.every,nativeSome=ArrayProto.some,nativeIndexOf=ArrayProto.indexOf,nativeLastIndexOf=ArrayProto.lastIndexOf,nativeIsArray=Array.isArray,nativeKeys=Object.keys,nativeBind=FuncProto.bind;var _=function(obj){if(obj instanceof _)return obj;if(!(this instanceof _))return new _(obj);this._wrapped=obj};if(typeof exports!=="undefined"){if(typeof module!=="undefined"&&module.exports){exports=module.exports=_
+}exports._=_}else{root._=_}_.VERSION="1.4.4";var each=_.each=_.forEach=function(obj,iterator,context){if(obj==null)return;if(nativeForEach&&obj.forEach===nativeForEach){obj.forEach(iterator,context)}else if(obj.length===+obj.length){for(var i=0,l=obj.length;i<l;i++){if(iterator.call(context,obj[i],i,obj)===breaker)return}}else{for(var key in obj){if(_.has(obj,key)){if(iterator.call(context,obj[key],key,obj)===breaker)return}}}};_.map=_.collect=function(obj,iterator,context){var results=[];if(obj==null)return results;if(nativeMap&&obj.map===nativeMap)return obj.map(iterator,context);each(obj,function(value,index,list){results[results.length]=iterator.call(context,value,index,list)});return results};var reduceError="Reduce of empty array with no initial value";_.reduce=_.foldl=_.inject=function(obj,iterator,memo,context){var initial=arguments.length>2;if(obj==null)obj=[];if(nativeReduce&&obj.reduce===nativeReduce){if(context)iterator=_.bind(iterator,context);return initial?obj.reduce(iterator,memo):obj.reduce(iterator)}each(obj,function(value,index,list){if(!initial){memo=value;initial=true}else{memo=iterator.call(context,memo,value,index,list)}});if(!initial)throw new TypeError(reduceError);return memo};_.reduceRight=_.foldr=function(obj,iterator,memo,context){var initial=arguments.length>2;if(obj==null)obj=[];if(nativeReduceRight&&obj.reduceRight===nativeReduceRight){if(context)iterator=_.bind(iterator,context);return initial?obj.reduceRight(iterator,memo):obj.reduceRight(iterator)}var length=obj.length;if(length!==+length){var keys=_.keys(obj);length=keys.length}each(obj,function(value,index,list){index=keys?keys[--length]:--length;if(!initial){memo=obj[index];initial=true}else{memo=iterator.call(context,memo,obj[index],index,list)}});if(!initial)throw new TypeError(reduceError);return memo};_.find=_.detect=function(obj,iterator,context){var result;any(obj,function(value,index,list){if(iterator.call(context,value,index,list)){result=value;return true}});return result};_.filter=_.select=function(obj,iterator,context){var results=[];if(obj==null)return results;if(nativeFilter&&obj.filter===nativeFilter)return obj.filter(iterator,context);each(obj,function(value,index,list){if(iterator.call(context,value,index,list))results[results.length]=value});return results};_.reject=function(obj,iterator,context){return _.filter(obj,function(value,index,list){return!iterator.call(context,value,index,list)},context)};_.every=_.all=function(obj,iterator,context){iterator||(iterator=_.identity);var result=true;if(obj==null)return result;if(nativeEvery&&obj.every===nativeEvery)return obj.every(iterator,context);each(obj,function(value,index,list){if(!(result=result&&iterator.call(context,value,index,list)))return breaker});return!!result};var any=_.some=_.any=function(obj,iterator,context){iterator||(iterator=_.identity);var result=false;if(obj==null)return result;if(nativeSome&&obj.some===nativeSome)return obj.some(iterator,context);each(obj,function(value,index,list){if(result||(result=iterator.call(context,value,index,list)))return breaker});return!!result};_.contains=_.include=function(obj,target){if(obj==null)return false;if(nativeIndexOf&&obj.indexOf===nativeIndexOf)return obj.indexOf(target)!=-1;return any(obj,function(value){return value===target})};_.invoke=function(obj,method){var args=slice.call(arguments,2);var isFunc=_.isFunction(method);return _.map(obj,function(value){return(isFunc?method:value[method]).apply(value,args)})};_.pluck=function(obj,key){return _.map(obj,function(value){return value[key]})};_.where=function(obj,attrs,first){if(_.isEmpty(attrs))return first?null:[];return _[first?"find":"filter"](obj,function(value){for(var key in attrs){if(attrs[key]!==value[key])return false}return true})};_.findWhere=function(obj,attrs){return _.where(obj,attrs,true)};_.max=function(obj,iterator,context){if(!iterator&&_.isArray(obj)&&obj[0]===+obj[0]&&obj.length<65535){return Math.max.apply(Math,obj)}if(!iterator&&_.isEmpty(obj))return-Infinity;var result={computed:-Infinity,value:-Infinity};each(obj,function(value,index,list){var computed=iterator?iterator.call(context,value,index,list):value;computed>=result.computed&&(result={value:value,computed:computed})});return result.value};_.min=function(obj,iterator,context){if(!iterator&&_.isArray(obj)&&obj[0]===+obj[0]&&obj.length<65535){return Math.min.apply(Math,obj)}if(!iterator&&_.isEmpty(obj))return Infinity;var result={computed:Infinity,value:Infinity};each(obj,function(value,index,list){var computed=iterator?iterator.call(context,value,index,list):value;computed<result.computed&&(result={value:value,computed:computed})});return result.value};_.shuffle=function(obj){var rand;var index=0;var shuffled=[];each(obj,function(value){rand=_.random(index++);shuffled[index-1]=shuffled[rand];shuffled[rand]=value});return shuffled};var lookupIterator=function(value){return _.isFunction(value)?value:function(obj){return obj[value]}};_.sortBy=function(obj,value,context){var iterator=lookupIterator(value);return _.pluck(_.map(obj,function(value,index,list){return{value:value,index:index,criteria:iterator.call(context,value,index,list)}}).sort(function(left,right){var a=left.criteria;var b=right.criteria;if(a!==b){if(a>b||a===void 0)return 1;if(a<b||b===void 0)return-1}return left.index<right.index?-1:1}),"value")};var group=function(obj,value,context,behavior){var result={};var iterator=lookupIterator(value||_.identity);each(obj,function(value,index){var key=iterator.call(context,value,index,obj);behavior(result,key,value)});return result};_.groupBy=function(obj,value,context){return group(obj,value,context,function(result,key,value){(_.has(result,key)?result[key]:result[key]=[]).push(value)})};_.countBy=function(obj,value,context){return group(obj,value,context,function(result,key){if(!_.has(result,key))result[key]=0;result[key]++})};_.sortedIndex=function(array,obj,iterator,context){iterator=iterator==null?_.identity:lookupIterator(iterator);var value=iterator.call(context,obj);var low=0,high=array.length;while(low<high){var mid=low+high>>>1;iterator.call(context,array[mid])<value?low=mid+1:high=mid}return low};_.toArray=function(obj){if(!obj)return[];if(_.isArray(obj))return slice.call(obj);if(obj.length===+obj.length)return _.map(obj,_.identity);return _.values(obj)};_.size=function(obj){if(obj==null)return 0;return obj.length===+obj.length?obj.length:_.keys(obj).length};_.first=_.head=_.take=function(array,n,guard){if(array==null)return void 0;return n!=null&&!guard?slice.call(array,0,n):array[0]};_.initial=function(array,n,guard){return slice.call(array,0,array.length-(n==null||guard?1:n))};_.last=function(array,n,guard){if(array==null)return void 0;if(n!=null&&!guard){return slice.call(array,Math.max(array.length-n,0))}else{return array[array.length-1]}};_.rest=_.tail=_.drop=function(array,n,guard){return slice.call(array,n==null||guard?1:n)};_.compact=function(array){return _.filter(array,_.identity)};var flatten=function(input,shallow,output){each(input,function(value){if(_.isArray(value)){shallow?push.apply(output,value):flatten(value,shallow,output)}else{output.push(value)}});return output};_.flatten=function(array,shallow){return flatten(array,shallow,[])};_.without=function(array){return _.difference(array,slice.call(arguments,1))};_.uniq=_.unique=function(array,isSorted,iterator,context){if(_.isFunction(isSorted)){context=iterator;iterator=isSorted;isSorted=false}var initial=iterator?_.map(array,iterator,context):array;var results=[];var seen=[];each(initial,function(value,index){if(isSorted?!index||seen[seen.length-1]!==value:!_.contains(seen,value)){seen.push(value);results.push(array[index])}});return results};_.union=function(){return _.uniq(concat.apply(ArrayProto,arguments))};_.intersection=function(array){var rest=slice.call(arguments,1);return _.filter(_.uniq(array),function(item){return _.every(rest,function(other){return _.indexOf(other,item)>=0})})};_.difference=function(array){var rest=concat.apply(ArrayProto,slice.call(arguments,1));return _.filter(array,function(value){return!_.contains(rest,value)})};_.zip=function(){var args=slice.call(arguments);var length=_.max(_.pluck(args,"length"));var results=new Array(length);for(var i=0;i<length;i++){results[i]=_.pluck(args,""+i)}return results};_.object=function(list,values){if(list==null)return{};var result={};for(var i=0,l=list.length;i<l;i++){if(values){result[list[i]]=values[i]}else{result[list[i][0]]=list[i][1]}}return result};_.indexOf=function(array,item,isSorted){if(array==null)return-1;var i=0,l=array.length;if(isSorted){if(typeof isSorted=="number"){i=isSorted<0?Math.max(0,l+isSorted):isSorted}else{i=_.sortedIndex(array,item);return array[i]===item?i:-1}}if(nativeIndexOf&&array.indexOf===nativeIndexOf)return array.indexOf(item,isSorted);for(;i<l;i++)if(array[i]===item)return i;return-1};_.lastIndexOf=function(array,item,from){if(array==null)return-1;var hasIndex=from!=null;if(nativeLastIndexOf&&array.lastIndexOf===nativeLastIndexOf){return hasIndex?array.lastIndexOf(item,from):array.lastIndexOf(item)}var i=hasIndex?from:array.length;while(i--)if(array[i]===item)return i;return-1};_.range=function(start,stop,step){if(arguments.length<=1){stop=start||0;start=0}step=arguments[2]||1;var len=Math.max(Math.ceil((stop-start)/step),0);var idx=0;var range=new Array(len);while(idx<len){range[idx++]=start;start+=step}return range};_.bind=function(func,context){if(func.bind===nativeBind&&nativeBind)return nativeBind.apply(func,slice.call(arguments,1));var args=slice.call(arguments,2);return function(){return func.apply(context,args.concat(slice.call(arguments)))}};_.partial=function(func){var args=slice.call(arguments,1);return function(){return func.apply(this,args.concat(slice.call(arguments)))}};_.bindAll=function(obj){var funcs=slice.call(arguments,1);if(funcs.length===0)funcs=_.functions(obj);each(funcs,function(f){obj[f]=_.bind(obj[f],obj)});return obj};_.memoize=function(func,hasher){var memo={};hasher||(hasher=_.identity);return function(){var key=hasher.apply(this,arguments);return _.has(memo,key)?memo[key]:memo[key]=func.apply(this,arguments)}};_.delay=function(func,wait){var args=slice.call(arguments,2);return setTimeout(function(){return func.apply(null,args)},wait)};_.defer=function(func){return _.delay.apply(_,[func,1].concat(slice.call(arguments,1)))};_.throttle=function(func,wait){var context,args,timeout,result;var previous=0;var later=function(){previous=new Date;timeout=null;result=func.apply(context,args)};return function(){var now=new Date;var remaining=wait-(now-previous);context=this;args=arguments;if(remaining<=0){clearTimeout(timeout);timeout=null;previous=now;result=func.apply(context,args)}else if(!timeout){timeout=setTimeout(later,remaining)}return result}};_.debounce=function(func,wait,immediate){var timeout,result;return function(){var context=this,args=arguments;var later=function(){timeout=null;if(!immediate)result=func.apply(context,args)};var callNow=immediate&&!timeout;clearTimeout(timeout);timeout=setTimeout(later,wait);if(callNow)result=func.apply(context,args);return result}};_.once=function(func){var ran=false,memo;return function(){if(ran)return memo;ran=true;memo=func.apply(this,arguments);func=null;return memo}};_.wrap=function(func,wrapper){return function(){var args=[func];push.apply(args,arguments);return wrapper.apply(this,args)}};_.compose=function(){var funcs=arguments;return function(){var args=arguments;for(var i=funcs.length-1;i>=0;i--){args=[funcs[i].apply(this,args)]}return args[0]}};_.after=function(times,func){if(times<=0)return func();return function(){if(--times<1){return func.apply(this,arguments)}}};_.keys=nativeKeys||function(obj){if(obj!==Object(obj))throw new TypeError("Invalid object");var keys=[];for(var key in obj)if(_.has(obj,key))keys[keys.length]=key;return keys};_.values=function(obj){var values=[];for(var key in obj)if(_.has(obj,key))values.push(obj[key]);return values};_.pairs=function(obj){var pairs=[];for(var key in obj)if(_.has(obj,key))pairs.push([key,obj[key]]);return pairs};_.invert=function(obj){var result={};for(var key in obj)if(_.has(obj,key))result[obj[key]]=key;return result};_.functions=_.methods=function(obj){var names=[];for(var key in obj){if(_.isFunction(obj[key]))names.push(key)}return names.sort()};_.extend=function(obj){each(slice.call(arguments,1),function(source){if(source){for(var prop in source){obj[prop]=source[prop]}}});return obj};_.pick=function(obj){var copy={};var keys=concat.apply(ArrayProto,slice.call(arguments,1));each(keys,function(key){if(key in obj)copy[key]=obj[key]});return copy};_.omit=function(obj){var copy={};var keys=concat.apply(ArrayProto,slice.call(arguments,1));for(var key in obj){if(!_.contains(keys,key))copy[key]=obj[key]}return copy};_.defaults=function(obj){each(slice.call(arguments,1),function(source){if(source){for(var prop in source){if(obj[prop]==null)obj[prop]=source[prop]}}});return obj};_.clone=function(obj){if(!_.isObject(obj))return obj;return _.isArray(obj)?obj.slice():_.extend({},obj)};_.tap=function(obj,interceptor){interceptor(obj);return obj};var eq=function(a,b,aStack,bStack){if(a===b)return a!==0||1/a==1/b;if(a==null||b==null)return a===b;if(a instanceof _)a=a._wrapped;if(b instanceof _)b=b._wrapped;var className=toString.call(a);if(className!=toString.call(b))return false;switch(className){case"[object String]":return a==String(b);case"[object Number]":return a!=+a?b!=+b:a==0?1/a==1/b:a==+b;case"[object Date]":case"[object Boolean]":return+a==+b;case"[object RegExp]":return a.source==b.source&&a.global==b.global&&a.multiline==b.multiline&&a.ignoreCase==b.ignoreCase}if(typeof a!="object"||typeof b!="object")return false;var length=aStack.length;while(length--){if(aStack[length]==a)return bStack[length]==b}aStack.push(a);bStack.push(b);var size=0,result=true;if(className=="[object Array]"){size=a.length;result=size==b.length;if(result){while(size--){if(!(result=eq(a[size],b[size],aStack,bStack)))break}}}else{var aCtor=a.constructor,bCtor=b.constructor;if(aCtor!==bCtor&&!(_.isFunction(aCtor)&&aCtor instanceof aCtor&&_.isFunction(bCtor)&&bCtor instanceof bCtor)){return false}for(var key in a){if(_.has(a,key)){size++;if(!(result=_.has(b,key)&&eq(a[key],b[key],aStack,bStack)))break}}if(result){for(key in b){if(_.has(b,key)&&!size--)break}result=!size}}aStack.pop();bStack.pop();return result};_.isEqual=function(a,b){return eq(a,b,[],[])};_.isEmpty=function(obj){if(obj==null)return true;if(_.isArray(obj)||_.isString(obj))return obj.length===0;for(var key in obj)if(_.has(obj,key))return false;return true};_.isElement=function(obj){return!!(obj&&obj.nodeType===1)};_.isArray=nativeIsArray||function(obj){return toString.call(obj)=="[object Array]"};_.isObject=function(obj){return obj===Object(obj)};each(["Arguments","Function","String","Number","Date","RegExp"],function(name){_["is"+name]=function(obj){return toString.call(obj)=="[object "+name+"]"}});if(!_.isArguments(arguments)){_.isArguments=function(obj){return!!(obj&&_.has(obj,"callee"))}}if(typeof/./!=="function"){_.isFunction=function(obj){return typeof obj==="function"}}_.isFinite=function(obj){return isFinite(obj)&&!isNaN(parseFloat(obj))};_.isNaN=function(obj){return _.isNumber(obj)&&obj!=+obj};_.isBoolean=function(obj){return obj===true||obj===false||toString.call(obj)=="[object Boolean]"};_.isNull=function(obj){return obj===null};_.isUndefined=function(obj){return obj===void 0};_.has=function(obj,key){return hasOwnProperty.call(obj,key)};_.noConflict=function(){root._=previousUnderscore;return this};_.identity=function(value){return value};_.times=function(n,iterator,context){var accum=Array(n);for(var i=0;i<n;i++)accum[i]=iterator.call(context,i);return accum};_.random=function(min,max){if(max==null){max=min;min=0}return min+Math.floor(Math.random()*(max-min+1))};var entityMap={escape:{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"}};entityMap.unescape=_.invert(entityMap.escape);var entityRegexes={escape:new RegExp("["+_.keys(entityMap.escape).join("")+"]","g"),unescape:new RegExp("("+_.keys(entityMap.unescape).join("|")+")","g")};_.each(["escape","unescape"],function(method){_[method]=function(string){if(string==null)return"";return(""+string).replace(entityRegexes[method],function(match){return entityMap[method][match]})}});_.result=function(object,property){if(object==null)return null;var value=object[property];return _.isFunction(value)?value.call(object):value};_.mixin=function(obj){each(_.functions(obj),function(name){var func=_[name]=obj[name];_.prototype[name]=function(){var args=[this._wrapped];push.apply(args,arguments);return result.call(this,func.apply(_,args))}})};var idCounter=0;_.uniqueId=function(prefix){var id=++idCounter+"";return prefix?prefix+id:id};_.templateSettings={evaluate:/<%([\s\S]+?)%>/g,interpolate:/<%=([\s\S]+?)%>/g,escape:/<%-([\s\S]+?)%>/g};var noMatch=/(.)^/;var escapes={"'":"'","\\":"\\","\r":"r","\n":"n","	":"t","\u2028":"u2028","\u2029":"u2029"};var escaper=/\\|'|\r|\n|\t|\u2028|\u2029/g;_.template=function(text,data,settings){var render;settings=_.defaults({},settings,_.templateSettings);var matcher=new RegExp([(settings.escape||noMatch).source,(settings.interpolate||noMatch).source,(settings.evaluate||noMatch).source].join("|")+"|$","g");var index=0;var source="__p+='";text.replace(matcher,function(match,escape,interpolate,evaluate,offset){source+=text.slice(index,offset).replace(escaper,function(match){return"\\"+escapes[match]});if(escape){source+="'+\n((__t=("+escape+"))==null?'':_.escape(__t))+\n'"}if(interpolate){source+="'+\n((__t=("+interpolate+"))==null?'':__t)+\n'"}if(evaluate){source+="';\n"+evaluate+"\n__p+='"}index=offset+match.length;return match});source+="';\n";if(!settings.variable)source="with(obj||{}){\n"+source+"}\n";source="var __t,__p='',__j=Array.prototype.join,"+"print=function(){__p+=__j.call(arguments,'');};\n"+source+"return __p;\n";try{render=new Function(settings.variable||"obj","_",source)}catch(e){e.source=source;throw e}if(data)return render(data,_);var template=function(data){return render.call(this,data,_)};template.source="function("+(settings.variable||"obj")+"){\n"+source+"}";return template};_.chain=function(obj){return _(obj).chain()};var result=function(obj){return this._chain?_(obj).chain():obj};_.mixin(_);each(["pop","push","reverse","shift","sort","splice","unshift"],function(name){var method=ArrayProto[name];_.prototype[name]=function(){var obj=this._wrapped;method.apply(obj,arguments);if((name=="shift"||name=="splice")&&obj.length===0)delete obj[0];return result.call(this,obj)}});each(["concat","join","slice"],function(name){var method=ArrayProto[name];_.prototype[name]=function(){return result.call(this,method.apply(this._wrapped,arguments))}});_.extend(_.prototype,{chain:function(){this._chain=true;return this},value:function(){return this._wrapped}})}.call(this)},{}],23:[function(require,module,exports){if(typeof window!=="undefined"&&typeof window.requestAnimationFrame!=="function"){window.requestAnimationFrame=window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(callback){setTimeout(callback,1e3/60)}}Leap=require("../lib/index")},{"../lib/index":9}]},{},[23]);}, "classes/libs/leap-plugins-0.1.3.min": function(exports, require, module) {/*    
+ * LeapJS-Plugins  - v0.1.3 - 2014-03-12    
+ * http://github.com/leapmotion/leapjs-plugins/    
+ *    
+ * Copyright 2014 LeapMotion, Inc    
+ *    
+ * Licensed under the Apache License, Version 2.0 (the "License");    
+ * you may not use this file except in compliance with the License.    
+ * You may obtain a copy of the License at    
+ *    
+ *     http://www.apache.org/licenses/LICENSE-2.0    
+ *    
+ * Unless required by applicable law or agreed to in writing, software    
+ * distributed under the License is distributed on an "AS IS" BASIS,    
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    
+ * See the License for the specific language governing permissions and    
+ * limitations under the License.    
+ *    
+ */    
+(function(){var a;a=function(){var a;return a=[],a.remove=function(){for(var a,b,c=arguments,d=c.length;d&&this.length;)for(a=c[--d];-1!==(b=this.indexOf(a));)this.splice(b,1);return this},this.on("deviceDisconnected",function(){var b,c,d,e;for(e=[],c=0,d=a.length;d>c;c++)b=a[c],e.push(this.emit("handLost",this.lastConnectionFrame.hand(b)));return e}),{frame:function(b){var c,d,e,f,g;d=b.hands.map(function(a){return a.id});for(var h=0,i=a.length;i>h;h++)c=a[h],-1==d.indexOf(c)&&(a.remove(c),this.emit("handLost",this.frame(1).hand(c)),h--,i--);for(g=[],e=0,f=d.length;f>e;e++)c=d[e],-1===a.indexOf(c)?(a.push(c),g.push(this.emit("handFound",b.hand(c)))):g.push(void 0);return g}}},"undefined"!=typeof Leap&&Leap.Controller?Leap.Controller.plugin("handEntry",a):module.exports.handEntry=a}).call(this),function(){var a;a=function(){var a;return a={},{hand:{data:function(b,c){var d,e,f;if(a[e=this.id]||(a[e]=[]),c)return a[this.id][b]=c;if("[object String]"===toString.call(b))return a[this.id][b];f=[];for(d in b)c=b[d],f.push(void 0===c?delete a[this.id][d]:a[this.id][d]=c);return f},hold:function(a){return a?this.data({holding:a}):this.hold(this.hovering())},holding:function(){return this.data("holding")},release:function(){var a;return a=this.data("holding"),this.data({holding:void 0}),a},hoverFn:function(a){return this.data({getHover:a})},hovering:function(){var a;return(a=this.data("getHover"))?this._hovering||(this._hovering=a.call(this)):void 0}}}},"undefined"!=typeof Leap&&Leap.Controller?Leap.Controller.plugin("handHold",a):module.exports.handHold=a}.call(this),function(){var a;a=function(a){var b,c,d,e;return null==a&&(a={}),a.positioning||(a.positioning="absolute"),a.scale||(a.scale=1),a.scaleX||(a.scaleX=1),a.scaleY||(a.scaleY=1),a.scaleZ||(a.scaleZ=1),a.verticalOffset||(a.verticalOffset=0),b=6,c=-100,e={absolute:function(d){return[window.innerWidth/2+d[0]*b*a.scale*a.scaleX,window.innerHeight+c+a.verticalOffset-d[1]*b*a.scale*a.scaleY,d[2]*b*a.scale*a.scaleZ]}},d=function(b,c){var d;return null==c&&(c=!1),d="function"==typeof a.positioning?a.positioning.call(this,b):e[a.positioning].call(this,b),c&&(this.screenPositionVec3=d),d},{hand:{screenPosition:function(a){return d.call(this,a||this.stabilizedPalmPosition,!a)}},pointable:{screenPosition:function(a){return d.call(this,a||this.stabilizedTipPosition,!a)}}}},"undefined"!=typeof Leap&&Leap.Controller?Leap.Controller.plugin("screenPosition",a):module.exports.screenPosition=a}.call(this);}, "classes/libs/prelude-browser-min": function(exports, require, module) {window.require=function(n,r,t){function e(t,i){if(!r[t]){if(!n[t]){var o=typeof require=="function"&&require;if(!i&&o)return o(t,!0);if(u)return u(t,!0);throw new Error("Cannot find module '"+t+"'")}var a=r[t]={exports:{}};n[t][0].call(a.exports,function(r){var u=n[t][1][r];return e(u?u:r)},a,a.exports)}return r[t].exports}var u=typeof require=="function"&&require;for(var i=0;i<t.length;i++)e(t[i]);return e}({"prelude-ls":[function(n,r,t){r.exports=n("bcmc1g")},{}],bcmc1g:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h={}.toString;e=n("./Func.js");u=n("./List.js");i=n("./Obj.js");o=n("./Str.js");a=n("./Num.js");c=function(n){return n};f=p(function(n,r){return h.call(r).slice(8,-1)===n});l=p(function(n,r){var t,e=[];for(t=0;t<n;++t){e.push(r)}return e});o.empty=u.empty;o.slice=u.slice;o.take=u.take;o.drop=u.drop;o.splitAt=u.splitAt;o.takeWhile=u.takeWhile;o.dropWhile=u.dropWhile;o.span=u.span;o.breakStr=u.breakList;s={Func:e,List:u,Obj:i,Str:o,Num:a,id:c,isType:f,replicate:l};s.each=u.each;s.map=u.map;s.filter=u.filter;s.compact=u.compact;s.reject=u.reject;s.partition=u.partition;s.find=u.find;s.head=u.head;s.first=u.first;s.tail=u.tail;s.last=u.last;s.initial=u.initial;s.empty=u.empty;s.reverse=u.reverse;s.difference=u.difference;s.intersection=u.intersection;s.union=u.union;s.countBy=u.countBy;s.groupBy=u.groupBy;s.fold=u.fold;s.foldl=u.foldl;s.fold1=u.fold1;s.foldl1=u.foldl1;s.foldr=u.foldr;s.foldr1=u.foldr1;s.unfoldr=u.unfoldr;s.andList=u.andList;s.orList=u.orList;s.any=u.any;s.all=u.all;s.unique=u.unique;s.sort=u.sort;s.sortWith=u.sortWith;s.sortBy=u.sortBy;s.sum=u.sum;s.product=u.product;s.mean=u.mean;s.average=u.average;s.concat=u.concat;s.concatMap=u.concatMap;s.flatten=u.flatten;s.maximum=u.maximum;s.minimum=u.minimum;s.scan=u.scan;s.scanl=u.scanl;s.scan1=u.scan1;s.scanl1=u.scanl1;s.scanr=u.scanr;s.scanr1=u.scanr1;s.slice=u.slice;s.take=u.take;s.drop=u.drop;s.splitAt=u.splitAt;s.takeWhile=u.takeWhile;s.dropWhile=u.dropWhile;s.span=u.span;s.breakList=u.breakList;s.zip=u.zip;s.zipWith=u.zipWith;s.zipAll=u.zipAll;s.zipAllWith=u.zipAllWith;s.apply=e.apply;s.curry=e.curry;s.flip=e.flip;s.fix=e.fix;s.split=o.split;s.join=o.join;s.lines=o.lines;s.unlines=o.unlines;s.words=o.words;s.unwords=o.unwords;s.chars=o.chars;s.unchars=o.unchars;s.values=i.values;s.keys=i.keys;s.pairsToObj=i.pairsToObj;s.objToPairs=i.objToPairs;s.listsToObj=i.listsToObj;s.objToLists=i.objToLists;s.max=a.max;s.min=a.min;s.negate=a.negate;s.abs=a.abs;s.signum=a.signum;s.quot=a.quot;s.rem=a.rem;s.div=a.div;s.mod=a.mod;s.recip=a.recip;s.pi=a.pi;s.tau=a.tau;s.exp=a.exp;s.sqrt=a.sqrt;s.ln=a.ln;s.pow=a.pow;s.sin=a.sin;s.tan=a.tan;s.cos=a.cos;s.acos=a.acos;s.asin=a.asin;s.atan=a.atan;s.atan2=a.atan2;s.truncate=a.truncate;s.round=a.round;s.ceiling=a.ceiling;s.floor=a.floor;s.isItNaN=a.isItNaN;s.even=a.even;s.odd=a.odd;s.gcd=a.gcd;s.lcm=a.lcm;s.VERSION="1.0.3";r.exports=s;function p(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{"./Func.js":1,"./Obj.js":2,"./Num.js":3,"./List.js":4,"./Str.js":5}],1:[function(n,r,t){var e,u,i,o;e=function(n){return a(n)};u=a(function(n,r,t){return n(t,r)});i=function(n){return function(r,t){return function(){return n(r(r)).apply(null,arguments)}}(function(r,t){return function(){return n(r(r)).apply(null,arguments)}})};o=a(function(n,r){return n.apply(null,r)});r.exports={curry:e,flip:u,fix:i,apply:o};function a(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}],2:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h,p,g,v,m;e=function(n){var r,t,e=[];for(r in n){t=n[r];e.push(t)}return e};u=function(n){var r,t=[];for(r in n){t.push(r)}return t};i=function(n){var r,t,e,u={};for(r=0,t=n.length;r<t;++r){e=n[r];u[e[0]]=e[1]}return u};o=function(n){var r,t,e=[];for(r in n){t=n[r];e.push([r,t])}return e};a=d(function(n,r){var t,e,u,i,o={};for(t=0,e=n.length;t<e;++t){u=t;i=n[t];o[i]=r[u]}return o});c=function(n){var r,t,e,u;r=[];t=[];for(e in n){u=n[e];r.push(e);t.push(u)}return[r,t]};f=function(n){var r;for(r in n){return false}return true};l=d(function(n,r){var t,e;for(t in r){e=r[t];n(e)}return r});s=d(function(n,r){var t,e,u={};for(t in r){e=r[t];u[t]=n(e)}return u});h=d(function(n){var r,t,e={};for(r in n){t=n[r];if(t){e[r]=t}}return e});p=d(function(n,r){var t,e,u={};for(t in r){e=r[t];if(n(e)){u[t]=e}}return u});g=d(function(n,r){var t,e,u={};for(t in r){e=r[t];if(!n(e)){u[t]=e}}return u});v=d(function(n,r){var t,e,u,i;t={};e={};for(u in r){i=r[u];(n(i)?t:e)[u]=i}return[t,e]});m=d(function(n,r){var t,e;for(t in r){e=r[t];if(n(e)){return e}}});r.exports={values:e,keys:u,pairsToObj:i,objToPairs:o,listsToObj:a,objToLists:c,empty:f,each:l,map:s,filter:p,compact:h,reject:g,partition:v,find:m};function d(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}],3:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h,p,g,v,m,d,y,j,b,x,M,k,W,w,L,q,T,z,A,N,O,B,S;e=I(function(n,r){return n>r?n:r});u=I(function(n,r){return n<r?n:r});i=function(n){return-n};o=Math.abs;a=function(n){if(n<0){return-1}else if(n>0){return 1}else{return 0}};c=I(function(n,r){return~~(n/r)});f=I(function(n,r){return n%r});l=I(function(n,r){return Math.floor(n/r)});s=I(function(n,r){var t;return(n%(t=r)+t)%t});h=function(n){return 1/n};p=Math.PI;g=p*2;v=Math.exp;m=Math.sqrt;d=Math.log;y=I(function(n,r){return Math.pow(n,r)});j=Math.sin;b=Math.tan;x=Math.cos;M=Math.asin;k=Math.acos;W=Math.atan;w=I(function(n,r){return Math.atan2(n,r)});L=function(n){return~~n};q=Math.round;T=Math.ceil;z=Math.floor;A=function(n){return n!==n};N=function(n){return n%2===0};O=function(n){return n%2!==0};B=I(function(n,r){var t;n=Math.abs(n);r=Math.abs(r);while(r!==0){t=n%r;n=r;r=t}return n});S=I(function(n,r){return Math.abs(Math.floor(n/B(n,r)*r))});r.exports={max:e,min:u,negate:i,abs:o,signum:a,quot:c,rem:f,div:l,mod:s,recip:h,pi:p,tau:g,exp:v,sqrt:m,ln:d,pow:y,sin:j,tan:b,cos:x,acos:k,asin:M,atan:W,atan2:w,truncate:L,round:q,ceiling:T,floor:z,isItNaN:A,even:N,odd:O,gcd:B,lcm:S};function I(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}],4:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h,p,g,v,m,d,y,j,b,x,M,k,W,w,L,q,T,z,A,N,O,B,S,I,P,F,E,C,R,V,D,G,H,J,K,Q,U,X,Y,Z,$,_,nr,rr,tr,er,ur,ir,or,ar,cr,fr,lr={}.toString,sr=[].slice;e=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];n(u)}return r});u=hr(function(n,r){var t,e,u,i=[];for(t=0,e=r.length;t<e;++t){u=r[t];i.push(n(u))}return i});i=hr(function(n){var r,t,e,u=[];for(r=0,t=n.length;r<t;++r){e=n[r];if(e){u.push(e)}}return u});o=hr(function(n,r){var t,e,u,i=[];for(t=0,e=r.length;t<e;++t){u=r[t];if(n(u)){i.push(u)}}return i});a=hr(function(n,r){var t,e,u,i=[];for(t=0,e=r.length;t<e;++t){u=r[t];if(!n(u)){i.push(u)}}return i});c=hr(function(n,r){var t,e,u,i,o;t=[];e=[];for(u=0,i=r.length;u<i;++u){o=r[u];(n(o)?t:e).push(o)}return[t,e]});f=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];if(n(u)){return u}}});l=s=function(n){if(!n.length){return}return n[0]};h=function(n){if(!n.length){return}return n.slice(1)};p=function(n){if(!n.length){return}return n[n.length-1]};g=function(n){var r;r=n.length;if(!r){return}return n.slice(0,r-1)};v=function(n){return!n.length};m=function(n){return n.concat().reverse()};d=function(n){var r,t,e,u;r=[];for(t=0,e=n.length;t<e;++t){u=n[t];if(!pr(u,r)){r.push(u)}}return r};y=j=hr(function(n,r,t){var e,u,i;for(e=0,u=t.length;e<u;++e){i=t[e];r=n(r,i)}return r});b=x=hr(function(n,r){return y(n,r[0],r.slice(1))});M=hr(function(n,r,t){return y(n,r,t.concat().reverse())});k=hr(function(n,r){var t;t=r.concat().reverse();return y(n,t[0],t.slice(1))});W=hr(function(n,r){var t,e,u;t=[];e=r;while((u=n(e))!=null){t.push(u[0]);e=u[1]}return t});w=function(n){return[].concat.apply([],n)};L=hr(function(n,r){var t;return[].concat.apply([],function(){var e,u,i,o=[];for(e=0,i=(u=r).length;e<i;++e){t=u[e];o.push(n(t))}return o}())});q=hr(function(n){var r;return[].concat.apply([],function(){var t,e,u,i=[];for(t=0,u=(e=n).length;t<u;++t){r=e[t];if(lr.call(r).slice(8,-1)==="Array"){i.push(q(r))}else{i.push(r)}}return i}())});T=function(n){var r,t,e,u,i,o,a,c;r=sr.call(arguments,1);t=[];n:for(e=0,u=n.length;e<u;++e){i=n[e];for(o=0,a=r.length;o<a;++o){c=r[o];if(pr(i,c)){continue n}}t.push(i)}return t};z=function(n){var r,t,e,u,i,o,a,c;r=sr.call(arguments,1);t=[];n:for(e=0,u=n.length;e<u;++e){i=n[e];for(o=0,a=r.length;o<a;++o){c=r[o];if(!pr(i,c)){continue n}}t.push(i)}return t};A=function(){var n,r,t,e,u,i,o,a;n=sr.call(arguments);r=[];for(t=0,e=n.length;t<e;++t){u=n[t];for(i=0,o=u.length;i<o;++i){a=u[i];if(!pr(a,r)){r.push(a)}}}return r};N=hr(function(n,r){var t,e,u,i,o;t={};for(e=0,u=r.length;e<u;++e){i=r[e];o=n(i);if(o in t){t[o]+=1}else{t[o]=1}}return t});O=hr(function(n,r){var t,e,u,i,o;t={};for(e=0,u=r.length;e<u;++e){i=r[e];o=n(i);if(o in t){t[o].push(i)}else{t[o]=[i]}}return t});B=function(n){var r,t,e;for(r=0,t=n.length;r<t;++r){e=n[r];if(!e){return false}}return true};S=function(n){var r,t,e;for(r=0,t=n.length;r<t;++r){e=n[r];if(e){return true}}return false};I=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];if(n(u)){return true}}return false});P=hr(function(n,r){var t,e,u;for(t=0,e=r.length;t<e;++t){u=r[t];if(!n(u)){return false}}return true});F=function(n){return n.concat().sort(function(n,r){if(n>r){return 1}else if(n<r){return-1}else{return 0}})};E=hr(function(n,r){if(!r.length){return[]}return r.concat().sort(n)});C=hr(function(n,r){if(!r.length){return[]}return r.concat().sort(function(r,t){if(n(r)>n(t)){return 1}else if(n(r)<n(t)){return-1}else{return 0}})});R=function(n){var r,t,e,u;r=0;for(t=0,e=n.length;t<e;++t){u=n[t];r+=u}return r};V=function(n){var r,t,e,u;r=1;for(t=0,e=n.length;t<e;++t){u=n[t];r*=u}return r};D=G=function(n){var r,t,e,u;r=0;t=n.length;for(e=0;e<t;++e){u=e;r+=n[u]}return r/t};H=function(n){var r,t,e,u,i;r=n[0];for(t=0,u=(e=n.slice(1)).length;t<u;++t){i=e[t];if(i>r){r=i}}return r};J=function(n){var r,t,e,u,i;r=n[0];for(t=0,u=(e=n.slice(1)).length;t<u;++t){i=e[t];if(i<r){r=i}}return r};K=Q=hr(function(n,r,t){var e,u;e=r;return[r].concat(function(){var r,i,o,a=[];for(r=0,o=(i=t).length;r<o;++r){u=i[r];a.push(e=n(e,u))}return a}())});U=X=hr(function(n,r){if(!r.length){return}return K(n,r[0],r.slice(1))});Y=hr(function(n,r,t){t=t.concat().reverse();return K(n,r,t).reverse()});Z=hr(function(n,r){if(!r.length){return}r=r.concat().reverse();return K(n,r[0],r.slice(1)).reverse()});$=hr(function(n,r,t){return t.slice(n,r)});_=hr(function(n,r){if(n<=0){return r.slice(0,0)}else if(!r.length){return r}else{return r.slice(0,n)}});nr=hr(function(n,r){if(n<=0||!r.length){return r}else{return r.slice(n)}});rr=hr(function(n,r){return[_(n,r),nr(n,r)]});tr=hr(function(n,r){var t,e;t=r.length;if(!t){return r}e=0;while(e<t&&n(r[e])){e+=1}return r.slice(0,e)});er=hr(function(n,r){var t,e;t=r.length;if(!t){return r}e=0;while(e<t&&n(r[e])){e+=1}return r.slice(e)});ur=hr(function(n,r){return[tr(n,r),er(n,r)]});ir=hr(function(n,r){return ur(gr([vr,n]),r)});or=hr(function(n,r){var t,e,u,i,o,a;t=[];e=r.length;for(u=0,i=n.length;u<i;++u){o=u;a=n[u];if(o===e){break}t.push([a,r[o]])}return t});ar=hr(function(n,r,t){var e,u,i,o,a,c;e=[];u=t.length;for(i=0,o=r.length;i<o;++i){a=i;c=r[i];if(a===u){break}e.push(n(c,t[a]))}return e});cr=function(){var n,r,t,e,u,i,o,a,c,f=[];n=sr.call(arguments);r=9e9;for(t=0,e=n.length;t<e;++t){u=n[t];r<=(i=u.length)||(r=i)}for(t=0;t<r;++t){o=t;a=[];for(c=0,e=n.length;c<e;++c){u=n[c];a.push(u[o])}f.push(a)}return f};fr=function(n){var r,t,e,u,i,o,a,c=[];r=sr.call(arguments,1);t=9e9;for(e=0,u=r.length;e<u;++e){i=r[e];t<=(o=i.length)||(t=o)}for(e=0;e<t;++e){a=e;c.push(n.apply(null,f()))}return c;function f(){var n,t,e,u=[];for(n=0,e=(t=r).length;n<e;++n){i=t[n];u.push(i[a])}return u}};r.exports={each:e,map:u,filter:o,compact:i,reject:a,partition:c,find:f,head:l,first:s,tail:h,last:p,initial:g,empty:v,reverse:m,difference:T,intersection:z,union:A,countBy:N,groupBy:O,fold:y,fold1:b,foldl:j,foldl1:x,foldr:M,foldr1:k,unfoldr:W,andList:B,orList:S,any:I,all:P,unique:d,sort:F,sortWith:E,sortBy:C,sum:R,product:V,mean:D,average:G,concat:w,concatMap:L,flatten:q,maximum:H,minimum:J,scan:K,scan1:U,scanl:Q,scanl1:X,scanr:Y,scanr1:Z,slice:$,take:_,drop:nr,splitAt:rr,takeWhile:tr,dropWhile:er,span:ur,breakList:ir,zip:or,zipWith:ar,zipAll:cr,zipAllWith:fr};function hr(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}function pr(n,r){var t=-1,e=r.length>>>0;while(++t<e)if(n===r[t]&&t in r)return true;return false}function gr(n){return function(){var r,t=arguments;for(r=n.length;r>0;--r){t=[n[r-1].apply(this,t)]}return t[0]}}function vr(n){return!n}},{}],5:[function(n,r,t){var e,u,i,o,a,c,f,l,s,h;e=p(function(n,r){return r.split(n)});u=p(function(n,r){return r.join(n)});i=function(n){if(!n.length){return[]}return n.split("\n")};o=function(n){return n.join("\n")};a=function(n){if(!n.length){return[]}return n.split(/[ ]+/)};c=function(n){return n.join(" ")};f=function(n){return n.split("")};l=function(n){return n.join("")};s=function(n){return n.split("").reverse().join("")};h=p(function(n,r){var t,e,u;e=[];for(u=0;u<n;++u){e.push(r)}t=e;return t.join("")});r.exports={split:e,join:u,lines:i,unlines:o,words:a,unwords:c,chars:f,unchars:l,reverse:s,repeat:h};function p(n,r){var t,e=function(u){return n.length>1?function(){var i=u?u.concat():[];t=r?t||this:this;return i.push.apply(i,arguments)<n.length&&arguments.length?e.call(t,i):n.apply(t,i)}:n};return e()}},{}]},{},[]);}, "data/images/gb": function(exports, require, module) {if (!window.imagePackage) window.imagePackage = function() { return "data:" + this.mime + ";base64," + this.content };
 if (!window.otherImports) window.otherImports = {}; 
 var item = {
 	mime: 'image/png', 
@@ -3898,11 +11281,11 @@ return window.JSONImport['ro-RO'] = module.exports = item;}, "data/views/index":
     
       __out.push(DepMan.render(["partials", "header"]));
     
-      __out.push('\n        <div ng-controller="Content" class="container" ng-class="{true: \'formopen\', false: \'formclosed\'}[runtime.props[\'contact-form-open\']]">\n            <h1>Data</h1>\n            ');
+      __out.push('\n            ');
     
-      __out.push(DepMan.render(["partials", "dummydata"]));
+      __out.push(DepMan.render(["partials", "content"]));
     
-      __out.push('\n        </div>\n    </div>\n    ');
+      __out.push('\n    </div>\n    ');
     
       __out.push(DepMan.render(["partials", "signup"]));
     
@@ -4091,6 +11474,56 @@ return window.JSONImport['ro-RO'] = module.exports = item;}, "data/views/index":
   }).call(__obj);
   __obj.safe = __objSafe, __obj.escape = __escape;
   return __out.join('');
+}}, "data/views/partials/content": function(exports, require, module) {module.exports = function(__obj) {
+  if (!__obj) __obj = {};
+  var __out = [], __capture = function(callback) {
+    var out = __out, result;
+    __out = [];
+    callback.call(this);
+    result = __out.join('');
+    __out = out;
+    return __safe(result);
+  }, __sanitize = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else if (typeof value !== 'undefined' && value != null) {
+      return __escape(value);
+    } else {
+      return '';
+    }
+  }, __safe, __objSafe = __obj.safe, __escape = __obj.escape;
+  __safe = __obj.safe = function(value) {
+    if (value && value.ecoSafe) {
+      return value;
+    } else {
+      if (!(typeof value !== 'undefined' && value != null)) value = '';
+      var result = new String(value);
+      result.ecoSafe = true;
+      return result;
+    }
+  };
+  if (!__escape) {
+    __escape = __obj.escape = function(value) {
+      return ('' + value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    };
+  }
+  (function() {
+    (function() {
+      __out.push('<div ng-controller="Content" class="container" ng-class="{hidden: voiceCommand, fullscreen: runtime.props[\'fullscreen\']}">\n    <section id="voice" ng-class="{true: \'active\'}[voiceCommand]">\n        <article>\n            <h1>Voice command stuff</h1>\n            <button class="close" ng-click="disableVoice()" ');
+    
+      __out.push(_T("Never Mind"));
+    
+      __out.push('></button>\n        </article>\n    </section>\n    <section id="rest" ng-class="{true: \'hidden\'}[voiceCommand]">\n        <article>\n            <h1>stuff</h1>\n            <aside><img src="https://www.viralheat.com/wp-content/uploads/2012/09/analytics.jpg" alt="" /></aside>\n        </article>\n        <article>\n            <h1>more stuff</h1>\n            <aside><img src="https://www.viralheat.com/wp-content/uploads/2012/09/analytics.jpg" alt="" /></aside>\n        </article>\n    </section>\n</div>\n');
+    
+    }).call(this);
+    
+  }).call(__obj);
+  __obj.safe = __objSafe, __obj.escape = __escape;
+  return __out.join('');
 }}, "data/views/partials/dummydata": function(exports, require, module) {module.exports = function(__obj) {
   if (!__obj) __obj = {};
   var __out = [], __capture = function(callback) {
@@ -4176,11 +11609,11 @@ return window.JSONImport['ro-RO'] = module.exports = item;}, "data/views/index":
   }
   (function() {
     (function() {
-      __out.push('<header>\n    <h1>');
+      __out.push('<header ng-controller="Navigation" ng-class="{fullscreen: runtime.props[\'fullscreen\']}">\n    <h1>');
     
       __out.push(__sanitize(window.AppInfo.displayname));
     
-      __out.push(' </h1>\n    <nav ng-controller="Navigation">\n        <div class="facebook"><a href="#"><i class="fa fa-fw fa-facebook"></i><span ');
+      __out.push(' </h1>\n        <nav>\n        <div class="facebook"><a href="#"><i class="fa fa-fw fa-facebook"></i><span ');
     
       __out.push(_T("Facebook"));
     
@@ -4288,7 +11721,7 @@ return window.JSONImport['ro-RO'] = module.exports = item;}, "data/views/index":
   }
   (function() {
     (function() {
-      __out.push('<nav class="languages" ng-controller="Language">\n    <li ng-repeat="(code, lang) in languages" ng-click="changeLanguage(lang)">\n        <img src="{{getImage(code)}}" alt="" />\n    </li>\n</nav>\n');
+      __out.push('<nav class="languages" ng-controller="Language">\n    <li ng-repeat="(code, lang) in languages" ng-click="changeLanguage(lang)">\n        <img src="{{getImage(code)}}" alt="" />\n    </li>\n    <li ng-click=\'runtime.set("fullscreen", !runtime.props["fullscreen"])\'><i class="fa" ng-class="{true: \'fa-compress\', false: \'fa-expand\'}[runtime.props[\'fullscreen\']]"></i></li>\n</nav>\n');
     
     }).call(this);
     
@@ -4422,78 +11855,6 @@ window.AppInfo = {
     "node": "3"
   }
 }
-;window.AppInfo = {
-  "name": "lyticlanding",
-  "displayname": "Lytic",
-  "version": "0.0.1",
-  "author": {
-    "name": "Sabin Marcu",
-    "email": "sabinmarcu@gmail.com"
-  },
-  "dependencies": {
-    "coffee-script": "*",
-    "cliparser": "*",
-    "express": "*",
-    "stylus": "*",
-    "nib": "*",
-    "isf": "*",
-    "stitchw": "*",
-    "eco": "*",
-    "mime": "*",
-    "LiveScript": "*",
-    "js-yaml": "*",
-    "mailchimp-api": "~2.0.4",
-    "handlebars": "~2.0.0-alpha.2",
-    "nodemailer": "~0.6.1"
-  },
-  "scripts": {
-    "create-dir-structure": "mkdir lib src spec bin",
-    "compile": "node node_modules/.bin/coffee -c -o lib src",
-    "run-tests": "node node_modules/.bin/jasmine-node --coffee --noColor spec",
-    "test": "npm run-script compile && npm run-script run-tests"
-  },
-  "main": "node server -s -c -v -p 80",
-  "subdomain": "lytic",
-  "engines": {
-    "node": "3"
-  }
-}
-;window.AppInfo = {
-  "name": "lyticlanding",
-  "displayname": "Lytic",
-  "version": "0.0.1",
-  "author": {
-    "name": "Sabin Marcu",
-    "email": "sabinmarcu@gmail.com"
-  },
-  "dependencies": {
-    "coffee-script": "*",
-    "cliparser": "*",
-    "express": "*",
-    "stylus": "*",
-    "nib": "*",
-    "isf": "*",
-    "stitchw": "*",
-    "eco": "*",
-    "mime": "*",
-    "LiveScript": "*",
-    "js-yaml": "*",
-    "mailchimp-api": "~2.0.4",
-    "handlebars": "~2.0.0-alpha.2",
-    "nodemailer": "~0.6.1"
-  },
-  "scripts": {
-    "create-dir-structure": "mkdir lib src spec bin",
-    "compile": "node node_modules/.bin/coffee -c -o lib src",
-    "run-tests": "node node_modules/.bin/jasmine-node --coffee --noColor spec",
-    "test": "npm run-script compile && npm run-script run-tests"
-  },
-  "main": "node server -s -c -v -p 80",
-  "subdomain": "lytic",
-  "engines": {
-    "node": "3"
-  }
-}
 ;/** COPYRIGHT
 Copyright (c) Sabin Marcu 2009-2013, Powered by the Arrowhead System (tm)
 You may not redistribute this software under any circumstance other than sharing the link to any online service supplied by myself, Sabin Marcu, or any market or application store it might be registered in without consulting with the author, or using the software in any commercial way.
@@ -4502,7 +11863,7 @@ Other than that, feel free to enjoy the application!
 @Application Name : Lytic
 @Author           : Sabin Marcu <sabinmarcu@gmail.com>
 @Version          : 0.0.1
-@Date Compiled    : Mon Mar 17 2014 08:48:10 GMT+0000 (GMT)
+@Date Compiled    : Tue Mar 25 2014 15:15:03 GMT+0000 (GMT)
 **/
 
 	window.addEventListener('load', function(){ 
