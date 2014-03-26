@@ -1,5 +1,2 @@
-
 node_modules
-.settings
-.c9revisions
-.idea
+certs/*

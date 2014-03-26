@@ -6,7 +6,6 @@ class ScrollController extends IS.Object
     init-runtime: ~>
         window.addEventListener "resize", @headerResize
         window.addEventListener "orientationchange", @headerResize
-        @headerResize!
         @runtime.init "contact-form-open", false
         $ ".app header nav" .css "top", ($ ".app header h1" .height!)
         $ \.flow .scroll ~>
@@ -20,6 +19,7 @@ class ScrollController extends IS.Object
             else
                 $ \.app .css \background-position : "bottom right"
                 $ \.heatmap .css \top : 0
+        setTimeout @headerResize, 500
         @
 
     headerResize: ~>

@@ -6,8 +6,8 @@ class HeatmapController extends IS.Object
 
     (@scope) ~>
         window.HC = @
-        @config-scope!
         @init-runtime!
+        @config-scope!
 
     init-runtime: ~>
 
@@ -22,15 +22,20 @@ class HeatmapController extends IS.Object
         handler = ~>
 
             _add = (it, amnt = 1) ~>
-                set = x: it.pageX, y: it.pageY
-                set.x = window.innerWidth / 2 - set.x
-                for i = [1 to amnt]
-                    @dataSet = "#{set.x + @flow.scrollLeft!},#{set.y + @flow.scrollTop!}"
-                    @map.store.add-data-point ( window.innerWidth / 2 - set.x ) + @flow.scrollLeft!, set.y + @flow.scrollTop!
+                if ( it.pageX? and it.pageY? ) or ( it.screenPosition? )
+                    if it.pageX? and it.pageY? then set = x: it.pageX, y: it.pageY
+                    else set = x: it.screenPosition![0], y: it.screenPosition![1];
+                    set.x = window.innerWidth / 2 - set.x
+                    for i = [1 to amnt]
+                        @dataSet = "#{set.x + @flow.scrollLeft!},#{set.y + @flow.scrollTop!}"
+                        @map.store.add-data-point ( window.innerWidth / 2 - set.x ) + @flow.scrollLeft!, set.y + @flow.scrollTop!
 
             if it.touches? 
                 for touch in it.touches 
                     _add touch, 5
+            else if it.hands? and it.hands.length 
+                for hand in it.hands
+                    _add hand
             else _add it
 
         resHandler = ~>
@@ -40,12 +45,22 @@ class HeatmapController extends IS.Object
             @map.resize!
             @refresh!
 
-        resHandler!
         window.addEventListener "resize", resHandler
         window.addEventListener "mousemove", handler
         window.addEventListener "touchstart", handler
         if not Tester.ios then window.addEventListener "touchmove", handler
         window.addEventListener "touchend", handler
+
+        @leap = new Leap.Controller!
+        @leap.use \screenPosition, verticalOffset: 500
+        @leap.on \connected, ~> @log "Leap Online"
+        @leap.on \deviceConnected, ~> @log "Leap Connected"
+        @leap.on \deviceDisconnected, ~> @log "Leap Disconnected"
+        @leap.on \frame, handler
+        @leap.connect!
+        @log "Leap Created"
+
+        resHandler!
 
     refresh: ~> 
         set = @dataSet

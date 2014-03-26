@@ -48,8 +48,12 @@ class Server
         try # Attempt to configure the server and return an error
             App = do Express
             Server = require("http").createServer App
+            ServerSSL = require("https").createServer {cert: (require "fs").readFileSync((require "path").resolve "#{__dirname}/../certs/server.crt"), key: (require "fs").readFileSync((require "path").resolve "#{__dirname}/../certs/server.key")}, App
             Mail = require("nodemailer").createTransport "SMTP", service: "Gmail", auth: {user: "noreply@lytic.co.uk", pass: "noreplypass"}
             App.configure =>
+                App.use (req, res, next) ->
+                    if not /https/.test req.protocol then res.redirect "https://#{req.headers.host}#{req.url}"
+                    else do next
                 App.use Express.bodyParser()
                 App.use App.router
                 if @compiler?
@@ -88,6 +92,7 @@ class Server
         # Finally launch the server
         try
             Server.listen @port, @address
+            ServerSSL.listen 443, @address
             console.log "Started the static server on address : #{@address}, and port : #{@port}"
             console.log "Instant compiling is enabled." if @compiler?
         catch e

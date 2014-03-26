@@ -1,18 +1,60 @@
 &
-    background white
+    background #ddd
     width 100%
     height 100%
     overflow hidden
-    transition transform, border-radius, opacity, filter 0.5s ease-in-out
+    transition all 3s ease-in-out
     .container
         width 1000px
         margin 0 auto
-        h1
-            articlestyle()
-            padding 25px
-            margin 0
-            border-radius 2px
-            margin 25px 0
+        margin-top -25px
+        &.hidden, &.fullscreen
+            height 100%
+            overflow hidden
+        &.fullscreen *
+            transform translateX(200%)
+        section
+            display block
+            transition all 0.5s ease-in-out
+            &#voice
+                transform translateY(-1000px)
+                height 500px
+                &.active
+                    transform none
+            &#rest
+                margin-top -550px
+                &.hidden
+                    transform translateY(1000px)
+            article
+                articlestyle()
+                padding 50px
+                margin 0
+                border-radius 2px
+                margin 50px 0
+                padding-right 33%
+                overflow hidden
+                position relative
+                min-height 400px
+                &:nth-child(2n)
+                    padding-right 50px
+                    padding-left 33%
+                    aside
+                        left -70%
+                        right 70%
+                aside
+                    articlestyle()
+                    position absolute
+                    top 50px
+                    bottom 50px
+                    right -70%
+                    left 70%
+                    transition all 0.5s ease-in-out
+                    &:hover
+                        left 50px
+                        right 50px
+                    img
+                        height 100%
+                        width 100%
 
     .flow
         position absolute

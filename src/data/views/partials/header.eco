@@ -1,6 +1,6 @@
-<header>
+<header ng-controller="Navigation" ng-class="{fullscreen: runtime.props['fullscreen']}">
     <h1><%= window.AppInfo.displayname %> </h1>
-    <nav ng-controller="Navigation">
+        <nav>
         <div class="facebook"><a href="#"><i class="fa fa-fw fa-facebook"></i><span <%- _T "Facebook" %>></span></a></div>
         <div class="twitter"><a href="http://twitter.com/lyticapp"><i class="fa fa-fw fa-twitter"></i><span <%- _T "Twitter" %>></span></a></div>
         <div class="admin"><a href="http://lytic.io/"><i class="fa fa-fw fa-user"></i><span <%- _T "App" %>></span></a></div>
