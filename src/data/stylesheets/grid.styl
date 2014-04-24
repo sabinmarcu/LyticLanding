@@ -8,10 +8,13 @@
         width 1000px
         margin 0 auto
         margin-top -25px
-        &.hidden, &.fullscreen
+        &.hidden
             height 100%
+        &.hidden, &.fullscreen
             overflow hidden
-        &.fullscreen *
+        > *
+            transition transform 0.5s ease-in-out
+        &.fullscreen > *
             transform translateX(200%)
         section
             display block
@@ -25,36 +28,119 @@
                 margin-top -550px
                 &.hidden
                     transform translateY(1000px)
-            article
+            > article
                 articlestyle()
-                padding 50px
+                padding 25px
                 margin 0
                 border-radius 2px
                 margin 50px 0
-                padding-right 33%
                 overflow hidden
                 position relative
-                min-height 400px
-                &:nth-child(2n)
-                    padding-right 50px
-                    padding-left 33%
+                font-size 12pt
+                font-family Roboto
+                color #777
+                h2, h1
+                    font-size 1em
+                    color #181810
+                h1
+                    font-size 3em
+                    text-align center
+                    padding 0 0 10px 0
+                    margin 0 0 20px 0
+                    border-bottom solid 2px #639
+                &.img
+                    padding-right 33%
                     aside
-                        left -70%
-                        right 70%
-                aside
-                    articlestyle()
-                    position absolute
-                    top 50px
-                    bottom 50px
-                    right -70%
-                    left 70%
-                    transition all 0.5s ease-in-out
-                    &:hover
-                        left 50px
-                        right 50px
+                        articlestyle()
+                        position absolute
+                        top 50px
+                        bottom 50px
+                        right -70%
+                        left 70%
+                        padding 15px
+                        text-align center
+                        transition all 0.5s ease-in-out
+                        &:not(.static):hover
+                            left 50px
+                            right 50px
                     img
                         height 100%
-                        width 100%
+                > section
+                    text-align center
+                    width 100%
+                    height auto
+                    vertical-align middle
+                    article.team
+                        display inline-block
+                        position relative
+                        width 250px
+                        overflow hidden
+                        height 250px
+                        border-radius 100%
+                        padding 0
+                        margin 5px
+                        figcaption, figure img
+                            width 250px
+                            height 250px
+                            backface-visibility hidden
+                            border-radius 100%
+                            background #eee
+                            position absolute
+                            top 0
+                            transition all 1s ease-in-out
+                            left 0
+                            margin 0
+                        figcaption, figure
+                            position absolute
+                            top 0
+                            left 0
+                            margin 0px
+                            padding 0
+                            z-index 0
+                            overflow hidden
+                            border-radius 100%
+                            width 250px
+                            height 250px
+                        figure
+                            box-shadow none
+                            background transparent
+                            transition all 0s 1s ease-in-out
+                            perspective 600
+                            z-index 1
+                        &.hover
+                        &:hover
+                            figure
+                                transform none
+                                top -100%
+                                img
+                                    transform translateY(-100%) rotateX(90deg)
+                                    opacity 0
+
+                        figcaption
+                            h1
+                                font-size 18pt
+                                margin 30px 0 10px
+                                padding 15px 0 0
+                    figure
+                        articlestyle()
+                        overflow hidden
+                        height 240px
+                        width 240px
+                        padding 5px
+                        margin 5px
+                        display inline-block
+                        transition transform 0.2s ease-in-out
+                        &:hover
+                            transform scale(1.2)
+                            articlestyledarken()
+                        div
+                            display table
+                            vertical-align middle
+                            width 100%
+                            height 100%
+                            a
+                                display table-cell
+                                vertical-align middle
 
     .flow
         position absolute

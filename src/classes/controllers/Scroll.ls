@@ -11,7 +11,8 @@ class ScrollController extends IS.Object
         $ \.flow .scroll ~>
             _r = (it.target.scrollTop + 1) / (it.target.scrollHeight - window.innerHeight)
             _o = 1000 - window.innerHeight
-            $ ".app header" .css \top : 0
+            if window.innerWidth >= 1200 then $ ".app header" .css \top : 25
+            else $ ".app header" .css \top : 0
             if _o > 0
                 $ \.app .css \background-position : "right -#{parseInt _r * _o}px"
                 if window.innerWidth < 1200 then $ ".app header" .css \top : - it.target.scrollTop * 2
@@ -27,18 +28,21 @@ class ScrollController extends IS.Object
         el = $ ".app header h1"
         flow = $ \.flow.prime
         nav = $ ".app header nav"
+        img = $ ".app header h1 img"
         if window.innerWidth >= 1200
             for i in [0 to 5]
                 header.height el.height! + nav.height!
-                header.css "right",  925
+                header.css "right": 925, "top": 25
                 el.css "font-size", ((el.width! / (7 * 1.5)) * 3)
-                flow.css "padding-left", window.innerWidth - 900
+                flow.css "padding-left": window.innerWidth - 875, "padding-right": 30
         else
             el.css "font-size", ""
-            flow.css "padding-left", ""
+            flow.css "padding-left": "", "padding-right": ""
             header.height ""
-            header.css "right",  ""
-        $ ".app header nav" .css "top", el.height!
+            header.css "right": "", "top": 0
+        img.height el.height!
+        img.width el.height!
+        nav.css "top", el.height!
 
     config-scope: ~>
         @safeApply = (fn) ~>

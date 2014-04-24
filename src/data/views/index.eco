@@ -3,7 +3,7 @@
     <%- DepMan.render ["partials", "heatmap"] %>
     <div class="flow prime" ng-controller="Scroll">
         <%- DepMan.render ["partials", "header"] %>
-            <%- DepMan.render ["partials", "content"] %>
+        <%- DepMan.render ["partials", "content"] %>
     </div>
     <%- DepMan.render ["partials", "signup"] %>
 </section>

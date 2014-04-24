@@ -6,13 +6,8 @@
         </article>
     </section>
     <section id="rest" ng-class="{true: 'hidden'}[voiceCommand]">
-        <article>
-            <h1>stuff</h1>
-            <aside><img src="https://www.viralheat.com/wp-content/uploads/2012/09/analytics.jpg" alt="" /></aside>
-        </article>
-        <article>
-            <h1>more stuff</h1>
-            <aside><img src="https://www.viralheat.com/wp-content/uploads/2012/09/analytics.jpg" alt="" /></aside>
-        </article>
+        <% for item in ["aboutus", "team", "partners"]: %>
+        <article><%- DepMan.doc item %></article>
+        <% end %>
     </section>
 </div>
