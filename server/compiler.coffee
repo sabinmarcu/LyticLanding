@@ -44,8 +44,10 @@ class Compiler
                 critem = """
                     #{require path.resolve "#{__dirname}/data/copyright"}
                 """
+
+
                 @sources.push """
-                    window.AppInfo = #{fs.readFileSync path.resolve "@{__dirname}/../package.json"};
+                    window.AppInfo = #{fs.readFileSync path.resolve "#{__dirname}/../package.json"};
                 """
                 @sources.push """
                     /** COPYRIGHT

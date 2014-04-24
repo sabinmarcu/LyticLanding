@@ -5,7 +5,7 @@ class DepMan extends IS.Object
     unless module.substr? then module = module * "/"
     str = "#{prefix}#{module}"
     if @deps[str] then return @deps[str]
-    else 
+    else
       @deps[str] = require "#{@basePrefix}#{str}"
       return @deps["#{prefix}#{module}"]
 
@@ -15,7 +15,7 @@ class DepMan extends IS.Object
     module = @data module, "views/"
     if module.main then module.main.apply @, [null, null, null] ++ [args]
     else module.apply @, args
-  doc        : (module) ~> @data "docs/"
+  doc        : (module) ~> @data module, "docs/"
   stylesheet : (module) ~> @data module, "stylesheets/"
   image      : (module) ~> @data module, "images/"
   font       : (module) ~> @data module, "fonts/"

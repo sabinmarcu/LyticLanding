@@ -1,11 +1,12 @@
 .languages
     display block
     position absolute
-    top 5px
-    left 0px
-    right 15px
+    top 0
+    left -5px
     height 15px
     z-index 99999999
+    padding 5px
+    transition all 0.5s ease-in-out
     li
         list-style none
         float left
@@ -13,6 +14,8 @@
         transition all 0.5s ease-in-out
         margin 0 0 0 5px
         cursor pointer
+        background white
         &:hover
             opacity 1
-
+    &.fullscreen
+        top 0 !important

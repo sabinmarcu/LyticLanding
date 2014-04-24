@@ -15,7 +15,7 @@ class HeatmapController extends IS.Object
         $ \.heatmap .width ($ ".flow .container" .width!)
 
         @flow = $ \.flow
-        @map = window.h337.create radius: 30, opacity: 100, element: ($ \.heatmap .0)
+        @map = window.h337.create radius: 30, opacity: 100, element: ($ \.heatmap .0) #, gradient: { 0.45: "rgb(150,150,255)", 0.55: "rgb(0,255,255)", 0.65: "rgb(0,255,0)", 0.95: "yellow", 1.0: "rgb(255,0,0)"}
 
         @refresh!
 
@@ -30,10 +30,10 @@ class HeatmapController extends IS.Object
                         @dataSet = "#{set.x + @flow.scrollLeft!},#{set.y + @flow.scrollTop!}"
                         @map.store.add-data-point ( window.innerWidth / 2 - set.x ) + @flow.scrollLeft!, set.y + @flow.scrollTop!
 
-            if it.touches? 
-                for touch in it.touches 
+            if it.touches?
+                for touch in it.touches
                     _add touch, 5
-            else if it.hands? and it.hands.length 
+            else if it.hands? and it.hands.length
                 for hand in it.hands
                     _add hand
             else _add it
@@ -62,9 +62,9 @@ class HeatmapController extends IS.Object
 
         resHandler!
 
-    refresh: ~> 
+    refresh: ~>
         set = @dataSet
-        try 
+        try
             TOLERANCE = 3
             _set = set
             if set.length > TOLERANCE
@@ -79,7 +79,7 @@ class HeatmapController extends IS.Object
             max = 999999
         @map.store.set-data-set data: set, max: max
 
-    @defineGetter "dataSet", -> 
+    @defineGetter "dataSet", ->
         set = []
         for key, value of _dataSet
             [x, y] = key.split ","

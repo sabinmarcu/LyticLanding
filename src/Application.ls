@@ -32,6 +32,7 @@ class Application extends IS.Object
     getStyles: ~> document.head.append-child @getStylesFunc!; @LifeCycle.resolve!
     loadLibs: ~>
         DepMan.google-font "Roboto", [100 400]
+        window._trackJs = customer: "e429c7bc13114634a691f06893614f39"
         DepMan.ext-link "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
         window.jQuery = window.$ = DepMan.lib \jquery.min
         window <<< DepMan.lib \angular.min
@@ -41,6 +42,7 @@ class Application extends IS.Object
         window <<< DepMan.lib \annyang
         window <<< DepMan.lib \leap-0.4.3
         window <<< DepMan.lib \leap-plugins-0.1.3.min
+        window <<< DepMan.lib \tracker
         window <<<< window.require "prelude-ls"
         @LifeCycle.resolve!
 
@@ -71,4 +73,3 @@ class Application extends IS.Object
 
 
 module.exports = Application
-

@@ -1,5 +1,27 @@
 hheight = 200px
 
+@keyframes revolve
+    0%, 84%, 16%
+        transform none
+        opacity 1
+    32%, 67%
+        transform rotateY(-90deg) translateX(-100%)
+        opacity 0
+    68%
+        transform rotateY(90deg) translateX(100%)
+        opacity 0
+
+@keyframes fade
+    0%, 16%
+        transform translateX(100%)
+        opacity 0
+    32%, 68%
+        opacity 1
+        transform none
+    84%, 100%
+        transform translateX(-100%)
+        opacity 0
+
 header
     display block
     border-top solid 5px #639
@@ -9,20 +31,42 @@ header
     right 0
     height hheight
     articlestyle()
-    transition all 0.5s ease-in-out
+    transition transform 0.5s ease-in-out
     &.fullscreen
-        transform translateY(-100%)
+        transform translateY(-200%)
     h1
         display block
         padding 0
-        margin 0 
+        margin 0
         font-weight 100
         font-size hheight - 50
         text-transform uppercase
         text-align center
+        overflow hidden
         small
             display none
         background #fff
+        figure
+            display block
+            margin 0
+            padding 0
+            position absolute
+            left 0
+            right 0
+            top 0
+            bottom 0
+            text-align center
+            animation revolve 12s 2s infinite
+            img
+                height 100%
+                width auto
+        figcaption
+            display block
+            margin 0
+            padding 0
+            animation fade 12s 2s infinite
+            transform translateX(-100%)
+            opacity 0
     nav
         height navheight
         position absolute
@@ -63,15 +107,18 @@ header
                 &.contact
                     background black
                     color white
-        
+
 
 
 .flow.prime
     padding-top hheight + navheight
 
 @media (min-width: 1200px)
-    cwidth = 900px
-
+    cwidth = 875px
+    header
+        top 25px
+    nav.languages
+        top 30px
     .flow.prime
         padding-top 0
         left auto
@@ -79,13 +126,13 @@ header
             float left
             width cwidth
 
-@media (max-width: 1000px)
+@media (max-width: 1000)
     hheight = 200px
     header
         height hheight
         h1
             font-size hheight - 50
-        nav 
+        nav
             top hheight
 
     .flow.prime
@@ -97,7 +144,7 @@ header
         height hheight
         h1
             font-size hheight - 50
-        nav 
+        nav
             top hheight
 
     .flow.prime
@@ -109,7 +156,7 @@ header
         height hheight
         h1
             font-size 75px
-        nav 
+        nav
             top hheight
 
     .flow.prime

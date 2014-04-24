@@ -12,6 +12,36 @@ class ContentController extends IS.Object
                 annyang.addCommands "show me more": @disableVoice
                 annyang.start!
 
+        # Dealing with images
+        iter = 0
+        $ '#rest > article .team' .hover (-> $ @ .add-class 'hovered'), (-> $ @ .remove-class 'hovered')
+        (index, el) <~ $ '#rest > article' .each
+        el = $ el
+        img = el.find "img"
+        if img.length is 1
+            el.add-class "img"
+            as = document.create-element "aside"
+            el.0.append-child as
+            as.appendChild img.0
+            iter += 1
+            if iter % 2 is 0 then el.add-class "alt"
+        else if img.length > 1
+            unless ($ img.0).parent!parent!.has-class "team"
+                wrapper = document.create-element "section"
+                el.0.append-child wrapper
+                (index, img) <~ img.each
+                setTimeout( ~>
+                    @log img.natural-width, img.natural-height, img.natural-width > img.natural-height
+                    if img.natural-width > img.natural-height then ($ img).css "width", 240
+                    else ($ img).css "height", 240
+                , 50)
+                f = document.create-element "figure"
+                d = document.create-element "div"
+                d.append-child ($ img).parent!.0
+                f.append-child d
+                wrapper.append-child f
+
+
     disableVoice:  ~>
         @log "Recognized"
         @scope.voiceCommand = false
