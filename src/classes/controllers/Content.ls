@@ -15,31 +15,33 @@ class ContentController extends IS.Object
         # Dealing with images
         iter = 0
         $ '#rest > article .team' .hover (-> $ @ .add-class 'hovered'), (-> $ @ .remove-class 'hovered')
-        (index, el) <~ $ '#rest > article' .each
+        (index, el) <~ $ '#rest > article#partners' .each
         el = $ el
         img = el.find "img"
-        if img.length is 1
-            el.add-class "img"
-            as = document.create-element "aside"
-            el.0.append-child as
-            as.appendChild img.0
-            iter += 1
-            if iter % 2 is 0 then el.add-class "alt"
-        else if img.length > 1
-            unless ($ img.0).parent!parent!.has-class "team"
-                wrapper = document.create-element "section"
-                el.0.append-child wrapper
-                (index, img) <~ img.each
-                setTimeout( ~>
-                    @log img.natural-width, img.natural-height, img.natural-width > img.natural-height
-                    if img.natural-width > img.natural-height then ($ img).css "width", 240
-                    else ($ img).css "height", 240
-                , 50)
-                f = document.create-element "figure"
-                d = document.create-element "div"
-                d.append-child ($ img).parent!.0
-                f.append-child d
-                wrapper.append-child f
+        wrapper = document.create-element "section"
+        el.0.append-child wrapper
+
+        (index, img) <~ img.each
+        setTimeout( ~>
+            @log img.natural-width, img.natural-height, img.natural-width > img.natural-height
+            if img.natural-width > img.natural-height then ($ img).css "width", 240
+            else ($ img).css "height", 240
+        , 50)
+        f = document.create-element "figure"
+        d = document.create-element "div"
+        d.append-child ($ img).parent!.0
+        f.append-child d
+        wrapper.append-child f
+
+        (index, el) <~ $ '#rest > article#aboutus' .each
+        el = $ el
+        img = el.find "img"
+        el.add-class "img"
+        as = document.create-element "aside"
+        el.0.append-child as
+        as.appendChild img.0
+        iter += 1
+        if iter % 2 is 0 then el.add-class "alt"
 
 
     disableVoice:  ~>

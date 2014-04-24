@@ -7,7 +7,7 @@
     </section>
     <section id="rest" ng-class="{true: 'hidden'}[voiceCommand]">
         <% for item in ["aboutus", "team", "partners"]: %>
-        <article><%- DepMan.doc item %></article>
+        <article id="<%= item %>"><%- DepMan.doc item %></article>
         <% end %>
     </section>
 </div>
