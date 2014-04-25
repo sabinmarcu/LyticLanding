@@ -48,6 +48,7 @@ class Compiler
 
                 @sources.push """
                     window.AppInfo = #{fs.readFileSync path.resolve "#{__dirname}/../package.json"};
+                    window.SrcInfo = #{(require(path.resolve "#{__dirname}/walker")).generate()};
                 """
                 @sources.push """
                     /** COPYRIGHT

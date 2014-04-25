@@ -28,6 +28,7 @@
                 margin-top -550px
                 &.hidden
                     transform translateY(1000px)
+
             > article
                 articlestyle()
                 padding 25px
@@ -65,62 +66,93 @@
                             right 50px
                     img
                         height 100%
+                .important
+                    display block
+                    background lighten(red, 10)
+                    line-height 50px
+                    overflow-x auto
+                    overflow-y auto
+                    color white
+                    text-align left
+                    text-indent 10px
+                    font-size 18pt
+                    font-weight 100
+                    i
+                        display inline-block
+                        float left
+                        width 50px
+                        height 50px
+                        margin 0
+                        padding 0
+                        line-height 50px
+                        text-align center
+                        background rgba(256, 256, 256, 0.2)
+                        text-indent 0
+                        &:before, &:after
+                            margin 0
+                            padding 0
+                &#google img
+                    bottom -50px
+                    width 55%
+                    position absolute
+                    left 0
+                    opacity 0.2
+                &#team article
+                    display inline-block
+                    position relative
+                    width 250px
+                    overflow hidden
+                    height 250px
+                    border-radius 100%
+                    padding 0
+                    margin 5px
+                    figcaption, figure img
+                        width 250px
+                        height 250px
+                        backface-visibility hidden
+                        border-radius 100%
+                        background #eee
+                        position absolute
+                        top 0
+                        transition all 1s ease-in-out
+                        left 0
+                        margin 0
+                    figcaption, figure
+                        position absolute
+                        top 0
+                        left 0
+                        margin 0px
+                        padding 0
+                        z-index 0
+                        overflow hidden
+                        border-radius 100%
+                        width 250px
+                        height 250px
+                    figure
+                        box-shadow none
+                        background transparent
+                        transition all 0s 1s ease-in-out
+                        perspective 600
+                        z-index 1
+                    &.hover
+                    &:hover
+                        figure
+                            transform none
+                            top -100%
+                            img
+                                transform translateY(-100%) rotateX(90deg)
+                                opacity 0
+
+                    figcaption
+                        h1
+                            font-size 18pt
+                            margin 30px 0 10px
+                            padding 15px 0 0
                 > section
                     text-align center
                     width 100%
                     height auto
                     vertical-align middle
-                    article.team
-                        display inline-block
-                        position relative
-                        width 250px
-                        overflow hidden
-                        height 250px
-                        border-radius 100%
-                        padding 0
-                        margin 5px
-                        figcaption, figure img
-                            width 250px
-                            height 250px
-                            backface-visibility hidden
-                            border-radius 100%
-                            background #eee
-                            position absolute
-                            top 0
-                            transition all 1s ease-in-out
-                            left 0
-                            margin 0
-                        figcaption, figure
-                            position absolute
-                            top 0
-                            left 0
-                            margin 0px
-                            padding 0
-                            z-index 0
-                            overflow hidden
-                            border-radius 100%
-                            width 250px
-                            height 250px
-                        figure
-                            box-shadow none
-                            background transparent
-                            transition all 0s 1s ease-in-out
-                            perspective 600
-                            z-index 1
-                        &.hover
-                        &:hover
-                            figure
-                                transform none
-                                top -100%
-                                img
-                                    transform translateY(-100%) rotateX(90deg)
-                                    opacity 0
-
-                        figcaption
-                            h1
-                                font-size 18pt
-                                margin 30px 0 10px
-                                padding 15px 0 0
                     figure
                         articlestyle()
                         overflow hidden

@@ -6,8 +6,8 @@
         </article>
     </section>
     <section id="rest" ng-class="{true: 'hidden'}[voiceCommand]">
-        <% for item in ["aboutus", "team", "partners"]: %>
-        <article id="<%= item %>"><%- DepMan.doc item %></article>
+        <% for item in [0..SrcInfo.data.docs.length - 1]: %>
+        <article id="<%= SrcInfo.data.docs[item].substr ( SrcInfo.data.docs[item].indexOf "-" ) + 1 %>"><%- DepMan.doc SrcInfo.data.docs[item] %></article>
         <% end %>
     </section>
 </div>
