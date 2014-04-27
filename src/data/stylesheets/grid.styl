@@ -66,9 +66,12 @@
                             right 50px
                     img
                         height 100%
-                .important
+                        background black
+                .important, .warning
                     display block
                     background lighten(red, 10)
+                    &.warning
+                        background darken(yellow, 7)
                     line-height 50px
                     overflow-x auto
                     overflow-y auto
@@ -102,10 +105,14 @@
                     position relative
                     width 250px
                     overflow hidden
-                    height 250px
-                    border-radius 100%
                     padding 0
+                    height 0
+                    padding-top 275px
                     margin 5px
+                    box-shadow none
+                    overflow hidden
+                    vertical-align top
+                    transition height 0.5s ease-in-out
                     figcaption, figure img
                         width 250px
                         height 250px
@@ -136,12 +143,15 @@
                         z-index 1
                     &.hover
                     &:hover
+                        height 300px
                         figure
                             transform none
                             top -100%
                             img
                                 transform translateY(-100%) rotateX(90deg)
                                 opacity 0
+                    figure img
+                        background black
 
                     figcaption
                         h1

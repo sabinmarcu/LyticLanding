@@ -12,29 +12,33 @@ class ContentController extends IS.Object
                 annyang.addCommands "show me more": @disableVoice
                 annyang.start!
 
+        #el = document.createElement "script"
+        #el.src = "#{document.location.protocol}//platform.twitter.com/widjets.js"
+        #el.id = "twitter-wjs"
+        #document.head.appendChild el
+
         # Dealing with images
         iter = 0
         $ '#rest > article .team' .hover (-> $ @ .add-class 'hovered'), (-> $ @ .remove-class 'hovered')
-        (index, el) <~ $ '#rest > article#partners' .each
-        el = $ el
+
+        el = $ '#rest > article#partners'
         img = el.find "img"
         wrapper = document.create-element "section"
         el.0.append-child wrapper
 
-        (index, img) <~ img.each
-        setTimeout( ~>
-            @log img.natural-width, img.natural-height, img.natural-width > img.natural-height
-            if img.natural-width > img.natural-height then ($ img).css "width", 240
-            else ($ img).css "height", 240
-        , 50)
-        f = document.create-element "figure"
-        d = document.create-element "div"
-        d.append-child ($ img).parent!.0
-        f.append-child d
-        wrapper.append-child f
+        img.each (index, img) ~> 
+            setTimeout( ~>
+                @log img.natural-width, img.natural-height, img.natural-width > img.natural-height
+                if img.natural-width > img.natural-height then ($ img).css "width", 240
+                else ($ img).css "height", 240
+            , 50)
+            f = document.create-element "figure"
+            d = document.create-element "div"
+            d.append-child ($ img).parent!.0
+            f.append-child d
+            wrapper.append-child f
 
-        (index, el) <~ $ '#rest > article#aboutus' .each
-        el = $ el
+        el = $ '#rest > article#aboutus'
         img = el.find "img"
         el.add-class "img"
         as = document.create-element "aside"

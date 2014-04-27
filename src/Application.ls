@@ -70,6 +70,7 @@ class Application extends IS.Object
 
         DepMan.controller "Modal"
         angular.bootstrap document.body, [AppInfo.displayname]
+        setTimeout DepMan.helper("twitter"), 50
 
 
 module.exports = Application
