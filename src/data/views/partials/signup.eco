@@ -1,6 +1,6 @@
 <aside ng-controller="Signup" ng-class="{'hidden': isHidden}">
     <section>
-        <div class="input"><input type="email" id="mail" <%= _T "Get Invited to the Beta", "placeholder" %> ng-model="email"></div>
+        <div class="input"><input type="email" id="mail" <%= _T "Get Involved!", "placeholder" %> ng-model="email"></div>
         <div class="submit"><input type="submit" <%= _T "Sign Up" %> ng-click="signup(email)"></input></div>
     </section>
 </aside>
